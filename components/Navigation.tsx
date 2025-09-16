@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 
 // Navigation Component
@@ -17,47 +18,47 @@ const Navigation = () => {
   return (
     <>
       {/* Desktop & Mobile Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 ">
-        
+      <nav className="fixed top-0 left-0 right-0 z-50">
         {/* Container */}
         <div className="flex items-center justify-between px-6 py-4 lg:px-24">
           
-          {/* Logo */}
+          {/* Logo Desktop only */}
           <div className="flex flex-col">
-            <h1 className="text-xl lg:text-2xl font-bold text-gray-800">
+            <h1 className="text-xl lg:text-4xl font-extralight tracking-tighter text-white font-mono">
               Harcherran
             </h1>
-            <p className="text-xs lg:text-sm text-gray-600">
+            {/* <Image src={"/images/navbar/logo.png"} width={195} height={42} alt="Logo" /> */}
+            <p className="text-xs lg:text-base text-white">
               Performance Creative Partner
             </p>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center bg-transparent backdrop-blur-sm rounded-full px-2 py-2 shadow-lg">
+          <div className="hidden md:flex items-center bg-transparent backdrop-blur-sm rounded-full px-2 py-2 shadow-lg border border-gray-300 space-x-2">
             <button className="px-6 py-2 bg-white rounded-full text-gray-700 font-medium shadow-sm hover:shadow-md transition-all hover:scale-105">
               Home
             </button>
             <a
               href="#"
-              className="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
+              className="px-4 py-2 text-white hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
             >
               Portfolio
             </a>
             <a
               href="#"
-              className="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
+              className="px-4 py-2 text-white hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
             >
               Case Studies
             </a>
             <a
               href="#"
-              className="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
+              className="px-4 py-2 text-white hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
             >
               About
             </a>
             <a
               href="#"
-              className="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
+              className="px-4 py-2 text-white hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
             >
               Process
             </a>
@@ -118,7 +119,9 @@ const Navigation = () => {
           {/* Mobile Header */}
           <div className="flex items-center justify-between px-6 py-4 border-b border-white/20">
             <div className="flex flex-col">
-              <h1 className="text-xl font-bold text-gray-800">Harcherran</h1>
+              <h1 className="text-xl font-extralight tracking-tighter text-white font-mono">
+                Harcherran
+              </h1>
               <p className="text-xs text-gray-600">
                 Performance Creative Partner
               </p>
