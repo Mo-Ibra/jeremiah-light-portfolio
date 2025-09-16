@@ -1,6 +1,6 @@
 "use client";
 
-// import Image from "next/image";
+import Image from "next/image";
 import React, { useState } from "react";
 
 // Navigation Component
@@ -24,11 +24,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between px-6 py-4 lg:px-24">
           {/* Logo */}
           <div className="flex flex-col">
-            <h1 className="text-xl lg:text-4xl font-extralight tracking-tighter text-white font-mono">
+            {/* <h1 className="text-xl lg:text-4xl font-extralight tracking-tighter text-white font-mono">
               Harcherran
-            </h1>
-            {/* <Image src={"/images/navbar/logo.png"} width={195} height={42} alt="Logo" /> */}
-            <p className="text-xs lg:text-base text-white">
+            </h1> */}
+            <Image src={"/images/navbar/logo.svg"} width={195} height={42} alt="Logo" />
+            <p className="text-xs lg:text-base text-white ml-[6px]">
               Performance Creative Partner
             </p>
           </div>
