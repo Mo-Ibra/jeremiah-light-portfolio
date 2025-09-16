@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import React, { useState } from "react";
 
 // Navigation Component
@@ -17,12 +17,12 @@ const Navigation = () => {
 
   return (
     <>
-      {/* Desktop & Mobile Navigation */}
+      {/* Desktop & Mobile Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50">
         {/* Container */}
+
         <div className="flex items-center justify-between px-6 py-4 lg:px-24">
-          
-          {/* Logo Desktop only */}
+          {/* Logo */}
           <div className="flex flex-col">
             <h1 className="text-xl lg:text-4xl font-extralight tracking-tighter text-white font-mono">
               Harcherran
@@ -73,26 +73,35 @@ const Navigation = () => {
           </button>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden flex flex-col items-center space-y-1 p-2"
-          >
-            <div
-              className={`w-6 h-0.5 bg-gray-700 transition-all duration-300 ${
-                isMenuOpen ? "rotate-45 translate-y-2" : ""
-              }`}
-            ></div>
-            <div
-              className={`w-6 h-0.5 bg-gray-700 transition-all duration-300 ${
-                isMenuOpen ? "opacity-0" : ""
-              }`}
-            ></div>
-            <div
-              className={`w-6 h-0.5 bg-gray-700 transition-all duration-300 ${
-                isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-              }`}
-            ></div>
-          </button>
+          <div className="md:hidden flex items-center space-x-3">
+            <button className="px-4 py-2 bg-white rounded-full text-gray-700 font-medium shadow-sm hover:shadow-md transition-all text-sm flex items-center space-x-2">
+              <span>Let's Talk</span>
+              <svg className="w-3 h-3" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 0l8 8-8 8-1.5-1.5L12 9H0V7h12L6.5 1.5z" />
+              </svg>
+            </button>
+
+            <button
+              onClick={toggleMenu}
+              className="flex flex-col items-center space-y-1 p-2"
+            >
+              <div
+                className={`w-6 h-0.5 bg-white transition-all duration-300 ${
+                  isMenuOpen ? "rotate-45 translate-y-2" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-6 h-0.5 bg-white transition-all duration-300 ${
+                  isMenuOpen ? "opacity-0" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-6 h-0.5 bg-white transition-all duration-300 ${
+                  isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                }`}
+              ></div>
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -104,7 +113,7 @@ const Navigation = () => {
       >
         {/* Background overlay */}
         <div
-          className={`absolute inset-0 bg-black transition-opacity duration-300 ${
+          className={`absolute inset-0 bg-black transition-opacity duration-300 backdrop-blur-lg ${
             isMenuOpen ? "opacity-20" : "opacity-0"
           }`}
           onClick={closeMenu}
@@ -112,84 +121,46 @@ const Navigation = () => {
 
         {/* Mobile Menu Content */}
         <div
-          className={`absolute top-0 left-0 right-0 bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200 transform transition-transform duration-300 ease-out ${
+          className={`absolute top-0 left-0 right-0 border border-gray-300 rounded-2xl transform transition-transform duration-300 ease-out ${
             isMenuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
-          {/* Mobile Header */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-white/20">
-            <div className="flex flex-col">
-              <h1 className="text-xl font-extralight tracking-tighter text-white font-mono">
-                Harcherran
-              </h1>
-              <p className="text-xs text-gray-600">
-                Performance Creative Partner
-              </p>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <button className="px-4 py-2 bg-white rounded-full text-gray-700 font-medium shadow-sm hover:shadow-md transition-all text-sm flex items-center space-x-2">
-                <span>Let's Talk</span>
-                <svg
-                  className="w-3 h-3"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                >
-                  <path d="M8 0l8 8-8 8-1.5-1.5L12 9H0V7h12L6.5 1.5z" />
-                </svg>
-              </button>
-
-              <button onClick={closeMenu} className="p-2">
-                <svg
-                  className="w-6 h-6 text-gray-700"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
+          {/* Mobile Menu Spacer to account for navbar height */}
+          <div className="h-20"></div>
 
           {/* Mobile Navigation Links */}
           <div className="px-6 py-6 space-y-6">
             <a
               href="#"
-              className="block text-lg font-medium text-gray-800 hover:text-gray-600 transition-colors"
+              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
               onClick={closeMenu}
             >
               Home
             </a>
             <a
               href="#"
-              className="block text-lg font-medium text-gray-800 hover:text-gray-600 transition-colors"
+              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
               onClick={closeMenu}
             >
               Portfolio
             </a>
             <a
               href="#"
-              className="block text-lg font-medium text-gray-800 hover:text-gray-600 transition-colors"
+              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
               onClick={closeMenu}
             >
               Case Studies
             </a>
             <a
               href="#"
-              className="block text-lg font-medium text-gray-800 hover:text-gray-600 transition-colors"
+              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
               onClick={closeMenu}
             >
               About
             </a>
             <a
               href="#"
-              className="block text-lg font-medium text-gray-800 hover:text-gray-600 transition-colors"
+              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
               onClick={closeMenu}
             >
               Process
