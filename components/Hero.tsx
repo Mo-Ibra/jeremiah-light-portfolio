@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import LogoCarousel from "./LogoCarousel";
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -20,7 +21,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center h-screen relative"
+      className="flex justify-center items-center h-screen relative overflow-x-hidden"
       style={{
         backgroundImage: "url('/images/hero/sky-from-bottom.png')",
         backgroundSize: "cover",
@@ -69,7 +70,7 @@ const Hero = () => {
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center justify-center flex-1 px-8 text-center">
         {/* Status Badge */}
-        <div className="mb-8 inline-flex items-center px-4 py-2 border border-green-500 bg-green-50 rounded-full text-green-500 text-sm font-bold">
+        <div className="mb-8 inline-flex items-center px-4 py-2 border border-green-500 bg-green-50 rounded-full text-green-500 text-sm font-bold mt-32">
           <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
           Partnering with 1 more brand this month
         </div>
@@ -162,11 +163,17 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <p className="font-bold text-gray-800 text-sm md:text-base">Trusted by 86+ Shopify </p>
+            <p className="font-bold text-gray-800 text-sm md:text-base">
+              Trusted by 86+ Shopify{" "}
+            </p>
             <img src="/images/hero/shopify.png" alt="Shopify" />
-            <p className="font-bold text-gray-800 text-sm md:text-base">Brands</p>
+            <p className="font-bold text-gray-800 text-sm md:text-base">
+              Brands
+            </p>
           </div>
         </div>
+
+        <LogoCarousel />
       </div>
     </section>
   );
