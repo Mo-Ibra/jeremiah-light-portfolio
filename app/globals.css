@@ -118,3 +118,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  /* Add font: Inter */
+  font-family: 'Inter', sans-serif;
+}

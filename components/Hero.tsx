@@ -117,45 +117,45 @@ const Hero = () => {
           <div className="flex -space-x-2">
             <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
               <Image
-                src="/images/hero/avatars/3.png"
-                width={48}
-                height={48}
+                src="/images/hero/avatars-2/1.jpg"
+                width={400}
+                height={400}
                 alt="Avatar"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
               <Image
-                src="/images/hero/avatars/1.png"
-                width={48}
-                height={48}
+                src="/images/hero/avatars-2/2.jpg"
+                width={400}
+                height={400}
                 alt="Avatar"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
               <Image
-                src="/images/hero/avatars/2.png"
-                width={48}
-                height={48}
+                src="/images/hero/avatars-2/3.jpg"
+                width={400}
+                height={400}
                 alt="Avatar"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
               <Image
-                src="/images/hero/avatars/4.png"
-                width={48}
-                height={48}
+                src="/images/hero/avatars-2/4.jpg"
+                width={400}
+                height={400}
                 alt="Avatar"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
               <Image
-                src="/images/hero/avatars/1.png"
-                width={48}
-                height={48}
+                src="/images/hero/avatars-2/5.jpg"
+                width={400}
+                height={400}
                 alt="Avatar"
                 className="w-full h-full object-cover"
               />

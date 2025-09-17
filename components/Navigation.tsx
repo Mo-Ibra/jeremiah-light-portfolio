@@ -34,7 +34,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center bg-transparent backdrop-blur-sm rounded-full px-2 py-2 shadow-lg border border-gray-300 space-x-2">
+          <div className="hidden md:flex items-center bg-transparent backdrop-blur-sm rounded-full px-[4px] py-[4px] shadow-lg border border-gray-300 space-x-2">
             <button className="px-6 py-2 bg-white rounded-full text-gray-700 font-medium shadow-sm hover:shadow-md transition-all hover:scale-105">
               Home
             </button>
