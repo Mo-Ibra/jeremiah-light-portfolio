@@ -76,7 +76,7 @@ const Hero = () => {
         </div>
 
         {/* Hero Text */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-primary mb-6 leading-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-primary mb-6 leading-tight">
           Creatives That{" "}
           <span className="italic font-serif text-gray-700 font-light">
             Fly
