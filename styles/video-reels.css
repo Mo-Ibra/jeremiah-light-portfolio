@@ -8,45 +8,7 @@
 /* ================= */
 /* ================= */
 
-.video-reels {
-  /* padding: clamp(2rem, 4vw, 4rem) 0; */
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-}
 
-/* Video Reels Container */
-.video-reels-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 clamp(1rem, 3vw, 2rem);
-}
-
-/* Reels Header */
-.video-reels-header {
-  text-align: center;
-  margin-top: clamp(0.5rem, 2.0vw, 1.0rem);
-  margin-bottom: clamp(0.5rem, 2.0vw, 1.0rem);
-  letter-spacing: -0.02em;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
-
-.video-reels-header p {
-  font-size: clamp(1rem, 3vw, 2rem);
-  color: white;
-  font-weight: bold;
-    color: black;
-}
-
-/* Gradient Text for Title */
-.video-reels-header .gradient-text {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
 /* Keyframe Animation for Fading In */
 @keyframes fadeInUp {
@@ -56,34 +18,12 @@
   }
 }
 
-/* Optimized Reels Grid */
-.reels-grid {
-  column-count: 4;
-  column-gap: clamp(1rem, 2vw, 1.5rem);
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-@media (max-width: 1200px) {
-  .reels-grid {
-    column-count: 3;
-  }
-}
 
-@media (max-width: 900px) {
-  .reels-grid {
-    column-count: 2;
-  }
-}
 
-@media (max-width: 600px) {
-  .reels-grid {
-    column-count: 1;
-    max-width: 400px;
-  }
-}
 
+
+/* Reel Card */
 .reel-card {
   position: relative;
   opacity: 0;
@@ -224,6 +164,11 @@
 .reel-video.loaded {
   opacity: 1;
 }
+
+
+
+
+
 
 /* Reel Testimonial */
 .reel-testimonial {

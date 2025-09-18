@@ -92,19 +92,30 @@ const VideoReels = () => {
   ]);
 
   return (
-    <section id="video-reels" className="video-reels">
-      <div className="grid-background"></div>
-      <div className="video-reels-container">
-        <div className="video-reels-header">
-          <p>
-            I&apos;ve created <span className="gradient-text">1,000+</span> ads
-            that
+    <section 
+      id="video-reels" 
+      className="relative overflow-hidden z-0"
+    >
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        {/* Header */}
+        <div className="text-center my-2 sm:mt-4 sm:mb-4 lg:mt-6 lg:mb-16 tracking-tight opacity-0 translate-y-5 animate-[fadeInUp_1s_ease_forwards]">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black font-bold">
+            I&apos;ve created{" "}
+            <span className="text-primary">
+              1,000+
+            </span>{" "}
+            ads that
             <br />
-            have generated <span className="gradient-text">$1M+</span> in sales
+            have generated{" "}
+            <span className="text-primary">
+              $1M+
+            </span>{" "}
+            in sales
           </p>
         </div>
 
-        <div className="reels-grid">
+        {/* Reels Grid */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 sm:gap-3 lg:gap-4 max-w-[1400px] mx-auto max-sm:max-w-[400px]">
           {displayedReels.map((reel, index) => (
             <VideoReelCard key={index} {...reel} />
           ))}
@@ -112,13 +123,13 @@ const VideoReels = () => {
 
         {/* Dynamic Button - Mobile Only */}
         {isMobile && buttonConfig && (
-          <div className="flex justify-center my-4 md:my-8 md:none">
+          <div className="flex justify-center my-4 md:my-8 md:hidden">
             <button
               onClick={buttonConfig.action}
               className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
             >
-              <span className="btn-text">{buttonConfig.text}</span>
-              <span className="btn-icon">{buttonConfig.icon}</span>
+              <span>{buttonConfig.text}</span>
+              <span>{buttonConfig.icon}</span>
             </button>
           </div>
         )}
@@ -126,8 +137,8 @@ const VideoReels = () => {
         {/* Desktop Portfolio CTA */}
         {!isMobile && (
           <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12">
-            <span className="btn-text">See Full Portfolio</span>
-            <span className="btn-arrow">→</span>
+            <span>See Full Portfolio</span>
+            <span>→</span>
           </button>
         )}
       </div>
