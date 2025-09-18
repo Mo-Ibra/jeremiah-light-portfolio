@@ -56,7 +56,7 @@ const Hero = () => {
       {/* Birds */}
       {!isMobile && (
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[370px] left-80 text-white opacity-80">
+          <div className="absolute top-[370px] left-[90px] text-white opacity-80">
             <Image
               src={"/images/hero/birds.png"}
               width={433}
@@ -70,17 +70,15 @@ const Hero = () => {
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center justify-center flex-1 px-8 text-center">
         {/* Status Badge */}
-        <div className="mb-8 inline-flex items-center px-4 py-2 border border-green-500 bg-green-50 rounded-full text-green-500 text-sm font-bold mt-32">
-          <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+        <div className="mb-8 inline-flex items-center px-4 py-1 border border-green-400 bg-[#d4d4ff] rounded-full text-green-600 text-sm font-semibold mt-32">
+          <div className="w-3 h-3 bg-green-600 rounded-full mr-2"></div>
           Partnering with 1 more brand this month
         </div>
 
         {/* Hero Text */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-primary mb-6 leading-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent">
           Creatives That{" "}
-          <span className="italic font-serif text-gray-700 font-light">
-            Fly
-          </span>
+          <span className="italic font-serif font-light">Fly</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-800 max-w-2xl mb-12 leading-relaxed">
@@ -90,7 +88,7 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mb-16 mt-12">
-          <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
+          <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-xl font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
             <span>I'm Ready To Talk</span>
             <svg
               className="w-4 md:w-5 h-4 md:h-5"
@@ -101,7 +99,7 @@ const Hero = () => {
             </svg>
           </button>
 
-          <button className="px-6 md:px-8 py-3 md:py-4 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-md font-medium hover:shadow-lg transition-all hover:scale-105 flex items-center justify-center space-x-2">
+          <button className="px-6 md:px-8 py-3 md:py-4 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-xl font-medium hover:shadow-lg transition-all hover:scale-105 flex items-center justify-center space-x-2">
             <span>Show Me Some Proof First</span>
             <svg
               className="w-4 md:w-5 h-4 md:h-5"

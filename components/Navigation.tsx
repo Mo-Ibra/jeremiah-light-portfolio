@@ -34,7 +34,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center bg-transparent backdrop-blur-sm rounded-full px-[4px] py-[4px] shadow-lg border border-gray-300 space-x-2">
+          <div className="hidden md:flex items-center bg-transparent backdrop-blur-sm rounded-full px-[4px] py-[4px] border border-gray-300 space-x-2">
             <button className="px-6 py-2 bg-white rounded-full text-gray-700 font-medium shadow-sm hover:shadow-md transition-all hover:scale-105">
               Home
             </button>
@@ -65,7 +65,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop CTA Button */}
-          <button className="hidden md:flex px-6 py-2 bg-white rounded-full text-gray-700 font-medium shadow-sm hover:shadow-md transition-all hover:scale-105 items-center space-x-2">
+          <button className="hidden md:flex px-6 py-2 bg-white rounded-md cursor-pointer text-gray-700 font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2">
             <span>Let's Talk</span>
             <svg className="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
               <path d="M8 0l8 8-8 8-1.5-1.5L12 9H0V7h12L6.5 1.5z" />
