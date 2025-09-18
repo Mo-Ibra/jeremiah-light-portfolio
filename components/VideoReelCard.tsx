@@ -116,32 +116,37 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
   };
 
   return (
-    <div className="reel-card">
-      <div className="reel-wrapper" style={{ aspectRatio: aspectRatio }}>
+    <div className="relative opacity-0 translate-y-10 animate-[fadeInUp_0.8s_ease_forwards] break-inside-avoid mb-4 sm:mb-6 lg:mb-8">
+      <div 
+        className="relative rounded-2xl overflow-hidden border-2 border-primary scale-100 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_20px_rgba(0,0,0,0.15)] cursor-pointer hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] tap-highlight-transparent"
+        style={{ aspectRatio: aspectRatio }}
+      >
         <div
-          className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false`}
-          style={{ height: "100%", width: "100%", scale: "1.2" }}
+          className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false w-full h-full scale-[1.2] transition-[filter] duration-300 ease-in-out hover:brightness-110`}
           onClick={handleMute}
         ></div>
 
-        <div className="reel-overlay">
-          <div className="reel-info">
-            <span className="reel-metric">{views} views</span>
-            <span className="reel-platform">{platform}</span>
+        <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
+          <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-4 bg-gradient-to-t from-black/80 to-transparent flex justify-between items-end text-white text-xs sm:text-sm font-medium z-[2]">
+            <span className="flex items-center gap-2 before:content-['👁'] before:text-sm sm:before:text-base">
+              {views} views
+            </span>
+            
+            <span className="py-1 px-2 sm:py-1 sm:px-3 bg-white/20 backdrop-blur-[10px] rounded-xl text-xs sm:text-xs relative overflow-hidden">
+              {platform}
+            </span>
           </div>
 
-          {/* Mute/Unmute Icon */}
+          {/* Mute/Unmute Button */}
           <button
             onClick={handleMute}
-            className="mute-button"
+            className="absolute top-3 right-3 bg-black/60 border-none rounded-full w-11 h-11 flex items-center justify-center cursor-pointer transition-all duration-200 ease-in-out backdrop-blur-[4px] z-10 hover:bg-black/80 hover:scale-105 active:scale-95"
             aria-label={isMuted ? "Unmute video" : "Mute video"}
           >
             {isMuted ? (
-              // Muted Icon (speaker with X)
-              <MdVolumeOff size={24} color="white" />
+              <MdVolumeOff size={24} color="white" className="transition-opacity duration-200 ease-in-out hover:opacity-90" />
             ) : (
-              // Unmuted Icon (speaker with sound waves)
-              <MdVolumeUp size={24} color="white" />
+              <MdVolumeUp size={24} color="white" className="transition-opacity duration-200 ease-in-out hover:opacity-90" />
             )}
           </button>
         </div>

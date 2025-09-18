@@ -98,7 +98,7 @@ const VideoReels = () => {
     >
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
-        <div className="text-center my-2 sm:mt-4 sm:mb-4 lg:mt-6 lg:mb-16 tracking-tight opacity-0 translate-y-5 animate-[fadeInUp_1s_ease_forwards]">
+        <div className="text-center my-2 sm:my-4 lg:my-6 tracking-tight opacity-0 translate-y-5 animate-[fadeInUp_1s_ease_forwards]">
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black font-bold">
             I&apos;ve created{" "}
             <span className="text-primary">
@@ -115,7 +115,7 @@ const VideoReels = () => {
         </div>
 
         {/* Reels Grid */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 sm:gap-3 lg:gap-4 max-w-[1400px] mx-auto max-sm:max-w-[400px]">
+        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 sm:gap-3 lg:gap-4 max-w-[1400px] mx-auto max-sm:max-w-[400px] mb-16 md:mb-0">
           {displayedReels.map((reel, index) => (
             <VideoReelCard key={index} {...reel} />
           ))}
