@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import Image from "next/image";
+import SectionHeader from "./SectionHeader";
 
 const Services = () => {
   const [aiContentSlide, setAiContentSlide] = useState(0);
@@ -51,13 +52,8 @@ const Services = () => {
   return (
     <section className="py-20 px-6">
       <div className="container max-w-[1400px] mx-auto">
-        
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-indigo-100 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-            My Services
-          </div>
+        <SectionHeader badgeText="My Services">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Here's What I Can Do For Your{" "}
             <span className="text-primary">Brand</span>
@@ -67,7 +63,7 @@ const Services = () => {
             omni-channel, high-quality creative that drive remarkable results -
             in both acquisition and retention
           </p>
-        </div>
+        </SectionHeader>
 
         {/* Bento Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
