@@ -3,6 +3,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import Image from "next/image";
 
 const Services = () => {
   const [aiContentSlide, setAiContentSlide] = useState(0);
@@ -49,7 +50,8 @@ const Services = () => {
 
   return (
     <section className="py-20 px-6">
-      <div className="container max-w-7xl mx-auto">
+      <div className="container max-w-[1400px] mx-auto">
+        
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center bg-indigo-100 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -70,7 +72,7 @@ const Services = () => {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           {/* AI Generated Content */}
-          <div className="relative overflow-hidden rounded-3xl min-h-[400px] group pointer-events-none">
+          <div className="relative overflow-hidden rounded-3xl min-h-[600px] group pointer-events-none">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -110,7 +112,7 @@ const Services = () => {
           </div>
 
           {/* User Generated Content */}
-          <div className="relative overflow-hidden rounded-3xl min-h-[400px] group pointer-events-none">
+          <div className="relative overflow-hidden rounded-3xl min-h-[600px] group pointer-events-none">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -151,7 +153,7 @@ const Services = () => {
           </div>
 
           {/* Studio Content */}
-          <div className="relative overflow-hidden rounded-3xl min-h-[400px] group pointer-events-none">
+          <div className="relative overflow-hidden rounded-3xl min-h-[600px] group pointer-events-none">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -188,6 +190,42 @@ const Services = () => {
                 WOW your consumers, build trust, and elevate your brand
                 presence.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Arrow */}
+        <div className="inset-x-0 top-full flex justify-center pointer-events-none">
+          <Image
+            src="/images/services/line.svg"
+            alt="Arrow Connector"
+            width={800}
+            height={200}
+            className="w-full max-w-3xl h-auto"
+          />
+        </div>
+
+        {/* Growth Engine Card - Centered and Smaller */}
+        <div className="mt-8 flex justify-center">
+          <div className="relative overflow-hidden rounded-3xl max-w-2xl w-full bg-gradient-to-t from-black via-[#0a0a1a] to-[#1a1a3a] shadow-2xl border-2 border-white">
+            {/* Image */}
+            <div className="relative z-10 w-full h-[250px] flex justify-center items-center">
+              <Image
+                src="/images/services/group.png"
+                alt="Growth Chart"
+                width={500}
+                height={400}
+                className="object-contain"
+              />
+            </div>
+
+            {/* Text */}
+            <div className="relative z-10 px-6 pb-8 flex flex-col justify-center items-center text-center text-white">
+              <h3 className="text-xl md:text-3xl font-semibold">
+                The Ultimate{" "}
+                <span className="text-indigo-400 font-bold">Growth</span> Engine
+                For DTC
+              </h3>
             </div>
           </div>
         </div>
