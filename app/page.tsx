@@ -4,6 +4,7 @@ import VideoReels from "@/components/VideoReels";
 import Services from "@/components/Services";
 import CaseStudies from "@/components/CaseStudies";
 import Portfolio from "@/components/Portfolio";
+import Process from "@/components/Process";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <Services />
       <CaseStudies />
       <Portfolio />
+      <Process />
     </>
   );
 }
