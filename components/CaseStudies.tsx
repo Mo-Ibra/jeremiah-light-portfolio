@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import SectionHeader from "./SectionHeader";
+import { ChartBar, DollarSign, ListOrdered, UploadCloud } from "lucide-react";
 
 const CaseStudies = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -19,10 +20,10 @@ const CaseStudies = () => {
       description:
         "We prioritized split-testing viral hooks given the niche and products are heavily visually focused and, with fewer than five ad creatives, generated over $900K in revenue.",
       stats: [
-        { icon: "$", value: "932k", label: "Revenue" },
-        { icon: "📈", value: "384k", label: "Adspend" },
-        { icon: "⚡", value: "12345", label: "Orders" },
-        { icon: "🏠", value: "3.24x", label: "Roas" },
+        { icon: <DollarSign />, value: "932k", label: "Revenue" },
+        { icon: <ChartBar />, value: "384k", label: "Adspend" },
+        { icon: <ListOrdered />, value: "145", label: "Orders" },
+        { icon: <UploadCloud />, value: "3.24x", label: "Roas" },
       ],
     },
     {
@@ -33,10 +34,10 @@ const CaseStudies = () => {
       description:
         "Strategic content creation and viral marketing campaigns that resulted in exponential growth through targeted social media advertising.",
       stats: [
-        { icon: "$", value: "1.2M", label: "Revenue" },
-        { icon: "📈", value: "456k", label: "Adspend" },
-        { icon: "⚡", value: "18567", label: "Orders" },
-        { icon: "🏠", value: "2.73x", label: "Roas" },
+        { icon: <DollarSign />, value: "932k", label: "Revenue" },
+        { icon: <ChartBar />, value: "456k", label: "Adspend" },
+        { icon: <ListOrdered />, value: "124", label: "Orders" },
+        { icon: <UploadCloud />, value: "2.73x", label: "Roas" },
       ],
     },
     {
@@ -47,10 +48,10 @@ const CaseStudies = () => {
       description:
         "Focused on user-generated content and authentic storytelling to build trust and drive conversions across platforms.",
       stats: [
-        { icon: "$", value: "789k", label: "Revenue" },
-        { icon: "📈", value: "298k", label: "Adspend" },
-        { icon: "⚡", value: "9876", label: "Orders" },
-        { icon: "🏠", value: "2.65x", label: "Roas" },
+        { icon: <DollarSign />, value: "932k", label: "Revenue" },
+        { icon: <ChartBar />, value: "298k", label: "Adspend" },
+        { icon: <ListOrdered />, value: "654", label: "Orders" },
+        { icon: <UploadCloud />, value: "2.65x", label: "Roas" },
       ],
     },
   ];
@@ -114,7 +115,7 @@ const CaseStudies = () => {
 
         {/* Carousel Container */}
         <div
-          className="relative flex items-center justify-center cursor-grab active:cursor-grabbing select-none"
+          className="w-full mx-auto relative flex items-center justify-center cursor-grab active:cursor-grabbing select-none"
           onMouseDown={handleMouseDown}
           style={{ height: "600px" }}
         >
@@ -124,7 +125,9 @@ const CaseStudies = () => {
             const isActive = index === currentIndex;
 
             // Calculate position and scale
-            let translateX = offset * 400 + (isDragging ? currentX : 0);
+            let translateX =
+              offset * 85 * (window.innerWidth / 100) +
+              (isDragging ? currentX : 0);
             let scale = isActive ? 1 : 0.8;
             let opacity = isActive ? 1 : 0.4;
             let zIndex = isActive ? 10 : 1;
@@ -148,7 +151,7 @@ const CaseStudies = () => {
                   transform: `translateX(${translateX}px) scale(${scale})`,
                   opacity: opacity,
                   zIndex: zIndex,
-                  width: "600px",
+                  width: "80vh",
                   height: "500px",
                 }}
               >
@@ -156,12 +159,11 @@ const CaseStudies = () => {
                   className="rounded-3xl overflow-hidden shadow-2xl h-full relative bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/studies/1.jpg')" }}
                 >
-
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/50"></div>
 
                   {/* Company Badge */}
                   <div className="absolute top-6 right-6 z-20">
-                    <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                    <div className="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">
                       {study.company}
                     </div>
                   </div>
@@ -169,16 +171,16 @@ const CaseStudies = () => {
                   {/* Main Content */}
                   <div className="relative z-10 p-8 h-full flex flex-col justify-end">
                     <div className="text-white">
-                      <h3 className="text-5xl font-bold mb-6">
-                        {study.company}
-                      </h3>
+                      <div className="flex items-center gap-2 mb-2">
+                        <h3 className="text-3xl font-bold">{study.company}</h3>
 
-                      {/* Revenue Badge */}
-                      <div className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full mb-6 text-lg font-bold">
-                        {study.startRevenue} → {study.revenue}
+                        {/* Revenue Badge */}
+                        <div className="inline-flex items-center bg-primary text-white px-4 py-2 rounded-md text-lg font-bold">
+                          {study.startRevenue} → {study.revenue}
+                        </div>
                       </div>
 
-                      <p className="text-gray-200 text-lg leading-relaxed mb-8 max-w-lg">
+                      <p className="text-gray-200 text-md leading-relaxed mb-8 max-w-lg">
                         {study.description}
                       </p>
 
@@ -187,14 +189,21 @@ const CaseStudies = () => {
                         {study.stats.map((stat, statIndex) => (
                           <div
                             key={statIndex}
-                            className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20"
+                            className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-primary flex items-center gap-4"
                           >
-                            <div className="text-2xl mb-2">{stat.icon}</div>
-                            <div className="text-2xl font-bold text-white mb-1">
-                              {stat.value}
+                            {/* Icon circle */}
+                            <div className="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-white text-2xl">
+                              {stat.icon}
                             </div>
-                            <div className="text-gray-300 text-sm">
-                              {stat.label}
+
+                            {/* Text content */}
+                            <div className="flex flex-col justify-center">
+                              <div className="text-2xl font-bold text-white leading-none">
+                                {stat.value}
+                              </div>
+                              <div className="text-gray-300 text-sm leading-tight">
+                                {stat.label}
+                              </div>
                             </div>
                           </div>
                         ))}
@@ -215,7 +224,7 @@ const CaseStudies = () => {
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "bg-blue-600 w-8"
+                  ? "bg-primary w-8"
                   : "bg-gray-300 hover:bg-gray-400"
               }`}
             />
