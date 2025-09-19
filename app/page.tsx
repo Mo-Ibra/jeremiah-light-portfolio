@@ -13,9 +13,9 @@ function Home() {
       <Hero />
       <VideoReels />
       <Services />
-      <CaseStudies />
-      <Portfolio />
-      <Process />
+      {/* <CaseStudies /> */}
+      {/* <Portfolio /> */}
+      {/* <Process /> */}
     </>
   );
 }
