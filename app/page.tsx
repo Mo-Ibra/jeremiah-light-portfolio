@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import VideoReels from "@/components/VideoReels";
 import Services from "@/components/Services";
 import CaseStudies from "@/components/CaseStudies";
+import Portfolio from "@/components/Portfolio";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <VideoReels />
       <Services />
       <CaseStudies />
+      <Portfolio />
     </>
   );
 }
