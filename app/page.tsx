@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import CaseStudies from "@/components/CaseStudies";
 import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
+import Comparison from "@/components/Comparison";
 
 function Home() {
   return (
@@ -13,9 +14,10 @@ function Home() {
       <Hero />
       <VideoReels />
       <Services />
-      {/* <CaseStudies /> */}
-      {/* <Portfolio /> */}
-      {/* <Process /> */}
+      <CaseStudies />
+      <Portfolio />
+      <Process />
+      <Comparison />
     </>
   );
 }
