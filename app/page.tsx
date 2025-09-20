@@ -6,6 +6,7 @@ import CaseStudies from "@/components/CaseStudies";
 import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
 import Comparison from "@/components/Comparison";
+import Features from "@/components/Features";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <Portfolio />
       <Process />
       <Comparison />
+      <Features />
     </>
   );
 }
