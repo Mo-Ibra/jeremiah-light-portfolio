@@ -7,6 +7,8 @@ import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
 import Comparison from "@/components/Comparison";
 import Features from "@/components/Features";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 function Home() {
   return (
@@ -20,6 +22,8 @@ function Home() {
       <Process />
       <Comparison />
       <Features />
+      <CTA />
+      <Footer />
     </>
   );
 }
