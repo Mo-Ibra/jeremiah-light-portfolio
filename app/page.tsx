@@ -7,6 +7,7 @@ import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
 import Comparison from "@/components/Comparison";
 import Features from "@/components/Features";
+import FAQs from "@/components/Faqs";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -22,6 +23,7 @@ function Home() {
       <Process />
       <Comparison />
       <Features />
+      <FAQs />
       <CTA />
       <Footer />
     </>
