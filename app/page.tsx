@@ -32,7 +32,7 @@ function Home() {
     <>
       <Navigation />
       <Hero />
-      <VideoReels />
+      <VideoReels /> 
       <Services />
       {!isMobile && <Portfolio />}
       {/* <CaseStudies />
