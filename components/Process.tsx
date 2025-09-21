@@ -66,7 +66,7 @@ const Process = () => {
                 <p className="text-white/90 text-sm leading-relaxed">
                   The foundation phase where we dive deep into understanding
                   your brand, business goals, target audience, and competitive
-                  landscape to create a strategic roadmap for your project's
+                  landscape to create a strategic roadmap for your project&apos;s
                   success.
                 </p>
               </div>

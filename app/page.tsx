@@ -35,14 +35,14 @@ function Home() {
       <VideoReels /> 
       <Services />
       {!isMobile && <Portfolio />}
-      {/* <CaseStudies />
+      <CaseStudies />
       <WhoAmI />
       <Process />
       <Comparison />
       <Features />
       <FAQs />
       <CTA />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

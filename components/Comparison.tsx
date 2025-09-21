@@ -10,7 +10,7 @@ const Comparison = () => {
             Collaborate With Me
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Here's exactly why over 80+ Established DTC Brands have worked with
+            Here&apos;s exactly why over 80+ Established DTC Brands have worked with
             me to help scale content production and profits
           </p>
         </SectionHeader>

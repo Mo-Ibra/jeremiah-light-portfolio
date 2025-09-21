@@ -55,7 +55,7 @@ const Services = () => {
         {/* Header */}
         <SectionHeader badgeText="My Services">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Here's What I Can Do For Your{" "}
+            Here&apos;s What I Can Do For Your{" "}
             <span className="text-primary">Brand</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">

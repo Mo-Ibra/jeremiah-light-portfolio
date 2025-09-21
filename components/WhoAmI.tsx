@@ -9,7 +9,7 @@ const WhoAmI = () => {
         <SectionHeader badgeText="Portfolio">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             The Talent Behind Your{" "}
-            <span className="text-indigo-600">Creative Success</span>
+            <span className="text-primary">Creative Success</span>
           </h2>
         </SectionHeader>
 
@@ -17,7 +17,7 @@ const WhoAmI = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Left Column - Video/Image */}
           <div className="relative">
-            <div className="relative overflow-hidden rounded-3xl border-4 border-indigo-400 bg-gray-200 aspect-[4/5]">
+            <div className="relative overflow-hidden rounded-3xl border-4 border-primary bg-gray-200 aspect-[4/5]">
               <img
                 src="/images/portfolio/1.jpg"
                 alt="Jeremiah - Creative Director"
@@ -29,7 +29,7 @@ const WhoAmI = () => {
 
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-indigo-600 hover:bg-indigo-700 transition-colors rounded-full p-6 cursor-pointer">
+                <div className="bg-primary hover:bg-indigo-700 transition-colors rounded-full p-6 cursor-pointer">
                   <svg
                     className="w-8 h-8 text-white ml-1"
                     fill="currentColor"
@@ -46,7 +46,7 @@ const WhoAmI = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-5xl md:text-9xl text-gray-900 drop-shadow-2xl">
-                Hey! I'm
+                Hey! I&apos;m
               </h3>
               <span className="text-5xl md:text-9xl italic text-primary font-serif drop-shadow-2xl">
                 Jeremiah
@@ -65,7 +65,7 @@ const WhoAmI = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded-full border-gray-300 hover:border-indigo-400 hover:bg-indigo-50 bg-transparent"
+                  className="rounded-full border-gray-300 hover:border-primary hover:bg-indigo-50 bg-transparent"
                 >
                   <svg
                     className="w-5 h-5"
@@ -80,7 +80,7 @@ const WhoAmI = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded-full border-gray-300 hover:border-indigo-400 hover:bg-indigo-50 bg-transparent"
+                  className="rounded-full border-gray-300 hover:border-primary hover:bg-indigo-50 bg-transparent"
                 >
                   <svg
                     className="w-5 h-5"
@@ -95,7 +95,7 @@ const WhoAmI = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded-full border-gray-300 hover:border-indigo-400 hover:bg-indigo-50 bg-transparent"
+                  className="rounded-full border-gray-300 hover:border-primary hover:bg-indigo-50 bg-transparent"
                 >
                   <svg
                     className="w-5 h-5"
@@ -108,7 +108,7 @@ const WhoAmI = () => {
               </div>
 
               <Button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-xl font-medium transition-all hover:scale-105 hover:shadow-lg space-x-2">
-                Let's Talk
+                Let&apos;s Talk
               </Button>
             </div>
           </div>

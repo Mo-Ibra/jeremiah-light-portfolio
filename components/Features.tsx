@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 
 const Features = () => {
@@ -7,8 +8,8 @@ const Features = () => {
         {/* Header */}
         <SectionHeader badgeText="Benefits & Features">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            <span className="text-primary">Exclusive Perks</span> You Get
-            When <span className="text-primary">We Work Together</span>
+            <span className="text-primary">Exclusive Perks</span> You Get When{" "}
+            <span className="text-primary">We Work Together</span>
           </h2>
         </SectionHeader>
 
@@ -19,9 +20,11 @@ const Features = () => {
             {/* Content Management - 3/4 */}
             <div className="lg:col-span-3 bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
               <div className="flex-1 bg-gray-900 relative">
-                <img
+                <Image
                   src="/images/features/1.png"
                   alt="Content Management System Interface"
+                  width={800}
+                  height={400}
                   className="w-full h-[400px] object-cover"
                 />
               </div>
@@ -38,9 +41,11 @@ const Features = () => {
             {/* Ads Reporting - 1/4 */}
             <div className="lg:col-span-1 bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
               <div className="flex-1 bg-gray-100 relative">
-                <img
+                <Image
                   src="/images/features/2.png"
                   alt="Advertising Dashboard"
+                  width={800}
+                  height={400}
                   className="w-full h-[400px] object-cover"
                 />
               </div>
@@ -60,9 +65,11 @@ const Features = () => {
             {/* Communication - 1/4 */}
             <div className="lg:col-span-1 bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
               <div className="flex-1 bg-gray-100 relative">
-                <img
+                <Image
                   src="/images/features/3.png"
-                  alt="Advertising Dashboard"
+                  alt="Ads Reporting & Management"
+                  width={800}
+                  height={400}
                   className="w-full h-[400px] object-cover"
                 />
               </div>
@@ -79,9 +86,11 @@ const Features = () => {
             {/* Psychographics - 3/4 */}
             <div className="lg:col-span-3 bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
               <div className="flex-1 bg-gray-900 relative">
-                <img
+                <Image
                   src="/images/features/4.png"
                   alt="Content Management System Interface"
+                  width={800}
+                  height={400}
                   className="w-full h-[400px] object-cover"
                 />
               </div>

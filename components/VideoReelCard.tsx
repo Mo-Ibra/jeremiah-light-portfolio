@@ -40,16 +40,8 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
   authorRole = "CEO, Company Name",
   rating = 5,
 }) => {
-  const [isMobile, setIsMobile] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<WistiaVideo | null>(null);
-
-  useEffect(() => {
-    if (window.innerWidth < 768) {
-      console.log("mobile");
-      setIsMobile(true);
-    }
-  }, []);
 
   // Wait for Wistia API to be ready and get video reference
   useEffect(() => {
@@ -78,7 +70,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
         }
       },
     });
-  }, [videoId]);
+  }, [videoId, isMuted]);
 
   const handleMute = () => {
     const newMutedState = !isMuted;

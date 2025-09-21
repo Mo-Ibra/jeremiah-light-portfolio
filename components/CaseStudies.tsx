@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import SectionHeader from "./SectionHeader";
 import { ChartBar, DollarSign, ListOrdered, UploadCloud } from "lucide-react";
 
@@ -9,7 +9,6 @@ const CaseStudies = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [currentX, setCurrentX] = useState(0);
-  const carouselRef = useRef(null);
 
   const caseStudies = [
     {
@@ -96,7 +95,7 @@ const CaseStudies = () => {
       document.removeEventListener("mousemove", handleGlobalMouseMove);
       document.removeEventListener("mouseup", handleGlobalMouseUp);
     };
-  }, [isDragging, startX, currentX, currentIndex]);
+  }, [isDragging, startX, currentX, currentIndex, handleMouseMove, handleMouseUp]);
 
   return (
     <section className="py-20 px-4 overflow-hidden">

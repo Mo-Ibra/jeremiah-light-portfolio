@@ -89,7 +89,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mb-16 mt-12">
           <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-xl font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
-            <span>I'm Ready To Talk</span>
+            <span>I&apos;m Ready To Talk</span>
             <svg
               className="w-4 md:w-5 h-4 md:h-5"
               viewBox="0 0 20 20"
