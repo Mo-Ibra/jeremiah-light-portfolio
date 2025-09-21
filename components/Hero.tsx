@@ -68,7 +68,7 @@ const Hero = () => {
       )}
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center flex-1 px-8 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center flex-1 px-8 text-center max-w-[30rem] md:max-w-max">
         {/* Status Badge */}
         <div className="mb-8 inline-flex items-center px-4 py-1 border border-green-400 bg-[#d4d4ff] rounded-full text-green-600 text-sm font-semibold mt-32">
           <div className="w-3 h-3 bg-green-600 rounded-full mr-2"></div>
@@ -76,12 +76,12 @@ const Hero = () => {
         </div>
 
         {/* Hero Text */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent">
           Creatives That{" "}
           <span className="italic font-serif font-light">Fly</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-gray-800 max-w-2xl mb-12 leading-relaxed">
+        <p className="text-lg sm:text-lg md:text-xl text-gray-800 max-w-xl md:max-w-2xl mb-12 leading-relaxed">
           Blending data, design, and marketing psychology to help DTC brands
           scale further through creative content that converts
         </p>
@@ -112,59 +112,35 @@ const Hero = () => {
         </div>
 
         {/* Social Proof */}
-        <div className="flex items-center space-x-4 text-gray-600">
+        <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0 text-gray-600 w-full justify-center">
+          {/* Avatars */}
           <div className="flex -space-x-2">
-            <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
-              <Image
-                src="/images/hero/avatars-2/1.jpg"
-                width={400}
-                height={400}
-                alt="Avatar"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
-              <Image
-                src="/images/hero/avatars-2/2.jpg"
-                width={400}
-                height={400}
-                alt="Avatar"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
-              <Image
-                src="/images/hero/avatars-2/3.jpg"
-                width={400}
-                height={400}
-                alt="Avatar"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
-              <Image
-                src="/images/hero/avatars-2/4.jpg"
-                width={400}
-                height={400}
-                alt="Avatar"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
-              <Image
-                src="/images/hero/avatars-2/5.jpg"
-                width={400}
-                height={400}
-                alt="Avatar"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {[1, 2, 3, 4, 5].map((num) => (
+              <div
+                key={num}
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white overflow-hidden"
+              >
+                <Image
+                  src={`/images/hero/avatars-2/${num}.jpg`}
+                  width={400}
+                  height={400}
+                  alt={`Avatar ${num}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
           </div>
-          <div className="flex items-center space-x-2">
+
+          {/* Text + Shopify */}
+          <div className="flex flex-wrap justify-center items-center space-x-2">
             <p className="font-bold text-gray-800 text-sm md:text-base">
               Trusted by 86+ Shopify{" "}
             </p>
-            <img src="/images/hero/shopify.png" alt="Shopify" />
+            <img
+              src="/images/hero/shopify.png"
+              alt="Shopify"
+              className="h-5 md:h-6"
+            />
             <p className="font-bold text-gray-800 text-sm md:text-base">
               Brands
             </p>

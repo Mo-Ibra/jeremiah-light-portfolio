@@ -3,74 +3,52 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-// Navigation Component
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <>
-      {/* Desktop & Mobile Navbar */}
+      {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50">
-        {/* Container */}
-
-        <div className="flex items-center justify-between px-6 py-4 lg:px-24">
+        <div className="flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 py-4">
           {/* Logo */}
           <div className="flex flex-col">
-            {/* <h1 className="text-xl lg:text-4xl font-extralight tracking-tighter text-white font-mono">
-              Harcherran
-            </h1> */}
             <Image
-              src={"/images/navbar/logo.svg"}
-              width={195}
-              height={42}
+              src="/images/navbar/logo.svg"
+              width={160}
+              height={40}
               alt="Logo"
+              className="w-32 sm:w-40 lg:w-[195px] h-auto"
             />
-            <p className="text-xs lg:text-base text-white ml-[6px]">
+            <p className="text-xs sm:text-sm lg:text-base text-white ml-[6px]">
               Performance Creative Partner
             </p>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center bg-transparent backdrop-blur-sm rounded-full px-[4px] py-[4px] border border-gray-300 space-x-2">
-            <button className="px-6 py-2 bg-white rounded-full text-gray-700 font-medium shadow-sm hover:shadow-md transition-all hover:scale-105">
+          {/* Desktop Nav */}
+          <div className="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-2 py-1 border border-gray-300 space-x-2">
+            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
               Home
-            </button>
-            <a
-              href="#"
-              className="px-4 py-2 text-white hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
-            >
+            </a>
+            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
               Portfolio
             </a>
-            <a
-              href="#"
-              className="px-4 py-2 text-white hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
-            >
+            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
               Case Studies
             </a>
-            <a
-              href="#"
-              className="px-4 py-2 text-white hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
-            >
+            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
               About
             </a>
-            <a
-              href="#"
-              className="px-4 py-2 text-white hover:text-gray-800 transition-colors rounded-full hover:bg-white/50"
-            >
+            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
               Process
             </a>
           </div>
 
-          {/* Desktop CTA Button */}
-          <button className="hidden md:flex px-6 py-2 bg-white rounded-md cursor-pointer text-gray-700 font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2">
+          {/* Desktop CTA */}
+          <button className="hidden md:flex px-6 py-2 bg-white rounded-full text-gray-700 font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2">
             <span>Let's Talk</span>
             <svg className="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
               <path d="M8 0l8 8-8 8-1.5-1.5L12 9H0V7h12L6.5 1.5z" />
@@ -79,13 +57,14 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-3">
-            <button className="px-4 py-2 bg-white rounded-full text-gray-700 font-medium shadow-sm hover:shadow-md transition-all text-sm flex items-center space-x-2">
+            <button className="px-4 py-2 bg-white rounded-full text-gray-700 font-medium shadow-md hover:shadow-lg transition-all text-sm flex items-center space-x-2">
               <span>Let's Talk</span>
               <svg className="w-3 h-3" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M8 0l8 8-8 8-1.5-1.5L12 9H0V7h12L6.5 1.5z" />
               </svg>
             </button>
 
+            {/* Burger Menu */}
             <button
               onClick={toggleMenu}
               className="flex flex-col items-center space-y-1 p-2"
@@ -94,87 +73,59 @@ const Navigation = () => {
                 className={`w-6 h-0.5 bg-white transition-all duration-300 ${
                   isMenuOpen ? "rotate-45 translate-y-2" : ""
                 }`}
-              ></div>
+              />
               <div
                 className={`w-6 h-0.5 bg-white transition-all duration-300 ${
                   isMenuOpen ? "opacity-0" : ""
                 }`}
-              ></div>
+              />
               <div
                 className={`w-6 h-0.5 bg-white transition-all duration-300 ${
                   isMenuOpen ? "-rotate-45 -translate-y-2" : ""
                 }`}
-              ></div>
+              />
             </button>
           </div>
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu */}
       <div
         className={`md:hidden fixed inset-0 z-40 transition-all duration-300 ${
           isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        {/* Background overlay */}
+        {/* Overlay */}
         <div
-          className={`absolute inset-0 bg-black transition-opacity duration-300 backdrop-blur-lg ${
-            isMenuOpen ? "opacity-20" : "opacity-0"
-          }`}
+          className={`absolute inset-0 bg-black/50 transition-opacity duration-300 backdrop-blur-lg`}
           onClick={closeMenu}
-        ></div>
+        />
 
-        {/* Mobile Menu Content */}
+        {/* Menu Content */}
         <div
-          className={`absolute top-0 left-0 right-0 border border-gray-300 rounded-2xl transform transition-transform duration-300 ease-out ${
+          className={`absolute top-0 left-0 right-0 h-full bg-black/90 border-b border-gray-700 transform transition-transform duration-300 ease-out ${
             isMenuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
-          {/* Mobile Menu Spacer to account for navbar height */}
-          <div className="h-20"></div>
-
-          {/* Mobile Navigation Links */}
-          <div className="px-6 py-6 space-y-6">
-            <a
-              href="#"
-              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
-              onClick={closeMenu}
-            >
+          <div className="flex flex-col items-center justify-center h-full space-y-8 px-6">
+            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
               Home
             </a>
-            <a
-              href="#"
-              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
-              onClick={closeMenu}
-            >
+            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
               Portfolio
             </a>
-            <a
-              href="#"
-              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
-              onClick={closeMenu}
-            >
+            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
               Case Studies
             </a>
-            <a
-              href="#"
-              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
-              onClick={closeMenu}
-            >
+            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
               About
             </a>
-            <a
-              href="#"
-              className="block text-lg font-medium text-white hover:text-gray-200 transition-colors"
-              onClick={closeMenu}
-            >
+            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
               Process
             </a>
-          </div>
 
-          {/* Mobile CTA Button */}
-          <div className="px-6 pb-8">
-            <button className="w-full py-4 bg-white rounded-full text-gray-800 font-semibold shadow-md hover:shadow-lg transition-all text-center">
+            {/* CTA */}
+            <button className="w-full max-w-xs py-4 bg-white rounded-full text-gray-800 font-semibold shadow-md hover:shadow-lg transition-all text-center">
               Book Meeting
             </button>
           </div>
