@@ -257,7 +257,7 @@ export const portfolioReels = [
     hasTestimonial: true,
     testimonialText:
       "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
-    testimonialImageSrc: "6.jpg",
+    testimonialImageSrc: "2.jpg",
     authorName: "Jeremiah Smith",
     authorRole: "CEO, Company Name",
   },
@@ -302,7 +302,7 @@ export const portfolioReels = [
     hasTestimonial: true,
     testimonialText:
       "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
-    testimonialImageSrc: "7.jpg",
+    testimonialImageSrc: "3.jpg",
     authorName: "Jeremiah Smith",
     authorRole: "CEO, Company Name",
   },
@@ -325,7 +325,7 @@ export const portfolioReels = [
     hasTestimonial: true,
     testimonialText:
       "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
-    testimonialImageSrc: "8.jpg",
+    testimonialImageSrc: "1.jpg",
     authorName: "Jeremiah Smith",
     authorRole: "CEO, Company Name",
   },
