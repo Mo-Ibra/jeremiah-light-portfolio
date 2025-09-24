@@ -1,13 +1,40 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 const Footer = () => {
+  const [time, setTime] = useState("");
+
+  useEffect(() => {
+    const updateTime = () => {
+      const options: Intl.DateTimeFormatOptions = {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        hour12: false,
+        timeZone: "Europe/London", // London timezone
+      };
+
+      const formatter = new Intl.DateTimeFormat("en-GB", options);
+      setTime(formatter.format(new Date()));
+    };
+
+    updateTime(); // set initial time immediately
+    const interval = setInterval(updateTime, 1000); // update every second
+
+    return () => clearInterval(interval); // cleanup
+  }, []);
+
   return (
     <footer className="py-12 px-6 border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
           {/* Left - Time */}
           <div className="text-gray-600">
-            <div className="text-primary font-medium mb-1">
-              19:32:56, 6 September, 2025
-            </div>
+            <div className="text-primary font-medium mb-1">{time}</div>
             <div className="text-sm">Local Time in London, United Kingdom</div>
           </div>
 
