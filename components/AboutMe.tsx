@@ -51,7 +51,7 @@ const AboutMe = () => {
               <span className="text-5xl md:text-9xl italic text-primary font-serif drop-shadow-2xl">
                 Jeremiah
               </span>
-              <p className="text-xl text-gray-600 leading-relaxed mt-4">
+              <p className="text-2xl text-gray-600 leading-relaxed mt-4">
                 Addicted to E-commerce, in love with ads, and obsessed with
                 performance - I will personally help you take your brand to the
                 next level with my creatives, strategy, systems, and processes
@@ -59,7 +59,7 @@ const AboutMe = () => {
             </div>
 
             {/* Social Links and CTA */}
-            <div className="flex items-center justify-between mt-24">
+            <div className="flex items-center justify-between mt-16">
               <div className="flex items-center gap-4">
                 {/* Instagram */}
                 <Button
@@ -68,7 +68,7 @@ const AboutMe = () => {
                   className="rounded-full border-gray-300 hover:border-primary hover:bg-indigo-50 bg-transparent"
                 >
                   <svg
-                    className="w-5 h-5"
+                    className="w-5 h-5 text-primary"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -83,7 +83,7 @@ const AboutMe = () => {
                   className="rounded-full border-gray-300 hover:border-primary hover:bg-indigo-50 bg-transparent"
                 >
                   <svg
-                    className="w-5 h-5"
+                    className="w-5 h-5 text-primary"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -98,7 +98,7 @@ const AboutMe = () => {
                   className="rounded-full border-gray-300 hover:border-primary hover:bg-indigo-50 bg-transparent"
                 >
                   <svg
-                    className="w-5 h-5"
+                    className="w-5 h-5 text-primary"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -107,7 +107,7 @@ const AboutMe = () => {
                 </Button>
               </div>
 
-              <Button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-xl font-medium transition-all hover:scale-105 hover:shadow-lg space-x-2">
+              <Button className="px-6 md:px-12 py-3 md:py-6 bg-primary text-white rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg space-x-2 shadow-2xl">
                 Let&apos;s Talk
               </Button>
             </div>

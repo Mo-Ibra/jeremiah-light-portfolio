@@ -98,10 +98,10 @@ const CaseStudies = () => {
   }, [isDragging, startX, currentX, currentIndex, handleMouseMove, handleMouseUp]);
 
   return (
-    <section className="py-20 px-4 overflow-hidden">
+    <section className="py-16 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="Case Studies">
+        <SectionHeader badgeText="Case Studies" marginBottom="12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Transformative Brand <span className="text-primary">Success</span>{" "}
             Stories

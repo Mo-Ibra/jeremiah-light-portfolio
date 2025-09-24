@@ -5,9 +5,9 @@ const Process = () => {
     <section className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="My Process">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            The <span className="text-primary">Creative</span> Process
-            Journey
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Our <span className="text-primary">4-Step Process</span> to {" "}
+            <span className="text-primary">Predictable Results</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             A streamlined collaborative approach that quickly allows us to

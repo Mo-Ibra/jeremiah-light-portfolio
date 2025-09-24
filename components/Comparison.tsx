@@ -5,7 +5,7 @@ const Comparison = () => {
     <section className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="Why Us?">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Why <span className="text-primary">Leading DTC Brands</span>{" "}
             Collaborate With Me
           </h2>
