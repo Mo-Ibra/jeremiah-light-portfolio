@@ -30,20 +30,20 @@ export default function FAQs() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className="border border-border rounded-lg bg-card/50 backdrop-blur-sm hover:bg-card/70 transition-all duration-300 hover:border-primary/30"
+                className="border border-border bg-black/40 hover:bg-black/70 backdrop-blur-sm transition-all duration-300 hover:border-primary/30 rounded-lg"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-primary/20 rounded-lg"
+                  className="w-full px-6 py-5 text-left flex items-center justify-between rounded-lg"
                 >
-                  <h3 className="text-lg font-semibold text-foreground pr-4">
+                  <h3 className="text-lg font-semibold text-white pr-4">
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
                     {openIndex === index ? (
-                      <ChevronUp className="w-5 h-5 text-primary" />
+                      <ChevronUp className="w-5 h-5 text-white" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-muted-foreground" />
+                      <ChevronDown className="w-5 h-5 text-white" />
                     )}
                   </div>
                 </button>
@@ -56,8 +56,7 @@ export default function FAQs() {
                   }`}
                 >
                   <div className="px-6 pb-5">
-                    <div className="h-px bg-gradient-to-r from-primary/20 to-transparent mb-4"></div>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
