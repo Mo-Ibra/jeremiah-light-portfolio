@@ -6,7 +6,7 @@ import VideoReels from "@/components/VideoReels";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import CaseStudies from "@/components/CaseStudies";
-import WhoAmI from "@/components/WhoAmI";
+import AboutMe from "@/components/AboutMe";
 import Process from "@/components/Process";
 import Comparison from "@/components/Comparison";
 import Features from "@/components/Features";
@@ -36,7 +36,7 @@ function Home() {
       <Services />
       {!isMobile && <Portfolio />}
       <CaseStudies />
-      <WhoAmI />
+      <AboutMe />
       <Process />
       <Comparison />
       <Features />

@@ -1,12 +1,12 @@
 import SectionHeader from "./SectionHeader";
 import { Button } from "./ui/button";
 
-const WhoAmI = () => {
+const AboutMe = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="Portfolio">
+        <SectionHeader badgeText="About Me">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             The Talent Behind Your{" "}
             <span className="text-primary">Creative Success</span>
@@ -118,4 +118,4 @@ const WhoAmI = () => {
   );
 };
 
-export default WhoAmI;
+export default AboutMe;
