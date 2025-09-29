@@ -67,7 +67,7 @@ const Hero = () => {
             </div>
 
             {/* Hero Text */}
-            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-semibold mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[90px] mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent font-instrument">
               Performance Creative
               <br />
               for Scale-Stage Brands
