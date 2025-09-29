@@ -1,13 +1,33 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [activeSection, setActiveSection] = useState("home");
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const handleScroll = () => {
+      let current = "home";
+      sections.forEach((section) => {
+        const sectionTop = (section as HTMLElement).offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute("id") || "home";
+        }
+      });
+      setActiveSection(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -31,32 +51,52 @@ const Navigation = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-2 py-1 border border-gray-300 space-x-2">
             <a
-              href="#"
-              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+              href="#home"
+              className={`px-4 py-2 rounded-full transition ${
+                activeSection === "home"
+                  ? "bg-white text-gray-900 font-semibold"
+                  : "text-white hover:bg-white/20"
+              }`}
             >
               Home
             </a>
             <a
-              href="#"
-              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+              href="#portfolio"
+              className={`px-4 py-2 rounded-full transition ${
+                activeSection === "portfolio"
+                  ? "bg-white text-gray-900 font-semibold"
+                  : "text-white hover:bg-white/20"
+              }`}
             >
               Portfolio
             </a>
             <a
-              href="#"
-              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+              href="case-studies"
+              className={`px-4 py-2 rounded-full transition ${
+                activeSection === "case-studies"
+                  ? "bg-white text-gray-900 font-semibold"
+                  : "text-white hover:bg-white/20"
+              }`}
             >
               Case Studies
             </a>
             <a
-              href="#"
-              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+              href="#about"
+              className={`px-4 py-2 rounded-full transition ${
+                activeSection === "about"
+                  ? "bg-white text-gray-900 font-semibold"
+                  : "text-white hover:bg-white/20"
+              }`}
             >
               About
             </a>
             <a
-              href="#"
-              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+              href="#process"
+              className={`px-4 py-2 rounded-full transition ${
+                activeSection === "process"
+                  ? "bg-white text-gray-900 font-semibold"
+                  : "text-white hover:bg-white/20"
+              }`}
             >
               Process
             </a>

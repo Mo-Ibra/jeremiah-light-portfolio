@@ -93,7 +93,7 @@ const VideoReels = () => {
 
   return (
     <section 
-      id="video-reels" 
+      id="portfolio" 
       className="relative overflow-hidden z-0"
     >
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
