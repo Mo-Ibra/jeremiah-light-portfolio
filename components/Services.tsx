@@ -50,7 +50,7 @@ const Services = () => {
     );
 
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6" id="services">
       <div className="container max-w-[1400px] mx-auto">
         {/* Header */}
         <SectionHeader badgeText="My Services">

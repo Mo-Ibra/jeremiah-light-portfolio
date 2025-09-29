@@ -33,7 +33,7 @@ function Home() {
       <Navigation />
       <Hero />
       <VideoReels /> 
-      {/* <Services /> */}
+      <Services />
       {/* {!isMobile && <Portfolio />} */}
       {/* <CaseStudies />/ */}
       {/* <AboutMe /> */}

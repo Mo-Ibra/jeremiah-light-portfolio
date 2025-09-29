@@ -71,6 +71,16 @@ const Navigation = () => {
               Portfolio
             </a>
             <a
+              href="services"
+              className={`px-4 py-2 rounded-full transition ${
+                activeSection === "services"
+                  ? "bg-white text-gray-900 font-semibold"
+                  : "text-white hover:bg-white/20"
+              }`}
+            >
+              Services
+            </a>
+            <a
               href="case-studies"
               className={`px-4 py-2 rounded-full transition ${
                 activeSection === "case-studies"
