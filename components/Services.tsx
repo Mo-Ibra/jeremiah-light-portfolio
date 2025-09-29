@@ -68,7 +68,7 @@ const Services = () => {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           {/* AI Generated Content */}
-          <div className="relative overflow-hidden rounded-3xl min-h-[600px] group pointer-events-none">
+          <div className="relative overflow-hidden rounded-3xl h-[500px] group pointer-events-none">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -108,7 +108,7 @@ const Services = () => {
           </div>
 
           {/* User Generated Content */}
-          <div className="relative overflow-hidden rounded-3xl min-h-[600px] group pointer-events-none">
+          <div className="relative overflow-hidden rounded-3xl h-[500px] group pointer-events-none">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -149,7 +149,7 @@ const Services = () => {
           </div>
 
           {/* Studio Content */}
-          <div className="relative overflow-hidden rounded-3xl min-h-[600px] group pointer-events-none">
+          <div className="relative overflow-hidden rounded-3xl h-[500px] group pointer-events-none">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
