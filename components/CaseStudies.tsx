@@ -9,6 +9,7 @@ const CaseStudies = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [currentX, setCurrentX] = useState(0);
+  const [innerWidth, setInnerWidth] = useState<number | null>(null);
 
   const caseStudies = [
     {
@@ -97,6 +98,17 @@ const CaseStudies = () => {
     };
   }, [isDragging, startX, currentX, currentIndex]);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setInnerWidth(window.innerWidth);
+
+      const handleResize = () => setInnerWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
+
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+
   return (
     <section className="py-16 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -125,11 +137,11 @@ const CaseStudies = () => {
 
             // Calculate position and scale
             let translateX =
-              offset * 85 * (window.innerWidth / 100) +
+              offset * 85 * ((innerWidth ?? 1200) / 100) +
               (isDragging ? currentX : 0);
             let scale = isActive ? 1 : 0.8;
             let opacity = isActive ? 1 : 0.4;
-            let zIndex = isActive ? 10 : 1;
+            const zIndex = isActive ? 10 : 1;
 
             // Side cards positioning
             if (offset === -1) {
