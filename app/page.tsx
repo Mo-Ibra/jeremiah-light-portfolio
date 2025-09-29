@@ -33,16 +33,16 @@ function Home() {
       <Navigation />
       <Hero />
       <VideoReels /> 
-      <Services />
-      {!isMobile && <Portfolio />}
-      <CaseStudies />
-      <AboutMe />
-      <Process />
-      <Comparison />
-      <Features />
-      <FAQs />
-      <CTA />
-      <Footer />
+      {/* <Services /> */}
+      {/* {!isMobile && <Portfolio />} */}
+      {/* <CaseStudies />/ */}
+      {/* <AboutMe /> */}
+      {/* <Process /> */}
+      {/* <Comparison /> */}
+      {/* <Features /> */}
+      {/* <FAQs /> */}
+      {/* <CTA /> */}
+      {/* <Footer /> */}
     </>
   );
 }
