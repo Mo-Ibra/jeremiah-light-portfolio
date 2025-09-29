@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center h-screen relative overflow-x-hidden"
+      className="flex justify-center items-center min-h-screen relative overflow-x-hidden py-12"
       style={{
         backgroundImage: "url('/images/hero/sky-from-bottom.png')",
         backgroundSize: "cover",
@@ -53,45 +53,50 @@ const Hero = () => {
         )}
       </div>
 
-      {/* Birds */}
-      {!isMobile && (
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[370px] left-[90px] text-white opacity-80">
-            <Image
-              src={"/images/hero/birds.png"}
-              width={433}
-              height={433}
-              alt="Birds"
-            />
+      {/* Main Content Container */}
+      <div className="relative z-10 px-8 max-w-[100rem] mx-auto w-full">
+        
+        {/* Top Section - Text and Video Side by Side */}
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 w-full mb-16 mt-52">
+          
+          {/* Left Column - Text Content */}
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl">
+            {/* Status Badge */}
+            <div className="mb-8 inline-flex items-center px-4 py-1 border border-green-400 bg-[#d4d4ff] rounded-full text-green-600 text-sm font-semibold">
+              <div className="w-3 h-3 bg-green-600 rounded-full mr-2"></div>
+              Partnering with 1 more brand this month
+            </div>
+
+            {/* Hero Text */}
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-semibold mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent">
+              Performance Creative
+              <br />
+              for Scale-Stage Brands
+            </h1>
+
+            <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed max-w-xl">
+              Our proven systems help DTC brands spending $20k-$100k/month scale their ad production and better understand their consumers - the result is profitable, sustainable growth in new-customer acquisition.
+            </p>
+          </div>
+
+          {/* Right Column - Wistia Video */}
+          <div className="relative w-full lg:w-1/2 max-w-2xl">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div
+                  className={`wistia_embed wistia_async_hgkhne26m9 plugin_wistiaLogo=false volumeControl=false autoPlay=false relative w-full h-full  transition-[filter] duration-300 ease-in-out hover:brightness-110`}
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
-      )}
 
-      {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center flex-1 px-8 text-center max-w-[30rem] md:max-w-max">
-        {/* Status Badge */}
-        <div className="mb-8 inline-flex items-center px-4 py-1 border border-green-400 bg-[#d4d4ff] rounded-full text-green-600 text-sm font-semibold mt-32">
-          <div className="w-3 h-3 bg-green-600 rounded-full mr-2"></div>
-          Partnering with 1 more brand this month
-        </div>
-
-        {/* Hero Text */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent">
-          Creatives That{" "}
-          <span className="italic font-serif font-light">Fly</span>
-        </h1>
-
-        <p className="text-lg sm:text-lg md:text-xl text-gray-800 max-w-xl md:max-w-2xl mb-12 leading-relaxed">
-          Blending data, design, and marketing psychology to help DTC brands
-          scale further through creative content that converts
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-16 mt-12">
+        {/* CTA Buttons - Centered Below */}
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
           <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-xl font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
-            <span>I&apos;m Ready To Talk</span>
+            <span>Schedule Free Ads Audit</span>
             <svg
-              className="w-4 md:w-5 h-4 md:h-5"
+              className="w-3 md:w-4 h-3 md:h-4"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -102,7 +107,7 @@ const Hero = () => {
           <button className="px-6 md:px-8 py-3 md:py-4 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-xl font-medium hover:shadow-lg transition-all hover:scale-105 flex items-center justify-center space-x-2">
             <span>Show Me Some Proof First</span>
             <svg
-              className="w-4 md:w-5 h-4 md:h-5"
+              className="w-3 md:w-4 h-3 md:h-4"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -111,8 +116,8 @@ const Hero = () => {
           </button>
         </div>
 
-        {/* Social Proof */}
-        <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0 text-gray-600 w-full justify-center">
+        {/* Social Proof - Centered Below Buttons */}
+        <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0 text-gray-600 justify-center mb-12">
           {/* Avatars */}
           <div className="flex -space-x-2">
             {[1, 2, 3, 4, 5].map((num) => (
@@ -147,7 +152,10 @@ const Hero = () => {
           </div>
         </div>
 
-        <LogoCarousel />
+        {/* Logo Carousel - At the Bottom */}
+        <div className="w-full">
+          <LogoCarousel />
+        </div>
       </div>
     </section>
   );

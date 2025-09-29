@@ -30,38 +30,57 @@ const Navigation = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-2 py-1 border border-gray-300 space-x-2">
-            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
+            <a
+              href="#"
+              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+            >
               Home
             </a>
-            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
+            <a
+              href="#"
+              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+            >
               Portfolio
             </a>
-            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
+            <a
+              href="#"
+              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+            >
               Case Studies
             </a>
-            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
+            <a
+              href="#"
+              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+            >
               About
             </a>
-            <a href="#" className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition">
+            <a
+              href="#"
+              className="px-4 py-2 text-white hover:bg-white/20 rounded-full transition"
+            >
               Process
             </a>
           </div>
 
           {/* Desktop CTA */}
-          <button className="hidden md:flex px-6 py-2 bg-white rounded-full text-gray-700 font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2">
+          <button className="hidden md:flex px-6 py-2 bg-white rounded-lg text-gray-700 font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2">
             <span>Let&apos;s Talk</span>
-            <svg className="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
-              <path d="M8 0l8 8-8 8-1.5-1.5L12 9H0V7h12L6.5 1.5z" />
-            </svg>
+            <img
+              src="/images/arrow.png"
+              alt="Arrow"
+              className="w-[21px] h-[21px]"
+            />
           </button>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-3">
-            <button className="px-4 py-2 bg-white rounded-full text-gray-700 font-medium shadow-md hover:shadow-lg transition-all text-sm flex items-center space-x-2">
+            <button className="px-4 py-2 bg-white rounded-lg text-gray-700 font-medium shadow-md hover:shadow-lg transition-all text-sm flex items-center space-x-2">
               <span>Let&apos;s Talk</span>
-              <svg className="w-3 h-3" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M8 0l8 8-8 8-1.5-1.5L12 9H0V7h12L6.5 1.5z" />
-              </svg>
+              <img
+                src="/images/arrow.png"
+                alt="Arrow"
+                className="w-[21px] h-[21px]"
+              />
             </button>
 
             {/* Burger Menu */}
@@ -108,19 +127,39 @@ const Navigation = () => {
           }`}
         >
           <div className="flex flex-col items-center justify-center h-full space-y-8 px-6">
-            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
+            <a
+              href="#"
+              className="text-2xl font-medium text-white hover:text-gray-300"
+              onClick={closeMenu}
+            >
               Home
             </a>
-            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
+            <a
+              href="#"
+              className="text-2xl font-medium text-white hover:text-gray-300"
+              onClick={closeMenu}
+            >
               Portfolio
             </a>
-            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
+            <a
+              href="#"
+              className="text-2xl font-medium text-white hover:text-gray-300"
+              onClick={closeMenu}
+            >
               Case Studies
             </a>
-            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
+            <a
+              href="#"
+              className="text-2xl font-medium text-white hover:text-gray-300"
+              onClick={closeMenu}
+            >
               About
             </a>
-            <a href="#" className="text-2xl font-medium text-white hover:text-gray-300" onClick={closeMenu}>
+            <a
+              href="#"
+              className="text-2xl font-medium text-white hover:text-gray-300"
+              onClick={closeMenu}
+            >
               Process
             </a>
 
