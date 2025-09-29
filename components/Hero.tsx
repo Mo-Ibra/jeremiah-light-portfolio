@@ -57,7 +57,7 @@ const Hero = () => {
       {/* Main Content Container */}
       <div className="relative z-10 px-8 max-w-[100rem] mx-auto w-full">
         {/* Top Section - Text and Video Side by Side */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 w-full mb-16 mt-16 lg:mt-52">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 w-full mb-16 mt-16 lg:mt-40">
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl">
             {/* Status Badge */}
