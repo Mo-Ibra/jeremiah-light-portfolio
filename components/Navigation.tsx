@@ -12,8 +12,8 @@ const Navigation = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50">
-        <div className="flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 py-4">
+      <nav className="fixed top-[10px] md:top-0 left-0 right-0 z-50">
+        <div className="flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 py-4 bg-white/10 md:bg-transparent backdrop-blur-md  md:backdrop-blur-none rounded-[50px] border border-gray-300 md:border-none mx-2.5 md:mx-0">
           {/* Logo */}
           <div className="flex flex-col">
             <Image
@@ -68,7 +68,7 @@ const Navigation = () => {
             <img
               src="/images/arrow.png"
               alt="Arrow"
-              className="w-[21px] h-[21px]"
+              className="md:w-[21px] md:h-[21px]"
             />
           </button>
 

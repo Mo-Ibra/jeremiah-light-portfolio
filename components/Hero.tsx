@@ -21,12 +21,13 @@ const Hero = () => {
 
   return (
     <section
-  className="flex justify-center items-center min-h-screen relative overflow-x-hidden py-12"
-  style={{
-    backgroundImage: "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
+      className="flex justify-center items-center min-h-screen relative overflow-x-hidden py-12"
+      style={{
+        backgroundImage:
+          "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       {/* Cloud */}
       <div className="absolute inset-0 pointer-events-none">
@@ -55,10 +56,8 @@ const Hero = () => {
 
       {/* Main Content Container */}
       <div className="relative z-10 px-8 max-w-[100rem] mx-auto w-full">
-        
         {/* Top Section - Text and Video Side by Side */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 w-full mb-16 mt-16 md:mt-52">
-          
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl">
             {/* Status Badge */}
@@ -75,7 +74,10 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed max-w-xl">
-              Our proven systems help DTC brands spending $20k-$100k/month scale their ad production and better understand their consumers - the result is profitable, sustainable growth in new-customer acquisition.
+              Our proven systems help DTC brands spending $20k-$100k/month scale
+              their ad production and better understand their consumers - the
+              result is profitable, sustainable growth in new-customer
+              acquisition.
             </p>
           </div>
 
