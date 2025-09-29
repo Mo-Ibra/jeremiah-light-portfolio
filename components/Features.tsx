@@ -58,8 +58,8 @@ const Features = () => {
                   Weekly Performance Reporting
                 </h3>
                 <p className="text-muted text-sm leading-relaxed">
-                  You'll get a transparent report each week detailing what's
-                  working and what's not, so we can iterate and drive better
+                  You&apos;ll get a transparent report each week detailing what&apos;s
+                  working and what&apos;s not, so we can iterate and drive better
                   results together.
                 </p>
               </div>

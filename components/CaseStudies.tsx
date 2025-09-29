@@ -95,7 +95,7 @@ const CaseStudies = () => {
       document.removeEventListener("mousemove", handleGlobalMouseMove);
       document.removeEventListener("mouseup", handleGlobalMouseUp);
     };
-  }, [isDragging, startX, currentX, currentIndex, handleMouseMove, handleMouseUp]);
+  }, [isDragging, startX, currentX, currentIndex]);
 
   return (
     <section className="py-16 px-4 overflow-hidden">

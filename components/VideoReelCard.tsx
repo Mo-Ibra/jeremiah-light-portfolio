@@ -3,11 +3,13 @@ import { useEffect, useState, useRef } from "react";
 import { MdVolumeOff, MdVolumeUp } from "react-icons/md";
 import ReelTestimonial from "./ReelTestimonial";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 declare global {
   interface Window {
     _wq?: any[];
   }
 }
+/* eslint-enable @typescript-eslint/no-explicit-any */
 
 interface VideoReelCardProps {
   aspectRatio: string;
