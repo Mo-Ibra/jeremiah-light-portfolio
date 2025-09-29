@@ -21,12 +21,12 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center min-h-screen relative overflow-x-hidden py-12"
-      style={{
-        backgroundImage: "url('/images/hero/sky-from-bottom.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+  className="flex justify-center items-center min-h-screen relative overflow-x-hidden py-12"
+  style={{
+    backgroundImage: "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
     >
       {/* Cloud */}
       <div className="absolute inset-0 pointer-events-none">
