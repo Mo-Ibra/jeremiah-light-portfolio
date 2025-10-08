@@ -13,9 +13,9 @@ const Navigation = () => {
     <>
       {/* Navbar */}
       <nav className="fixed md:absolute top-0 left-0 right-0 z-50">
-        <div className="flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-56 py-4 bg-white/10 md:bg-transparent backdrop-blur-md  md:backdrop-blur-none rounded-[50px] border border-gray-300 md:border-none mx-2.5 md:mx-0">
+        <div className="flex items-center justify-between px-4 sm:px-6 md:px-6 lg:px-20 xl:px-56 py-4 bg-white/10 md:bg-transparent backdrop-blur-md md:backdrop-blur-none rounded-[50px] border border-gray-300 md:border-none mx-2.5 md:mx-0 my-2">
           {/* Logo */}
-          <div className="flex flex-col">
+          <div className="md:hidden lg:flex flex-col">
             <Image
               src="/images/navbar/logo.svg"
               width={160}
