@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center min-h-screen relative overflow-x-hidden py-12"
+      className="flex justify-center items-center h-screen relative overflow-hidden py-12"
       style={{
         backgroundImage:
           "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
@@ -55,9 +55,9 @@ const Hero = () => {
       </div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 px-8 max-w-[100rem] mx-auto w-full">
+      <div className="relative z-10 px-8 max-w-[95rem] mx-auto w-full">
         {/* Top Section - Text and Video Side by Side */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 w-full mb-16 mt-16 lg:mt-40">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-8 lg:mt-40">
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl">
             {/* Status Badge */}
@@ -95,7 +95,7 @@ const Hero = () => {
 
         {/* CTA Buttons - Centered Below */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-          <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-xl font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
+          <button className="px-6 md:px-8 py-3 md:py-4 cursor-pointer bg-primary text-white rounded-lg shadow-xl font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
             <span>Schedule Free Ads Audit</span>
             <svg
               className="w-3 md:w-4 h-3 md:h-4"
@@ -106,7 +106,7 @@ const Hero = () => {
             </svg>
           </button>
 
-          <button className="px-6 md:px-8 py-3 md:py-4 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-xl font-medium hover:shadow-lg transition-all hover:scale-105 flex items-center justify-center space-x-2">
+          <button className="px-6 md:px-8 py-3 md:py-4 cursor-pointer bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-xl font-medium hover:shadow-lg transition-all hover:scale-105 flex items-center justify-center space-x-2">
             <span>Show Me Some Proof First</span>
             <svg
               className="w-3 md:w-4 h-3 md:h-4"

@@ -1,39 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const [activeSection, setActiveSection] = useState("home");
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
-
-    const handleScroll = () => {
-      let current = "home";
-      sections.forEach((section) => {
-        const sectionTop = (section as HTMLElement).offsetTop - 100;
-        if (window.scrollY >= sectionTop) {
-          current = section.getAttribute("id") || "home";
-        }
-      });
-      setActiveSection(current);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-[10px] md:top-0 left-0 right-0 z-50">
-        <div className="flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 py-4 bg-white/10 md:bg-transparent backdrop-blur-md  md:backdrop-blur-none rounded-[50px] border border-gray-300 md:border-none mx-2.5 md:mx-0">
+      <nav className="fixed md:absolute top-0 left-0 right-0 z-50">
+        <div className="flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-56 py-4 bg-white/10 md:bg-transparent backdrop-blur-md  md:backdrop-blur-none rounded-[50px] border border-gray-300 md:border-none mx-2.5 md:mx-0">
           {/* Logo */}
           <div className="flex flex-col">
             <Image
@@ -52,61 +32,37 @@ const Navigation = () => {
           <div className="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-2 py-1 border border-gray-300 space-x-2">
             <a
               href="#home"
-              className={`px-4 py-2 rounded-full transition ${
-                activeSection === "home"
-                  ? "bg-white text-gray-900 font-semibold"
-                  : "text-white hover:bg-white/20"
-              }`}
+              className="px-4 py-2 rounded-full transition bg-white text-gray-900 font-semibold"
             >
               Home
             </a>
             <a
               href="#portfolio"
-              className={`px-4 py-2 rounded-full transition ${
-                activeSection === "portfolio"
-                  ? "bg-white text-gray-900 font-semibold"
-                  : "text-white hover:bg-white/20"
-              }`}
+              className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
             >
               Portfolio
             </a>
             <a
               href="services"
-              className={`px-4 py-2 rounded-full transition ${
-                activeSection === "services"
-                  ? "bg-white text-gray-900 font-semibold"
-                  : "text-white hover:bg-white/20"
-              }`}
+              className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
             >
               Services
             </a>
             <a
               href="case-studies"
-              className={`px-4 py-2 rounded-full transition ${
-                activeSection === "case-studies"
-                  ? "bg-white text-gray-900 font-semibold"
-                  : "text-white hover:bg-white/20"
-              }`}
+              className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
             >
               Case Studies
             </a>
             <a
               href="#about"
-              className={`px-4 py-2 rounded-full transition ${
-                activeSection === "about"
-                  ? "bg-white text-gray-900 font-semibold"
-                  : "text-white hover:bg-white/20"
-              }`}
+              className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
             >
               About
             </a>
             <a
               href="#process"
-              className={`px-4 py-2 rounded-full transition ${
-                activeSection === "process"
-                  ? "bg-white text-gray-900 font-semibold"
-                  : "text-white hover:bg-white/20"
-              }`}
+              className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
             >
               Process
             </a>
@@ -115,10 +71,12 @@ const Navigation = () => {
           {/* Desktop CTA */}
           <button className="hidden md:flex px-6 py-2 bg-white rounded-lg text-gray-700 font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2">
             <span>Let&apos;s Talk</span>
-            <img
+            <Image
               src="/images/arrow.png"
               alt="Arrow"
               className="md:w-[21px] md:h-[21px]"
+              width={21}
+              height={21}
             />
           </button>
 
@@ -126,10 +84,12 @@ const Navigation = () => {
           <div className="md:hidden flex items-center space-x-3">
             <button className="px-4 py-2 bg-white rounded-lg text-gray-700 font-medium shadow-md hover:shadow-lg transition-all text-sm flex items-center space-x-2">
               <span>Let&apos;s Talk</span>
-              <img
+              <Image
                 src="/images/arrow.png"
                 alt="Arrow"
                 className="w-[21px] h-[21px]"
+                width={21}
+                height={21}
               />
             </button>
 
