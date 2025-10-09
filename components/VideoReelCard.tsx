@@ -139,7 +139,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
   };
 
   return (
-    <div 
+    <div
       ref={containerRef}
       className="relative opacity-0 translate-y-10 animate-[fadeInUp_0.8s_ease_forwards] break-inside-avoid mb-4 sm:mb-6 lg:mb-8"
     >
@@ -147,14 +147,16 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
         className="relative rounded-2xl overflow-hidden border-2 border-primary scale-100 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_20px_rgba(0,0,0,0.15)] cursor-pointer hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] tap-highlight-transparent w-[259px] h-[316px]"
         style={{ aspectRatio: aspectRatio }}
       >
-        <div
-          className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false w-[259px] h-[316px]  transition-[filter] duration-300 ease-in-out hover:brightness-110`}
-          onClick={handleMute}
-          style={{ 
-            visibility: isVisible ? 'visible' : 'hidden',
-            backgroundColor: '#000'
-          }}
-        ></div>
+        {isVisible ? (
+          <div
+            className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false w-[259px] h-[316px] transition-[filter] duration-300 ease-in-out hover:brightness-110`}
+            onClick={handleMute}
+          ></div>
+        ) : (
+          <div className="w-[259px] h-[316px] bg-black flex items-center justify-center text-gray-400 text-sm">
+            🎬 Loading video...
+          </div>
+        )}
 
         <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
           <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-4 bg-gradient-to-t from-black/80 to-transparent flex justify-between items-end text-white text-xs sm:text-sm font-medium z-[2]">
