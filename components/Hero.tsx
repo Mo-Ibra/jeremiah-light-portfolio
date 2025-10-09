@@ -143,10 +143,12 @@ const Hero = () => {
             <p className="font-bold text-gray-800 text-sm md:text-base">
               Trusted by 86+ Shopify{" "}
             </p>
-            <img
+            <Image
               src="/images/hero/shopify.png"
               alt="Shopify"
               className="h-5 md:h-6"
+              height={20}
+              width={20}
             />
             <p className="font-bold text-gray-800 text-sm md:text-base">
               Brands
