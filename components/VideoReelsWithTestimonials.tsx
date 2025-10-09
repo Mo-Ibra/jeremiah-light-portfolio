@@ -3,7 +3,7 @@
 import "../styles/video-reels.css";
 
 import React, { useEffect, useMemo, useState } from "react";
-import VideoReelCard from "@/components/VideoReelCard";
+import VideoReelCard from "@/components/VideoReelCardWithTestimonial";
 import { videoReels, portfolioReels } from "@/data/data";
 
 type ButtonConfig = {
@@ -12,7 +12,7 @@ type ButtonConfig = {
   action: () => void;
 } | null;
 
-const VideoReels = () => {
+const VideoReelsWithTestimonials = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [visibleCount, setVisibleCount] = useState(4);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -26,6 +26,20 @@ const VideoReels = () => {
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // Load Wistia script
+  useEffect(() => {
+    if (
+      !document.querySelector(
+        'script[src="https://fast.wistia.com/assets/external/E-v1.js"]'
+      )
+    ) {
+      const script = document.createElement("script");
+      script.src = "https://fast.wistia.com/assets/external/E-v1.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
   }, []);
 
   // Reset visible count when switching between mobile/desktop
@@ -101,7 +115,7 @@ const VideoReels = () => {
         </div>
 
         {/* Reels Grid */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-2 sm:gap-3 lg:gap-5 mx-auto max-w-max mb-20">
+        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 sm:gap-3 lg:gap-4 max-w-[1400px] mx-auto max-sm:max-w-[400px] mb-16 md:mb-0">
           {displayedReels.map((reel, index) => (
             <VideoReelCard key={index} {...reel} />
           ))}
@@ -112,7 +126,7 @@ const VideoReels = () => {
           <div className="flex justify-center my-4 md:my-8 md:hidden">
             <button
               onClick={buttonConfig.action}
-              className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+              className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
             >
               <span>{buttonConfig.text}</span>
               <span>{buttonConfig.icon}</span>
@@ -122,7 +136,7 @@ const VideoReels = () => {
 
         {/* Desktop Portfolio CTA */}
         {!isMobile && (
-          <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white font-bold rounded-lg shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12">
+          <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12">
             <span>See Full Portfolio</span>
             <span>→</span>
           </button>
@@ -132,4 +146,4 @@ const VideoReels = () => {
   );
 };
 
-export default VideoReels;
+export default VideoReelsWithTestimonials;

@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from "react";
+
 import { MdVolumeOff, MdVolumeUp } from "react-icons/md";
+import ReelTestimonial from "./ReelTestimonial";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 declare global {
@@ -9,7 +11,7 @@ declare global {
 }
 /* eslint-enable @typescript-eslint/no-explicit-any */
 
-interface VideoReelCardProps {
+interface VideoReelCardWithTestimonialProps {
   aspectRatio: string;
   videoId: string;
   views: string;
@@ -28,47 +30,23 @@ interface WistiaVideo {
   volume?: (level: number) => void;
 }
 
-const VideoReelCard: React.FC<VideoReelCardProps> = ({
+const VideoReelCardWithTestimonial: React.FC<VideoReelCardWithTestimonialProps> = ({
   aspectRatio = "9/16",
   videoId,
   views,
   platform = "TikTok",
+  hasTestimonial = false,
+  testimonialText = "",
+  testimonialImageSrc = "1.jpg",
+  authorName = "Jeremiah Smith",
+  authorRole = "CEO, Company Name",
+  rating = 5,
 }) => {
   const [isMuted, setIsMuted] = useState(true);
-  const [isVisible, setIsVisible] = useState(false);
   const videoRef = useRef<WistiaVideo | null>(null);
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  // Intersection Observer for lazy loading
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.disconnect();
-          }
-        });
-      },
-      {
-        rootMargin: "50px", // Load slightly before entering viewport
-        threshold: 0.1,
-      }
-    );
-
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   // Wait for Wistia API to be ready and get video reference
   useEffect(() => {
-    if (!isVisible) return;
-
     // Initialize Wistia queue if it doesn't exist
     window._wq = window._wq || [];
 
@@ -94,14 +72,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
         }
       },
     });
-
-    return () => {
-      // Cleanup: remove from _wq queue
-      if (window._wq) {
-        window._wq = window._wq.filter((item) => item.id !== videoId);
-      }
-    };
-  }, [videoId, isMuted, isVisible]);
+  }, [videoId, isMuted]);
 
   const handleMute = () => {
     const newMutedState = !isMuted;
@@ -139,21 +110,14 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
   };
 
   return (
-    <div 
-      ref={containerRef}
-      className="relative opacity-0 translate-y-10 animate-[fadeInUp_0.8s_ease_forwards] break-inside-avoid mb-4 sm:mb-6 lg:mb-8"
-    >
-      <div
-        className="relative rounded-2xl overflow-hidden border-2 border-primary scale-100 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_20px_rgba(0,0,0,0.15)] cursor-pointer hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] tap-highlight-transparent w-[259px] h-[316px]"
+    <div className="relative opacity-0 translate-y-10 animate-[fadeInUp_0.8s_ease_forwards] break-inside-avoid mb-4 sm:mb-6 lg:mb-8">
+      <div 
+        className="relative rounded-2xl overflow-hidden border-2 border-primary scale-100 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_20px_rgba(0,0,0,0.15)] cursor-pointer hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] tap-highlight-transparent"
         style={{ aspectRatio: aspectRatio }}
       >
         <div
-          className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false w-[259px] h-[316px]  transition-[filter] duration-300 ease-in-out hover:brightness-110`}
+          className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false w-full h-full scale-[1.2] transition-[filter] duration-300 ease-in-out hover:brightness-110`}
           onClick={handleMute}
-          style={{ 
-            visibility: isVisible ? 'visible' : 'hidden',
-            backgroundColor: '#000'
-          }}
         ></div>
 
         <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
@@ -161,14 +125,14 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
             <span className="flex items-center gap-2 before:content-['👁'] before:text-sm sm:before:text-base">
               {views} views
             </span>
-
+            
             <span className="py-1 px-2 sm:py-1 sm:px-3 bg-white/20 backdrop-blur-[10px] rounded-xl text-xs sm:text-xs relative overflow-hidden">
               {platform}
             </span>
           </div>
 
           {/* Mute/Unmute Button */}
-          {/* <button
+          <button
             onClick={handleMute}
             className="absolute top-3 right-3 bg-black/60 border-none rounded-full w-11 h-11 flex items-center justify-center cursor-pointer transition-all duration-200 ease-in-out backdrop-blur-[4px] z-10 hover:bg-black/80 hover:scale-105 active:scale-95"
             aria-label={isMuted ? "Unmute video" : "Mute video"}
@@ -178,11 +142,21 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
             ) : (
               <MdVolumeUp size={24} color="white" className="transition-opacity duration-200 ease-in-out hover:opacity-90" />
             )}
-          </button> */}
+          </button>
         </div>
       </div>
+
+      {hasTestimonial && (
+        <ReelTestimonial
+          testimonialText={testimonialText}
+          testimonialImageSrc={testimonialImageSrc}
+          authorName={authorName}
+          authorRole={authorRole}
+          rating={rating}
+        />
+      )}
     </div>
   );
 };
 
-export default VideoReelCard;
+export default VideoReelCardWithTestimonial;

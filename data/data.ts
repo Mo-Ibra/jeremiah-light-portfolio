@@ -31,7 +31,7 @@
 export const videoReels = [
   {
     aspectRatio: "9/16",
-    videoId: "lbokfo5iv3", // Wistia video ID
+    videoId: "hisd0uu37o", // Wistia video ID
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true, // true = show testimonial section, false = hide it
@@ -44,7 +44,7 @@ export const videoReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "69qiuv07hz",
+    videoId: "u34ur396h2",
     views: "1.8M",
     platform: "Instagram",
     hasTestimonial: false, // No testimonial → leave these as null
@@ -55,7 +55,7 @@ export const videoReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "ktw4hsumt8",
+    videoId: "7zb5qe3kwx",
     views: "3.5M",
     platform: "TikTok",
     hasTestimonial: false,
@@ -66,7 +66,7 @@ export const videoReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "n3q3weig8v",
+    videoId: "281d36eotk",
     views: "925K",
     platform: "YouTube Shorts",
     hasTestimonial: true,
@@ -79,7 +79,7 @@ export const videoReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "1ku3mu07k8",
+    videoId: "ue0iiq05po",
     views: "1.2M",
     platform: "Facebook",
     hasTestimonial: false,
@@ -90,7 +90,7 @@ export const videoReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "dorz4lqu14",
+    videoId: "p340cccbz9",
     views: "4.1M",
     platform: "Instagram",
     hasTestimonial: true,
@@ -103,7 +103,7 @@ export const videoReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "glq2nisk1j",
+    videoId: "zs4vtmwlu8",
     views: "4.1M",
     platform: "Instagram",
     hasTestimonial: true,
@@ -116,7 +116,18 @@ export const videoReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "0l19efg1jt",
+    videoId: "dcgtijdehj",
+    views: "4.1M",
+    platform: "Instagram",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    aspectRatio: "9/16",
+    videoId: "eoq02iv4av",
     views: "4.1M",
     platform: "Instagram",
     hasTestimonial: false,
@@ -147,7 +158,7 @@ export const videoReels = [
 export const portfolioReels = [
   {
     aspectRatio: "9/16",
-    videoId: "s3pthor4vn",
+    videoId: "u6mkbgumak",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -159,7 +170,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "dkzw4n1wr0",
+    videoId: "mo8nhiduqr",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -171,7 +182,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "asoftd14pu",
+    videoId: "h8arhr3ghi",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: false,
@@ -182,7 +193,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "1iu0jtd817",
+    videoId: "09l1rla2ul",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: false,
@@ -193,7 +204,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "axpdql1sfx",
+    videoId: "ngp8y55jgo",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: false,
@@ -204,7 +215,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "idyc2rfkjp",
+    videoId: "mheaxmdda8",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: false,
@@ -215,7 +226,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "2exlvz5s5n",
+    videoId: "59574ehq6n",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -227,7 +238,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "sbbrj9d2ag",
+    videoId: "ypqbvkaw6l",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -239,7 +250,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "f4pg22t46p",
+    videoId: "8h6q65blew",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -251,7 +262,7 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "urul1qdxg0",
+    videoId: "nxjsz2gsqi",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
@@ -263,71 +274,27 @@ export const portfolioReels = [
   },
   {
     aspectRatio: "9/16",
-    videoId: "vb44bp1fb5",
-    views: "2.3M",
-    platform: "TikTok",
-    hasTestimonial: false,
-    testimonialText: null,
-    testimonialImageSrc: null,
-    authorName: null,
-    authorRole: null,
-  },
-  {
-    aspectRatio: "9/16",
-    videoId: "5j96facrfq",
-    views: "2.3M",
-    platform: "TikTok",
-    hasTestimonial: false,
-    testimonialText: null,
-    testimonialImageSrc: null,
-    authorName: null,
-    authorRole: null,
-  },
-  {
-    aspectRatio: "9/16",
-    videoId: "b606gkduct",
-    views: "2.3M",
-    platform: "TikTok",
-    hasTestimonial: false,
-    testimonialText: null,
-    testimonialImageSrc: null,
-    authorName: null,
-    authorRole: null,
-  },
-  {
-    aspectRatio: "9/16",
-    videoId: "shz4x8pyt5",
+    videoId: "hisd0uu37o",
     views: "2.3M",
     platform: "TikTok",
     hasTestimonial: true,
     testimonialText:
       "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
-    testimonialImageSrc: "3.jpg",
+    testimonialImageSrc: "1.jpg", // Name of testimonial image in /public/images/testimonials/
     authorName: "Jeremiah Smith",
     authorRole: "CEO, Company Name",
+    rating: 5,
   },
   {
     aspectRatio: "9/16",
-    videoId: "fx0tr3a1h9",
-    views: "2.3M",
-    platform: "TikTok",
+    videoId: "eoq02iv4av",
+    views: "4.1M",
+    platform: "Instagram",
     hasTestimonial: false,
     testimonialText: null,
     testimonialImageSrc: null,
     authorName: null,
     authorRole: null,
-  },
-  {
-    aspectRatio: "9/16",
-    videoId: "dzwspp5lfe",
-    views: "2.3M",
-    platform: "TikTok",
-    hasTestimonial: true,
-    testimonialText:
-      "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
-    testimonialImageSrc: "1.jpg",
-    authorName: "Jeremiah Smith",
-    authorRole: "CEO, Company Name",
   },
 ];
 
