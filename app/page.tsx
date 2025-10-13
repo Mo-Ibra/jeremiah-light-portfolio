@@ -17,6 +17,7 @@ import VideoReels from "@/components/VideoReels";
 // import ServicesWithCarousel from "@/components/ServicesWithCarousel";
 import Services from "@/components/Services";
 import TestimonialsSection from "@/components/Testimonials";
+import CaseStudiesSection from "@/components/CaseStudies";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,6 +40,7 @@ function Home() {
       <Services />
       {!isMobile && <Portfolio />}
       <TestimonialsSection />
+      <CaseStudiesSection />
       {/* <CaseStudies />/ */}
       {/* <AboutMe /> */}
       {/* <Process /> */}
