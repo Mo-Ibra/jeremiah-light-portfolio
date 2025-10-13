@@ -2,9 +2,11 @@
 
 import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
-// import VideoReelsWithTestimonials from "@/components/VideoReelsWithTestimonials";
+import VideoReels from "@/components/VideoReels";
+import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
-// import CaseStudies from "@/components/CaseStudies";
+import TestimonialsSection from "@/components/Testimonials";
+import CaseStudiesSection from "@/components/CaseStudies";
 import AboutMe from "@/components/AboutMe";
 import Process from "@/components/Process";
 import Comparison from "@/components/Comparison";
@@ -12,12 +14,9 @@ import Features from "@/components/Features";
 import FAQs from "@/components/Faqs";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+
+
 import { useEffect, useState } from "react";
-import VideoReels from "@/components/VideoReels";
-// import ServicesWithCarousel from "@/components/ServicesWithCarousel";
-import Services from "@/components/Services";
-import TestimonialsSection from "@/components/Testimonials";
-import CaseStudiesSection from "@/components/CaseStudies";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);

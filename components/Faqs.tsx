@@ -5,6 +5,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 import { faqData } from "@/data/data";
+import BlurCircle from "./BlurCircle";
 
 export default function FAQs() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -14,9 +15,12 @@ export default function FAQs() {
   };
 
   return (
-    <section id="faqs" className="py-16 bg-background relative overflow-hidden">
+    <section id="faqs" className="py-20 bg-background relative overflow-hidden">
+
+      <BlurCircle top="50%" left="50%" />
+
       <div className="container mx-auto px-4 relative z-10">
-        <SectionHeader badgeText="Do you have any question?">
+        <SectionHeader badgeText="Do you have any question?" badgeBackgroundColor="bg-[#5360c226]">
           <h2 className="text-[40px] font-bold text-foreground">
             Frequently Asked{" "}
             <span className="text-primary relative">

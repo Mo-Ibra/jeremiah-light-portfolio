@@ -3,13 +3,18 @@
 import { portfolioReels } from "@/data/data";
 import VideoReelCard from "@/components/VideoReelCard";
 import SectionHeader from "./SectionHeader";
+import BlurCircle from "./BlurCircle";
 
 const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="portfolio relative overflow-hidden z-0 py-20 px-4"
+      className="portfolio overflow-hidden z-0 py-20 px-4 relative"
     >
+      <BlurCircle top="700px" />
+
+      <BlurCircle top="1400px" left="1400px" blur="350px" />
+
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <SectionHeader badgeText="Creative Portfolio" marginBottom="0">

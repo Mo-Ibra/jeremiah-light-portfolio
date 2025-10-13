@@ -1,12 +1,19 @@
 import Image from "next/image";
 import SectionHeader from "./SectionHeader";
+import BlurCircle from "./BlurCircle";
 
 const Features = () => {
   return (
-    <section className="py-20 px-6 bg-[#5360c226]">
+    <section className="py-20 px-6 bg-[#5360c226] relative">
+      <BlurCircle left="20%" blur="350px" />
+
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="Benefits & Features" badgeBackgroundColor="bg-[#5360c226]" marginBottom="12">
+        <SectionHeader
+          badgeText="Benefits & Features"
+          badgeBackgroundColor="bg-[#5360c226]"
+          marginBottom="12"
+        >
           <h2 className="text-[40px] font-bold text-black">
             <span className="text-primary">Exclusive Perks</span> You Get When{" "}
             <span className="text-primary">We Work Together</span>
@@ -58,9 +65,9 @@ const Features = () => {
                   Weekly Performance Reporting
                 </h3>
                 <p className="text-muted text-xs leading-relaxed">
-                  You&apos;ll get a transparent report each week detailing what&apos;s
-                  working and what&apos;s not, so we can iterate and drive better
-                  results together.
+                  You&apos;ll get a transparent report each week detailing
+                  what&apos;s working and what&apos;s not, so we can iterate and
+                  drive better results together.
                 </p>
               </div>
             </div>
