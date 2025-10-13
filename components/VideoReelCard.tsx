@@ -158,7 +158,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
           </div>
         )}
 
-        <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
+        {/* <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
           <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-4 bg-gradient-to-t from-black/80 to-transparent flex justify-between items-end text-white text-xs sm:text-sm font-medium z-[2]">
             <span className="flex items-center gap-2 before:content-['👁'] before:text-sm sm:before:text-base">
               {views} views
@@ -167,7 +167,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
             <span className="py-1 px-2 sm:py-1 sm:px-3 bg-white/20 backdrop-blur-[10px] rounded-xl text-xs sm:text-xs relative overflow-hidden">
               {platform}
             </span>
-          </div>
+          </div> */}
 
           {/* Mute/Unmute Button */}
           {/* <button
@@ -181,7 +181,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
               <MdVolumeUp size={24} color="white" className="transition-opacity duration-200 ease-in-out hover:opacity-90" />
             )}
           </button> */}
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );

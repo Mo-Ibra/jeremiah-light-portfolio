@@ -8,7 +8,7 @@ const Services = () => {
     <section className="py-20 px-6 bg-[#5360c226]" id="services">
       <div className="container max-w-[1200px] mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="My Services">
+        <SectionHeader badgeText="My Services" badgeBackgroundColor="bg-[#5360c226]">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Here&apos;s What I Can Do For Your{" "}
             <span className="text-primary">Brand</span>

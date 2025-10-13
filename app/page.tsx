@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import VideoReels from "@/components/VideoReels";
 // import ServicesWithCarousel from "@/components/ServicesWithCarousel";
 import Services from "@/components/Services";
+import TestimonialsSection from "@/components/Testimonials";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,6 +38,7 @@ function Home() {
       <VideoReels /> 
       <Services />
       {!isMobile && <Portfolio />}
+      <TestimonialsSection />
       {/* <CaseStudies />/ */}
       {/* <AboutMe /> */}
       {/* <Process /> */}
