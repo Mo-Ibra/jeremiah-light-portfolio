@@ -43,13 +43,13 @@ const Navigation = () => {
               Portfolio
             </a>
             <a
-              href="services"
+              href="#services"
               className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
             >
               Services
             </a>
             <a
-              href="case-studies"
+              href="#case-studies"
               className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
             >
               Case Studies

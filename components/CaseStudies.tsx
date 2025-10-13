@@ -68,7 +68,7 @@ export default function CaseStudiesSection() {
   ];
 
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4" id="case-studies">
       <div className="max-w-4xl xl:max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader badgeText="Case studies">

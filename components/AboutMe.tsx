@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const AboutMe = () => {
   return (
-    <section className="py-20 px-6 bg-[#5360c226]">
+    <section className="py-20 px-6 bg-[#5360c226]" id="about">
       <div className="max-w-4xl md:max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader
