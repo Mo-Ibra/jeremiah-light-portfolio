@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation";
 import Portfolio from "@/components/Portfolio";
 // import CaseStudies from "@/components/CaseStudies";
 import AboutMe from "@/components/AboutMe";
-// import Process from "@/components/Process";
+import Process from "@/components/Process";
 // import Comparison from "@/components/Comparison";
 // import Features from "@/components/Features";
 // import FAQs from "@/components/Faqs";
@@ -42,7 +42,7 @@ function Home() {
       <TestimonialsSection />
       <CaseStudiesSection />
       <AboutMe />
-      {/* <Process /> */}
+      <Process />
       {/* <Comparison /> */}
       {/* <Features /> */}
       {/* <FAQs /> */}

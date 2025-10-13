@@ -16,7 +16,7 @@ const Process = () => {
         </SectionHeader>
 
         {/* Timeline */}
-        <div className="w-full max-w-6xl mx-auto mb-12 px-4">
+        <div className="w-full max-w-7xl mx-auto mb-12">
           <div className="relative flex items-center justify-between">
 
             {/* Line */}
@@ -60,7 +60,7 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-2xl font-bold text-white mb-3">
+                <h3 className="text-2xl font-bold text-[#8994e8] mb-3">
                   Onboarding & Analysis
                 </h3>
                 <p className="text-white/90 text-sm leading-relaxed">
@@ -100,7 +100,7 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-2xl font-bold text-white mb-3">
+                <h3 className="text-2xl font-bold text-[#8994e8] mb-3">
                   Production
                 </h3>
                 <p className="text-white/90 text-sm leading-relaxed">
@@ -141,7 +141,7 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-2xl font-bold text-white mb-3">
+                <h3 className="text-2xl font-bold text-[#8994e8] mb-3">
                   Launch & Optimize
                 </h3>
                 <p className="text-white/90 text-sm leading-relaxed">
@@ -180,7 +180,7 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-2xl font-bold text-white mb-3">Scaling</h3>
+                <h3 className="text-2xl font-bold text-[#8994e8] mb-3">Scaling</h3>
                 <p className="text-white/90 text-sm leading-relaxed">
                   The growth phase where we expand your successful brand
                   foundation across new markets, channels, and touchpoints while
