@@ -137,22 +137,21 @@ body {
 /* Skelton Loader */
 @keyframes shimmer {
   0% {
-    transform: translateX(-100%);
+    background-position: -200% 0;
   }
   100% {
-    transform: translateX(100%);
+    background-position: 200% 0;
   }
 }
 
 .animate-shimmer {
-  animation: shimmer 1.5s infinite linear;
   background: linear-gradient(
-    to right,
-    #d1d5db 0%,
+    90deg,
+    #d1d5db 25%,
     #e5e7eb 50%,
-    #d1d5db 100%
+    #d1d5db 75%
   );
   background-size: 200% 100%;
-  filter: brightness(1.1);
+  animation: shimmer 1.6s infinite linear;
 }
 /* Skelton Loader */

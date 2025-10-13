@@ -34,7 +34,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
   views,
   platform = "TikTok",
 }) => {
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const videoRef = useRef<WistiaVideo | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -103,40 +103,40 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
     };
   }, [videoId, isMuted, isVisible]);
 
-  const handleMute = () => {
-    const newMutedState = !isMuted;
-    setIsMuted(newMutedState);
+  // const handleMute = () => {
+  //   const newMutedState = !isMuted;
+  //   setIsMuted(newMutedState);
 
-    // Control the actual Wistia video
-    if (videoRef.current) {
-      try {
-        if (newMutedState) {
-          // Mute the video
-          if (typeof videoRef.current.mute === "function") {
-            videoRef.current.mute();
-          } else if (typeof videoRef.current.volume === "function") {
-            videoRef.current.volume(0);
-          }
-        } else {
-          // Unmute the video
-          if (typeof videoRef.current.unmute === "function") {
-            videoRef.current.unmute();
-          } else if (typeof videoRef.current.volume === "function") {
-            videoRef.current.volume(1);
-          }
-        }
-        console.log("Video mute state changed to:", newMutedState);
-      } catch (error) {
-        console.error("Error controlling video mute state:", error);
-        console.log(
-          "Available methods:",
-          Object.getOwnPropertyNames(videoRef.current)
-        );
-      }
-    } else {
-      console.warn("Video reference not available");
-    }
-  };
+  //   // Control the actual Wistia video
+  //   if (videoRef.current) {
+  //     try {
+  //       if (newMutedState) {
+  //         // Mute the video
+  //         if (typeof videoRef.current.mute === "function") {
+  //           videoRef.current.mute();
+  //         } else if (typeof videoRef.current.volume === "function") {
+  //           videoRef.current.volume(0);
+  //         }
+  //       } else {
+  //         // Unmute the video
+  //         if (typeof videoRef.current.unmute === "function") {
+  //           videoRef.current.unmute();
+  //         } else if (typeof videoRef.current.volume === "function") {
+  //           videoRef.current.volume(1);
+  //         }
+  //       }
+  //       console.log("Video mute state changed to:", newMutedState);
+  //     } catch (error) {
+  //       console.error("Error controlling video mute state:", error);
+  //       console.log(
+  //         "Available methods:",
+  //         Object.getOwnPropertyNames(videoRef.current)
+  //       );
+  //     }
+  //   } else {
+  //     console.warn("Video reference not available");
+  //   }
+  // };
 
   return (
     <div
@@ -158,8 +158,8 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
           {/* Actual video (hidden until loaded) */}
           {isVisible && (
             <div
-              className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false w-[259px] h-[316px] transition-opacity duration-500 ease-in-out`}
-              onClick={handleMute}
+              className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false autoPlay=false w-[259px] h-[316px] transition-opacity duration-500 ease-in-out`}
+              // onClick={handleMute}
               style={{ opacity: !isVisible ? 0 : 1 }}
             ></div>
           )}
