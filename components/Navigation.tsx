@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -12,9 +13,11 @@ const Navigation = () => {
     <>
       {/* Navbar */}
       <nav className="fixed md:absolute top-0 left-0 right-0 z-50">
-        <div className={`flex flex-col px-4 sm:px-6 md:px-6 lg:px-20 xl:px-56 py-4 bg-white/10 md:bg-transparent backdrop-blur-md md:backdrop-blur-none rounded-[50px] border border-gray-300 md:border-none mx-2.5 md:mx-0 my-2 transition-all duration-500 ease-in-out overflow-hidden ${
-          isMenuOpen ? "max-h-[500px]" : "max-h-[80px]"
-        }`}>
+        <div
+          className={`flex flex-col px-4 sm:px-6 md:px-6 lg:px-20 xl:px-56 py-4 bg-white/10 md:bg-transparent backdrop-blur-md md:backdrop-blur-none rounded-[50px] border border-gray-300 md:border-none mx-2.5 md:mx-0 my-2 transition-all duration-500 ease-in-out overflow-hidden ${
+            isMenuOpen ? "max-h-[500px]" : "max-h-[80px]"
+          }`}
+        >
           {/* Top Section - Always Visible */}
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -26,7 +29,7 @@ const Navigation = () => {
                 alt="Logo"
                 className="w-32 sm:w-40 lg:w-[195px] h-auto"
               />
-              <p className="text-xs sm:text-sm lg:text-base text-white ml-[6px]">
+              <p className="text-[8px] sm:text-sm lg:text-base text-white ml-[6px]">
                 Performance Creative Partner
               </p>
             </div>
@@ -85,15 +88,16 @@ const Navigation = () => {
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center space-x-3">
-              <button className="px-4 py-2 bg-white rounded-lg text-gray-700 font-medium shadow-md hover:shadow-lg transition-all text-sm flex items-center space-x-2">
-                <span>Let&apos;s Talk</span>
-                <Image
-                  src="/images/arrow.png"
-                  alt="Arrow"
-                  className="w-[21px] h-[21px]"
-                  width={21}
-                  height={21}
-                />
+              <button
+                className="px-4 py-2 rounded-lg text-white font-medium transition-all text-sm flex items-center space-x-2 relative group"
+                onClick={() => (window.location.href = "#cta")}
+              >
+                <span className="relative">
+                  Let&apos;s Talk
+                  {/* Underline */}
+                  <span className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-white scale-x-100 origin-left transition-transform duration-300"></span>
+                </span>
+                <ArrowRight className="w-5 h-5" />
               </button>
 
               {/* Burger Menu */}
@@ -121,12 +125,18 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Content - Expandable */}
-          <div className={`md:hidden transition-all duration-500 ${
-            isMenuOpen ? "opacity-100 mt-6" : "opacity-0 mt-0"
-          }`}>
+          <div
+            className={`md:hidden transition-all duration-500 ${
+              isMenuOpen ? "opacity-100 mt-6" : "opacity-0 mt-0"
+            }`}
+          >
             {/* Links */}
             <div className="flex flex-col items-start space-y-4 text-base font-medium text-white">
-              <a href="#home" onClick={toggleMenu} className="hover:text-white/70">
+              <a
+                href="#home"
+                onClick={toggleMenu}
+                className="hover:text-white/70"
+              >
                 Home
               </a>
               <a
