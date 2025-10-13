@@ -75,7 +75,10 @@ const Navigation = () => {
             </div>
 
             {/* Desktop CTA */}
-            <button className="hidden md:flex px-6 py-2 bg-white rounded-lg text-gray-700 font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2">
+            <button
+              className="hidden md:flex px-6 py-2 bg-white rounded-lg text-gray-700 font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2"
+              onClick={() => (window.location.href = "#cta")}
+            >
               <span>Let&apos;s Talk</span>
               <Image
                 src="/images/arrow.png"
@@ -171,7 +174,10 @@ const Navigation = () => {
 
             {/* CTA Button */}
             <div className="mt-6">
-              <button className="w-full py-3 bg-white text-gray-900 font-semibold rounded-full shadow-md hover:shadow-lg transition-all">
+              <button
+                className="w-full py-3 bg-white text-gray-900 font-semibold rounded-full shadow-md hover:shadow-lg transition-all"
+                onClick={() => (window.location.href = "#cta")}
+              >
                 Book Meeting
               </button>
             </div>
