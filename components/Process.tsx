@@ -16,7 +16,7 @@ const Process = () => {
         </SectionHeader>
 
         {/* Timeline */}
-        <div className="w-full max-w-7xl mx-auto mb-12">
+        <div className="w-full max-w-7xl mx-auto mb-12 hidden md:block">
           <div className="relative flex items-center justify-between">
 
             {/* Line */}
@@ -24,9 +24,9 @@ const Process = () => {
 
             {/* Dots */}
             <div className="relative z-10 w-4 h-4 bg-primary rounded-full"></div>
-            <div className="relative z-10 w-4 h-4 bg-primary rounded-full"></div>
-            <div className="relative z-10 w-4 h-4 bg-primary rounded-full"></div>
-            <div className="relative z-10 w-4 h-4 bg-primary rounded-full"></div>
+            <div className="relative z-10 w-4 h-4 bg-primary rounded-full left-[10px]"></div>
+            <div className="relative z-10 w-4 h-4 bg-primary rounded-full left-[20px]"></div>
+            <div className="relative z-10 w-4 h-4 bg-primary rounded-full left-[30px]"></div>
             <div className="relative z-10 w-4 h-4 bg-primary rounded-full"></div>
           </div>
         </div>
