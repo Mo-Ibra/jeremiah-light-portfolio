@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 // import VideoReelsWithTestimonials from "@/components/VideoReelsWithTestimonials";
 import Portfolio from "@/components/Portfolio";
 // import CaseStudies from "@/components/CaseStudies";
-// import AboutMe from "@/components/AboutMe";
+import AboutMe from "@/components/AboutMe";
 // import Process from "@/components/Process";
 // import Comparison from "@/components/Comparison";
 // import Features from "@/components/Features";
@@ -41,8 +41,7 @@ function Home() {
       {!isMobile && <Portfolio />}
       <TestimonialsSection />
       <CaseStudiesSection />
-      {/* <CaseStudies />/ */}
-      {/* <AboutMe /> */}
+      <AboutMe />
       {/* <Process /> */}
       {/* <Comparison /> */}
       {/* <Features /> */}

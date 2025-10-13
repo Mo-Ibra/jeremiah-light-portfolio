@@ -3,21 +3,24 @@ import { Button } from "./ui/button";
 
 const AboutMe = () => {
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 px-6 bg-[#5360c226]">
+      <div className="max-w-4xl md:max-w-7xl mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="About Me">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+        <SectionHeader
+          badgeText="About Me"
+          badgeBackgroundColor="bg-[#5360c226]"
+        >
+          <h2 className="text-4xl font-semibold text-gray-900 mb-6">
             The Talent Behind Your{" "}
             <span className="text-primary">Creative Success</span>
           </h2>
         </SectionHeader>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-4xl md:max-w-6xl mx-auto">
           {/* Left Column - Video/Image */}
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-3xl border-4 border-primary bg-gray-200 aspect-[4/5]">
+          <div className="flex justify-center mb-4">
+            <div className="relative overflow-hidden rounded-3xl border-4 border-primary bg-gray-200 aspect-[4/5] w-full max-w-[400px] sm:max-w-[450px] md:max-w-[488px]">
               <img
                 src="/images/portfolio/1.jpg"
                 alt="Jeremiah - Creative Director"
@@ -29,9 +32,9 @@ const AboutMe = () => {
 
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-primary hover:bg-indigo-700 transition-colors rounded-full p-6 cursor-pointer">
+                <div className="bg-primary hover:bg-indigo-700 transition-colors rounded-full p-2 cursor-pointer">
                   <svg
-                    className="w-8 h-8 text-white ml-1"
+                    className="w-12 h-12 text-white"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -43,15 +46,15 @@ const AboutMe = () => {
           </div>
 
           {/* Right Column - Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-center lg:text-left">
             <div>
-              <h3 className="text-5xl md:text-9xl text-gray-900 drop-shadow-2xl">
+              <h3 className="text-5xl md:text-8xl text-gray-900 drop-shadow-2xl">
                 Hey! I&apos;m
               </h3>
-              <span className="text-5xl md:text-9xl italic text-primary font-serif drop-shadow-2xl">
+              <span className="text-5xl md:text-8xl italic text-primary font-serif drop-shadow-2xl">
                 Jeremiah
               </span>
-              <p className="text-2xl text-gray-600 leading-relaxed mt-4">
+              <p className="max-w-2xl mx-auto text-2xl text-gray-600 leading-relaxed mt-2 md:mt-12">
                 Addicted to E-commerce, in love with ads, and obsessed with
                 performance - I will personally help you take your brand to the
                 next level with my creatives, strategy, systems, and processes
@@ -59,7 +62,7 @@ const AboutMe = () => {
             </div>
 
             {/* Social Links and CTA */}
-            <div className="flex items-center justify-between mt-16">
+            <div className="flex items-center justify-center lg:justify-start md:gap-32 gap-16 mt-16">
               <div className="flex items-center gap-4">
                 {/* Instagram */}
                 <Button

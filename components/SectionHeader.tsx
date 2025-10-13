@@ -16,7 +16,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   return (
     <div className={`text-center mb-${marginBottom}`}>
       <div
-        className={`inline-flex items-center ${badgeBackgroundColor} text-primary px-4 py-2 rounded-full text-sm font-medium mb-6`}
+        className={`inline-flex items-center ${badgeBackgroundColor} text-primary px-5 py-1 rounded-full text-sm font-medium mb-6`}
       >
         <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
         {badgeText}
