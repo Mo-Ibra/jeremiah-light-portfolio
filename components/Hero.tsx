@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center h-screen relative overflow-hidden py-12"
+      className="flex justify-center items-center md:h-screen relative overflow-hidden py-12"
       style={{
         backgroundImage:
           "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
@@ -55,7 +55,7 @@ const Hero = () => {
       </div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 px-8 max-w-[95rem] mx-auto w-full">
+      <div className="relative z-10 px-8 max-w-[95rem] mx-auto w-full mt-10 md:mt-64 lg:mt-0">
         {/* Top Section - Text and Video Side by Side */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-8 lg:mt-40">
           {/* Left Column - Text Content */}
