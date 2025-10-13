@@ -2,7 +2,7 @@ import SectionHeader from "./SectionHeader";
 
 const Comparison = () => {
   return (
-    <section className="py-20 px-6">
+    <section className="pb-16 px-6">
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="Why Us?">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -19,7 +19,7 @@ const Comparison = () => {
         <div className="relative max-w-4xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8">
             {/* Traditional Agencies Card */}
-            <div className="bg-black rounded-3xl p-8 shadow-lg w-full lg:w-96 lg:mt-12 border-3 border-primary">
+            <div className="bg-black rounded-3xl p-6 shadow-lg w-full lg:w-96 lg:mt-12 border-3 border-primary">
               <h3 className="text-3xl font-bold text-white">
                 Traditional Agencies
               </h3>
@@ -52,7 +52,7 @@ const Comparison = () => {
             </div>
 
             {/* Working With Me Card */}
-            <div className="bg-black rounded-3xl p-8 shadow-lg w-full lg:w-96 border-3 border-primary relative md:right-16">
+            <div className="bg-black rounded-3xl p-6 shadow-lg w-full lg:w-96 border-3 border-primary relative md:right-16">
               <h3 className="text-3xl font-bold text-primary">Working With Me</h3>
 
               {/* Border Gradient Under Heading */}

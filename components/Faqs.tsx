@@ -14,10 +14,10 @@ export default function FAQs() {
   };
 
   return (
-    <section id="faqs" className="py-20 bg-background relative overflow-hidden">
+    <section id="faqs" className="py-16 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeader badgeText="Do you have any question?">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-[40px] font-bold text-foreground">
             Frequently Asked{" "}
             <span className="text-primary relative">
               Questions
@@ -25,12 +25,12 @@ export default function FAQs() {
           </h2>
         </SectionHeader>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-4">
+        <div className="max-w-2xl mx-auto">
+          <div className="space-y-8">
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className="border border-border bg-black/40 hover:bg-black/70 backdrop-blur-sm transition-all duration-300 hover:border-primary/30 rounded-lg"
+                className="border border-black bg-[#000000dd] backdrop-blur-sm transition-all duration-300 hover:border-primary/30 rounded-lg"
               >
                 <button
                   onClick={() => toggleFAQ(index)}

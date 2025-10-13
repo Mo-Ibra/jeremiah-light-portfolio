@@ -7,10 +7,10 @@ import Portfolio from "@/components/Portfolio";
 // import CaseStudies from "@/components/CaseStudies";
 import AboutMe from "@/components/AboutMe";
 import Process from "@/components/Process";
-// import Comparison from "@/components/Comparison";
-// import Features from "@/components/Features";
-// import FAQs from "@/components/Faqs";
-// import CTA from "@/components/CTA";
+import Comparison from "@/components/Comparison";
+import Features from "@/components/Features";
+import FAQs from "@/components/Faqs";
+import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import VideoReels from "@/components/VideoReels";
@@ -43,10 +43,10 @@ function Home() {
       <CaseStudiesSection />
       <AboutMe />
       <Process />
-      {/* <Comparison /> */}
-      {/* <Features /> */}
-      {/* <FAQs /> */}
-      {/* <CTA /> */}
+      <Comparison />
+      <Features />
+      <FAQs />
+      <CTA />
       <Footer />
     </>
   );
