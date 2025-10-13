@@ -1,4 +1,7 @@
+"use client";
+
 import React, { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 interface SectionHeaderProps {
   badgeText: string;
@@ -14,15 +17,49 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   children,
 }) => {
   return (
-    <div className={`text-center mb-${marginBottom}`}>
-      <div
+    <motion.div
+      className={`text-center mb-${marginBottom}`}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.6,
+        type: "spring",
+        stiffness: 120,
+      }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      {/* Badge */}
+      <motion.div
         className={`inline-flex items-center ${badgeBackgroundColor} text-primary px-5 py-1 rounded-full text-sm font-medium mb-6`}
+        initial={{ scale: 0.8 }}
+        whileInView={{ scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 200,
+          damping: 8,
+          delay: 0.1,
+        }}
+        viewport={{ once: true }}
       >
         <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
         {badgeText}
-      </div>
-      {children}
-    </div>
+      </motion.div>
+
+      {/* Title or children */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.5,
+          type: "spring",
+          stiffness: 120,
+          delay: 0.15,
+        }}
+        viewport={{ once: true }}
+      >
+        {children}
+      </motion.div>
+    </motion.div>
   );
 };
 
