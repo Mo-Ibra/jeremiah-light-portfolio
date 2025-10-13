@@ -132,3 +132,27 @@ body {
 .font-instrument {
   font-family: "Instrument Serif", serif;
 }
+
+
+/* Skelton Loader */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(
+    to right,
+    #d1d5db 0%,
+    #e5e7eb 50%,
+    #d1d5db 100%
+  );
+  background-size: 200% 100%;
+  filter: brightness(1.1);
+}
+/* Skelton Loader */

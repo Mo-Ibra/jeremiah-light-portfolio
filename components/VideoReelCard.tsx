@@ -147,16 +147,23 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
         className="relative rounded-2xl overflow-hidden border-2 border-primary scale-100 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_20px_rgba(0,0,0,0.15)] cursor-pointer hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] tap-highlight-transparent w-[259px] h-[316px]"
         style={{ aspectRatio: aspectRatio }}
       >
-        {isVisible ? (
-          <div
-            className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false w-[259px] h-[316px] transition-[filter] duration-300 ease-in-out hover:brightness-110`}
-            onClick={handleMute}
-          ></div>
-        ) : (
-          <div className="w-[259px] h-[316px] bg-black flex items-center justify-center text-gray-400 text-sm">
-            🎬 Loading video...
-          </div>
-        )}
+        <div className="relative w-[259px] h-[316px] rounded-xl overflow-hidden">
+          {/* Skeleton placeholder */}
+          {!isVisible && (
+            <div className="absolute inset-0 bg-gray-300">
+              <div className="absolute inset-0 animate-shimmer" />
+            </div>
+          )}
+
+          {/* Actual video (hidden until loaded) */}
+          {isVisible && (
+            <div
+              className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false volumeControl=false autoPlay=false w-[259px] h-[316px] transition-opacity duration-500 ease-in-out`}
+              onClick={handleMute}
+              style={{ opacity: !isVisible ? 0 : 1 }}
+            ></div>
+          )}
+        </div>
 
         {/* <div className="absolute inset-0 pointer-events-none [&>*]:pointer-events-auto">
           <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-4 bg-gradient-to-t from-black/80 to-transparent flex justify-between items-end text-white text-xs sm:text-sm font-medium z-[2]">
@@ -169,8 +176,8 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
             </span>
           </div> */}
 
-          {/* Mute/Unmute Button */}
-          {/* <button
+        {/* Mute/Unmute Button */}
+        {/* <button
             onClick={handleMute}
             className="absolute top-3 right-3 bg-black/60 border-none rounded-full w-11 h-11 flex items-center justify-center cursor-pointer transition-all duration-200 ease-in-out backdrop-blur-[4px] z-10 hover:bg-black/80 hover:scale-105 active:scale-95"
             aria-label={isMuted ? "Unmute video" : "Mute video"}

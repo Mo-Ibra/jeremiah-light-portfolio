@@ -83,7 +83,11 @@ const Hero = () => {
 
           {/* Right Column - Wistia Video */}
           <div className="relative w-full lg:w-1/2 max-w-2xl">
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-b from-[#1f2346] to-[#272E5C]">
+              <div className="absolute inset-0 flex items-center justify-center">
+                {/* Loading Spineer*/}
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
+              </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div
                   className={`wistia_embed wistia_async_hgkhne26m9 plugin_wistiaLogo=false volumeControl=false autoPlay=false relative w-full h-full  transition-[filter] duration-300 ease-in-out hover:brightness-110`}
