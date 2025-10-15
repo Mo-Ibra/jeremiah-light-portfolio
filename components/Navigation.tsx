@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navigation = () => {
@@ -21,18 +22,20 @@ const Navigation = () => {
           {/* Top Section - Always Visible */}
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="md:hidden lg:flex flex-col">
-              <Image
-                src="/images/navbar/logo.svg"
-                width={160}
-                height={40}
-                alt="Logo"
-                className="w-32 sm:w-40 lg:w-[195px] h-auto"
-              />
-              <p className="text-[8px] sm:text-sm lg:text-base text-white ml-[6px]">
-                Performance Creative Partner
-              </p>
-            </div>
+            <Link href="/">
+              <div className="md:hidden lg:flex flex-col">
+                <Image
+                  src="/images/navbar/logo.svg"
+                  width={160}
+                  height={40}
+                  alt="Logo"
+                  className="w-32 sm:w-40 lg:w-[195px] h-auto"
+                />
+                <p className="text-[8px] sm:text-sm lg:text-base text-white ml-[6px]">
+                  Performance Creative Partner
+                </p>
+              </div>
+            </Link>
 
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-2 py-1 border border-gray-300 space-x-2">

@@ -5,6 +5,7 @@ import "../styles/video-reels.css";
 import React, { useEffect, useMemo, useState } from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { videoReels, portfolioReels } from "@/data/data";
+import Link from "next/link";
 
 type ButtonConfig = {
   text: string;
@@ -78,25 +79,15 @@ const VideoReels = () => {
   ]);
 
   return (
-    <section 
-      id="portfolio" 
-      className="relative overflow-hidden z-0"
-    >
+    <section id="portfolio" className="relative overflow-hidden z-0">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className="text-center my-2 sm:my-4 lg:my-6 tracking-tight opacity-0 translate-y-5 animate-[fadeInUp_1s_ease_forwards]">
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black font-bold">
-            I&apos;ve created{" "}
-            <span className="text-primary">
-              1,000+
-            </span>{" "}
-            ads that
+            I&apos;ve created <span className="text-primary">1,000+</span> ads
+            that
             <br />
-            have generated{" "}
-            <span className="text-primary">
-              $1M+
-            </span>{" "}
-            in sales
+            have generated <span className="text-primary">$1M+</span> in sales
           </p>
         </div>
 
@@ -108,7 +99,7 @@ const VideoReels = () => {
         </div>
 
         {/* Dynamic Button - Mobile Only */}
-        {isMobile && buttonConfig && (
+        {/* {isMobile && buttonConfig && (
           <div className="flex justify-center my-4 md:my-8 md:hidden">
             <button
               onClick={buttonConfig.action}
@@ -120,13 +111,20 @@ const VideoReels = () => {
           </div>
         )}
 
-        {/* Desktop Portfolio CTA */}
         {!isMobile && (
-          <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white font-bold rounded-lg shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12">
+          <button className="px-6 md:px-8 py-3 md:py-4 bg-primary text-white font-bold rounded-lg shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12" onClick={() => location.href = "/portfolio"}>
             <span>See Full Portfolio</span>
             <span>→</span>
           </button>
-        )}
+        )} */}
+
+        <Link
+          href="/portfolio"
+          className="px-6 md:px-8 py-3 md:py-4 w-fit bg-primary text-white font-bold rounded-lg shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12"
+        >
+          <span>See Full Portfolio</span>
+          <span>→</span>
+        </Link>
       </div>
     </section>
   );
