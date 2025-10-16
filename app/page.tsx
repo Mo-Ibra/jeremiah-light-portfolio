@@ -16,9 +16,20 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 import { useEffect, useState } from "react";
+import QuizModal from "@/components/QuizModal";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
+
+  const [isQuizOpen, setIsQuizOpen] = useState(false);
+
+  const openQuiz = () => {
+    setIsQuizOpen(true);
+  };
+
+  const closeQuiz = () => {
+    setIsQuizOpen(false);
+  };
 
   useEffect(() => {
     const checkMobile = () => {
@@ -30,11 +41,24 @@ function Home() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  useEffect(() => {
+    if (isQuizOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    // Clean up on unmount
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isQuizOpen]);
+
   return (
     <>
       <Navigation />
       <Hero />
-      <VideoReels /> 
+      <VideoReels />
       <CaseStudiesSection />
       <TestimonialsSection />
       <Services />
@@ -44,7 +68,8 @@ function Home() {
       <Comparison />
       <Features />
       <FAQs />
-      <CTA />
+      <CTA  onOpenQuiz={openQuiz}  />
+      <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} />
       <Footer />
     </>
   );

@@ -1,9 +1,12 @@
-const CTA = () => {
+type CTAProps = {
+  onOpenQuiz: () => void;
+};
+
+const CTA = ({ onOpenQuiz }: CTAProps) => {
   return (
     <section className="py-20 px-6" id="cta">
       <div className="max-w-5xl mx-auto">
         <div className="relative bg-gradient-to-r from-primary to-indigo-400 rounded-3xl p-12 text-center overflow-hidden shadow-2xl">
-
           <div
             className="absolute inset-0 opacity-40"
             style={{
@@ -38,9 +41,16 @@ const CTA = () => {
             I work with a maximum of 4 brands at any given time to ensure my
             partners get the focus and results they deserve.
           </p>
-          <p className="relative z-10 text-indigo-100 mb-2 max-w-4xl mx-auto leading-relaxed text-sm font-bold">There is currently 1 spot available for a new partnership</p>
-          <p className="relative z-10 text-indigo-100 mb-4 max-w-4xl mx-auto leading-relaxed text-sm font-bold">Apply below to see if we’re a good fit.</p>
-          <button className="relative z-10 bg-white text-primary px-8 py-4 rounded-xl shadow-2xl cursor-pointer text-lg font-semibold hover:bg-gray-50 mb-4 hover:scale-110 transition-all">
+          <p className="relative z-10 text-indigo-100 mb-2 max-w-4xl mx-auto leading-relaxed text-sm font-bold">
+            There is currently 1 spot available for a new partnership
+          </p>
+          <p className="relative z-10 text-indigo-100 mb-4 max-w-4xl mx-auto leading-relaxed text-sm font-bold">
+            Apply below to see if we’re a good fit.
+          </p>
+          <button
+            className="relative z-10 bg-white text-primary px-8 py-4 rounded-xl shadow-2xl cursor-pointer text-lg font-semibold hover:bg-gray-50 mb-4 hover:scale-110 transition-all"
+            onClick={onOpenQuiz}
+          >
             Schedule Free Ads Audit
           </button>
           <div className="relative z-10 flex items-center justify-center gap-2 text-indigo-200">
