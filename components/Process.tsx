@@ -2,7 +2,7 @@ import SectionHeader from "./SectionHeader";
 
 const Process = () => {
   return (
-    <section className="py-20 px-6" id="process">
+    <section className="py-16 px-6" id="process">
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="My Process">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
