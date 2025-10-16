@@ -1,4 +1,16 @@
-import React, { useState, useEffect, ChangeEvent, FormEvent, MouseEvent } from "react";
+import React, {
+  useState,
+  useEffect,
+  ChangeEvent,
+  FormEvent,
+  MouseEvent,
+} from "react";
+
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
 
 interface QuizModalProps {
   isOpen: boolean;
@@ -84,8 +96,8 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
     try {
       console.log("Quiz submission:", formData);
 
-      if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
-        (window as any).fbq("track", "QuizSubmit", {
+      if (typeof window !== "undefined" && typeof window.fbq === "function") {
+        window.fbq("track", "QuizSubmit", {
           platform: formData.platform,
           niche: formData.niche,
           website: formData.website,
@@ -103,13 +115,13 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
       // });
 
       // if (res.ok) {
-        setShowSuccess(true);
-        window.open(
-          "https://calendly.com/jeremiah-harcharran-qrd_/30min",
-          "_blank"
-        );
+      setShowSuccess(true);
+      window.open(
+        "https://calendly.com/jeremiah-harcharran-qrd_/30min",
+        "_blank"
+      );
       // } else {
-        // console.error("Failed to send email");
+      // console.error("Failed to send email");
       // }
     } catch (err) {
       console.error("Error submitting form:", err);

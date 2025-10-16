@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react";
-import { MdVolumeOff, MdVolumeUp } from "react-icons/md";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 declare global {

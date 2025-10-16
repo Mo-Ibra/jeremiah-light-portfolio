@@ -5,7 +5,6 @@ import "../styles/video-reels.css";
 import React, { useEffect, useMemo, useState } from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { videoReels, portfolioReels } from "@/data/data";
-import Link from "next/link";
 
 type ButtonConfig = {
   text: string;
