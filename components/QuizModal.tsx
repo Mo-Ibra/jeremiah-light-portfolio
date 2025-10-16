@@ -96,21 +96,21 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
         });
       }
 
-      const res = await fetch("/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      // const res = await fetch("/api/send-email", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: JSON.stringify(formData),
+      // });
 
-      if (res.ok) {
+      // if (res.ok) {
         setShowSuccess(true);
         window.open(
           "https://calendly.com/jeremiah-harcharran-qrd_/30min",
           "_blank"
         );
-      } else {
-        console.error("Failed to send email");
-      }
+      // } else {
+        // console.error("Failed to send email");
+      // }
     } catch (err) {
       console.error("Error submitting form:", err);
     }
