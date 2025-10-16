@@ -68,10 +68,10 @@ export default function CaseStudiesSection() {
   ];
 
   return (
-    <section className="py-16 px-4" id="case-studies">
+    <section className="py-16 px-4 bg-[#5360c226]" id="case-studies">
       <div className="max-w-4xl xl:max-w-7xl mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="Case studies">
+        <SectionHeader badgeText="Case studies" badgeBackgroundColor="bg-[#5360c226]">
           <h2 className="text-4xl md:text-[40px] font-bold text-gray-900 mb-6">
             Our Creatives Actually Work -{" "}
             <span className="text-primary">Watch Some Results Below</span>

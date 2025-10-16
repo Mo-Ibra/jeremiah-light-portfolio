@@ -1,14 +1,18 @@
+import BlurCircle from "./BlurCircle";
 import SectionHeader from "./SectionHeader";
 import { Button } from "./ui/button";
 
 const AboutMe = () => {
   return (
-    <section className="py-20 px-6 bg-[#5360c226]" id="about">
+    <section className="py-20 px-6 relative overflow-hidden" id="about">
+
+
+      <BlurCircle left="800px" blur="350px" />
+
       <div className="max-w-4xl md:max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader
           badgeText="About Me"
-          badgeBackgroundColor="bg-[#5360c226]"
         >
           <h2 className="text-4xl font-semibold text-gray-900 mb-6">
             The Talent Behind Your{" "}
@@ -110,7 +114,7 @@ const AboutMe = () => {
                 </Button>
               </div>
 
-              <Button className="px-6 md:px-12 py-3 md:py-6 bg-primary text-white rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg space-x-2 shadow-2xl">
+              <Button className="px-6 md:px-12 py-3 md:py-2 bg-primary text-white rounded-full font-medium transition-all hover:scale-105 hover:shadow-lg space-x-2 shadow-2xl">
                 Let&apos;s Talk
               </Button>
             </div>

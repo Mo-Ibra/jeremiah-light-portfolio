@@ -118,13 +118,13 @@ const VideoReels = () => {
           </button>
         )} */}
 
-        <Link
+        <a
           href="/portfolio"
           className="px-6 md:px-8 py-3 md:py-4 w-fit bg-primary text-white font-bold rounded-lg shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12"
         >
           <span>See Full Portfolio</span>
           <span>→</span>
-        </Link>
+        </a>
       </div>
     </section>
   );

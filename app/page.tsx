@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
 import VideoReels from "@/components/VideoReels";
 import Services from "@/components/Services";
-import Portfolio from "@/components/Portfolio";
+// import Portfolio from "@/components/Portfolio";
 import TestimonialsSection from "@/components/Testimonials";
 import CaseStudiesSection from "@/components/CaseStudies";
 import AboutMe from "@/components/AboutMe";
@@ -14,7 +14,6 @@ import Features from "@/components/Features";
 import FAQs from "@/components/Faqs";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-
 
 import { useEffect, useState } from "react";
 
@@ -36,10 +35,10 @@ function Home() {
       <Navigation />
       <Hero />
       <VideoReels /> 
+      <CaseStudiesSection />
+      <TestimonialsSection />
       <Services />
       {/* {!isMobile && <Portfolio />} */}
-      <TestimonialsSection />
-      <CaseStudiesSection />
       <AboutMe />
       <Process />
       <Comparison />

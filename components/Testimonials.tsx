@@ -134,10 +134,10 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function TestimonialsSection() {
   return (
-    <section className="min-h-screen bg-[#5360c226] px-4 py-16">
+    <section className="min-h-screen px-4 py-16">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
-        <SectionHeader badgeText="Testimonials" badgeBackgroundColor="bg-[#5360c226]" marginBottom="8">
+        <SectionHeader badgeText="Testimonials" marginBottom="8">
           <h2 className="text-4xl md:text-[40px] font-bold text-gray-900 mb-6">
             Thinking About{" "}
             <span className="text-primary">Working With Us?</span>

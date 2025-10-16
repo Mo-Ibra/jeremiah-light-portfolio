@@ -1,8 +1,12 @@
+import BlurCircle from "./BlurCircle";
 import SectionHeader from "./SectionHeader";
 
 const Comparison = () => {
   return (
-    <section className="pb-16 px-6">
+    <section className="pb-16 px-6 relative overflow-hidden">
+
+      <BlurCircle left="1200px" />
+
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="Why Us?">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

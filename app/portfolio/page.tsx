@@ -4,7 +4,7 @@ import VideoReelsForPortfolio from "@/components/VideoReelsForPortfolio";
 function Page() {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <VideoReelsForPortfolio />
     </>
   );
