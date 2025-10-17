@@ -162,7 +162,7 @@ const Hero = () => {
         </div>
 
         {/* Logo Carousel - At the Bottom */}
-        <div className="w-full">
+        <div className="w-full relative bottom-4 md:bottom-0">
           <LogoCarousel />
         </div>
       </div>
