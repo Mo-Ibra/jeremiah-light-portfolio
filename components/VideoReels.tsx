@@ -2,28 +2,30 @@
 
 import "../styles/video-reels.css";
 
-import React, { useEffect, useLayoutEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { videoReels, portfolioReels } from "@/data/data";
 
-type ButtonConfig = {
-  text: string;
-  icon: string;
-  action: () => void;
-} | null;
+// type ButtonConfig = {
+//   text: string;
+//   icon: string;
+//   action: () => void;
+// } | null;
 
 const VideoReels = () => {
-  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+  const [isMobile, setIsMobile] = useState(true);
   const [visibleCount, setVisibleCount] = useState(4);
   // const [isExpanded, setIsExpanded] = useState(false);
 
   // Check if device is mobile
-  useLayoutEffect(() => {
+  useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      setVisibleCount(mobile ? 4 : videoReels.length);
     };
 
-    checkMobile();
+    checkMobile(); // run once
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
