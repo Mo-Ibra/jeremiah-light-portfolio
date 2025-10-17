@@ -2,7 +2,7 @@
 
 import "../styles/video-reels.css";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { videoReels, portfolioReels } from "@/data/data";
 
@@ -13,12 +13,12 @@ type ButtonConfig = {
 } | null;
 
 const VideoReels = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
   const [visibleCount, setVisibleCount] = useState(4);
-  const [isExpanded, setIsExpanded] = useState(false);
+  // const [isExpanded, setIsExpanded] = useState(false);
 
   // Check if device is mobile
-  useEffect(() => {
+  useLayoutEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
@@ -30,12 +30,12 @@ const VideoReels = () => {
 
   // Reset visible count when switching between mobile/desktop
   useEffect(() => {
-    if (!isMobile) {
+    if (isMobile === null) {
       setVisibleCount(videoReels.length);
-      setIsExpanded(false);
+      // setIsExpanded(false);
     } else {
       setVisibleCount(4);
-      setIsExpanded(false);
+      // setIsExpanded(false);
     }
   }, [isMobile]);
 
@@ -44,38 +44,38 @@ const VideoReels = () => {
   const displayedReels = isMobile
     ? reelsData.slice(0, visibleCount)
     : reelsData;
-  const hasMore = isMobile && visibleCount < reelsData.length;
-  const isFullyExpanded = isMobile && visibleCount >= reelsData.length;
+  // const hasMore = isMobile && visibleCount < reelsData.length;
+  // const isFullyExpanded = isMobile && visibleCount >= reelsData.length;
 
-  const handleWantMore = () => {
-    const newCount = Math.min(visibleCount + 4, reelsData.length);
-    setVisibleCount(newCount);
-    setIsExpanded(true);
-  };
+  // const handleWantMore = () => {
+  //   const newCount = Math.min(visibleCount + 4, reelsData.length);
+  //   setVisibleCount(newCount);
+  //   setIsExpanded(true);
+  // };
 
-  const handleCollapse = () => {
-    setVisibleCount(4);
-    setIsExpanded(false);
-  };
+  // const handleCollapse = () => {
+  //   setVisibleCount(4);
+  //   setIsExpanded(false);
+  // };
 
   // Determine button text and action
-  const getButtonConfig = (): ButtonConfig => {
-    if (!isExpanded && visibleCount === 4) {
-      return { text: "See Full Portfolio", icon: "→", action: handleWantMore };
-    } else if (hasMore) {
-      return { text: "Want More?", icon: "+", action: handleWantMore };
-    } else if (isFullyExpanded) {
-      return { text: "Collapse", icon: "−", action: handleCollapse };
-    }
-    return null;
-  };
+  // const getButtonConfig = (): ButtonConfig => {
+  //   if (!isExpanded && visibleCount === 4) {
+  //     return { text: "See Full Portfolio", icon: "→", action: handleWantMore };
+  //   } else if (hasMore) {
+  //     return { text: "Want More?", icon: "+", action: handleWantMore };
+  //   } else if (isFullyExpanded) {
+  //     return { text: "Collapse", icon: "−", action: handleCollapse };
+  //   }
+  //   return null;
+  // };
 
-  const buttonConfig = useMemo<ButtonConfig>(getButtonConfig, [
-    isExpanded,
-    visibleCount,
-    hasMore,
-    isFullyExpanded,
-  ]);
+  // const buttonConfig = useMemo<ButtonConfig>(getButtonConfig, [
+  //   isExpanded,
+  //   visibleCount,
+  //   hasMore,
+  //   isFullyExpanded,
+  // ]);
 
   return (
     <section id="portfolio" className="relative overflow-hidden z-0">
