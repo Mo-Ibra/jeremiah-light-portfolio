@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="text-gray-900 font-medium mb-3">
               © 2025 HARCHARRAN LIMITED. All Rights Reserved
             </div>
-            <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-gray-600">
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 ">
               <a href="#" className="hover:text-primary transition-colors">
                 Privacy Policy
               </a>
