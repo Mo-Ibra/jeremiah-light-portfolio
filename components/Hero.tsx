@@ -21,10 +21,11 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center md:h-screen relative overflow-hidden py-12"
+      className="flex justify-center items-center md:min-h-screen relative overflow-hidden py-4 md:py-0"
       style={{
         backgroundImage:
-          "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
+          // "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
+          "url('/images/hero/sky-from-bottom.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -55,25 +56,25 @@ const Hero = () => {
       </div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 px-8 max-w-[95rem] mx-auto w-full mt-10 md:mt-64 lg:mt-0">
+      <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full mt-10 md:mt-64 lg:mt-0">
         {/* Top Section - Text and Video Side by Side */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-8 lg:mt-40">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-8 lg:mt-32">
           {/* Left Column - Text Content */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl mt-6">
             {/* Status Badge */}
-            <div className="mb-8 inline-flex items-center px-4 py-1 border border-green-400 bg-[#d4d4ff] rounded-full text-green-600 text-sm font-semibold">
+            <div className="inline-flex items-center px-4 py-1 border border-green-400 bg-[#d4d4ff] rounded-full text-green-600 text-sm font-semibold mb-4 md:mb-0">
               <div className="w-3 h-3 bg-green-600 rounded-full mr-2"></div>
               Partnering with 1 more brand this month
             </div>
 
             {/* Hero Text */}
-            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[90px] mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent font-instrument">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[70px] mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent font-instrument">
               Performance Creative
               <br />
               for Scale-Stage Brands
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed max-w-xl">
+            <p className="text-lg md:text-xl text-black mb-12 leading-relaxed max-w-xl">
               Our proven systems help DTC brands spending $20k-$100k/month scale
               their ad production and better understand their consumers - the
               result is profitable, sustainable growth in new-customer
@@ -83,14 +84,14 @@ const Hero = () => {
 
           {/* Right Column - Wistia Video */}
           <div className="relative w-full lg:w-1/2 max-w-2xl">
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-b from-[#1f2346] to-[#272E5C]">
+            <div className="relative aspect-video rounded-2xl border-4 border-primary overflow-hidden shadow-2xl bg-gradient-to-b from-[#1f2346] to-[#272E5C]">
               <div className="absolute inset-0 flex items-center justify-center">
                 {/* Loading Spineer*/}
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div
-                  className={`wistia_embed wistia_async_hgkhne26m9 plugin_wistiaLogo=false volumeControl=false autoPlay=false relative w-full h-full  transition-[filter] duration-300 ease-in-out hover:brightness-110`}
+                  className={`wistia_embed wistia_async_hgkhne26m9 plugin_wistiaLogo=false volumeControl=false autoPlay=false relative w-full h-full transition-[filter] duration-300 ease-in-out hover:brightness-110`}
                 ></div>
               </div>
             </div>
@@ -99,7 +100,7 @@ const Hero = () => {
 
         {/* CTA Buttons - Centered Below */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-          <button className="px-6 md:px-8 py-3 md:py-4 cursor-pointer bg-primary text-white rounded-full shadow-xl font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
+          <button className="px-6 py-3 md:px-8 md:py-3 cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
             <span>Schedule Free Ads Audit</span>
             <svg
               className="w-3 md:w-4 h-3 md:h-4"
@@ -123,7 +124,7 @@ const Hero = () => {
         </div>
 
         {/* Social Proof - Centered Below Buttons */}
-        <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0 text-gray-600 justify-center mb-12">
+        <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0 text-gray-600 justify-center">
           {/* Avatars */}
           <div className="flex -space-x-2">
             {[1, 2, 3, 4, 5].map((num) => (
