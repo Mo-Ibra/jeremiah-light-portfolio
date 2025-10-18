@@ -1,9 +1,25 @@
-import { DollarSign, Megaphone, ShoppingBag, TrendingUp } from "lucide-react";
+import React from "react";
 import SectionHeader from "./SectionHeader";
 import Image from "next/image";
 
+interface Metric {
+  icon: string | "/images/case-studies/icons/1.svg";
+  value: string;
+  label: string;
+}
+
+interface CaseStudy {
+  id: number;
+  clientBrand: string;
+  company: string;
+  revenue: string;
+  description: string;
+  wistiaId?: string;
+  metrics: Metric[];
+}
+
 export default function CaseStudiesSection() {
-  const caseStudies = [
+  const caseStudies: CaseStudy[] = [
     {
       id: 1,
       clientBrand: "Client Brand",
@@ -187,12 +203,11 @@ export default function CaseStudiesSection() {
                 {/* Metrics Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                   {study.metrics.map((metric, index) => {
-                    const Icon = metric.icon as any;
                     const isStringIcon = typeof metric.icon === "string";
                     return (
                       <div
                         key={index}
-                        className="bg-[#0f0d1f] rounded-xl p-3 border border-[#2d2a4a]"
+                        className="bg-[#0f0d1f] rounded-xl px-3 py-2 border border-primary"
                       >
                         <div className="flex items-center gap-4 mb-1">
                           <div className="w-8 h-8 rounded flex items-center justify-center">
@@ -205,7 +220,9 @@ export default function CaseStudiesSection() {
                                 className="w-8 h-8 text-primary"
                               />
                             ) : (
-                              <Icon className="w-5 h-5 text-white" />
+                              React.createElement(metric.icon, {
+                                className: "w-5 h-5 text-white",
+                              })
                             )}
                           </div>
                           <div>
