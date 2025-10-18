@@ -15,7 +15,7 @@ const AboutMe = () => {
           badgeText="About Me"
         >
           <h2 className="text-4xl font-semibold text-gray-900 mb-6">
-            The Talent Behind Your{" "}
+            The Talent Behind Your {" "}
             <span className="text-primary">Creative Success</span>
           </h2>
         </SectionHeader>
