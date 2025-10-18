@@ -229,7 +229,7 @@ export default function CaseStudiesSection() {
                             <div className="text-white font-bold text-lg">
                               {metric.value}
                             </div>
-                            <div className="text-gray-400 text-xs">
+                            <div className="text-gray-200 text-xs">
                               {metric.label}
                             </div>
                           </div>

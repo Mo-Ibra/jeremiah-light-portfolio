@@ -7,6 +7,7 @@ interface BlurCircleProps {
   height?: string;
   blur?: string;
   color?: string;
+  className?: string;
 }
 
 const BlurCircle: React.FC<BlurCircleProps> = ({
@@ -16,10 +17,11 @@ const BlurCircle: React.FC<BlurCircleProps> = ({
   height = "400px",
   blur = "300px",
   color = "bg-primary",
+  className = "",
 }) => {
   return (
     <div
-      className={`absolute ${color} rounded-full blur-[var(--blur)]`}
+      className={`absolute ${color} rounded-full blur-[var(--blur)] ${className}`}
       style={{
         top,
         left,

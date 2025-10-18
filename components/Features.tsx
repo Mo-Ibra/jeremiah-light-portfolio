@@ -4,8 +4,8 @@ import BlurCircle from "./BlurCircle";
 
 const Features = () => {
   return (
-    <section className="py-20 px-6 bg-[#5360c226] relative">
-      <BlurCircle left="20%" blur="350px" />
+    <section className="py-20 px-6 bg-[#5360c226] relative z-50">
+      <BlurCircle left="20%" blur="350px" className="z-10" />
 
       <div className="max-w-5xl mx-auto">
         {/* Header */}
@@ -37,9 +37,9 @@ const Features = () => {
               </div>
               <div className="pl-6 pb-3">
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Content Organisation & Management
+                  Your Centralized Creative Hub
                 </h3>
-                <p className="text-muted text-xs leading-relaxed">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed">
                   Forget messy Google Drive folders and lost files. You get 24/7
                   access to a dedicated, AI-searchable creative hub. Every ad,
                   raw clip, and asset is perfectly organized and instantly
@@ -64,7 +64,7 @@ const Features = () => {
                 <h3 className="text-lg font-bold text-white mb-2">
                   Weekly Performance Reporting
                 </h3>
-                <p className="text-muted text-xs leading-relaxed">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed">
                   You&apos;ll get a transparent report each week detailing
                   what&apos;s working and what&apos;s not, so we can iterate and
                   drive better results together.
@@ -90,7 +90,7 @@ const Features = () => {
                 <h3 className="text-lg font-bold text-white mb-2">
                   Direct & Rapid Communication
                 </h3>
-                <p className="text-muted text-xs leading-relaxed">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed">
                   You get direct, same-day communication with me. No account
                   managers, no waiting - just fast, consistent support, whenever
                   you want.
@@ -113,7 +113,7 @@ const Features = () => {
                 <h3 className="text-xl font-bold text-white mb-2">
                   Proprietary Audience Insights
                 </h3>
-                <p className="text-muted text-xs leading-relaxed">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed">
                   We go beyond basic demographics. Our proprietary database
                   tracks the emotional and behavioural psychographics of your
                   target audience. This allows us to craft ads with messaging

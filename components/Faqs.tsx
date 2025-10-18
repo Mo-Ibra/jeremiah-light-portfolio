@@ -15,9 +15,9 @@ export default function FAQs() {
   };
 
   return (
-    <section id="faqs" className="py-20 bg-background relative overflow-hidden">
+    <section id="faqs" className="py-20 bg-background relative overflow-hidden z-50">
 
-      {/* <BlurCircle top="50%" left="50%" /> */}
+      <BlurCircle width="400px" height="400px" top="50%" left="50%" blur="200px" className="z-10" />
 
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeader badgeText="Do you have any question?" badgeBackgroundColor="bg-[#5360c226]">
