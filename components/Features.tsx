@@ -5,7 +5,7 @@ import BlurCircle from "./BlurCircle";
 const Features = () => {
   return (
     <section className="py-20 px-6 bg-[#5360c226] relative z-50">
-      <BlurCircle left="20%" blur="350px" className="z-10" />
+      <BlurCircle left="20%" blur="350px" className="-z-10" />
 
       <div className="max-w-5xl mx-auto">
         {/* Header */}
