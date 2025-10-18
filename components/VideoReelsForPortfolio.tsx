@@ -11,7 +11,7 @@ const VideoReelsForPortfolio = () => {
   return (
     <section
       id="portfolio"
-      className="relative overflow-hidden bg-[#5360c226] pt-12 z-0"
+      className="relative overflow-hidden bg-[#5360c226] pt-24 z-0"
     >
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}

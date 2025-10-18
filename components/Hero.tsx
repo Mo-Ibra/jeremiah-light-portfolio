@@ -100,7 +100,7 @@ const Hero = () => {
 
         {/* CTA Buttons - Centered Below */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-          <button className="px-6 py-3 md:px-8 md:py-3 cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
+          <button onClick={() => location.href = "#cta"} className="px-6 py-3 md:px-8 md:py-3 cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
             <span>Schedule Free Ads Audit</span>
             <svg
               className="w-3 md:w-4 h-3 md:h-4"
