@@ -157,7 +157,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
           {/* Actual video (hidden until loaded) */}
           {isVisible && (
             <div
-              className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false autoPlay=false w-[180px] h-[240px] md:w-[310px] md:h-[388px] scale-120 transition-opacity duration-500 ease-in-out`}
+              className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false autoPlay=false w-[180px] h-[240px] md:w-[310px] md:h-[388px] scale-x-110 transition-opacity duration-500 ease-in-out`}
               // onClick={handleMute}
               style={{ opacity: !isVisible ? 0 : 1 }}
             ></div>
