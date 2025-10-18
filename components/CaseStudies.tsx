@@ -187,7 +187,7 @@ export default function CaseStudiesSection() {
 
               {/* Content Section */}
               <div className="bg-gradient-to-tr from-[#010a58] to-[#191d3b] p-6">
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex flex-col gap-2.5 md:flex-row md:gap-0 items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-[#98a2f1]">
                     {study.company}
                   </h3>
