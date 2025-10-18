@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Instagram, Facebook, X } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const [time, setTime] = useState("");
@@ -65,25 +66,44 @@ const Footer = () => {
             </div>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://instagram.com"
+                target="_blank"
                 aria-label="Instagram"
-                className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center hover:bg-indigo-200 transition-colors"
+                className="w-10 h-10 bg-white text-primary rounded-lg flex items-center justify-center border border-primary transition-colors"
               >
-                <Instagram className="w-5 h-5 text-primary" />
+                <Image
+                  src="/images/footer/instagram.svg"
+                  alt="Instagram"
+                  width={20}
+                  height={20}
+                />
               </a>
               <a
-                href="#"
+                href="https://facebook.com"
+                target="_blank"
                 aria-label="Facebook"
-                className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center hover:bg-indigo-200 transition-colors"
+                className="w-10 h-10 bg-white text-primary rounded-lg flex items-center justify-center border border-primary transition-colors"
               >
-                <Facebook className="w-5 h-5 text-primary" />
+                <Image
+                  src="/images/footer/facebook.svg"
+                  alt="Facebook"
+                  width={20}
+                  height={20}
+                />
               </a>
+
               <a
-                href="#"
-                aria-label="X (Twitter)"
-                className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center hover:bg-indigo-200 transition-colors"
+                href="https://x.com"
+                target="_blank"
+                aria-label="Twitter"
+                className="w-10 h-10 bg-white text-primary rounded-lg flex items-center justify-center border border-primary transition-colors"
               >
-                <X className="w-5 h-5 text-primary" />
+                <Image
+                  src="/images/footer/twitter.svg"
+                  alt="Twitter"
+                  width={16}
+                  height={16}
+                />
               </a>
             </div>
           </div>
