@@ -44,7 +44,7 @@ const Footer = () => {
           {/* Center - Copyright and Links */}
           <div>
             <div className="text-gray-900 font-medium mb-3">
-              © 2025 HARCHARRAN LIMITED. All Rights Reserved
+              © 2025 HARCHARRAN LIMITED. <span className="block md:inline">All Rights Reserved</span>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 ">
               <a href="#" className="hover:text-primary transition-colors">
