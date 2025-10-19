@@ -181,14 +181,14 @@ export default function CaseStudiesSection() {
 
                 <div
                   className={`wistia_embed wistia_async_${study.wistiaId} videoFoam=true`}
-                  style={{ height: "256px", width: "100%" }}
+                  style={{ height: "100%", width: "100%" }}
                 ></div>
               </div>
 
               {/* Content Section */}
               <div className="bg-gradient-to-tr from-[#010a58] to-[#191d3b] p-6">
-                <div className="flex flex-col gap-2.5 md:flex-row md:gap-0 items-center justify-between mb-4">
-                  <h3 className="md:text-xl md:text-left text-lg text-center font-bold text-[#98a2f1]">
+                <div className="flex flex-col-reverse gap-2.5 md:flex-row md:gap-0 items-center justify-between mb-4">
+                  <h3 className="md:text-xl md:text-left text-md text-center font-bold text-[#98a2f1]">
                     {study.company}
                   </h3>
                   <span className="px-3 py-1 rounded-md bg-primary text-white font-semibold text-xs">
