@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center md:min-h-screen relative overflow-hidden py-4 md:py-0"
+      className="flex justify-center items-center md:min-h-screen z-40 relative overflow-hidden py-4 md:py-0"
       style={{
         backgroundImage:
           // "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
