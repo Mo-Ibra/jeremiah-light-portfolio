@@ -49,10 +49,10 @@ const AboutMe = () => {
           {/* Right Column - Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div>
-              <h3 className="text-5xl md:text-[7rem] text-gray-900 drop-shadow-2xl">
+              <h3 className="text-7xl md:text-[7rem] text-gray-900 drop-shadow-2xl">
                 Hey! I&apos;m
               </h3>
-              <span className="text-5xl md:text-9xl italic text-primary font-serif drop-shadow-2xl font-instrument">
+              <span className="text-8xl md:text-9xl italic text-primary font-serif drop-shadow-2xl font-instrument">
                 Jeremiah
               </span>
               <p className="max-w-2xl mx-auto text-2xl text-gray-600 leading-relaxed mt-2 md:mt-12">
