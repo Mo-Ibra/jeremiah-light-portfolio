@@ -74,7 +74,8 @@ const Hero = () => {
               for Scale-Stage Brands
             </h1>
 
-            <p className="text-lg md:text-xl text-black mb-12 leading-relaxed max-w-xl">
+            {/* Desktop Text - Hidden on Mobile */}
+            <p className="hidden md:block text-lg md:text-xl text-black mb-12 leading-relaxed max-w-xl">
               Our proven systems help DTC brands spending $20k-$100k/month scale
               their ad production and better understand their consumers - the
               result is profitable, sustainable growth in new-customer
@@ -95,12 +96,23 @@ const Hero = () => {
                 ></div>
               </div>
             </div>
+
+            {/* Mobile Text - Hidden on Desktop */}
+            <p className="block md:hidden mt-6 text-lg md:text-xl text-black leading-relaxed max-w-xl text-center">
+              Our proven systems help DTC brands spending $20k-$100k/month scale
+              their ad production and better understand their consumers - the
+              result is profitable, sustainable growth in new-customer
+              acquisition.
+            </p>
           </div>
         </div>
 
         {/* CTA Buttons - Centered Below */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-          <button onClick={() => location.href = "#cta"} className="px-6 py-3 md:px-8 md:py-3 cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
+          <button
+            onClick={() => (location.href = "#cta")}
+            className="px-6 py-3 md:px-8 md:py-3 cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+          >
             <span>Schedule Free Ads Audit</span>
             <svg
               className="w-3 md:w-4 h-3 md:h-4"
