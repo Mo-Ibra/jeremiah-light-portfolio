@@ -4,7 +4,7 @@ import BlurCircle from "./BlurCircle";
 
 const Features = () => {
   return (
-    <section className="py-20 px-6 bg-[#5360c226] relative z-50">
+    <section className="py-16 px-6 bg-[#5360c226] relative z-50">
       <BlurCircle left="20%" blur="350px" className="-z-10" />
 
       <div className="max-w-5xl mx-auto">
@@ -12,7 +12,7 @@ const Features = () => {
         <SectionHeader
           badgeText="Benefits & Features"
           badgeBackgroundColor="bg-[#5360c226]"
-          marginBottom="12"
+          className="md:mb-12 mb-6"
         >
           <h2 className="text-2xl md:text-[40px] font-bold text-black">
             <span className="text-primary">Exclusive Perks</span> You Get When{" "}

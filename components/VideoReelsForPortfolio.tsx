@@ -10,13 +10,13 @@ import BlurCircle from "./BlurCircle";
 
 const VideoReelsForPortfolio = () => {
   return (
-    <section id="portfolio" className="relative overflow-hidden pt-36 z-0">
+    <section id="portfolio" className="relative overflow-hidden pt-24 md:pt-36 z-0">
       <BlurCircle top="200px" />
       <BlurCircle left="1500px" top="900px" />
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
-        <SectionHeader badgeText="Creative Portfolio" marginBottom="0">
+        <SectionHeader badgeText="Creative Portfolio" className="md:mb-0 mb-2">
           <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             The <span className="text-primary">Creative Styles</span> Trusted by{" "}
             <span className="text-primary">6, 7, and 8-Figure Brands</span>

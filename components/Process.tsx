@@ -4,7 +4,7 @@ const Process = () => {
   return (
     <section className="py-16 px-6" id="process">
       <div className="max-w-7xl mx-auto">
-        <SectionHeader badgeText="My Process">
+        <SectionHeader badgeText="My Process" className="md:mb-12 mb-6">
           <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             Our <span className="text-primary">4-Step Process</span> to{" "}
             <span className="text-primary">Predictable Results</span>

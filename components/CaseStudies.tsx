@@ -153,6 +153,7 @@ export default function CaseStudiesSection() {
         <SectionHeader
           badgeText="Case studies"
           badgeBackgroundColor="bg-[#5360c226]"
+          className="md:mb-12 mb-6"
         >
           <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             Our Creatives Actually Work -{" "}

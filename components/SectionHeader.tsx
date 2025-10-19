@@ -6,19 +6,19 @@ import React, { ReactNode } from "react";
 interface SectionHeaderProps {
   badgeText: string;
   badgeBackgroundColor?: string;
-  marginBottom?: string;
+  className?: string;
   children: ReactNode;
 }
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({
   badgeText,
   badgeBackgroundColor = "bg-indigo-100",
-  marginBottom = "16",
+  className = "",
   children,
 }) => {
   return (
     <div
-      className={`text-center mb-${marginBottom}`}
+      className={`text-center ${className}`}
       // initial={{ opacity: 0, y: 40 }}
       // whileInView={{ opacity: 1, y: 0 }}
       // transition={{

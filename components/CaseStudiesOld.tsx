@@ -113,7 +113,7 @@ const CaseStudies = () => {
     <section className="py-16 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="Case Studies" marginBottom="12">
+        <SectionHeader badgeText="Case Studies" className="md:mb-12 mb-6">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Transformative Brand <span className="text-primary">Success</span>{" "}
             Stories

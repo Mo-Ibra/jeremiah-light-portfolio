@@ -6,7 +6,7 @@ import BlurCircle from "./BlurCircle";
 
 const Services = () => {
   return (
-    <section className="py-20 px-6 bg-[#5360c226] relative" id="services">
+    <section className="py-16 px-6 bg-[#5360c226] relative" id="services">
       <BlurCircle />
 
       <div className="container max-w-[1200px] mx-auto">
@@ -14,6 +14,7 @@ const Services = () => {
         <SectionHeader
           badgeText="Our Services"
           badgeBackgroundColor="bg-[#5360c226]"
+          className="md:mb-12 mb-6"
         >
           <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             The Complete{" "}
@@ -28,7 +29,7 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           {/* AI Generated Content */}
-          <div className="relative overflow-hidden rounded-3xl h-[390px] group">
+          <div className="relative overflow-hidden rounded-3xl h-[390px] group border-4 border-primary">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -49,7 +50,7 @@ const Services = () => {
           </div>
 
           {/* User Generated Content */}
-          <div className="relative overflow-hidden rounded-3xl h-[390px] group">
+          <div className="relative overflow-hidden rounded-3xl h-[390px] group border-4 border-primary">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -71,7 +72,7 @@ const Services = () => {
           </div>
 
           {/* Studio Content */}
-          <div className="relative overflow-hidden rounded-3xl h-[390px] group">
+          <div className="relative overflow-hidden rounded-3xl h-[390px] group border-4 border-primary">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{

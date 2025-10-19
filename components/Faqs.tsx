@@ -15,12 +15,12 @@ export default function FAQs() {
   };
 
   return (
-    <section id="faqs" className="py-20 bg-background relative overflow-hidden z-50">
+    <section id="faqs" className="py-16 bg-background relative overflow-hidden z-50">
 
       <BlurCircle width="400px" height="400px" top="50%" left="50%" blur="200px" className="z-10" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <SectionHeader badgeText="Do you have any question?" badgeBackgroundColor="bg-[#5360c226]">
+        <SectionHeader badgeText="Do you have any question?" badgeBackgroundColor="bg-[#5360c226]" className="md:mb-12 mb-6">
           <h2 className="text-2xl md:text-[40px] font-bold text-foreground">
             Frequently Asked{" "}
             <span className="text-primary relative">

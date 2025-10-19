@@ -30,7 +30,9 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="py-10 px-6 border-t border-gray-200 bg-white">
+    <footer className="relative py-10 px-6 bg-white overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary to-transparent" />
+
       <div className="max-w-[1700px] mx-auto">
         <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:items-center text-center lg:text-left">
           {/* Left - Time */}
@@ -44,7 +46,8 @@ const Footer = () => {
           {/* Center - Copyright and Links */}
           <div>
             <div className="text-gray-900 font-medium mb-3">
-              © 2025 HARCHARRAN LIMITED. <span className="block md:inline">All Rights Reserved</span>
+              © 2025 HARCHARRAN LIMITED.{" "}
+              <span className="block md:inline">All Rights Reserved</span>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 ">
               <a href="#" className="hover:text-primary transition-colors">

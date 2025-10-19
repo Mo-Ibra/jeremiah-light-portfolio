@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const AboutMe = () => {
   return (
-    <section className="py-20 px-6 relative overflow-hidden z-50" id="about">
+    <section className="py-16 px-6 relative overflow-hidden z-50" id="about">
       <BlurCircle
         left="1000px"
         blur="250px"
@@ -16,7 +16,7 @@ const AboutMe = () => {
 
       <div className="max-w-4xl md:max-w-7xl mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="About Me">
+        <SectionHeader badgeText="About Me" className="mb-0 md:mb-16">
           <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             Message From {" "}
             <span className="text-primary">Our Founder </span>
