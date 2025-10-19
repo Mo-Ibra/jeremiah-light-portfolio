@@ -9,11 +9,11 @@ const Comparison = () => {
 
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="Why Us?">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             Why <span className="text-primary">Leading DTC Brands</span>{" "}
             Collaborate With Me
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base md:text-2xl md:leading-8 text-[#00000073] font-semibold max-w-4xl mx-auto">
             Here&apos;s exactly why over 80+ Established DTC Brands have worked with
             me to help scale content production and profits
           </p>
@@ -31,25 +31,25 @@ const Comparison = () => {
               <div className="h-[1px] w-full bg-gradient-to-r from-white to-transparent my-6"></div>
 
               <div className="space-y-4">
-                <div className="text-white text-lg">
+                <div className="text-white text-base md:text-lg">
                   Boring Cookie Cutter ADs
                 </div>
 
-                <div className="text-white text-lg">
+                <div className="text-white text-base md:text-lg">
                   No Learning or Optimization
                 </div>
 
-                <div className="text-white text-lg">Poor Communication</div>
+                <div className="text-white text-base md:text-lg">Poor Communication</div>
 
-                <div className="text-white text-lg">
+                <div className="text-white text-base md:text-lg">
                   Bad Customer Experience
                 </div>
 
-                <div className="text-white text-lg">
+                <div className="text-white text-base md:text-lg">
                   Creatives Delivered Monthly
                 </div>
 
-                <div className="text-white text-lg">
+                <div className="text-white text-base md:text-lg">
                   Here and There Communication
                 </div>
               </div>

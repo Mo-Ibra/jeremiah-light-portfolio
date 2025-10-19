@@ -138,11 +138,11 @@ export default function TestimonialsSection() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <SectionHeader badgeText="Testimonials" marginBottom="8">
-          <h2 className="text-4xl md:text-[40px] font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             Thinking About{" "}
             <span className="text-primary">Working With Us?</span>
           </h2>
-          <p className="text-xl font-semibold text-gray-600 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl font-semibold text-gray-600 max-w-5xl mx-auto leading-relaxed">
             Hear about what our clients have to say first
           </p>
         </SectionHeader>

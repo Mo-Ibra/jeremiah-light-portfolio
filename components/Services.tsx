@@ -7,23 +7,21 @@ import BlurCircle from "./BlurCircle";
 const Services = () => {
   return (
     <section className="py-20 px-6 bg-[#5360c226] relative" id="services">
-
       <BlurCircle />
 
       <div className="container max-w-[1200px] mx-auto">
         {/* Header */}
         <SectionHeader
-          badgeText="My Services"
+          badgeText="Our Services"
           badgeBackgroundColor="bg-[#5360c226]"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Here&apos;s What I Can Do For Your{" "}
-            <span className="text-primary">Brand</span>
+          <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
+            The Complete{" "}
+            <span className="text-primary">Performance Creative</span> Stack
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            In terms of content, here is what I leverage to produce
-            omni-channel, high-quality creative that drive remarkable results –
-            in both acquisition and retention
+          <p className="text-base md:text-2xl text-[#00000073] max-w-4xl font-semibold mx-auto leading-relaxed">
+            We leverage 3 main creative styles to find what scales your brand,
+            faster
           </p>
         </SectionHeader>
 
@@ -108,7 +106,7 @@ const Services = () => {
 
         {/* Growth Engine Card */}
         <div className="mt-8 flex justify-center">
-          <div className="relative overflow-hidden rounded-3xl max-w-2xl w-full bg-gradient-to-t from-black via-[#0a0a1a] to-[#1a1a3a] shadow-2xl border-2 border-white">
+          <div className="relative overflow-hidden rounded-3xl max-w-2xl w-full bg-gradient-to-t from-black via-[#0a0a1a] to-[#1a1a3a] shadow-2xl border-3 border-primary">
             <div className="relative z-10 w-full h-[250px] flex justify-center items-center">
               <Image
                 src="/images/services/group.png"

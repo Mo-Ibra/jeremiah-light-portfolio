@@ -6,25 +6,22 @@ import React from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { portfolioReels } from "@/data/data";
 import SectionHeader from "./SectionHeader";
+import BlurCircle from "./BlurCircle";
 
 const VideoReelsForPortfolio = () => {
   return (
-    <section
-      id="portfolio"
-      className="relative overflow-hidden bg-[#5360c226] pt-24 z-0"
-    >
+    <section id="portfolio" className="relative overflow-hidden pt-36 z-0">
+      <BlurCircle top="200px" />
+      <BlurCircle left="1500px" top="900px" />
+
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
-        <SectionHeader
-          badgeText="Creative Portfolio"
-          marginBottom="0"
-          badgeBackgroundColor="bg-[#5360c226]"
-        >
-          <h2 className="text-4xl md:text-[40px] font-bold text-gray-900 mb-6">
+        <SectionHeader badgeText="Creative Portfolio" marginBottom="0">
+          <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             The <span className="text-primary">Creative Styles</span> Trusted by{" "}
             <span className="text-primary">6, 7, and 8-Figure Brands</span>
           </h2>
-          <p className="text-xl font-semibold text-gray-600 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-base md:text-2xl font-semibold text-[#00000073] max-w-5xl mx-auto leading-relaxed">
             See the data-driven UGC, AI-generated, and Studio ads that form the
             backbone of a high-performance creative strategy. This is what
             allows top brands to profitably acquire new customers with

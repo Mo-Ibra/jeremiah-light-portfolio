@@ -14,7 +14,7 @@ const Features = () => {
           badgeBackgroundColor="bg-[#5360c226]"
           marginBottom="12"
         >
-          <h2 className="text-[40px] font-bold text-black">
+          <h2 className="text-2xl md:text-[40px] font-bold text-black">
             <span className="text-primary">Exclusive Perks</span> You Get When{" "}
             <span className="text-primary">We Work Together</span>
           </h2>

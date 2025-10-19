@@ -21,7 +21,7 @@ export default function FAQs() {
 
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeader badgeText="Do you have any question?" badgeBackgroundColor="bg-[#5360c226]">
-          <h2 className="text-[40px] font-bold text-foreground">
+          <h2 className="text-2xl md:text-[40px] font-bold text-foreground">
             Frequently Asked{" "}
             <span className="text-primary relative">
               Questions
@@ -40,7 +40,7 @@ export default function FAQs() {
                   onClick={() => toggleFAQ(index)}
                   className="w-full px-6 py-5 text-left flex items-center justify-between rounded-lg"
                 >
-                  <h3 className="text-lg font-semibold text-white pr-4">
+                  <h3 className="text-base font-semibold text-white pr-4">
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
@@ -60,7 +60,7 @@ export default function FAQs() {
                   }`}
                 >
                   <div className="px-6 pb-5">
-                    <p className="text-muted leading-relaxed">
+                    <p className="text-muted text-sm leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

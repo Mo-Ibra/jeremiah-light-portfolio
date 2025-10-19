@@ -154,11 +154,11 @@ export default function CaseStudiesSection() {
           badgeText="Case studies"
           badgeBackgroundColor="bg-[#5360c226]"
         >
-          <h2 className="text-4xl md:text-[40px] font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             Our Creatives Actually Work -{" "}
             <span className="text-primary">Watch Some Results Below</span>
           </h2>
-          <p className="text-xl font-semibold text-gray-600 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl font-semibold text-gray-600 max-w-5xl mx-auto leading-relaxed">
             Recent highlights from past/current brands that have scaled using
             our creative
           </p>

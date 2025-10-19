@@ -5,11 +5,11 @@ const Process = () => {
     <section className="py-16 px-6" id="process">
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="My Process">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             Our <span className="text-primary">4-Step Process</span> to{" "}
             <span className="text-primary">Predictable Results</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base md:text-2xl md:leading-8 text-[#00000073] font-semibold max-w-4xl mx-auto">
             A streamlined collaborative approach that quickly allows us to
             create on-brand, resonant creatives, that look and perform great
           </p>
@@ -58,7 +58,7 @@ const Process = () => {
                 <h3 className="text-xl font-bold text-[#8994e8] mb-3">
                   Onboarding & Analysis
                 </h3>
-                <p className="text-white/90 text-sm leading-relaxed">
+                <p className="text-white/90 text-xs md:text-sm leading-relaxed">
                   The foundation phase where we dive deep into understanding
                   your brand, business goals, target audience, and competitive
                   landscape to create a strategic roadmap for your
@@ -94,7 +94,7 @@ const Process = () => {
                 <h3 className="text-xl font-bold text-[#8994e8] mb-3">
                   Production
                 </h3>
-                <p className="text-white/90 text-sm leading-relaxed">
+                <p className="text-white/90 text-xs md:text-sm leading-relaxed">
                   The execution phase where strategic concepts come to life
                   through meticulous design work, refined iterations, and
                   quality craftsmanship to deliver exceptional brand assets that
@@ -130,7 +130,7 @@ const Process = () => {
                 <h3 className="text-xl font-bold text-[#8994e8] mb-3">
                   Launch & Optimize
                 </h3>
-                <p className="text-white/90 text-sm leading-relaxed">
+                <p className="text-white/90 text-xs md:text-sm leading-relaxed">
                   The final phase where we implement your brand assets across
                   all channels, monitor performance, and make data-driven
                   adjustments to ensure maximum impact and ongoing success.
@@ -165,7 +165,7 @@ const Process = () => {
                 <h3 className="text-xl font-bold text-[#8994e8] mb-3">
                   Scaling
                 </h3>
-                <p className="text-white/90 text-sm leading-relaxed">
+                <p className="text-white/90 text-xs md:text-sm leading-relaxed">
                   The growth phase where we expand your successful brand
                   foundation across new markets, channels, and touchpoints while
                   maintaining consistency and adapting strategies to support

@@ -6,14 +6,20 @@ import { Button } from "./ui/button";
 const AboutMe = () => {
   return (
     <section className="py-20 px-6 relative overflow-hidden z-50" id="about">
-      <BlurCircle left="1000px" blur="250px" width="300px" height="450px" className="-z-10" />
+      <BlurCircle
+        left="1000px"
+        blur="250px"
+        width="300px"
+        height="450px"
+        className="-z-10"
+      />
 
       <div className="max-w-4xl md:max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader badgeText="About Me">
-          <h2 className="text-4xl font-semibold text-gray-900 mb-6">
-            The Talent Behind Your{" "}
-            <span className="text-primary">Creative Success</span>
+          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
+            Message From {" "}
+            <span className="text-primary">Our Founder </span>
           </h2>
         </SectionHeader>
 
@@ -49,21 +55,25 @@ const AboutMe = () => {
           {/* Right Column - Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div>
-              <h3 className="text-7xl md:text-[7rem] text-gray-900 drop-shadow-2xl">
-                Hey! I&apos;m
-              </h3>
-              <span className="text-8xl md:text-9xl italic text-primary font-serif drop-shadow-2xl font-instrument">
-                Jeremiah
-              </span>
-              <p className="max-w-2xl mx-auto text-2xl text-gray-600 leading-relaxed mt-2 md:mt-12">
-                Addicted to E-commerce, in love with ads, and obsessed with
-                performance - I will personally help you take your brand to the
-                next level with my creatives, strategy, systems, and processes
+              <div className="md:mb-12 leading-24">
+                <h3 className="text-[87px] md:text-[93px] text-gray-900 drop-shadow-2xl">
+                  Hey! I&apos;m
+                </h3>
+                <span className="text-[92px] md:text-[110px] italic text-primary font-serif drop-shadow-2xl font-instrument">
+                  Jeremiah
+                </span>
+              </div>
+              <p className="max-w-2xl mx-auto text-2xl font-semibold text-[#00000073] leading-8 mt-2">
+                I'm obsessed with performance and so is my team. As your
+                dedicated creative partner, I personally lead the strategy and
+                execution for the handful of ambitious brands we work with. This
+                founder-led approach ensures I can build and manage the creative
+                system that fuels your growth.
               </p>
             </div>
 
             {/* Social Links and CTA */}
-            <div className="flex items-center justify-center lg:justify-start md:gap-32 gap-16 mt-16">
+            <div className="flex items-center justify-center lg:justify-start md:gap-32 gap-16">
               <div className="flex items-center gap-4">
                 {/* Instagram */}
                 <a
