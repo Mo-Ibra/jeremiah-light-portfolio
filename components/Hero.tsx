@@ -75,7 +75,7 @@ const Hero = () => {
             </h1>
 
             {/* Desktop Text - Hidden on Mobile */}
-            <p className="hidden md:block text-lg md:text-xl text-black mb-12 leading-relaxed max-w-xl">
+            <p className="hidden md:block text-xs md:text-xl text-black mb-12 leading-relaxed max-w-xl">
               Our proven systems help DTC brands spending $20k-$100k/month scale
               their ad production and better understand their consumers - the
               result is profitable, sustainable growth in new-customer
@@ -98,7 +98,7 @@ const Hero = () => {
             </div>
 
             {/* Mobile Text - Hidden on Desktop */}
-            <p className="block md:hidden mt-6 text-lg md:text-xl text-black leading-relaxed max-w-xl text-center">
+            <p className="block md:hidden mt-6 text-xs md:text-xl text-black leading-relaxed max-w-xl text-center">
               Our proven systems help DTC brands spending $20k-$100k/month scale
               their ad production and better understand their consumers - the
               result is profitable, sustainable growth in new-customer
@@ -111,7 +111,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
           <button
             onClick={() => (location.href = "#cta")}
-            className="px-6 py-3 md:px-8 md:py-3 cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+            className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
           >
             <span>Schedule Free Ads Audit</span>
             <svg
@@ -138,7 +138,7 @@ const Hero = () => {
         {/* Social Proof - Centered Below Buttons */}
         <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0 text-gray-600 justify-center">
           {/* Avatars */}
-          <div className="flex -space-x-2">
+          <div className="flex -space-x-4">
             {[1, 2, 3, 4, 5].map((num) => (
               <div
                 key={num}
@@ -146,8 +146,8 @@ const Hero = () => {
               >
                 <Image
                   src={`/images/hero/avatars-2/${num}.jpg`}
-                  width={400}
-                  height={400}
+                  width={48}
+                  height={48}
                   alt={`Avatar ${num}`}
                   className="w-full h-full object-cover"
                 />
@@ -157,7 +157,7 @@ const Hero = () => {
 
           {/* Text + Shopify */}
           <div className="flex flex-wrap justify-center items-center space-x-2">
-            <p className="font-bold text-gray-800 text-sm md:text-base">
+            <p className="font-bold text-gray-800 text-sm">
               Trusted by 86+ Shopify{" "}
             </p>
             <Image
@@ -167,7 +167,7 @@ const Hero = () => {
               height={20}
               width={20}
             />
-            <p className="font-bold text-gray-800 text-sm md:text-base">
+            <p className="font-bold text-gray-800 text-sm">
               Brands
             </p>
           </div>
