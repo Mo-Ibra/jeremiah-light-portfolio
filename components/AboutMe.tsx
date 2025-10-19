@@ -23,16 +23,16 @@ const AboutMe = () => {
           <div className="flex justify-center mb-4">
             <div className="relative overflow-hidden rounded-3xl border-4 border-primary bg-gray-200 aspect-[4/5] w-full max-w-[400px] sm:max-w-[450px] md:max-w-[488px]">
               <img
-                src="/images/portfolio/1.jpg"
+                src="/images/portfolio/2.jpg"
                 alt="Jeremiah - Creative Director"
                 className="w-full h-full object-cover"
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 via-gray-900/40 to-gray-900/0"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 via-gray-900/40 to-gray-900/0"></div> */}
 
               {/* Play Button Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center">
+              {/* <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-primary hover:bg-indigo-700 transition-colors rounded-full p-2 cursor-pointer">
                   <svg
                     className="w-12 h-12 text-white"
@@ -42,7 +42,7 @@ const AboutMe = () => {
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
