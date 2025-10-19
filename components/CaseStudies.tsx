@@ -117,7 +117,7 @@ export default function CaseStudiesSection() {
       id: 4,
       clientBrand: "Client Brand",
       company: "E-Commerce (Physical) Tech Brand",
-      revenue: "$0 → $931,968.93",
+      revenue: "$600 CAC → $130 CAC",
       wistiaId: "cavjkqvav3",
       description:
         "This brand is taking longer than most to help scale due to the nature of the niche, market, and business model - however - we have managed to cut the CAC from $600 to just $130 using our creative since onboarding with this client - this is great, as the typical LTV is just $268.",
