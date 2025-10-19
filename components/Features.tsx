@@ -4,7 +4,7 @@ import BlurCircle from "./BlurCircle";
 
 const Features = () => {
   return (
-    <section className="py-16 px-6 bg-[#5360c226] relative z-50">
+    <section className="md:py-16 py-12 px-6 bg-[#5360c226] relative z-50">
       <BlurCircle left="20%" blur="350px" className="-z-10" />
 
       <div className="max-w-5xl mx-auto">
@@ -25,7 +25,7 @@ const Features = () => {
           {/* First Row */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Content Management - 3/4 */}
-            <div className="lg:col-span-2 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col">
+            <div className="lg:col-span-2 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
               <div className="bg-black relative">
                 <Image
                   src="/images/features/1.png"
@@ -35,7 +35,7 @@ const Features = () => {
                   className="w-full h-[300px] object-cover p-2 rounded-4xl"
                 />
               </div>
-              <div className="pl-6 pb-3">
+              <div className="pl-6 py-3">
                 <h3 className="text-xl font-bold text-white mb-2">
                   Your Centralized Creative Hub
                 </h3>
@@ -50,7 +50,7 @@ const Features = () => {
             </div>
 
             {/* Ads Reporting - 1/4 */}
-            <div className="lg:col-span-1 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col">
+            <div className="lg:col-span-1 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
               <div className="bg-black relative">
                 <Image
                   src="/images/features/2.png"
@@ -60,7 +60,7 @@ const Features = () => {
                   className="w-full h-[300px] object-cover p-2 rounded-4xl"
                 />
               </div>
-              <div className="pl-6 pb-3">
+              <div className="pl-6 py-3">
                 <h3 className="text-lg font-bold text-white mb-2">
                   Weekly Performance Reporting
                 </h3>
@@ -76,7 +76,7 @@ const Features = () => {
           {/* Second Row */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Communication - 1/4 */}
-            <div className="lg:col-span-1 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col">
+            <div className="lg:col-span-1 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
               <div className="bg-black relative">
                 <Image
                   src="/images/features/3.png"
@@ -86,7 +86,7 @@ const Features = () => {
                   className="w-full h-[300px] object-cover p-2 rounded-4xl"
                 />
               </div>
-              <div className="pl-6 pb-3">
+              <div className="pl-6 py-3">
                 <h3 className="text-lg font-bold text-white mb-2">
                   Direct & Rapid Communication
                 </h3>
@@ -99,7 +99,7 @@ const Features = () => {
             </div>
 
             {/* Psychographics - 3/4 */}
-            <div className="lg:col-span-2 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col">
+            <div className="lg:col-span-2 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
               <div className="bg-black relative">
                 <Image
                   src="/images/features/4.png"
@@ -109,7 +109,7 @@ const Features = () => {
                   className="w-full h-[300px] object-cover p-2 rounded-4xl"
                 />
               </div>
-              <div className="pl-6 pb-3">
+              <div className="pl-6 py-3">
                 <h3 className="text-xl font-bold text-white mb-2">
                   Proprietary Audience Insights
                 </h3>

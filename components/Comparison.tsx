@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 
 const Comparison = () => {
   return (
-    <section className="py-16 px-6 relative overflow-hidden">
+    <section className="md:py-16 py-12 px-6 relative overflow-hidden">
 
       <BlurCircle left="1200px" blur="400px" />
 

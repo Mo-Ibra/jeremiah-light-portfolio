@@ -4,7 +4,7 @@ type CTAProps = {
 
 const CTA = ({ onOpenQuiz }: CTAProps) => {
   return (
-    <section className="py-16 px-6" id="cta">
+    <section className="md:py-16 py-12 px-6" id="cta">
       <div className="max-w-5xl mx-auto">
         <div className="relative bg-gradient-to-r from-primary to-indigo-400 rounded-3xl p-12 text-center overflow-hidden shadow-2xl">
           <div
@@ -48,10 +48,10 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
             Apply below to see if we’re a good fit.
           </p>
           <button
-            className="relative z-10 bg-white text-primary px-8 py-4 rounded-xl shadow-2xl cursor-pointer text-lg font-semibold hover:bg-gray-50 mb-4 hover:scale-110 transition-all"
+            className="relative z-10 bg-white text-primary md:px-8 px-4 md:py-4 py-3 rounded-xl shadow-2xl cursor-pointer text-xs md:text-lg font-semibold hover:bg-gray-50 mb-4 hover:scale-110 transition-all"
             onClick={onOpenQuiz}
           >
-            Schedule Free Ads Audit
+            Book Meeting
           </button>
           <div className="relative z-10 flex items-center justify-center gap-2 text-indigo-200">
             <div className="w-2 h-2 rounded-full bg-[#E3E6FF] animate-pulse"></div>

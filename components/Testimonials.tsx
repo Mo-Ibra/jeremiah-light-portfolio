@@ -134,7 +134,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function TestimonialsSection() {
   return (
-    <section className="min-h-screen px-6 py-16">
+    <section className="min-h-screen px-6 md:py-16 py-12">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <SectionHeader badgeText="Testimonials" className="md:mb-8 mb-4">

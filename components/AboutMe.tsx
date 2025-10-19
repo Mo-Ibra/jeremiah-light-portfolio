@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const AboutMe = () => {
   return (
-    <section className="py-16 px-6 relative overflow-hidden z-50" id="about">
+    <section className="md:py-16 py-12 px-6 relative overflow-hidden z-50" id="about">
       <BlurCircle
         left="1000px"
         blur="250px"

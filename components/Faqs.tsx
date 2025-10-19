@@ -15,7 +15,7 @@ export default function FAQs() {
   };
 
   return (
-    <section id="faqs" className="py-16 bg-background relative overflow-hidden z-50">
+    <section id="faqs" className="md:py-16 py-12 bg-background relative overflow-hidden z-50">
 
       <BlurCircle width="400px" height="400px" top="50%" left="50%" blur="200px" className="z-10" />
 
@@ -40,7 +40,7 @@ export default function FAQs() {
                   onClick={() => toggleFAQ(index)}
                   className="w-full px-6 py-5 text-left flex items-center justify-between rounded-lg"
                 >
-                  <h3 className="text-base font-semibold text-white pr-4">
+                  <h3 className="md:text-base text-xs font-semibold text-white pr-4">
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
@@ -60,7 +60,7 @@ export default function FAQs() {
                   }`}
                 >
                   <div className="px-6 pb-5">
-                    <p className="text-muted text-sm leading-relaxed">
+                    <p className="text-muted md:text-sm text-[10px] leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
