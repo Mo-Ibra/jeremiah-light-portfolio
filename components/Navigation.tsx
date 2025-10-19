@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -13,7 +12,7 @@ const Navigation = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed md:absolute top-0 left-0 right-0 z-50">
+      <nav className="absolute md:top-9 left-0 right-0 z-50">
         <div
           className={`flex flex-col px-4 sm:px-6 md:px-6 lg:px-20 xl:px-56 py-2 bg-white/10 md:bg-transparent backdrop-blur-md md:backdrop-blur-none rounded-[50px] border border-gray-300 md:border-none mx-2.5 md:mx-0 my-2 transition-all duration-500 ease-in-out overflow-hidden ${
             isMenuOpen ? "max-h-[500px]" : "max-h-[60px] md:max-h-[80px]"

@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center md:min-h-screen z-40 relative overflow-hidden py-4 md:py-0"
+      className="flex justify-center items-center md:min-h-[95vh] z-40 relative overflow-hidden py-4 md:py-0 md:m-6 rounded-b-3xl md:rounded-3xl"
       style={{
         backgroundImage:
           // "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
@@ -58,7 +58,7 @@ const Hero = () => {
       {/* Main Content Container */}
       <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full mt-10 md:mt-64 lg:mt-0">
         {/* Top Section - Text and Video Side by Side */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-8 lg:mt-32">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-8 lg:mt-24">
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl mt-6">
             {/* Status Badge */}
