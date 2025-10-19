@@ -107,15 +107,12 @@ const Navigation = () => {
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center space-x-3">
               <button
-                className="px-4 py-2 rounded-lg text-white font-medium transition-all text-sm flex items-center space-x-2 relative group"
+                className="px-8 py-2 rounded-full bg-white text-gray-700 font-bold transition-all text-sm flex items-center space-x-2 relative group"
                 onClick={() => (window.location.href = "#cta")}
               >
                 <span className="relative">
                   Let&apos;s Talk
-                  {/* Underline */}
-                  <span className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-white scale-x-100 origin-left transition-transform duration-300"></span>
                 </span>
-                <ArrowRight className="w-5 h-5" />
               </button>
 
               {/* Burger Menu */}
