@@ -6,7 +6,10 @@ import BlurCircle from "./BlurCircle";
 
 const Services = () => {
   return (
-    <section className="md:py-16 py-12 px-6 bg-[#5360c226] relative" id="services">
+    <section
+      className="md:py-16 py-12 px-6 bg-[#5360c226] relative"
+      id="services"
+    >
       <BlurCircle />
 
       <div className="container max-w-[1200px] mx-auto">
@@ -39,10 +42,10 @@ const Services = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
 
             <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
-              <h3 className="text-2xl font-bold mb-2 text-[#8994E9]">
+              <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
                 AI Generated Content
               </h3>
-              <p className="text-white/90 leading-relaxed text-sm">
+              <p className="text-white/90 leading-relaxed text-xs">
                 Hyper-realistic AI generated content made for quick testing and
                 iteration – so we can cut costs and scale at the speed of light.
               </p>
@@ -60,10 +63,10 @@ const Services = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
 
             <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
-              <h3 className="text-2xl font-bold mb-2 text-[#8994E9]">
+              <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
                 User Generated Content
               </h3>
-              <p className="text-white/90 leading-relaxed text-sm">
+              <p className="text-white/90 leading-relaxed text-xs">
                 Customer-created content like reviews, photos, and posts that
                 converts incredibly well, builds authentic trust, and real
                 engagement.
@@ -82,13 +85,13 @@ const Services = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
 
             <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
-              <h3 className="text-2xl font-bold mb-2 text-[#8994E9]">
+              <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
                 Studio Content
               </h3>
-              <p className="text-white/90 leading-relaxed text-sm">
-                Professional, high-quality content created in-house that will
-                WOW your consumers, build trust, and elevate your brand
-                presence.
+              <p className="text-white/90 leading-relaxed text-xs">
+                Professional, polished, and high-production content created
+                in-house that will WOW your consumers, build trust, and elevate
+                your brand presence.
               </p>
             </div>
           </div>

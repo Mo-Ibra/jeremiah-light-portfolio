@@ -40,13 +40,13 @@ const Process = () => {
                 backgroundImage: `url('/images/process/1.jpg')`,
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/20" />
 
             <div className="relative z-10 p-4 h-full flex flex-col">
               <div className="flex justify-between items-center">
-                <div className="text-5xl font-bold text-white mb-4">01</div>
+                <div className="text-5xl font-bold text-white mb-5">01</div>
 
-                <div className="bg-white rounded-2xl px-4 py-2 inline-flex items-center gap-2 mb-6 w-fit">
+                <div className="bg-white rounded-2xl px-3 py-1 inline-flex items-center gap-2 mb-6 w-fit">
                   <img src="/images/process/icons/1.svg" alt="SVG Icon" className="w-6 h-6" />
                   <span className="text-xs text-gray-800 font-bold">
                     Audience Research
@@ -55,10 +55,10 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-xl font-bold text-[#8994e8] mb-3">
+                <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
                   Onboarding & Analysis
                 </h3>
-                <p className="text-white/90 text-xs md:text-sm leading-relaxed">
+                <p className="text-white text-xs md:text-[15px] leading-relaxed">
                   The foundation phase where we dive deep into understanding
                   your brand, business goals, target audience, and competitive
                   landscape to create a strategic roadmap for your
@@ -76,13 +76,13 @@ const Process = () => {
                 backgroundImage: `url('/images/process/2.jpg')`,
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/20" />
 
             <div className="relative z-10 p-4 h-full flex flex-col">
               <div className="flex justify-between items-center">
-                <div className="text-5xl font-bold text-white mb-4">02</div>
+                <div className="text-5xl font-bold text-white mb-5">02</div>
 
-                <div className="bg-white rounded-2xl px-4 py-2 inline-flex items-center gap-2 mb-6 w-fit">
+                <div className="bg-white rounded-2xl px-3 py-1 inline-flex items-center gap-2 mb-6 w-fit">
                   <img src="/images/process/icons/2.svg" alt="SVG Icon" className="w-6 h-6" />
                   <span className="text-xs text-gray-800 font-bold">
                     Creative Production
@@ -91,10 +91,10 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-xl font-bold text-[#8994e8] mb-3">
+                <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
                   Production
                 </h3>
-                <p className="text-white/90 text-xs md:text-sm leading-relaxed">
+                <p className="text-white text-xs md:text-[15px] leading-relaxed">
                   The execution phase where strategic concepts come to life
                   through meticulous design work, refined iterations, and
                   quality craftsmanship to deliver exceptional brand assets that
@@ -112,13 +112,13 @@ const Process = () => {
                 backgroundImage: `url('/images/process/3.jpg')`,
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/20" />
 
             <div className="relative z-10 p-4 h-full flex flex-col">
               <div className="flex justify-between items-center">
-                <div className="text-5xl font-bold text-white mb-4">03</div>
+                <div className="text-5xl font-bold text-white mb-5">03</div>
 
-                <div className="bg-white rounded-2xl px-4 py-2 inline-flex items-center gap-2 mb-6 w-fit">
+                <div className="bg-white rounded-2xl px-3 py-1 inline-flex items-center gap-2 mb-6 w-fit">
                   <img src="/images/process/icons/3.svg" alt="SVG Icon" className="w-6 h-6" />
                   <span className="text-xs text-gray-800 font-bold">
                     Ad Optimization
@@ -127,10 +127,10 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-xl font-bold text-[#8994e8] mb-3">
+                <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
                   Launch & Optimize
                 </h3>
-                <p className="text-white/90 text-xs md:text-sm leading-relaxed">
+                <p className="text-white text-xs md:text-[15px] leading-relaxed">
                   The final phase where we implement your brand assets across
                   all channels, monitor performance, and make data-driven
                   adjustments to ensure maximum impact and ongoing success.
@@ -147,13 +147,13 @@ const Process = () => {
                 backgroundImage: `url('/images/process/4.png')`,
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/20" />
 
             <div className="relative z-10 p-4 h-full flex flex-col">
               <div className="flex justify-between items-center">
-                <div className="text-5xl font-bold text-white mb-4">04</div>
+                <div className="text-5xl font-bold text-white mb-5">04</div>
 
-                <div className="bg-white rounded-2xl px-4 py-2 inline-flex items-center gap-2 mb-6 w-fit">
+                <div className="bg-white rounded-2xl px-3 py-1 inline-flex items-center gap-2 mb-6 w-fit">
                   <img src="/images/process/icons/4.svg" alt="SVG Icon" className="w-6 h-6" />
                   <span className="text-xs text-gray-800 font-bold">
                     Scaling Efficiency
@@ -162,10 +162,10 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-xl font-bold text-[#8994e8] mb-3">
+                <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
                   Scaling
                 </h3>
-                <p className="text-white/90 text-xs md:text-sm leading-relaxed">
+                <p className="text-white text-xs md:text-[15px] leading-relaxed">
                   The growth phase where we expand your successful brand
                   foundation across new markets, channels, and touchpoints while
                   maintaining consistency and adapting strategies to support

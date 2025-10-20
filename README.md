@@ -1,0 +1,7 @@
+- Remove "Thank you!" from form (Done)
+- Added new text in Benefits & Features (Done)
+- Make heading titles with semibold text (Done)
+- remove navbar button (Done)
+- Add new text to our services section (Done)
+- Our process card fade
+- Fix Hero Background
