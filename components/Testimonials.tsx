@@ -141,7 +141,7 @@ export default function TestimonialsSection() {
             Thinking About{" "}
             <span className="text-primary">Working With Us?</span>
           </h2>
-          <p className="text-base md:text-xl font-semibold text-gray-600 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
             Hear about what our clients have to say first
           </p>
         </SectionHeader>

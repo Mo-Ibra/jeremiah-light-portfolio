@@ -20,7 +20,7 @@ const Services = () => {
             The Complete{" "}
             <span className="text-primary">Performance Creative</span> Stack
           </h2>
-          <p className="text-base md:text-2xl text-[#00000073] max-w-4xl font-semibold mx-auto leading-relaxed">
+          <p className="text-base md:text-2xl text-[#00000073] max-w-4xl mx-auto leading-relaxed">
             We leverage 3 main creative styles to find what scales your brand,
             faster
           </p>

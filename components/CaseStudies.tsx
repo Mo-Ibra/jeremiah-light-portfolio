@@ -159,7 +159,7 @@ export default function CaseStudiesSection() {
             Our Creatives Actually Work -{" "}
             <span className="text-primary">Watch Some Results Below</span>
           </h2>
-          <p className="text-base md:text-xl font-semibold text-gray-600 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
             Recent highlights from past/current brands that have scaled using
             our creative
           </p>

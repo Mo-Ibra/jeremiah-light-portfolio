@@ -13,7 +13,7 @@ const Comparison = () => {
             Why <span className="text-primary">Leading DTC Brands</span>{" "}
             Collaborate With Me
           </h2>
-          <p className="text-base md:text-2xl md:leading-8 text-[#00000073] font-semibold max-w-4xl mx-auto">
+          <p className="text-base md:text-2xl md:leading-8 text-[#00000073] max-w-4xl mx-auto">
             Here&apos;s exactly why over 80+ Established DTC Brands have worked with
             me to help scale content production and profits
           </p>

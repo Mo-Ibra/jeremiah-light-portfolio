@@ -9,7 +9,7 @@ const Process = () => {
             Our <span className="text-primary">4-Step Process</span> to{" "}
             <span className="text-primary">Predictable Results</span>
           </h2>
-          <p className="text-base md:text-2xl md:leading-8 text-[#00000073] font-semibold max-w-4xl mx-auto">
+          <p className="text-base md:text-2xl md:leading-8 text-[#00000073] max-w-4xl mx-auto">
             A streamlined collaborative approach that quickly allows us to
             create on-brand, resonant creatives, that look and perform great
           </p>

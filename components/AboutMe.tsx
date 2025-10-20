@@ -63,7 +63,7 @@ const AboutMe = () => {
                   Jeremiah
                 </span>
               </div>
-              <p className="max-w-2xl mx-auto text-2xl font-semibold text-[#00000073] leading-8 mt-2">
+              <p className="max-w-2xl mx-auto text-2xl text-[#00000073] leading-8 mt-2">
                 I&apos;m obsessed with performance and so is my team. As your
                 dedicated creative partner, I personally lead the strategy and
                 execution for the handful of ambitious brands we work with. This
