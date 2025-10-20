@@ -42,7 +42,7 @@ const Navigation = () => {
               <div className="flex items-center space-x-2">
                 <a
                   href="#home"
-                  className="px-4 py-2 rounded-full transition bg-white text-gray-900 font-semibold"
+                  className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
                 >
                   Home
                 </a>

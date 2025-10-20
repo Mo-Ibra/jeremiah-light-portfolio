@@ -85,6 +85,31 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
   };
 
   const nextStep = () => {
+    if (currentStep === 1 && !formData.platform) {
+      alert("Please select your advertising platform.");
+      return;
+    }
+
+    if (currentStep === 2 && !formData.adSpend) {
+      alert("Please select your ad spend.");
+      return;
+    }
+
+    if (currentStep === 3 && !formData.issues.trim()) {
+      alert("Please describe the issues you are facing.");
+      return;
+    }
+
+    if (currentStep === 4 && !formData.lookingFor.trim()) {
+      alert("Please tell us what you are looking for.");
+      return;
+    }
+
+    if (currentStep === 5 && !formData.website.trim()) {
+      alert("Please enter your website URL.");
+      return;
+    }
+
     if (currentStep < totalSteps) {
       setCurrentStep((prev) => prev + 1);
     }
@@ -94,9 +119,8 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!formData.platform || !formData.issues || !formData.website) {
-      alert("Please fill in all required fields.");
-      console.log("Missing required fields:", formData);
+    if (!formData.fullName || !formData.email) {
+      alert("Please fill in your name and email before booking.");
       return;
     }
 
@@ -126,6 +150,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
       setShowSuccess(true);
       const cal = await getCalApi({ namespace: "30min" });
       cal("ui", { layout: "month_view" });
+      cal("modal", { calLink: "harcharran/30min" });
       // } else {
       // console.error("Failed to send email");
       // }
@@ -407,9 +432,9 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                   <button
                     type="submit"
                     className="quiz-btn quiz-btn-submit"
-                    data-cal-namespace="30min"
-                    data-cal-link="harcharran/30min"
-                    data-cal-config='{"layout":"month_view"}'
+                    // data-cal-namespace="30min"
+                    // data-cal-link="harcharran/30min"
+                    // data-cal-config='{"layout":"month_view"}'
                   >
                     Book Meeting
                   </button>
