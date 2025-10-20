@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <section className="flex justify-center items-center md:min-h-[95vh] z-40 relative overflow-hidden py-4 md:py-0 md:m-6 rounded-b-3xl md:rounded-3xl">
       <div
-        className="absolute inset-0 pointer-events-none scale-150"
+        className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage: "url('/images/hero/hero-bg.png')",
           backgroundSize: "cover",
