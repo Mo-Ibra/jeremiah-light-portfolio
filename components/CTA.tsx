@@ -20,9 +20,9 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
           {/* Content */}
           <h2 className="relative z-10 text-2xl sm:text-4xl font-bold text-white mb-4 flex flex-col sm:flex-row items-center justify-center md:gap-2">
             <span className="flex items-center gap-2">
-              <p className="relative left-5 sm:static sm:left-0">
+              <p className="relative left-5 sm:static sm:left-0 text-[#dddddd60]">
                 {" "}
-                Ready to <span className="text-indigo-200">Scale</span>
+                Ready to <span className="text-white">Scale</span>
               </p>
               {/* SVG — تظهر جنب Scale في الشاشات الكبيرة وتكون فوق Brand في الموبايل */}
               <div className="bg-white rounded-lg p-2 -rotate-12 shadow-lg sm:static sm:translate-y-0 sm:translate-x-0 -translate-y-2 translate-x-5 sm:mb-0 mb-2">
@@ -41,16 +41,16 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
                 </svg>
               </div>
             </span>
-            <span className="text-indigo-100">Your Brand?</span>
+            <span className="text-[#dddddd60]">Your <span className="text-white">Brand?</span></span>
           </h2>
-          <p className="relative z-10 text-indigo-100 md:mb-2 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base font-bold">
+          <p className="relative z-10 text-[#ffffff90] md:mb-2 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base ">
             I work with a maximum of 4 brands at any given time to ensure my
             partners get the focus and results they deserve.
           </p>
-          <p className="relative z-10 text-indigo-100 md:mb-2 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base font-bold">
+          <p className="relative z-10 text-[#ffffff90] md:mb-2 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base ">
             There is currently 1 spot available for a new partnership
           </p>
-          <p className="relative z-10 text-indigo-100 md:mb-4 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base font-bold">
+          <p className="relative z-10 text-[#ffffff90] md:mb-4 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base ">
             Apply below to see if we’re a good fit.
           </p>
           <button
