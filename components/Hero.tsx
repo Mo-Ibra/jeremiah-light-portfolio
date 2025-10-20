@@ -22,37 +22,39 @@ const Hero = () => {
   return (
     <section
       className="flex justify-center items-center md:min-h-[95vh] z-40 relative overflow-hidden py-4 md:py-0 md:m-6 rounded-b-3xl md:rounded-3xl"
-      style={{
-        backgroundImage:
-          // "linear-gradient(to bottom, transparent 70%, white 100%), url('/images/hero/sky-from-bottom.png')",
-          "url('/images/hero/sky-from-bottom.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
     >
-      {/* Cloud */}
+      <div
+        className="absolute inset-0 pointer-events-none scale-150"
+        style={{
+          backgroundImage: "url('/images/hero/sky-from-bottom.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
+
       <div className="absolute inset-0 pointer-events-none">
-        {/* Right Cloud */}
-        <div className="absolute top-20 right-0 text-white opacity-80">
+
+        {/* Right */}
+        {/* <div className="absolute top-20 right-0 text-white opacity-80">
           <Image
             src={"/images/hero/cloud.png"}
             width={433}
             height={433}
             alt="Cloud"
           />
-        </div>
+        </div> */}
 
-        {/* Left Cloud */}
-        {!isMobile && (
-          <div className="absolute -top-32 left-0 rotate-180 text-white opacity-80">
+        {/* Left */}
+        {/* {!isMobile && (
+          <div className="absolute -top-[450px] right-[1100px] text-white opacity-80">
             <Image
-              src={"/images/hero/cloud.png"}
-              width={433}
-              height={433}
+              src={"/images/hero/top-left-cloud.svg"}
+              width={1058}
+              height={1058}
               alt="Cloud"
             />
           </div>
-        )}
+        )} */}
       </div>
 
       {/* Main Content Container */}
@@ -167,9 +169,7 @@ const Hero = () => {
               height={20}
               width={20}
             />
-            <p className="font-bold text-gray-800 text-sm">
-              Brands
-            </p>
+            <p className="font-bold text-gray-800 text-sm">Brands</p>
           </div>
         </div>
 
