@@ -3,5 +3,5 @@
 - Make heading titles with semibold text (Done)
 - remove navbar button (Done)
 - Add new text to our services section (Done)
-- Our process card fade
+- Our process card fade (done)
 - Fix Hero Background

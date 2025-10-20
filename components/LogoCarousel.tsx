@@ -16,7 +16,7 @@ function LogoCarousel() {
   const repeatedLogos = Array(20).fill(logos).flat();
 
   return (
-    <div className="overflow-hidden mt-16">
+    <div className="overflow-hidden mt-12 md:mt-16">
       <motion.div
         className="flex gap-12"
         animate={{

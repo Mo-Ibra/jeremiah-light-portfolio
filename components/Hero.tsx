@@ -20,20 +20,17 @@ const Hero = () => {
   }, []);
 
   return (
-    <section
-      className="flex justify-center items-center md:min-h-[95vh] z-40 relative overflow-hidden py-4 md:py-0 md:m-6 rounded-b-3xl md:rounded-3xl"
-    >
+    <section className="flex justify-center items-center md:min-h-[95vh] z-40 relative overflow-hidden py-4 md:py-0 md:m-6 rounded-b-3xl md:rounded-3xl">
       <div
         className="absolute inset-0 pointer-events-none scale-150"
         style={{
-          backgroundImage: "url('/images/hero/sky-from-bottom.png')",
+          backgroundImage: "url('/images/hero/hero-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       ></div>
 
       <div className="absolute inset-0 pointer-events-none">
-
         {/* Right */}
         {/* <div className="absolute top-20 right-0 text-white opacity-80">
           <Image
@@ -64,24 +61,26 @@ const Hero = () => {
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl mt-6">
             {/* Status Badge */}
-            <div className="inline-flex items-center px-4 py-1 border border-green-400 bg-[#d4d4ff] rounded-full text-green-600 text-sm font-semibold mb-4 md:mb-0">
-              <div className="w-3 h-3 bg-green-600 rounded-full mr-2"></div>
+            <div className="inline-flex items-center px-4 py-1 border border-green-400 bg-[#eff1fe] rounded-full text-[#0ea300] text-sm font-semibold mb-4 md:mb-0">
+              <div className="w-3 h-3 bg-[#00c514] rounded-full mr-2"></div>
               Partnering with 1 more brand this month
             </div>
 
             {/* Hero Text */}
-            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[70px] mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent font-instrument">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[70px] md:mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent font-instrument">
               Performance Creative
               <br />
               for Scale-Stage Brands
             </h1>
 
             {/* Desktop Text - Hidden on Mobile */}
-            <p className="hidden md:block text-xs md:text-xl text-black mb-12 leading-relaxed max-w-xl">
-              Our proven systems help DTC brands spending $20k-$100k/month scale
-              their ad production and better understand their consumers - the
-              result is profitable, sustainable growth in new-customer
-              acquisition.
+            <p className="hidden md:block text-xs md:text-[15px] text-black mb-2 leading-relaxed max-w-xl">
+              We help DTC brands spending $20k-$100k/month grow profitably by
+              creating high-converting ads at scale.
+            </p>
+            <p className="hidden md:block text-xs md:text-[15px] text-black mb-6 leading-relaxed max-w-xl">
+              Creative Strategy, Copywriting, Funnels, Post Production, Ads and
+              Campaign Structure - done with and for you.
             </p>
           </div>
 
@@ -101,10 +100,12 @@ const Hero = () => {
 
             {/* Mobile Text - Hidden on Desktop */}
             <p className="block md:hidden mt-6 text-xs md:text-xl text-black leading-relaxed max-w-xl text-center">
-              Our proven systems help DTC brands spending $20k-$100k/month scale
-              their ad production and better understand their consumers - the
-              result is profitable, sustainable growth in new-customer
-              acquisition.
+              We help DTC brands spending $20k-$100k/month grow profitably by
+              creating high-converting ads at scale.
+            </p>
+            <p className="block md:hidden mt-2 text-xs md:text-xl text-black leading-relaxed max-w-xl text-center">
+              Creative Strategy, Copywriting, Funnels, Post Production, Ads and
+              Campaign Structure - done with and for you.
             </p>
           </div>
         </div>
