@@ -1,9 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  FormEvent,
-  MouseEvent,
-} from "react";
+import React, { useState, useEffect, FormEvent, MouseEvent } from "react";
 
 declare global {
   interface Window {
@@ -18,11 +13,12 @@ interface QuizModalProps {
 
 interface FormData {
   platform: string;
-  niche: string;
+  adSpend: string;
+  issues: string;
+  lookingFor: string;
   website: string;
-  adSpend: number;
-  ctr: number;
-  conversionRate: number;
+  // ctr: number;
+  // conversionRate: number;
   fullName: string;
   email: string;
 }
@@ -31,11 +27,12 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
   const [currentStep, setCurrentStep] = useState<number>(1);
   const [formData, setFormData] = useState<FormData>({
     platform: "",
-    niche: "",
+    adSpend: "",
+    issues: "",
+    lookingFor: "",
     website: "",
-    adSpend: 10000,
-    ctr: 2,
-    conversionRate: 3,
+    // ctr: 2,
+    // conversionRate: 3,
     fullName: "",
     email: "",
   });
@@ -50,11 +47,12 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
       setShowSuccess(false);
       setFormData({
         platform: "",
-        niche: "",
+        adSpend: "",
+        issues: "",
+        lookingFor: "",
         website: "",
-        adSpend: 10000,
-        ctr: 2,
-        conversionRate: 3,
+        // ctr: 2,
+        // conversionRate: 3,
         fullName: "",
         email: "",
       });
@@ -86,7 +84,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!formData.platform || !formData.niche || !formData.website) {
+    if (!formData.platform || !formData.issues || !formData.website) {
       alert("Please fill in all required fields.");
       console.log("Missing required fields:", formData);
       return;
@@ -98,11 +96,12 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
       if (typeof window !== "undefined" && typeof window.fbq === "function") {
         window.fbq("track", "QuizSubmit", {
           platform: formData.platform,
-          niche: formData.niche,
-          website: formData.website,
           adSpend: formData.adSpend,
-          ctr: formData.ctr,
-          conversionRate: formData.conversionRate,
+          issues: formData.issues,
+          lookingFor: formData.lookingFor,
+          website: formData.website,
+          // ctr: formData.ctr,
+          // conversionRate: formData.conversionRate,
           email: formData.email,
         });
       }
@@ -155,9 +154,13 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
         </div>
 
         <div className="quiz-header">
-          <h3 className="quiz-title">Let&apos;s Create Your Growth Strategy</h3>
+          <h3 className="quiz-title">Schedule Free Ads Audit</h3>
           <p className="quiz-subtitle">
-            Answer a few questions to help us understand your needs
+            Before booking, please give us more insight into your needs
+          </p>
+          <p className="quiz-subtitle mt-6">
+            Note: Due to high demand & quality standards, some entrants may be
+            rejected pre-call *
           </p>
         </div>
 
@@ -173,7 +176,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                   {[
                     {
                       value: "Facebook/Instagram",
-                      label: "Facebook / Instagram",
+                      label: "Meta",
                     },
                     { value: "TikTok", label: "TikTok" },
                     { value: "Google Ads", label: "Google Ads" },
@@ -206,16 +209,70 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                 </div>
               </div>
 
-              {/* Step 2: Niche */}
+              {/* Step 2: Ad Spend */}
               <div className={`quiz-step ${currentStep === 2 ? "active" : ""}`}>
-                <h4 className="quiz-question">What niche are you in?</h4>
+                <h4 className="quiz-question">What's your monthly ad spend?</h4>
+                <div className="quiz-radio-group">
+                  {[
+                    {
+                      value: "Less-20k",
+                      label: "Less than $20k per month",
+                    },
+                    {
+                      value: "Between-20-100k",
+                      label: "Between $20-100k per month",
+                    },
+                    {
+                      value: "Greater-100k",
+                      label: "Greater than $100k per month",
+                    },
+                  ].map((option, index) => (
+                    <React.Fragment key={option.value}>
+                      <input
+                        type="radio"
+                        name="adSpend"
+                        value={option.value}
+                        id={`adSpend${index + 1}`}
+                        className="quiz-radio-input"
+                        checked={formData.adSpend === option.value}
+                        onChange={(e) =>
+                          handleInputChange("adSpend", e.target.value)
+                        }
+                        required
+                      />
+                      <label
+                        htmlFor={`adSpend${index + 1}`}
+                        className="quiz-radio-label"
+                      >
+                        <span className="quiz-radio-text">{option.label}</span>
+                      </label>
+                    </React.Fragment>
+                  ))}
+                  <div className="quiz-nav">
+                    <button
+                      type="button"
+                      className="quiz-btn quiz-btn-continue"
+                      onClick={nextStep}
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3: Issues */}
+              <div className={`quiz-step ${currentStep === 3 ? "active" : ""}`}>
+                <h4 className="quiz-question">
+                  What issues are you currently facing?
+                </h4>
                 <div className="quiz-input-group">
                   <input
                     type="text"
                     className="quiz-input"
-                    placeholder="Enter your niche (e.g., Beauty, Fashion, Tech, etc.)"
-                    value={formData.niche}
-                    onChange={(e) => handleInputChange("niche", e.target.value)}
+                    value={formData.issues}
+                    onChange={(e) =>
+                      handleInputChange("issues", e.target.value)
+                    }
                   />
                 </div>
                 <div className="quiz-nav">
@@ -229,9 +286,33 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                 </div>
               </div>
 
-              {/* Step 3: Website */}
-              <div className={`quiz-step ${currentStep === 3 ? "active" : ""}`}>
-                <h4 className="quiz-question">What is your website domain?</h4>
+              {/* Step 4: Looking for */}
+              <div className={`quiz-step ${currentStep === 4 ? "active" : ""}`}>
+                <h4 className="quiz-question">What are you looking for?</h4>
+                <div className="quiz-input-group">
+                  <input
+                    type="text"
+                    className="quiz-input"
+                    value={formData.lookingFor}
+                    onChange={(e) =>
+                      handleInputChange("lookingFor", e.target.value)
+                    }
+                  />
+                </div>
+                <div className="quiz-nav">
+                  <button
+                    type="button"
+                    className="quiz-btn quiz-btn-continue"
+                    onClick={nextStep}
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+
+              {/* Step 5: Website */}
+              <div className={`quiz-step ${currentStep === 5 ? "active" : ""}`}>
+                <h4 className="quiz-question">Please share your website URL</h4>
                 <div className="quiz-input-group">
                   <input
                     type="text"
@@ -254,107 +335,10 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                 </div>
               </div>
 
-              {/* Step 4: Ad Spend */}
-              <div className={`quiz-step ${currentStep === 4 ? "active" : ""}`}>
-                <h4 className="quiz-question">
-                  What&apos;s your monthly ad spend?
-                </h4>
-                <div className="quiz-input-group">
-                  <input
-                    type="range"
-                    className="quiz-range-input"
-                    min="1000"
-                    max="50000"
-                    step="1000"
-                    value={formData.adSpend}
-                    onChange={(e) =>
-                      handleInputChange("adSpend", parseInt(e.target.value))
-                    }
-                    required
-                  />
-                  <span className="range-value">
-                    ${formData.adSpend.toLocaleString()}
-                  </span>
-                </div>
-                <div className="quiz-nav">
-                  <button
-                    type="button"
-                    className="quiz-btn quiz-btn-continue"
-                    onClick={nextStep}
-                  >
-                    Continue
-                  </button>
-                </div>
-              </div>
-
-              {/* Step 5: ROI Calculator */}
-              <div className={`quiz-step ${currentStep === 5 ? "active" : ""}`}>
-                <h4 className="quiz-question">Ad ROI Calculator</h4>
-                <p
-                  style={{
-                    color: "rgba(255,255,255,0.8)",
-                    marginBottom: "2rem",
-                  }}
-                >
-                  What performance metrics are you seeing?
-                </p>
-
-                <div className="range-group">
-                  <label className="range-label">
-                    Click-Through Rate (CTR)
-                  </label>
-                  <input
-                    type="range"
-                    className="quiz-range-input"
-                    min="0.1"
-                    max="10"
-                    step="0.1"
-                    value={formData.ctr}
-                    onChange={(e) =>
-                      handleInputChange("ctr", parseFloat(e.target.value))
-                    }
-                    required
-                  />
-                  <span className="range-value">{formData.ctr}%</span>
-                </div>
-
-                <div className="range-group">
-                  <label className="range-label">Conversion Rate</label>
-                  <input
-                    type="range"
-                    className="quiz-range-input"
-                    min="0.1"
-                    max="10"
-                    step="0.1"
-                    value={formData.conversionRate}
-                    onChange={(e) =>
-                      handleInputChange(
-                        "conversionRate",
-                        parseFloat(e.target.value)
-                      )
-                    }
-                    required
-                  />
-                  <span className="range-value">
-                    {formData.conversionRate}%
-                  </span>
-                </div>
-
-                <div className="quiz-nav">
-                  <button
-                    type="button"
-                    className="quiz-btn quiz-btn-continue"
-                    onClick={nextStep}
-                  >
-                    Continue
-                  </button>
-                </div>
-              </div>
-
               {/* Step 6: Contact Info */}
               <div className={`quiz-step ${currentStep === 6 ? "active" : ""}`}>
                 <h4 className="quiz-question">
-                  Last step! Where should we send your growth strategy?
+                  Last step - who will we be meeting with?
                 </h4>
                 <div className="quiz-input-group">
                   <input
@@ -380,7 +364,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                 </div>
                 <div className="quiz-nav">
                   <button type="submit" className="quiz-btn quiz-btn-submit">
-                    Get My Growth Strategy
+                    Book Meeting
                   </button>
                 </div>
               </div>
