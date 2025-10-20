@@ -21,7 +21,7 @@ const Navigation = () => {
           {/* Top Section - Always Visible */}
           <div className="flex items-center justify-between">
             {/* Desktop Nav - Combined with Logo and CTA */}
-            <div className="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-4 py-1 border border-gray-300 space-x-4 justify-center mx-auto">
+            <div className="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-4 py-1 border border-gray-300 space-x-4 justify-center mx-auto md:shadow-sm">
               {/* Logo Inside */}
               <Link href="/">
                 <div className="flex flex-col mx-4">
