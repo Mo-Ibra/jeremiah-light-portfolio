@@ -1,4 +1,3 @@
-import { Star } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 import Image from "next/image";
 import { IoStar } from "react-icons/io5";

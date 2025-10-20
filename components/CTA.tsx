@@ -24,7 +24,6 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
                 {" "}
                 Ready to <span className="text-white">Scale</span>
               </p>
-              {/* SVG — تظهر جنب Scale في الشاشات الكبيرة وتكون فوق Brand في الموبايل */}
               <div className="bg-white rounded-lg p-2 -rotate-12 shadow-lg sm:static sm:translate-y-0 sm:translate-x-0 -translate-y-2 translate-x-5 sm:mb-0 mb-2">
                 <svg
                   className="w-6 h-6 sm:w-8 sm:h-8 text-primary"

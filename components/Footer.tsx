@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Instagram, Facebook, X } from "lucide-react";
 import Image from "next/image";
 
 const Footer = () => {

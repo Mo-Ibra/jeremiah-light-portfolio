@@ -1,7 +1,6 @@
 import React, {
   useState,
   useEffect,
-  ChangeEvent,
   FormEvent,
   MouseEvent,
 } from "react";
