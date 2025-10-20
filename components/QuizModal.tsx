@@ -1,3 +1,4 @@
+import { getCalApi } from "@calcom/embed-react";
 import React, { useState, useEffect, FormEvent, MouseEvent } from "react";
 
 declare global {
@@ -39,6 +40,15 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
   const [showSuccess, setShowSuccess] = useState<boolean>(false);
 
   const totalSteps = 6;
+
+  useEffect(() => {
+    if (isOpen) {
+      (async function () {
+        const cal = await getCalApi({ namespace: "30min" });
+        cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+      })();
+    }
+  }, [isOpen]);
 
   // ✅ Reset quiz when modal opens
   useEffect(() => {
@@ -114,10 +124,8 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
 
       // if (res.ok) {
       setShowSuccess(true);
-      window.open(
-        "https://calendly.com/jeremiah-harcharran-qrd_/30min",
-        "_blank"
-      );
+      const cal = await getCalApi({ namespace: "30min" });
+      cal("ui", { layout: "month_view" });
       // } else {
       // console.error("Failed to send email");
       // }
@@ -226,7 +234,9 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                   <h3 className="quiz-title">Schedule Free Ads Audit</h3>
                 </div>
 
-                <h4 className="quiz-question">What&apos;s your monthly ad spend?</h4>
+                <h4 className="quiz-question">
+                  What&apos;s your monthly ad spend?
+                </h4>
                 <div className="quiz-radio-group">
                   {[
                     {
@@ -277,7 +287,6 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
 
               {/* Step 3: Issues */}
               <div className={`quiz-step ${currentStep === 3 ? "active" : ""}`}>
-
                 <div className="quiz-header">
                   <h3 className="quiz-title">Schedule Free Ads Audit</h3>
                 </div>
@@ -308,7 +317,6 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
 
               {/* Step 4: Looking for */}
               <div className={`quiz-step ${currentStep === 4 ? "active" : ""}`}>
-
                 <div className="quiz-header">
                   <h3 className="quiz-title">Schedule Free Ads Audit</h3>
                 </div>
@@ -337,7 +345,6 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
 
               {/* Step 5: Website */}
               <div className={`quiz-step ${currentStep === 5 ? "active" : ""}`}>
-
                 <div className="quiz-header">
                   <h3 className="quiz-title">Schedule Free Ads Audit</h3>
                 </div>
@@ -367,7 +374,6 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
 
               {/* Step 6: Contact Info */}
               <div className={`quiz-step ${currentStep === 6 ? "active" : ""}`}>
-
                 <div className="quiz-header">
                   <h3 className="quiz-title">Schedule Free Ads Audit</h3>
                 </div>
@@ -398,7 +404,13 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                   />
                 </div>
                 <div className="quiz-nav">
-                  <button type="submit" className="quiz-btn quiz-btn-submit">
+                  <button
+                    type="submit"
+                    className="quiz-btn quiz-btn-submit"
+                    data-cal-namespace="30min"
+                    data-cal-link="harcharran/30min"
+                    data-cal-config='{"layout":"month_view"}'
+                  >
                     Book Meeting
                   </button>
                 </div>
