@@ -226,7 +226,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                   <h3 className="quiz-title">Schedule Free Ads Audit</h3>
                 </div>
 
-                <h4 className="quiz-question">What's your monthly ad spend?</h4>
+                <h4 className="quiz-question">What&apos;s your monthly ad spend?</h4>
                 <div className="quiz-radio-group">
                   {[
                     {
