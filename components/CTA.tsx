@@ -51,7 +51,7 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
             There is currently 1 spot available for a new partnership
           </p>
           <p className="relative z-10 text-[#ffffff90] md:mb-4 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base ">
-            Apply below to see if we’re a good fit.
+            Apply below to see if we&apos;re a good fit.
           </p>
           <button
             className="relative z-10 bg-white text-primary md:px-8 px-4 md:py-4 py-3 rounded-xl shadow-2xl cursor-pointer text-xs md:text-lg font-semibold hover:bg-gray-50 mb-4 hover:scale-110 transition-all"
