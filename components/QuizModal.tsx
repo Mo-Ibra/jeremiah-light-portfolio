@@ -147,7 +147,8 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
       // });
 
       // if (res.ok) {
-      setShowSuccess(true);
+      // setShowSuccess(true);
+      closeModal();
       const cal = await getCalApi({ namespace: "30min" });
       cal("ui", { layout: "month_view" });
       cal("modal", { calLink: "harcharran/30min" });

@@ -68,7 +68,7 @@ function Home() {
       <Comparison />
       <Features />
       <FAQs />
-      <CTA onOpenQuiz={openQuiz}  />
+      <CTA onOpenQuiz={openQuiz} />
       <QuizModal isOpen={isQuizOpen} onClose={closeQuiz} />
       <Footer />
     </>
