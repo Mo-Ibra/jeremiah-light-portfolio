@@ -6,7 +6,7 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
   return (
     <section className="md:py-16 py-12 px-6" id="cta">
       <div className="max-w-5xl mx-auto">
-        <div className="relative bg-gradient-to-r from-primary to-indigo-400 rounded-3xl p-12 text-center overflow-hidden shadow-2xl">
+        <div className="relative bg-gradient-to-r max-w-7xl from-primary to-indigo-400 rounded-3xl p-12 text-center overflow-hidden shadow-2xl">
           <div
             className="absolute inset-0 opacity-40"
             style={{
@@ -18,33 +18,39 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
           ></div>
 
           {/* Content */}
-          <h2 className="relative z-10 text-xl sm:text-4xl md:text-5xl font-bold text-white pb-6 mb-6 flex items-center justify-center gap-4 after:content-[''] after:block after:h-[2px] after:w-2/3 after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2">
-            Ready to Scale
-            <div className="bg-white rounded-lg p-2 -rotate-12 shadow-2xl cursor-pointer hover:scale-110 transition-all">
-              <svg
-                className="w-8 h-8 text-primary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                />
-              </svg>
-            </div>
-            Your Brand?
+          <h2 className="relative z-10 text-2xl sm:text-4xl font-bold text-white mb-4 flex flex-col sm:flex-row items-center justify-center md:gap-2">
+            <span className="flex items-center gap-2">
+              <p className="relative left-5 sm:static sm:left-0">
+                {" "}
+                Ready to <span className="text-indigo-200">Scale</span>
+              </p>
+              {/* SVG — تظهر جنب Scale في الشاشات الكبيرة وتكون فوق Brand في الموبايل */}
+              <div className="bg-white rounded-lg p-2 -rotate-12 shadow-lg sm:static sm:translate-y-0 sm:translate-x-0 -translate-y-2 translate-x-5 sm:mb-0 mb-2">
+                <svg
+                  className="w-6 h-6 sm:w-8 sm:h-8 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                  />
+                </svg>
+              </div>
+            </span>
+            <span className="text-indigo-100">Your Brand?</span>
           </h2>
-          <p className="relative z-10 text-indigo-100 mb-2 max-w-4xl mx-auto leading-relaxed text-sm font-bold">
+          <p className="relative z-10 text-indigo-100 md:mb-2 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base font-bold">
             I work with a maximum of 4 brands at any given time to ensure my
             partners get the focus and results they deserve.
           </p>
-          <p className="relative z-10 text-indigo-100 mb-2 max-w-4xl mx-auto leading-relaxed text-sm font-bold">
+          <p className="relative z-10 text-indigo-100 md:mb-2 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base font-bold">
             There is currently 1 spot available for a new partnership
           </p>
-          <p className="relative z-10 text-indigo-100 mb-4 max-w-4xl mx-auto leading-relaxed text-sm font-bold">
+          <p className="relative z-10 text-indigo-100 md:mb-4 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base font-bold">
             Apply below to see if we’re a good fit.
           </p>
           <button
