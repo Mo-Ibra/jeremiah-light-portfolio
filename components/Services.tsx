@@ -16,7 +16,7 @@ const Services = () => {
           badgeBackgroundColor="bg-[#5360c226]"
           className="md:mb-12 mb-6"
         >
-          <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             The Complete{" "}
             <span className="text-primary">Performance Creative</span> Stack
           </h2>

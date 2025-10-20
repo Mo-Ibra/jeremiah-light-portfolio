@@ -14,7 +14,7 @@ const Features = () => {
           badgeBackgroundColor="bg-[#5360c226]"
           className="md:mb-12 mb-6"
         >
-          <h2 className="text-2xl md:text-[40px] font-bold text-black">
+          <h2 className="text-2xl md:text-[40px] font-semibold text-black">
             <span className="text-primary">Exclusive Perks</span> You Get When{" "}
             <span className="text-primary">We Work Together</span>
           </h2>
@@ -37,14 +37,14 @@ const Features = () => {
               </div>
               <div className="pl-6 py-3">
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Your Centralized Creative Hub
+                  Live Dashboard & Centralized Creative Hub
                 </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed max-w-xl">
                   Forget messy Google Drive folders and lost files. You get 24/7
                   access to a dedicated, AI-searchable creative hub. Every ad,
                   raw clip, and asset is perfectly organized and instantly
                   accessible, creating a valuable, evergreen content library for
-                  your brand.
+                  your brand - you can even see what we’re doing in real time.
                 </p>
               </div>
             </div>
@@ -113,7 +113,7 @@ const Features = () => {
                 <h3 className="text-xl font-bold text-white mb-2">
                   Proprietary Audience Insights
                 </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed max-w-xl">
                   We go beyond basic demographics. Our proprietary database
                   tracks the emotional and behavioural psychographics of your
                   target audience. This allows us to craft ads with messaging

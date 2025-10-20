@@ -155,7 +155,7 @@ export default function CaseStudiesSection() {
           badgeBackgroundColor="bg-[#5360c226]"
           className="md:mb-12 mb-6"
         >
-          <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             Our Creatives Actually Work -{" "}
             <span className="text-primary">Watch Some Results Below</span>
           </h2>
