@@ -74,7 +74,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
     if (currentStep === 1 && formData.platform) {
       const timer = setTimeout(() => {
         setCurrentStep(2);
-      }, 1000);
+      }, 100);
       return () => clearTimeout(timer);
     }
   }, [formData.platform, currentStep]);
