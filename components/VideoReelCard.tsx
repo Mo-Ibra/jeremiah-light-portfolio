@@ -140,7 +140,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
   return (
     <div
       ref={containerRef}
-      className="relative opacity-0 translate-y-10 animate-[fadeInUp_0.8s_ease_forwards] break-inside-avoid mb-4 sm:mb-6 lg:mb-8"
+      className="relative opacity-0 translate-y-10 animate-[fadeInUp_0.8s_ease_forwards] break-inside-avoid"
     >
       <div
         className="relative rounded-2xl overflow-hidden border-2 border-primary scale-100 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_20px_rgba(0,0,0,0.15)] cursor-pointer hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] tap-highlight-transparent w-[180px] h-[240px] md:w-[310px] md:h-[388px]"

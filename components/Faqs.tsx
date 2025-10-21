@@ -30,7 +30,7 @@ export default function FAQs() {
         </SectionHeader>
 
         <div className="max-w-2xl mx-auto">
-          <div className="space-y-8">
+          <div className="space-y-4 md:space-y-8">
             {faqData.map((faq, index) => (
               <div
                 key={index}
@@ -38,7 +38,7 @@ export default function FAQs() {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 py-5 text-left flex items-center justify-between rounded-lg"
+                  className="w-full px-6 md:py-5 py-2.5 text-left flex items-center justify-between rounded-lg"
                 >
                   <h3 className="md:text-base text-xs font-semibold text-white pr-4">
                     {faq.question}

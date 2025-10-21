@@ -2,15 +2,28 @@
 
 import "../styles/video-reels.css";
 
-import React from "react";
+import React, { useState } from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { portfolioReels } from "@/data/data";
 import SectionHeader from "./SectionHeader";
 import BlurCircle from "./BlurCircle";
 
 const VideoReelsForPortfolio = () => {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filters = ["All", "UGC", "Studio", "AI", "Statics"];
+
+  // Filter the reels based on active filter
+  const filteredReels =
+    activeFilter === "All"
+      ? portfolioReels
+      : portfolioReels.filter((reel) => reel.category === activeFilter);
+
   return (
-    <section id="portfolio" className="relative overflow-hidden pt-24 md:pt-36 z-0">
+    <section
+      id="portfolio"
+      className="relative overflow-hidden pt-24 md:pt-36 z-0"
+    >
       <BlurCircle top="200px" />
       <BlurCircle left="1500px" top="900px" />
 
@@ -29,9 +42,29 @@ const VideoReelsForPortfolio = () => {
           </p>
         </SectionHeader>
 
+        {/* Filter Buttons */}
+        <div className="flex items-center justify-center gap-3 pt-6">
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`
+                px-5 py-2 rounded-full font-medium text-sm transition-all duration-200
+                ${
+                  activeFilter === filter
+                    ? "bg-indigo-600 text-white shadow-md"
+                    : "bg-white text-gray-700 hover:bg-gray-50 border border-gray-200"
+                }
+              `}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
         {/* Reels Grid */}
-        <div className="columns-2 sm:columns-2 lg:columns-3 md:gap-2 lg:gap-5 mx-auto max-w-max mb-20">
-          {portfolioReels.map((reel, index) => (
+        <div className="grid grid-cols-2 lg:grid-cols-3 md:gap-2 lg:gap-5 mx-auto max-w-max mb-20 gap-2 sm:gap-3">
+          {filteredReels.map((reel, index) => (
             <VideoReelCard key={index} {...reel} />
           ))}
         </div>

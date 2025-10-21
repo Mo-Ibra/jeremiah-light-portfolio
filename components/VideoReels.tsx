@@ -94,7 +94,7 @@ const VideoReels = () => {
         </div>
 
         {/* Reels Grid */}
-        <div className="columns-2 sm:columns-2 lg:columns-3 gap-2 sm:gap-3 lg:gap-5 mx-auto max-w-max mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 lg:gap-5 mx-auto max-w-max mb-20">
           {displayedReels.map((reel, index) => (
             <VideoReelCard key={index} {...reel} />
           ))}
