@@ -43,17 +43,17 @@ const VideoReelsForPortfolio = () => {
         </SectionHeader>
 
         {/* Filter Buttons */}
-        <div className="flex items-center flex-wrap justify-center gap-3 pt-6 z-[100]">
+        <div className="flex items-center flex-wrap justify-center gap-3 pt-6">
           {filters.map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
               className={`
-                px-5 py-2 rounded-full font-medium text-sm transition-all duration-200
+                px-5 py-2 rounded-full text-sm transition-all duration-200 font-semibold z-50 text-[15px]
                 ${
                   activeFilter === filter
                     ? "bg-indigo-600 text-white shadow-md"
-                    : "bg-white text-gray-700 hover:bg-gray-50 border border-gray-200"
+                    : "bg-transparent text-primary hover:bg-gray-50 border border-gray-200"
                 }
               `}
             >
