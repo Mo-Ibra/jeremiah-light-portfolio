@@ -40,14 +40,16 @@ const Process = () => {
           }}
         >
           {/* Step 1 - Onboarding & Analysis */}
-          <div className="relative overflow-hidden rounded-3xl h-[320px] border-2 border-primary">
+          <div className="relative overflow-hidden rounded-3xl h-[320px]">
             <div
-              className="absolute inset-0 bg-cover bg-center"
+              className="absolute inset-0 bg-center"
               style={{
-                backgroundImage: `url('/images/process/1.jpg')`,
+                backgroundImage: `url('/images/process/1.svg')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/20" />
+            <div className="absolute inset-0" />
 
             <div className="relative z-10 p-4 h-full flex flex-col">
               <div className="flex justify-between items-center">
@@ -69,7 +71,7 @@ const Process = () => {
                 <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
                   Onboarding & Analysis
                 </h3>
-                <p className="text-white text-xs md:text-[15px] leading-relaxed">
+                <p className="text-white text-xs md:text-[15px] leading-5">
                   The foundation phase where we dive deep into understanding
                   your brand, business goals, target audience, and competitive
                   landscape to create a strategic roadmap for your
@@ -80,14 +82,16 @@ const Process = () => {
           </div>
 
           {/* Step 2 - Production */}
-          <div className="relative overflow-hidden rounded-3xl h-[320px] border-2 border-primary">
+          <div className="relative overflow-hidden rounded-3xl h-[320px]">
             <div
-              className="absolute inset-0 bg-cover bg-center"
+              className="absolute inset-0 bg-center"
               style={{
-                backgroundImage: `url('/images/process/2.jpg')`,
+                backgroundImage: `url('/images/process/2.svg')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/20" />
+            {/* <div className="absolute inset-0" /> */}
 
             <div className="relative z-10 p-4 h-full flex flex-col">
               <div className="flex justify-between items-center">
@@ -109,7 +113,7 @@ const Process = () => {
                 <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
                   Production
                 </h3>
-                <p className="text-white text-xs md:text-[15px] leading-relaxed">
+                <p className="text-white text-xs md:text-[15px] leading-5">
                   The execution phase where strategic concepts come to life
                   through meticulous design work, refined iterations, and
                   quality craftsmanship to deliver exceptional brand assets that
@@ -120,14 +124,16 @@ const Process = () => {
           </div>
 
           {/* Step 3 - Launch & Optimize */}
-          <div className="relative overflow-hidden rounded-3xl h-[320px] border-2 border-primary">
+          <div className="relative overflow-hidden rounded-3xl h-[320px]">
             <div
-              className="absolute inset-0 bg-cover bg-center"
+              className="absolute inset-0 bg-center"
               style={{
-                backgroundImage: `url('/images/process/3.jpg')`,
+                backgroundImage: `url('/images/process/3.svg')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/20" />
+            <div className="absolute inset-0" />
 
             <div className="relative z-10 p-4 h-full flex flex-col">
               <div className="flex justify-between items-center">
@@ -149,7 +155,7 @@ const Process = () => {
                 <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
                   Launch & Optimize
                 </h3>
-                <p className="text-white text-xs md:text-[15px] leading-relaxed">
+                <p className="text-white text-xs md:text-[15px] leading-5">
                   The final phase where we implement your brand assets across
                   all channels, monitor performance, and make data-driven
                   adjustments to ensure maximum impact and ongoing success.
@@ -159,14 +165,16 @@ const Process = () => {
           </div>
 
           {/* Step 4 - Scaling */}
-          <div className="relative overflow-hidden rounded-3xl h-[320px] border-2 border-primary">
+          <div className="relative overflow-hidden rounded-3xl h-[320px]">
             <div
-              className="absolute inset-0 bg-cover bg-center"
+              className="absolute inset-0 bg-center"
               style={{
-                backgroundImage: `url('/images/process/4.png')`,
+                backgroundImage: `url('/images/process/4.svg')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/20" />
+            <div className="absolute inset-0" />
 
             <div className="relative z-10 p-4 h-full flex flex-col">
               <div className="flex justify-between items-center">
@@ -188,7 +196,7 @@ const Process = () => {
                 <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
                   Scaling
                 </h3>
-                <p className="text-white text-xs md:text-[15px] leading-relaxed">
+                <p className="text-white text-xs md:text-[15px] leading-5">
                   The growth phase where we expand your successful brand
                   foundation across new markets, channels, and touchpoints while
                   maintaining consistency and adapting strategies to support
