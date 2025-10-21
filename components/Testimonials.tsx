@@ -150,7 +150,7 @@ export default function TestimonialsSection() {
             <div
               key={index}
               className="rounded-2xl bg-white p-6 mb-6 break-inside-avoid"
-              style={{ boxShadow: "0px 2px 12px 0px #00000025" }}
+              style={{ boxShadow: "0px 2px 12px 0px #00000050" }}
             >
               {/* Avatar and Name */}
               <div className="flex gap-3 items-center">

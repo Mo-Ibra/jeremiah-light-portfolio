@@ -1,14 +1,28 @@
+import { useEffect, useState } from "react";
+
 type CTAProps = {
   onOpenQuiz: () => void;
 };
 
 const CTA = ({ onOpenQuiz }: CTAProps) => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <section className="md:py-16 py-12 px-6" id="cta">
       <div className="max-w-5xl mx-auto">
         <div className="relative bg-gradient-to-r max-w-7xl from-primary to-indigo-400 rounded-3xl p-12 text-center overflow-hidden"
-        
-        style={{ boxShadow: "0px 30px 30px 12px #00000040", }}
+          style={{ boxShadow: isMobile ? "0px 15px 15px 5px #00000040" :  "0px 30px 30px 12px #00000040", }}
         >
           <div
             className="absolute inset-0 opacity-40"
