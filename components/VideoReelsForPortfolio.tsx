@@ -53,7 +53,7 @@ const VideoReelsForPortfolio = () => {
                 ${
                   activeFilter === filter
                     ? "bg-indigo-600 text-white shadow-md"
-                    : "bg-transparent text-primary hover:bg-gray-50 border border-gray-200"
+                    : "bg-transparent text-primary hover:bg-gray-50 "
                 }
               `}
             >
