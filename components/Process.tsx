@@ -31,7 +31,14 @@ const Process = () => {
         </div>
 
         {/* Process Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 rounded-3xl p-3"
+          style={{
+            backgroundImage: "url('images/process/bg.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           {/* Step 1 - Onboarding & Analysis */}
           <div className="relative overflow-hidden rounded-3xl h-[320px] border-2 border-primary">
             <div
@@ -47,7 +54,11 @@ const Process = () => {
                 <div className="text-5xl font-bold text-white mb-5">01</div>
 
                 <div className="bg-white rounded-2xl px-3 py-1 inline-flex items-center gap-2 mb-6 w-fit">
-                  <img src="/images/process/icons/1.svg" alt="SVG Icon" className="w-6 h-6" />
+                  <img
+                    src="/images/process/icons/1.svg"
+                    alt="SVG Icon"
+                    className="w-6 h-6"
+                  />
                   <span className="text-xs text-gray-800 font-bold">
                     Audience Research
                   </span>
@@ -83,7 +94,11 @@ const Process = () => {
                 <div className="text-5xl font-bold text-white mb-5">02</div>
 
                 <div className="bg-white rounded-2xl px-3 py-1 inline-flex items-center gap-2 mb-6 w-fit">
-                  <img src="/images/process/icons/2.svg" alt="SVG Icon" className="w-6 h-6" />
+                  <img
+                    src="/images/process/icons/2.svg"
+                    alt="SVG Icon"
+                    className="w-6 h-6"
+                  />
                   <span className="text-xs text-gray-800 font-bold">
                     Creative Production
                   </span>
@@ -119,7 +134,11 @@ const Process = () => {
                 <div className="text-5xl font-bold text-white mb-5">03</div>
 
                 <div className="bg-white rounded-2xl px-3 py-1 inline-flex items-center gap-2 mb-6 w-fit">
-                  <img src="/images/process/icons/3.svg" alt="SVG Icon" className="w-6 h-6" />
+                  <img
+                    src="/images/process/icons/3.svg"
+                    alt="SVG Icon"
+                    className="w-6 h-6"
+                  />
                   <span className="text-xs text-gray-800 font-bold">
                     Ad Optimization
                   </span>
@@ -154,7 +173,11 @@ const Process = () => {
                 <div className="text-5xl font-bold text-white mb-5">04</div>
 
                 <div className="bg-white rounded-2xl px-3 py-1 inline-flex items-center gap-2 mb-6 w-fit">
-                  <img src="/images/process/icons/4.svg" alt="SVG Icon" className="w-6 h-6" />
+                  <img
+                    src="/images/process/icons/4.svg"
+                    alt="SVG Icon"
+                    className="w-6 h-6"
+                  />
                   <span className="text-xs text-gray-800 font-bold">
                     Scaling Efficiency
                   </span>
