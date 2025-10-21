@@ -49,7 +49,7 @@ const VideoReelsForPortfolio = () => {
               key={filter}
               onClick={() => setActiveFilter(filter)}
               className={`
-                px-5 py-2 rounded-full font-medium text-sm transition-all duration-200 z-50
+                px-5 py-2 rounded-full font-medium text-sm transition-all duration-200
                 ${
                   activeFilter === filter
                     ? "bg-indigo-600 text-white shadow-md"
