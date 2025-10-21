@@ -22,10 +22,10 @@ const VideoReelsForPortfolio = () => {
   return (
     <section
       id="portfolio"
-      className="relative overflow-hidden pt-24 md:pt-36 z-0"
+      className="relative overflow-hidden pt-24 md:pt-36"
     >
-      <BlurCircle top="200px" />
-      <BlurCircle left="1500px" top="900px" />
+      <BlurCircle top="200px" className="z-40" />
+      <BlurCircle left="1500px" top="900px" className="z-40" />
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
@@ -49,7 +49,7 @@ const VideoReelsForPortfolio = () => {
               key={filter}
               onClick={() => setActiveFilter(filter)}
               className={`
-                px-5 py-2 rounded-full font-medium text-sm transition-all duration-200
+                px-5 py-2 rounded-full font-medium text-sm transition-all duration-200 z-50
                 ${
                   activeFilter === filter
                     ? "bg-indigo-600 text-white shadow-md"
