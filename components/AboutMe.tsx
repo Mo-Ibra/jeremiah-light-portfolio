@@ -16,7 +16,7 @@ const AboutMe = () => {
 
       <div className="max-w-4xl md:max-w-7xl mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="About Me" className="mb-0 md:mb-16">
+        <SectionHeader badgeText="About Us" className="mb-0 md:mb-16">
           <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             Message From {" "}
             <span className="text-primary">Our Founder </span>
@@ -29,7 +29,7 @@ const AboutMe = () => {
           <div className="flex justify-center mb-4">
             <div className="relative overflow-hidden rounded-3xl border-4 border-primary bg-gray-200 aspect-[4/5] w-full max-w-[400px] sm:max-w-[450px] md:max-w-[488px]">
               <img
-                src="/images/portfolio/2.jpg"
+                src="/images/portfolio/3.png"
                 alt="Jeremiah - Creative Director"
                 className="w-full h-full object-cover"
               />
@@ -63,7 +63,7 @@ const AboutMe = () => {
                   Jeremiah
                 </span>
               </div>
-              <p className="max-w-2xl mx-auto text-2xl text-[#00000073] leading-8 mt-2">
+              <p className="max-w-2xl mx-auto text-base md:text-2xl text-[#00000073] leading-8 mt-2">
                 I&apos;m obsessed with performance and so is my team. As your
                 dedicated creative partner, I personally lead the strategy and
                 execution for the handful of ambitious brands we work with. This

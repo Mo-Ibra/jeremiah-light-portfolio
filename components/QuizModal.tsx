@@ -77,7 +77,14 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
       }, 100);
       return () => clearTimeout(timer);
     }
-  }, [formData.platform, currentStep]);
+
+    if (currentStep === 2 && formData.adSpend) {
+      const timer = setTimeout(() => {
+        setCurrentStep(3);
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [formData.platform, formData.adSpend, currentStep]);
 
   // Generic input handler
   const handleInputChange = (name: keyof FormData, value: string | number) => {
@@ -299,7 +306,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                       </label>
                     </React.Fragment>
                   ))}
-                  <div className="quiz-nav">
+                  {/* <div className="quiz-nav">
                     <button
                       type="button"
                       className="quiz-btn quiz-btn-continue"
@@ -307,7 +314,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                     >
                       Continue
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

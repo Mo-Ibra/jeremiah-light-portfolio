@@ -78,7 +78,7 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
             className="relative z-10 bg-white text-primary md:px-8 px-4 md:py-4 py-3 rounded-xl shadow-2xl cursor-pointer text-xs md:text-lg font-semibold hover:bg-gray-50 mb-4 hover:scale-110 transition-all"
             onClick={onOpenQuiz}
           >
-            Book Meeting
+            Schedule Free Ads Audit
           </button>
           <div className="relative z-10 flex items-center justify-center gap-2 text-indigo-200">
             <div className="w-2 h-2 rounded-full bg-[#E3E6FF] animate-pulse"></div>

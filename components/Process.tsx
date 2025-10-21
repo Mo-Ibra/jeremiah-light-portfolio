@@ -32,15 +32,10 @@ const Process = () => {
 
         {/* Process Cards */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 rounded-3xl p-3"
-          style={{
-            backgroundImage: "url('images/process/bg.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 rounded-3xl p-3 bg-none md:bg-[url('/images/process/bg.png')] md:bg-cover md:bg-center"
         >
           {/* Step 1 - Onboarding & Analysis */}
-          <div className="relative overflow-hidden h-[320px]">
+          <div className="relative overflow-hidden h-[320px] md:rounded-none rounded-3xl">
             <div
               className="absolute inset-0 bg-center"
               style={{
@@ -51,7 +46,7 @@ const Process = () => {
             />
             <div className="absolute inset-0" />
 
-            <div className="relative z-10 p-4 h-full flex flex-col">
+            <div className="relative z-10 p-4 h-full flex flex-col md:rounded-none rounded-xl">
               <div className="flex justify-between items-center">
                 <div className="text-5xl font-bold text-white mb-5">01</div>
 
@@ -68,10 +63,10 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
+                <h3 className="text-[23px] font-bold text-[#8994e8] mb-2">
                   Onboarding & Analysis
                 </h3>
-                <p className="text-white text-xs md:text-[15px] leading-5">
+                <p className="text-white text-xs md:text-[14px] leading-5">
                   The foundation phase where we dive deep into understanding
                   your brand, business goals, target audience, and competitive
                   landscape to create a strategic roadmap for your
@@ -82,7 +77,7 @@ const Process = () => {
           </div>
 
           {/* Step 2 - Production */}
-          <div className="relative overflow-hidden h-[320px]">
+          <div className="relative overflow-hidden h-[320px] md:rounded-none rounded-3xl">
             <div
               className="absolute inset-0 bg-center"
               style={{
@@ -93,7 +88,7 @@ const Process = () => {
             />
             {/* <div className="absolute inset-0" /> */}
 
-            <div className="relative z-10 p-4 h-full flex flex-col">
+            <div className="relative z-10 p-4 h-full flex flex-col md:rounded-none rounded-xl">
               <div className="flex justify-between items-center">
                 <div className="text-5xl font-bold text-white mb-5">02</div>
 
@@ -110,21 +105,21 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
+                <h3 className="text-[23px] font-bold text-[#8994e8] mb-2">
                   Production
                 </h3>
-                <p className="text-white text-xs md:text-[15px] leading-5">
-                  The execution phase where strategic concepts come to life
-                  through meticulous design work, refined iterations, and
-                  quality craftsmanship to deliver exceptional brand assets that
-                  exceed expectations.
+                <p className="text-white text-xs md:text-[14px] leading-5">
+                  Next is the production phase where our planning becomes real.
+                  We make your content with great care, optimize for
+                  performance, build out, and revise the final result until you
+                  are satisfied. We go the extra mile at no extra cost.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Step 3 - Launch & Optimize */}
-          <div className="relative overflow-hidden h-[320px]">
+          <div className="relative overflow-hidden h-[320px] md:rounded-none rounded-3xl">
             <div
               className="absolute inset-0 bg-center"
               style={{
@@ -135,7 +130,7 @@ const Process = () => {
             />
             <div className="absolute inset-0" />
 
-            <div className="relative z-10 p-4 h-full flex flex-col">
+            <div className="relative z-10 p-4 h-full flex flex-col md:rounded-none rounded-xl">
               <div className="flex justify-between items-center">
                 <div className="text-5xl font-bold text-white mb-5">03</div>
 
@@ -152,20 +147,21 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
+                <h3 className="text-[23px] font-bold text-[#8994e8] mb-2">
                   Launch & Optimize
                 </h3>
-                <p className="text-white text-xs md:text-[15px] leading-5">
-                  The final phase where we implement your brand assets across
-                  all channels, monitor performance, and make data-driven
-                  adjustments to ensure maximum impact and ongoing success.
+                <p className="text-white text-xs md:text-[14px] leading-5">
+                  After production we implement your final performance creatives
+                  across your channels, monitor performance, and make
+                  data-driven adjustments to ensure maximum impact and ongoing
+                  success.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Step 4 - Scaling */}
-          <div className="relative overflow-hidden h-[320px]">
+          <div className="relative overflow-hidden h-[320px] md:rounded-none rounded-3xl">
             <div
               className="absolute inset-0 bg-center"
               style={{
@@ -193,14 +189,14 @@ const Process = () => {
               </div>
 
               <div className="mt-auto">
-                <h3 className="text-[23px] font-bold text-[#8994e8] mb-3">
+                <h3 className="text-[23px] font-bold text-[#8994e8] mb-2">
                   Scaling
                 </h3>
-                <p className="text-white text-xs md:text-[15px] leading-5">
-                  The growth phase where we expand your successful brand
-                  foundation across new markets, channels, and touchpoints while
-                  maintaining consistency and adapting strategies to support
-                  your business expansion.
+                <p className="text-white text-xs md:text-[14px] leading-5">
+                  In this final phase we focus on growth. We spend more on your
+                  best ads and stop what isn’t working. We'll then take these
+                  winning ads to new markets and channels to help you expand
+                  smoothly. Then iterate for reproducible success
                 </p>
               </div>
             </div>
