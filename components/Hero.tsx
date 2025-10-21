@@ -20,7 +20,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="flex justify-center items-center md:min-h-[95vh] z-40 relative overflow-hidden py-4 md:py-0 md:m-6 rounded-b-3xl md:rounded-3xl">
+    <section className="flex justify-center items-center md:min-h-[95vh] min-h-[100vh] z-40 relative overflow-hidden py-4 md:py-0 md:m-6 rounded-b-3xl md:rounded-3xl">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -61,7 +61,7 @@ const Hero = () => {
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl mt-6">
             {/* Status Badge */}
-            <div className="inline-flex items-center px-4 py-1 border border-green-400 bg-[#eff1fe] rounded-full text-[#0ea300] text-sm font-semibold mb-4 md:mb-0">
+            <div className="inline-flex items-center px-4 py-1 border border-green-400 bg-[#eff1fe] rounded-full text-[#0ea300] text-[10px] md:text-sm font-semibold mb-4 md:mb-0">
               <div className="w-3 h-3 bg-[#00c514] rounded-full mr-2"></div>
               Partnering with 1 more brand this month
             </div>
@@ -111,7 +111,7 @@ const Hero = () => {
         </div>
 
         {/* CTA Buttons - Centered Below */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-12">
           <button
             onClick={() => (location.href = "#cta")}
             className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
