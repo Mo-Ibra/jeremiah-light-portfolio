@@ -60,7 +60,7 @@ export default function FAQs() {
                   }`}
                 >
                   <div className="px-6 pb-5">
-                    <p className="text-muted md:text-sm text-[10px] leading-relaxed">
+                    <p className="text-muted md:text-sm text-[10px] leading-relaxed max-w-[500px]">
                       {faq.answer}
                     </p>
                   </div>
