@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Plus } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 import { faqData } from "@/data/data";
@@ -45,9 +45,9 @@ export default function FAQs() {
                   </h3>
                   <div className="flex-shrink-0">
                     {openIndex === index ? (
-                      <ChevronUp className="w-5 h-5 text-white" />
+                      <Plus className="w-5 h-5 rotate-45 text-white" strokeWidth={4} />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-white" />
+                      <Plus className="w-5 h-5 text-white" strokeWidth={4} />
                     )}
                   </div>
                 </button>
