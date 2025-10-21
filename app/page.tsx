@@ -19,6 +19,7 @@ import { useEffect, useState } from "react";
 import QuizModal from "@/components/QuizModal";
 
 function Home() {
+  
   const [isMobile, setIsMobile] = useState(false);
 
   const [isQuizOpen, setIsQuizOpen] = useState(false);
