@@ -197,7 +197,7 @@ export default function CaseStudiesSection() {
                   </span>
                 </div>
 
-                <p className="text-gray-300 text-sm mb-6 leading-relaxed">
+                <p className="text-gray-300 text-center md:text-start text-sm mb-6 leading-relaxed">
                   {study.description}
                 </p>
 
