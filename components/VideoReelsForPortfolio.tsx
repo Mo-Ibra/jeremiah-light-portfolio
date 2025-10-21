@@ -43,7 +43,7 @@ const VideoReelsForPortfolio = () => {
         </SectionHeader>
 
         {/* Filter Buttons */}
-        <div className="flex items-center flex-wrap justify-center gap-3 pt-6">
+        <div className="flex items-center flex-wrap justify-center gap-3 pt-6 z-[100]">
           {filters.map((filter) => (
             <button
               key={filter}
