@@ -5,6 +5,7 @@ import "../styles/video-reels.css";
 import React, { useEffect, useState } from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { videoReels, portfolioReels } from "@/data/data";
+import Link from "next/link";
 
 // type ButtonConfig = {
 //   text: string;
@@ -119,13 +120,12 @@ const VideoReels = () => {
           </button>
         )} */}
 
-        <a
+        <Link
           href="/portfolio"
-          className="px-6 md:px-8 py-3 md:py-4 w-fit bg-primary text-white font-bold rounded-lg shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12"
+          className="px-7 md:px-9 py-3 md:py-4 w-fit bg-primary text-white font-bold rounded-full shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12"
         >
           <span>See Full Portfolio</span>
-          <span>→</span>
-        </a>
+        </Link>
       </div>
     </section>
   );
