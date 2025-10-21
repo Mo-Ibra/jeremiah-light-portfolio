@@ -7,8 +7,8 @@ So let's make a list for myself.
 - About Me => About Us and sizing the text on mobile  (✅)
 - Text in my process section (✅)
 - Sizing and change second section title (✅)
+- Hero section (Label and margin, and this fade in carousel) (✅)
 - Benefits and Features section on mobile - it should be more to the left because it cuts out a bit
-- Hero section (Label and margin, and this fade in carousel)
 - Blend background together
 - Fix the modal bug on mobile (Hide scrollbar when open modal)
 - Borders

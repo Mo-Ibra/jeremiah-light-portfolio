@@ -194,7 +194,7 @@ const Process = () => {
                 </h3>
                 <p className="text-white text-xs md:text-[14px] leading-5">
                   In this final phase we focus on growth. We spend more on your
-                  best ads and stop what isn’t working. We'll then take these
+                  best ads and stop what isn&apos;t working. We&apos;ll then take these
                   winning ads to new markets and channels to help you expand
                   smoothly. Then iterate for reproducible success
                 </p>
