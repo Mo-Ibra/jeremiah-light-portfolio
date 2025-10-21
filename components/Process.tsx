@@ -40,7 +40,7 @@ const Process = () => {
           }}
         >
           {/* Step 1 - Onboarding & Analysis */}
-          <div className="relative overflow-hidden rounded-3xl h-[320px]">
+          <div className="relative overflow-hidden h-[320px]">
             <div
               className="absolute inset-0 bg-center"
               style={{
@@ -82,7 +82,7 @@ const Process = () => {
           </div>
 
           {/* Step 2 - Production */}
-          <div className="relative overflow-hidden rounded-3xl h-[320px]">
+          <div className="relative overflow-hidden h-[320px]">
             <div
               className="absolute inset-0 bg-center"
               style={{
@@ -124,7 +124,7 @@ const Process = () => {
           </div>
 
           {/* Step 3 - Launch & Optimize */}
-          <div className="relative overflow-hidden rounded-3xl h-[320px]">
+          <div className="relative overflow-hidden h-[320px]">
             <div
               className="absolute inset-0 bg-center"
               style={{
@@ -165,7 +165,7 @@ const Process = () => {
           </div>
 
           {/* Step 4 - Scaling */}
-          <div className="relative overflow-hidden rounded-3xl h-[320px]">
+          <div className="relative overflow-hidden h-[320px]">
             <div
               className="absolute inset-0 bg-center"
               style={{
