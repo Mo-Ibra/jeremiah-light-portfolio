@@ -21,7 +21,7 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
   return (
     <section className="md:py-16 py-12 px-6" id="cta">
       <div className="max-w-5xl mx-auto">
-        <div className="relative bg-gradient-to-r max-w-7xl from-primary to-indigo-400 rounded-3xl p-12 text-center overflow-hidden"
+        <div className="relative bg-gradient-to-r max-w-7xl from-primary to-indigo-400 rounded-3xl p-10 md:p-12 text-center overflow-hidden"
           style={{ boxShadow: isMobile ? "0px 15px 15px 5px #00000040" :  "0px 30px 30px 12px #00000040", }}
         >
           <div
