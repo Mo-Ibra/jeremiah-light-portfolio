@@ -9,11 +9,11 @@ So let's make a list for myself.
 - Sizing and change second section title (✅)
 - Hero section (Label and margin, and this fade in carousel) (✅)
 - Benefits and Features section on mobile - it should be more to the left because it cuts out a bit  (✅)
+- Add facebook meta pixel (✅)
 - Blend background together
 - Fix the modal bug on mobile (Hide scrollbar when open modal)
 - Borders
 - Fix big screen, mobile background
-- Add facebook meta pixel
 - Add the new section (After fix all previous first)
 
 [10:42 PM, 10/20/2025] Jeremiah Harcharran Static: https://www.linkedin.com/in/jeremiah-harcharran-95948b207/
