@@ -5,7 +5,10 @@ import { Button } from "./ui/button";
 
 const AboutMe = () => {
   return (
-    <section className="md:py-16 py-12 px-6 relative overflow-hidden z-50" id="about">
+    <section
+      className="md:py-16 py-12 px-6 relative overflow-hidden z-50"
+      id="about"
+    >
       <BlurCircle
         left="1000px"
         blur="250px"
@@ -18,8 +21,7 @@ const AboutMe = () => {
         {/* Header */}
         <SectionHeader badgeText="About Us" className="mb-0 md:mb-16">
           <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
-            Message From {" "}
-            <span className="text-primary">Our Founder </span>
+            Message From <span className="text-primary">Our Founder </span>
           </h2>
         </SectionHeader>
 
@@ -118,7 +120,10 @@ const AboutMe = () => {
                 </a>
               </div>
 
-              <Button className="px-6 md:px-12 py-3 md:py-2 bg-primary text-white rounded-full font-medium transition-all hover:scale-105 hover:shadow-lg space-x-2 shadow-2xl">
+              <Button
+                onClick={() => (location.href = "#cta")}
+                className="px-6 md:px-12 py-3 md:py-2 bg-primary text-white rounded-full font-medium transition-all hover:scale-105 hover:shadow-lg space-x-2 shadow-2xl"
+              >
                 Let&apos;s Talk
               </Button>
             </div>

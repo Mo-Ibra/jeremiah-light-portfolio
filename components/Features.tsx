@@ -21,9 +21,9 @@ const Features = () => {
         </SectionHeader>
 
         {/* Benefits Grid */}
-        <div className="space-y-8">
+        <div className="space-y-4">
           {/* First Row */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* Content Management - 3/4 */}
             <div className="lg:col-span-2 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
               <div className="bg-black relative">
@@ -32,14 +32,14 @@ const Features = () => {
                   alt="Content Management System Interface"
                   width={600}
                   height={300}
-                  className="w-full h-[300px] object-cover p-2 rounded-4xl"
+                  className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
                 />
               </div>
-              <div className="pl-6 py-3">
+              <div className="md:pl-6 pl-4 md:py-3 py-2">
                 <h3 className="text-xl font-bold text-white mb-2">
                   Live Dashboard & Centralized Creative Hub
                 </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed max-w-xl">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed md:max-w-xl max-w-xs md:mb-0 mb-1">
                   Forget messy Google Drive folders and lost files. You get 24/7
                   access to a dedicated, AI-searchable creative hub. Every ad,
                   raw clip, and asset is perfectly organized and instantly
@@ -57,14 +57,14 @@ const Features = () => {
                   alt="Advertising Dashboard"
                   width={600}
                   height={300}
-                  className="w-full h-[300px] object-cover p-2 rounded-4xl"
+                  className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
                 />
               </div>
-              <div className="pl-6 py-3">
+              <div className="md:pl-6 pl-4 py-3">
                 <h3 className="text-lg font-bold text-white mb-2">
                   Weekly Performance Reporting
                 </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed md:mb-0 mb-1">
                   You&apos;ll get a transparent report each week detailing
                   what&apos;s working and what&apos;s not, so we can iterate and
                   drive better results together.
@@ -74,7 +74,7 @@ const Features = () => {
           </div>
 
           {/* Second Row */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* Communication - 1/4 */}
             <div className="lg:col-span-1 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
               <div className="bg-black relative">
@@ -83,14 +83,14 @@ const Features = () => {
                   alt="Ads Reporting & Management"
                   width={600}
                   height={300}
-                  className="w-full h-[300px] object-cover p-2 rounded-4xl"
+                  className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
                 />
               </div>
-              <div className="pl-6 py-3">
+              <div className="md:pl-6 pl-4 py-3">
                 <h3 className="text-lg font-bold text-white mb-2">
                   Direct & Rapid Communication
                 </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed md:mb-0 mb-1">
                   You get direct, same-day communication with me. No account
                   managers, no waiting - just fast, consistent support, whenever
                   you want.
@@ -106,14 +106,14 @@ const Features = () => {
                   alt="Content Management System Interface"
                   width={600}
                   height={300}
-                  className="w-full h-[300px] object-cover p-2 rounded-4xl"
+                  className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
                 />
               </div>
-              <div className="pl-6 py-3">
+              <div className="md:pl-6 pl-4 py-3">
                 <h3 className="text-xl font-bold text-white mb-2">
                   Proprietary Audience Insights
                 </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed max-w-xl">
+                <p className="text-[#ffffffb3] text-xs leading-relaxed md:max-w-xl max-w-xs md:mb-0 mb-1">
                   We go beyond basic demographics. Our proprietary database
                   tracks the emotional and behavioural psychographics of your
                   target audience. This allows us to craft ads with messaging
