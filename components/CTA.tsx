@@ -5,7 +5,6 @@ type CTAProps = {
 };
 
 const CTA = ({ onOpenQuiz }: CTAProps) => {
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -21,16 +20,20 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
   return (
     <section className="md:py-16 py-12 md:pb-36 px-6" id="cta">
       <div className="max-w-5xl mx-auto">
-        <div className="relative bg-gradient-to-r max-w-7xl from-primary to-indigo-400 rounded-3xl p-10 md:p-12 text-center overflow-hidden"
-          style={{ boxShadow: isMobile ? "0px 15px 15px 5px #00000040" :  "0px 30px 30px 12px #00000040", }}
+        <div
+          className="relative max-w-7xl rounded-3xl p-10 md:p-12 text-center overflow-hidden"
+          style={{
+            boxShadow: isMobile
+              ? "0px 15px 15px 5px #00000040"
+              : "0px 30px 30px 12px #00000040",
+          }}
         >
           <div
-            className="absolute inset-0 opacity-40"
+            className="absolute inset-0"
             style={{
-              backgroundImage: `
-                radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px)
-              `,
-              backgroundSize: "20px 20px",
+              backgroundImage: "url('/images/cta/bg.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           ></div>
 
@@ -57,7 +60,9 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
                 </svg>
               </div>
             </span>
-            <span className="text-[#dddddd60]">Your <span className="text-white">Brand?</span></span>
+            <span className="text-[#dddddd60]">
+              Your <span className="text-white">Brand?</span>
+            </span>
           </h2>
           <p className="relative z-10 text-[#ffffff90] md:mb-2 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base ">
             I work with a maximum of 4 brands at any given time to ensure my
