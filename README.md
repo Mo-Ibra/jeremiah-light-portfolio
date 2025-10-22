@@ -12,8 +12,8 @@ So let's make a list for myself.
 - Add facebook meta pixel (✅)
 - Fix the paragraph under heading in each section (✅)
 - Borders (✅)
+- Fix the modal bug on mobile (Hide scrollbar when open modal) (✅)
 - Blend background together
-- Fix the modal bug on mobile (Hide scrollbar when open modal)
 - Fix big screen, mobile background
 - Add the new section (After fix all previous first)
 
