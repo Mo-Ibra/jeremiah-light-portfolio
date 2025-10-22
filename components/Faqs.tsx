@@ -47,12 +47,13 @@ export default function FAQs() {
                 key={index}
                 className="relative rounded-2xl overflow-hidden transition-all duration-300 p-[2px] bg-gradient-to-t from-white via-[#6C5DD370] to-primary shadow-2xl"
               >
-
                 {/* Inner Content */}
-                <div className="relative bg-[#000000dd] backdrop-blur-sm rounded-2xl">
+                <div className="relative bg-[#272727] backdrop-blur-sm rounded-2xl">
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 md:py-5 py-2.5 text-left flex items-center justify-between rounded-lg"
+                    className={`w-full px-6 md:py-5 py-2.5 text-left flex items-center justify-between ${
+                      openIndex === index ? "rounded-none" : "rounded-2xl"
+                    } transition-all duration-300 ease-in-out`}
                   >
                     <h3 className="md:text-base text-xs font-semibold text-white pr-4">
                       {faq.question}
