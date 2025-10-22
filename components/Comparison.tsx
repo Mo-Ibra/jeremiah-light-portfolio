@@ -8,7 +8,7 @@ const Comparison = () => {
       <BlurCircle left="1200px" blur="400px" />
 
       <div className="max-w-7xl mx-auto">
-        <SectionHeader badgeText="Why Us?" className="md:mb-12 mb-6">
+        <SectionHeader badgeText="Why Us?" className="md:mb-12 mb-2">
           <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             Why <span className="text-primary">Leading DTC Brands</span>{" "}
             Collaborate With Me

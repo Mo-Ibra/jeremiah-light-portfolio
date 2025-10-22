@@ -27,30 +27,19 @@ const AboutMe = () => {
 
         {/* Two Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-4xl md:max-w-6xl mx-auto">
-          {/* Left Column - Video/Image */}
+          {/* Left Column - Image */}
           <div className="flex justify-center mb-4">
-            <div className="relative overflow-hidden rounded-3xl border-4 border-primary bg-gray-200 aspect-[4/5] w-full max-w-[400px] sm:max-w-[450px] md:max-w-[488px]">
-              <img
-                src="/images/portfolio/3.png"
-                alt="Jeremiah - Creative Director"
-                className="w-full h-full object-cover"
-              />
-
-              {/* Overlay */}
-              {/* <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 via-gray-900/40 to-gray-900/0"></div> */}
-
-              {/* Play Button Overlay */}
-              {/* <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-primary hover:bg-indigo-700 transition-colors rounded-full p-2 cursor-pointer">
-                  <svg
-                    className="w-12 h-12 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
+            <div className="relative rounded-3xl aspect-[4/5] w-full max-w-[400px] sm:max-w-[450px] md:max-w-[488px] shadow-2xl">
+              {/* Gradient Border */}
+              <div className="absolute inset-0 rounded-3xl p-[4px] bg-gradient-to-tl from-white via-[#6253c290] to-primary">
+                <div className="h-full w-full rounded-3xl overflow-hidden bg-gray-200">
+                  <img
+                    src="/images/portfolio/3.png"
+                    alt="Jeremiah - Creative Director"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
 
@@ -70,7 +59,7 @@ const AboutMe = () => {
                 dedicated creative partner, I personally lead the strategy and
                 execution for the handful of ambitious brands we work with. This
                 founder-led approach ensures I can build and manage the creative
-                system that fuels your growth.
+                system that fuels your growth.
               </p>
             </div>
 
@@ -104,7 +93,6 @@ const AboutMe = () => {
                     height={24}
                   />
                 </a>
-
                 <a
                   href="https://x.com"
                   target="_blank"

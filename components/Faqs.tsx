@@ -15,17 +15,28 @@ export default function FAQs() {
   };
 
   return (
-    <section id="faqs" className="md:py-16 py-12 bg-background relative overflow-hidden z-50">
-
-      <BlurCircle width="400px" height="400px" top="50%" left="50%" blur="200px" className="z-10" />
+    <section
+      id="faqs"
+      className="md:py-16 py-12 bg-background relative overflow-hidden z-50"
+    >
+      <BlurCircle
+        width="400px"
+        height="400px"
+        top="50%"
+        left="50%"
+        blur="200px"
+        className="z-10"
+      />
 
       <div className="container mx-auto px-4 relative z-10">
-        <SectionHeader badgeText="Do you have any question?" badgeBackgroundColor="bg-[#5360c226]" className="md:mb-12 mb-6">
+        <SectionHeader
+          badgeText="Do you have any question?"
+          badgeBackgroundColor="bg-[#5360c226]"
+          className="md:mb-12 mb-6"
+        >
           <h2 className="text-2xl md:text-[40px] font-semibold text-foreground">
             Frequently Asked{" "}
-            <span className="text-primary relative">
-              Questions
-            </span>
+            <span className="text-primary relative">Questions</span>
           </h2>
         </SectionHeader>
 
@@ -34,35 +45,42 @@ export default function FAQs() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className="border border-black bg-[#000000dd] backdrop-blur-sm transition-all duration-300 hover:border-primary/30 rounded-lg"
+                className="relative rounded-2xl overflow-hidden transition-all duration-300 p-[2px] bg-gradient-to-t from-white via-[#6C5DD370] to-primary shadow-2xl"
               >
-                <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 md:py-5 py-2.5 text-left flex items-center justify-between rounded-lg"
-                >
-                  <h3 className="md:text-base text-xs font-semibold text-white pr-4">
-                    {faq.question}
-                  </h3>
-                  <div className="flex-shrink-0">
-                    {openIndex === index ? (
-                      <Plus className="w-5 h-5 rotate-45 text-white" strokeWidth={4} />
-                    ) : (
-                      <Plus className="w-5 h-5 text-white" strokeWidth={4} />
-                    )}
-                  </div>
-                </button>
 
-                <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    openIndex === index
-                      ? "max-h-96 opacity-100"
-                      : "max-h-0 opacity-0"
-                  }`}
-                >
-                  <div className="px-6 pb-5">
-                    <p className="text-muted md:text-sm text-[10px] leading-relaxed max-w-[500px]">
-                      {faq.answer}
-                    </p>
+                {/* Inner Content */}
+                <div className="relative bg-[#000000dd] backdrop-blur-sm rounded-2xl">
+                  <button
+                    onClick={() => toggleFAQ(index)}
+                    className="w-full px-6 md:py-5 py-2.5 text-left flex items-center justify-between rounded-lg"
+                  >
+                    <h3 className="md:text-base text-xs font-semibold text-white pr-4">
+                      {faq.question}
+                    </h3>
+                    <div className="flex-shrink-0">
+                      {openIndex === index ? (
+                        <Plus
+                          className="w-5 h-5 rotate-45 text-white"
+                          strokeWidth={4}
+                        />
+                      ) : (
+                        <Plus className="w-5 h-5 text-white" strokeWidth={4} />
+                      )}
+                    </div>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      openIndex === index
+                        ? "max-h-96 opacity-100"
+                        : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    <div className="px-6 pb-5">
+                      <p className="text-muted md:text-sm text-[10px] leading-relaxed max-w-[500px]">
+                        {faq.answer}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

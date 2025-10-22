@@ -19,7 +19,7 @@ const Services = () => {
           badgeBackgroundColor="bg-[#5360c226]"
           className="md:mb-12 mb-6"
         >
-          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-2">
             The Complete{" "}
             <span className="text-primary">Performance Creative</span> Stack
           </h2>
@@ -32,67 +32,81 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           {/* AI Generated Content */}
-          <div className="relative overflow-hidden rounded-3xl h-[390px] group border-4 border-primary">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: `url('/images/services/AI-Generated-Content/1.jpg')`,
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
+          <div className="relative rounded-3xl overflow-hidden h-[390px] group shadow-2xl">
+            {/* Gradient Border */}
+            <div className="absolute inset-0 rounded-3xl p-[4px] bg-gradient-to-t from-white via-[#6C5DD3] to-primary">
+              <div className="h-full w-full rounded-3xl overflow-hidden relative">
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url('/images/services/AI-Generated-Content/1.jpg')`,
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
 
-            <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
-              <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
-                AI Generated Content
-              </h3>
-              <p className="text-white/90 leading-relaxed text-xs">
-                Hyper-realistic AI generated content made for quick testing and
-                iteration – so we can cut costs and scale at the speed of light.
-              </p>
+                <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+                  <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
+                    AI Generated Content
+                  </h3>
+                  <p className="text-white/90 leading-relaxed text-xs">
+                    Hyper-realistic AI generated content made for quick testing
+                    and iteration – so we can cut costs and scale at the speed
+                    of light.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* User Generated Content */}
-          <div className="relative overflow-hidden rounded-3xl h-[390px] group border-4 border-primary">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: `url('/images/services/User-Generated-Content/1.png')`,
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
+          <div className="relative rounded-3xl overflow-hidden h-[390px] group shadow-2xl">
+            <div className="absolute inset-0 rounded-3xl p-[4px] bg-gradient-to-t from-white via-[#6C5DD3] to-primary">
+              <div className="h-full w-full rounded-3xl overflow-hidden relative">
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url('/images/services/User-Generated-Content/1.png')`,
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
 
-            <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
-              <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
-                User Generated Content
-              </h3>
-              <p className="text-white/90 leading-relaxed text-xs">
-                Customer-created content like reviews, photos, and posts that
-                converts incredibly well, builds authentic trust, and real
-                engagement.
-              </p>
+                <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+                  <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
+                    User Generated Content
+                  </h3>
+                  <p className="text-white/90 leading-relaxed text-xs">
+                    Customer-created content like reviews, photos, and posts
+                    that converts incredibly well, builds authentic trust, and
+                    real engagement.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Studio Content */}
-          <div className="relative overflow-hidden rounded-3xl h-[390px] group border-4 border-primary">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: `url('/images/services/Studio-Content/1.jpg')`,
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
+          <div className="relative rounded-3xl overflow-hidden h-[390px] group shadow-2xl">
+            <div className="absolute inset-0 rounded-3xl p-[4px] bg-gradient-to-t from-white via-[#6C5DD3] to-primary">
+              <div className="h-full w-full rounded-3xl overflow-hidden relative">
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url('/images/services/Studio-Content/1.jpg')`,
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
 
-            <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
-              <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
-                Studio Content
-              </h3>
-              <p className="text-white/90 leading-relaxed text-xs">
-                Professional, polished, and high-production content created
-                in-house that will WOW your consumers, build trust, and elevate
-                your brand presence.
-              </p>
+                <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
+                  <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
+                    Studio Content
+                  </h3>
+                  <p className="text-white/90 leading-relaxed text-xs">
+                    Professional, polished, and high-production content created
+                    in-house that will WOW your consumers, build trust, and
+                    elevate your brand presence.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -110,23 +124,29 @@ const Services = () => {
 
         {/* Growth Engine Card */}
         <div className="mt-8 flex justify-center">
-          <div className="relative overflow-hidden rounded-3xl max-w-2xl w-full bg-gradient-to-t from-black via-[#0a0a1a] to-[#1a1a3a] shadow-2xl border-3 border-primary">
-            <div className="relative z-10 w-full h-[250px] flex justify-center items-center">
-              <Image
-                src="/images/services/group.png"
-                alt="Growth Chart"
-                width={500}
-                height={400}
-                className="object-contain"
-              />
-            </div>
+          <div className="relative rounded-3xl max-w-2xl w-full shadow-2xl">
+            {/* Gradient Border */}
+            <div className="relative inset-0 rounded-3xl p-[4px] bg-gradient-to-t from-white via-[#6C5DD3] to-primary">
+              {/* Inner Content */}
+              <div className="rounded-3xl overflow-hidden bg-gradient-to-t from-black via-[#0a0a1a] to-[#1a1a3a]">
+                <div className="relative z-10 w-full h-[250px] flex justify-center items-center">
+                  <Image
+                    src="/images/services/group.png"
+                    alt="Growth Chart"
+                    width={500}
+                    height={400}
+                    className="object-contain"
+                  />
+                </div>
 
-            <div className="relative z-10 px-6 pb-8 flex flex-col justify-center items-center text-center text-white">
-              <h3 className="text-xl md:text-3xl font-semibold">
-                The Ultimate{" "}
-                <span className="text-indigo-400 font-bold">Growth</span> Engine
-                For DTC
-              </h3>
+                <div className="relative z-10 px-6 pb-8 flex flex-col justify-center items-center text-center text-white">
+                  <h3 className="text-xl md:text-3xl font-semibold">
+                    The Ultimate{" "}
+                    <span className="text-indigo-400 font-bold">Growth</span>{" "}
+                    Engine For DTC
+                  </h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>

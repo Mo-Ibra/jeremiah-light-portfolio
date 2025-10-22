@@ -5,7 +5,7 @@ const Process = () => {
     <section className="md:py-16 py-12 px-6" id="process">
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="My Process" className="md:mb-12 mb-6">
-          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-2">
             Our <span className="text-primary">4-Step Process</span> to{" "}
             <span className="text-primary">Predictable Results</span>
           </h2>
