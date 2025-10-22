@@ -184,7 +184,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="quiz-modal active" onClick={handleModalClick}>
+    <div className="quiz-modal active overflow-hidden" onClick={handleModalClick}>
       <div className="quiz-container">
         <button className="quiz-close" onClick={closeModal}>
           ×
