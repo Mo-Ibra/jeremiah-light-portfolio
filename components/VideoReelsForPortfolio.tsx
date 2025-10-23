@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { portfolioReels } from "@/data/data";
 import SectionHeader from "./SectionHeader";
-// import BlurCircle from "./BlurCircle";
+import BlurCircle from "./BlurCircle";
 
 const VideoReelsForPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -20,13 +20,17 @@ const VideoReelsForPortfolio = () => {
       : portfolioReels.filter((reel) => reel.category === activeFilter);
 
   return (
-    <section
-      id="portfolio"
-      className="relative overflow-hidden pt-6 md:pt-12"
-    >
+    <section id="portfolio" className="relative overflow-hidden pt-6 md:pt-12">
+      <BlurCircle top="700px" />
+      <BlurCircle top="1200px" left="1400px" blur="350px" />
+
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
-        <SectionHeader badgeText="Creative Portfolio" className="md:mb-0 mb-2">
+        <SectionHeader
+          badgeText="Creative Portfolio"
+          className="md:mb-0 mb-2"
+          withLabel={false}
+        >
           <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
             The <span className="text-primary">Creative Styles</span> Trusted by{" "}
             <span className="text-primary">6, 7, and 8-Figure Brands</span>
