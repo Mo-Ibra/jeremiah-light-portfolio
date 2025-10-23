@@ -19,7 +19,7 @@ So let's make a list for myself.
 - Add the new section (After fix all previous first) (✅)
 
 
-- Navbar Close Icon in mobile
+- Navbar Close Icon in mobile (✅)
 - Fix Navbar mobile border radius
 - Make navbar smaller
 - Fix Hero text margins

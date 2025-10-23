@@ -1,5 +1,6 @@
 "use client";
 
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -14,7 +15,7 @@ const Navigation = () => {
       {/* Navbar */}
       <nav className="absolute md:top-9 left-0 right-0 z-50">
         <div
-          className={`flex flex-col px-4 sm:px-6 md:px-6 lg:px-20 xl:px-56 py-2 bg-white/10 md:bg-transparent backdrop-blur-md md:backdrop-blur-none rounded-[50px] border border-gray-300 md:border-none mx-2.5 md:mx-0 my-2 transition-all duration-500 ease-in-out overflow-hidden ${
+          className={`flex flex-col px-4 sm:px-6 md:px-6 lg:px-20 xl:px-56 py-2 bg-white/10 md:bg-transparent backdrop-blur-md md:backdrop-blur-none md:rounded-[50px] rounded-[30px]  border border-gray-300 md:border-none mx-2.5 md:mx-0 my-2 transition-height duration-500 ease-in-out overflow-hidden ${
             isMenuOpen ? "max-h-[500px]" : "max-h-[60px] md:max-h-[80px]"
           }`}
         >
@@ -109,31 +110,19 @@ const Navigation = () => {
                 className="px-8 py-2 rounded-full bg-white text-gray-700 font-bold transition-all text-sm flex items-center space-x-2 relative group"
                 onClick={() => (window.location.href = "#cta")}
               >
-                <span className="relative">
-                  Let&apos;s Talk
-                </span>
+                <span className="relative">Let&apos;s Talk</span>
               </button>
 
               {/* Burger Menu */}
               <button
                 onClick={toggleMenu}
-                className="flex flex-col items-center space-y-1 p-2"
+                className="p-2 rounded-md text-white transition hover:bg-white/10"
               >
-                <div
-                  className={`w-6 h-0.5 bg-white transition-all duration-300 ${
-                    isMenuOpen ? "rotate-45 translate-y-2" : ""
-                  }`}
-                />
-                <div
-                  className={`w-6 h-0.5 bg-white transition-all duration-300 ${
-                    isMenuOpen ? "opacity-0" : ""
-                  }`}
-                />
-                <div
-                  className={`w-6 h-0.5 bg-white transition-all duration-300 ${
-                    isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-                  }`}
-                />
+                {isMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
               </button>
             </div>
           </div>
