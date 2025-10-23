@@ -32,7 +32,7 @@ const Process = () => {
 
         {/* Process Cards */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 rounded-3xl p-3 bg-none md:bg-[url('/images/process/bg.png')] md:bg-cover md:bg-center"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 rounded-3xl p-3 bg-[url('/images/process/bg.png')] bg-cover bg-center"
         >
           {/* Step 1 - Onboarding & Analysis */}
           <div className="relative overflow-hidden h-[320px] md:rounded-none rounded-3xl">
