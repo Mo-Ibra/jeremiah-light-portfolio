@@ -53,42 +53,42 @@ const Navigation = () => {
 
               {/* Navigation Links */}
               <div className="flex items-center space-x-2">
-                <a
+                <Link
                   href="#home"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#portfolio"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Portfolio
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/#services"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Services
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/#case-studies"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Case Studies
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/#about"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   About
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/#process"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Process
-                </a>
+                </Link>
               </div>
 
               {/* CTA Inside */}
@@ -147,41 +147,41 @@ const Navigation = () => {
           >
             {/* Links */}
             <div className="flex flex-col items-start space-y-4 text-base font-medium text-white">
-              <a
+              <Link
                 href="#home"
                 onClick={toggleMenu}
                 className="hover:text-white/70"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#portfolio"
                 onClick={toggleMenu}
                 className="hover:text-white/70"
               >
                 Portfolio
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#case-studies"
                 onClick={toggleMenu}
                 className="hover:text-white/70"
               >
                 Case Studies
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#about"
                 onClick={toggleMenu}
                 className="hover:text-white/70"
               >
                 About
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#process"
                 onClick={toggleMenu}
                 className="hover:text-white/70"
               >
                 Process
-              </a>
+              </Link>
             </div>
 
             {/* CTA Button */}

@@ -64,7 +64,7 @@ const VideoReelsForPortfolio = () => {
           ))}
         </div>
 
-        <button onClick={() => location.href = "#cta"} className="px-6 md:px-8 py-3 md:py-4 bg-transparent text-primary rounded-full shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12 border-2 border-primary">
+        <button onClick={() => location.href = "#cta"} className="cursor-pointer px-6 md:px-8 py-3 md:py-4 bg-transparent text-primary rounded-full shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12 border-2 border-primary">
           <span>Schedule Free Ads Audit Today</span>
         </button>
       </div>
