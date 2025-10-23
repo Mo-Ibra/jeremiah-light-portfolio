@@ -63,6 +63,8 @@ const Comparison = () => {
 
             {/* Working With Me Card */}
             <div className="bg-black rounded-3xl p-6 shadow-lg w-full lg:w-96 border-3 border-primary relative md:right-16">
+              <div className="absolute top-0 left-0 w-40 h-40 bg-primary/40 blur-3xl rounded-full pointer-events-none"></div>
+
               <h3 className="text-3xl font-bold text-primary">
                 Working With Us
               </h3>
