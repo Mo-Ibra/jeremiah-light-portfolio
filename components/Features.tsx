@@ -25,50 +25,61 @@ const Features = () => {
           {/* First Row */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* Content Management - 3/4 */}
-            <div className="lg:col-span-2 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
-              <div className="bg-black relative">
-                <Image
-                  src="/images/features/1.png"
-                  alt="Content Management System Interface"
-                  width={600}
-                  height={300}
-                  className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
-                />
-              </div>
-              <div className="md:pl-6 pl-4 md:py-3 py-2">
-                <h3 className="text-xl font-bold text-white mb-2">
-                  Live Dashboard & Centralized Creative Hub
-                </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed md:max-w-xl max-w-xs md:mb-0 mb-1">
-                  Forget messy Google Drive folders and lost files. You get 24/7
-                  access to a dedicated, AI-searchable creative hub. Every ad,
-                  raw clip, and asset is perfectly organized and instantly
-                  accessible, creating a valuable, evergreen content library for
-                  your brand - you can even see what we’re doing in real time.
-                </p>
+            <div className="relative lg:col-span-2 rounded-4xl overflow-hidden group">
+              {/* Gradient Border */}
+              <div className="relative inset-0 rounded-4xl p-[4px] bg-gradient-to-t from-primary via-[#6253c290] to-white shadow-2xl">
+                <div className="h-full w-full bg-black rounded-4xl shadow-lg flex flex-col overflow-hidden">
+                  <div className="bg-black relative">
+                    <Image
+                      src="/images/features/1.png"
+                      alt="Content Management System Interface"
+                      width={600}
+                      height={300}
+                      className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
+                    />
+                  </div>
+                  <div className="md:pl-6 pl-4 md:py-3 py-2">
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      Live Dashboard & Centralized Creative Hub
+                    </h3>
+                    <p className="text-[#ffffffb3] text-xs leading-relaxed md:max-w-xl max-w-xs md:mb-0 mb-1">
+                      Forget messy Google Drive folders and lost files. You get
+                      24/7 access to a dedicated, AI-searchable creative hub.
+                      Every ad, raw clip, and asset is perfectly organized and
+                      instantly accessible, creating a valuable, evergreen
+                      content library for your brand - you can even see what
+                      we’re doing in real time.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Ads Reporting - 1/4 */}
-            <div className="lg:col-span-1 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
-              <div className="bg-black relative">
-                <Image
-                  src="/images/features/2.png"
-                  alt="Advertising Dashboard"
-                  width={600}
-                  height={300}
-                  className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
-                />
-              </div>
-              <div className="md:pl-6 pl-4 py-3">
-                <h3 className="text-lg font-bold text-white mb-2">
-                  Weekly Performance Reporting
-                </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed md:mb-0 mb-1">
-                  You&apos;ll get a transparent report each week detailing
-                  what&apos;s working and what&apos;s not, so we can iterate and
-                  drive better results together.
-                </p>
+            <div className="relative lg:col-span-1 rounded-4xl overflow-hidden group">
+              {/* Gradient Border */}
+              <div className="relative inset-0 rounded-4xl p-[4px] bg-gradient-to-t from-primary via-[#6253c290] to-white shadow-2xl">
+                <div className="h-full w-full bg-black rounded-4xl shadow-lg flex flex-col overflow-hidden">
+                  <div className="bg-black relative">
+                    <Image
+                      src="/images/features/2.png"
+                      alt="Advertising Dashboard"
+                      width={600}
+                      height={300}
+                      className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
+                    />
+                  </div>
+                  <div className="md:pl-6 pl-4 py-3">
+                    <h3 className="text-lg font-bold text-white mb-2">
+                      Weekly Performance Reporting
+                    </h3>
+                    <p className="text-[#ffffffb3] text-xs leading-relaxed md:mb-0 mb-1">
+                      You&apos;ll get a transparent report each week detailing
+                      what&apos;s working and what&apos;s not, so we can iterate
+                      and drive better results together.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

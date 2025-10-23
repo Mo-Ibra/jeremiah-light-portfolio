@@ -24,8 +24,8 @@ So let's make a list for myself.
 - Fix Faq Background (✅)
 - Fix New Section background (✅)
 - Make navbar smaller in desktop and let's talk semibold (✅)
-- Fix Hero text margins
-- Add gradient border on benifits and features
+- Fix Hero text margins  (✅)
+- Add gradient border on benifits and features (✅)
 
 
 [10:42 PM, 10/20/2025] Jeremiah Harcharran Static: https://www.linkedin.com/in/jeremiah-harcharran-95948b207/
