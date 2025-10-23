@@ -37,7 +37,7 @@ So let's make a list for myself.
 - And add a line break after the “-“ in mobile in case studies section (✅)
 - Fix "->" in buttons (✅)
 - Fix FAQ Separator (✅)
-- Video stretch
+- Video stretch (✅)
 
 
 [10:42 PM, 10/20/2025] Jeremiah Harcharran Static: https://www.linkedin.com/in/jeremiah-harcharran-95948b207/

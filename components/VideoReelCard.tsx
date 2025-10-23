@@ -143,7 +143,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
       className="relative opacity-0 translate-y-10 animate-[fadeInUp_0.8s_ease_forwards] break-inside-avoid"
     >
       <div
-        className="relative rounded-2xl overflow-hidden border-2 border-primary scale-100 transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_20px_rgba(0,0,0,0.15)] cursor-pointer hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] tap-highlight-transparent w-[180px] h-[240px] md:w-[310px] md:h-[388px]"
+        className="relative rounded-2xl overflow-hidden border-2 border-primary transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_20px_rgba(0,0,0,0.15)] cursor-pointer hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] tap-highlight-transparent w-[180px] h-[240px] md:w-[310px] md:h-[388px]"
         style={{ aspectRatio: aspectRatio }}
       >
         <div className="relative w-[180px] h-[240px] md:w-[310px] md:h-[388px] rounded-xl overflow-hidden">
@@ -157,7 +157,7 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
           {/* Actual video (hidden until loaded) */}
           {isVisible && (
             <div
-              className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false autoPlay=false w-[180px] h-[240px] md:w-[310px] md:h-[388px] scale-x-110 transition-opacity duration-500 ease-in-out`}
+              className={`wistia_embed wistia_async_${videoId} plugin_wistiaLogo=false autoPlay=false w-[180px] h-[240px] md:w-[310px] md:h-[388px] scale-x-107 transition-opacity duration-500 ease-in-out`}
               // onClick={handleMute}
               style={{ opacity: !isVisible ? 0 : 1 }}
             ></div>

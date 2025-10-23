@@ -1,11 +1,11 @@
-import BlurCircle from "./BlurCircle";
+// import BlurCircle from "./BlurCircle";
 import SectionHeader from "./SectionHeader";
 
 const Comparison = () => {
   return (
     <section className="md:py-16 py-12 px-6 relative overflow-hidden">
 
-      <BlurCircle left="1200px" blur="400px" />
+      {/* <BlurCircle left="1200px" blur="400px" /> */}
 
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="Why Us?" className="md:mb-6 mb-2">
