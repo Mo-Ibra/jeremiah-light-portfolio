@@ -26,6 +26,16 @@ So let's make a list for myself.
 - Make navbar smaller in desktop and let's talk semibold (✅)
 - Fix Hero text margins  (✅)
 - Add gradient border on benifits and features (✅)
+- Add button in testimonial (✅)
+- Fix Glow in small screen
+- Fix "->" in buttons
+- Fix FAQ Separator
+- Change "Our Services" image
+- Make dot in hero more smaller
+- Change navbar colors in small screen to fit figma
+- Video stretch
+- And add a line break after the “-“ in mobile in case studies section
+- Move compare cards up a little bit and change the Sort layout on mobile
 
 
 [10:42 PM, 10/20/2025] Jeremiah Harcharran Static: https://www.linkedin.com/in/jeremiah-harcharran-95948b207/

@@ -245,7 +245,7 @@ export default function CaseStudiesSection() {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-12">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 my-12 md:my-16">
           <button
             onClick={() => (location.href = "#cta")}
             className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
@@ -266,7 +266,7 @@ export default function CaseStudiesSection() {
           <div className="grid md:grid-cols-2 gap-8 md:mt-8">
             {/* Left Column */}
             <div className="text-white space-y-6 z-20">
-              <h1 className="text-[32px] md:text-5xl mb-4">
+              <h1 className="text-[28px] md:text-5xl mb-4">
                 Who do we{" "}
                 <span className="italic font-light font-instrument">
                   work with?
@@ -346,7 +346,7 @@ export default function CaseStudiesSection() {
               </div>
 
               {/* No Box */}
-              <div className="bg-transparent border-2 border-gray-200 rounded-2xl pt-1 pb-8 px-4 shadow-lg">
+              <div className="bg-transparent border-2 border-gray-200 rounded-2xl pt-1 pb-8 px-4 shadow-lg relative z-20">
                 <div className="flex items-center gap-2 mb-2 relative">
                   <h2 className="text-[40px] font-instrument italic text-white">
                     No

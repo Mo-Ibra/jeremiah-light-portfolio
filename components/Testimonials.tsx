@@ -204,6 +204,22 @@ export default function TestimonialsSection() {
             </div>
           ))}
         </div>
+
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4 md:mt-12">
+          <button
+            onClick={() => (location.href = "#cta")}
+            className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+          >
+            <span>Schedule Free Ads Audit</span>
+            <svg
+              className="w-3 md:w-4 h-3 md:h-4"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path d="M10 0l10 10-10 10-2-2 6-6H0V8h14l-6-6z" />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
   );
