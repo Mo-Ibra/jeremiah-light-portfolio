@@ -19,14 +19,13 @@ export default function FAQs() {
       id="faqs"
       className="md:py-16 py-12 bg-background relative overflow-hidden z-50"
     >
-      <BlurCircle
-        width="400px"
-        height="400px"
-        top="50%"
-        left="50%"
-        blur="200px"
-        className="z-10"
-      />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img
+          src="/images/faqs/background.svg"
+          alt="Faq Background"
+          className="max-w-full max-h-full object-contain"
+        />
+      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeader
@@ -65,7 +64,10 @@ export default function FAQs() {
                           strokeWidth={4}
                         />
                       ) : (
-                        <Plus className="w-5 h-5 rotate-0 transition-all duration-300 ease-in-out text-white" strokeWidth={4} />
+                        <Plus
+                          className="w-5 h-5 rotate-0 transition-all duration-300 ease-in-out text-white"
+                          strokeWidth={4}
+                        />
                       )}
                     </div>
                   </button>

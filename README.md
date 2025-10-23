@@ -20,11 +20,11 @@ So let's make a list for myself.
 
 
 - Navbar Close Icon in mobile (✅)
-- Fix Navbar mobile border radius
-- Make navbar smaller
+- Fix Navbar mobile border radius (✅)
+- Fix Faq Background (✅)
+- Make navbar smaller in desktop
 - Fix Hero text margins
 - Add gradient border on benifits and features
-- Decrease opacity for Faq mobile background
 
 
 [10:42 PM, 10/20/2025] Jeremiah Harcharran Static: https://www.linkedin.com/in/jeremiah-harcharran-95948b207/
