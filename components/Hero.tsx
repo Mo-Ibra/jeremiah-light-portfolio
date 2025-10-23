@@ -54,7 +54,7 @@ const Hero = () => {
       {/* Main Content Container */}
       <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full mt-10 md:mt-64 lg:mt-0">
         {/* Top Section - Text and Video Side by Side */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-8 lg:mt-24">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-8 lg:mt-40">
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl mt-6">
             {/* Status Badge */}
@@ -108,7 +108,7 @@ const Hero = () => {
         </div>
 
         {/* CTA Buttons - Centered Below */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-12">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-14">
           <button
             onClick={() => (location.href = "#cta")}
             className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
@@ -136,18 +136,18 @@ const Hero = () => {
         </div>
 
         {/* Social Proof - Centered Below Buttons */}
-        <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0 text-gray-600 justify-center">
+        <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0 text-gray-600 justify-center md:mt-20 mt-10 mb-10">
           {/* Avatars */}
           <div className="flex -space-x-4">
             {[1, 2, 3, 4, 5].map((num) => (
               <div
                 key={num}
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white overflow-hidden"
+                className="w-10 h-10 sm:w-10 sm:h-10 rounded-full border-2 border-white overflow-hidden"
               >
                 <Image
                   src={`/images/hero/avatars-2/${num}.jpg`}
-                  width={48}
-                  height={48}
+                  width={40}
+                  height={40}
                   alt={`Avatar ${num}`}
                   className="w-full h-full object-cover"
                 />

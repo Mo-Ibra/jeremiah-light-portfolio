@@ -16,7 +16,7 @@ function LogoCarousel() {
   const repeatedLogos = Array(20).fill(logos).flat();
 
   return (
-    <div className="overflow-hidden mt-14 md:mt-16 relative">
+    <div className="overflow-hidden mt-7 md:mt-8 relative">
       <div
         style={{
           maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
