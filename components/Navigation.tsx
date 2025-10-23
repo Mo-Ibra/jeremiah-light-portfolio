@@ -3,12 +3,24 @@
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <>
@@ -91,8 +103,8 @@ const Navigation = () => {
             {/* Mobile Logo - Separate */}
             <Link href="/" className="md:hidden">
               <div className="flex flex-col">
-                <img
-                  src="/images/navbar/logo.png"
+                <Image
+                  src={`${isMobile ? "/images/navbar/logo.png" : "/images/navbar/logo.svg"}`}
                   width={160}
                   height={40}
                   alt="Logo"
