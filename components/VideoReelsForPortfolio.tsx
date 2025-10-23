@@ -3,10 +3,10 @@
 import "../styles/video-reels.css";
 
 import React, { useState } from "react";
-import VideoReelCard from "@/components/VideoReelCard";
 import { portfolioReels } from "@/data/data";
 import SectionHeader from "./SectionHeader";
 import BlurCircle from "./BlurCircle";
+import VideoReelCardForPortfolio from "@/components/VideoReelCardForPortfolio";
 
 const VideoReelsForPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -60,7 +60,7 @@ const VideoReelsForPortfolio = () => {
         {/* Reels Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-3 md:gap-2 lg:gap-5 mx-auto max-w-max mb-20 gap-2 sm:gap-3">
           {filteredReels.map((reel, index) => (
-            <VideoReelCard key={index} {...reel} />
+            <VideoReelCardForPortfolio key={index} {...reel} />
           ))}
         </div>
 

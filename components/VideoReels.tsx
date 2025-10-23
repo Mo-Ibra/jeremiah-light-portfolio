@@ -43,10 +43,9 @@ const VideoReels = () => {
   }, [isMobile]);
 
   // Choose data source based on device
-  const reelsData = isMobile ? portfolioReels : videoReels;
   const displayedReels = isMobile
-    ? reelsData.slice(0, visibleCount)
-    : reelsData;
+    ? videoReels.slice(0, visibleCount)
+    : videoReels;
   // const hasMore = isMobile && visibleCount < reelsData.length;
   // const isFullyExpanded = isMobile && visibleCount >= reelsData.length;
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { portfolioReels } from "@/data/data";
-import VideoReelCard from "@/components/VideoReelCard";
+import VideoReelCard from "@/components/VideoReelCardForPortfolio";
 import SectionHeader from "./SectionHeader";
 import BlurCircle from "./BlurCircle";
 
