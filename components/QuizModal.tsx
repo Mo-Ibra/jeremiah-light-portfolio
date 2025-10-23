@@ -43,9 +43,18 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
 
   useEffect(() => {
     if (isOpen) {
-      (async function () {
+      (async () => {
         const cal = await getCalApi({ namespace: "30min" });
         cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+        cal("on", {
+          action: "bookingSuccessful",
+          callback: (e) => {
+            console.log("Booking successful:", e.detail);
+            if (window.fbq) {
+              window.fbq("track", "Schedule");
+            }
+          },
+        });
       })();
     }
   }, [isOpen]);
@@ -216,7 +225,9 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                     Before booking, please give us more insight into your needs
                   </p>
                   <p className="quiz-subtitle mt-6 md:mt-8 italic">
-                    If you&apos;re a good fit you&apos;ll hear from us and we&apos;ll set up a call - if not we&apos;ll tell you quickly and respectfully *
+                    If you&apos;re a good fit you&apos;ll hear from us and
+                    we&apos;ll set up a call - if not we&apos;ll tell you
+                    quickly and respectfully *
                   </p>
                 </div>
 
