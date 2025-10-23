@@ -258,7 +258,7 @@ export default function CaseStudiesSection() {
               </h1>
 
               <p className="text-xl leading-relaxed max-w-md">
-                We're a lean team of senior specialists helping DTC E-commerce
+                We&apos;re a lean team of senior specialists helping DTC E-commerce
                 brands grow globally.
               </p>
 
@@ -275,7 +275,7 @@ export default function CaseStudiesSection() {
               </p>
 
               <p className="text-xl leading-relaxed max-w-md">
-                We aren't here to be the biggest; we're here to be the best.
+                We aren&apos;t here to be the biggest; we&apos;re here to be the best.
               </p>
             </div>
 
@@ -343,7 +343,7 @@ export default function CaseStudiesSection() {
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
                     <p className="text-white text-base">
-                      Doesn't have product-market-fit
+                      Doesn&apos;t have product-market-fit
                     </p>
                   </div>
 
