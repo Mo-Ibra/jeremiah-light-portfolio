@@ -1,11 +1,15 @@
-// import BlurCircle from "./BlurCircle";
 import SectionHeader from "./SectionHeader";
 
 const Comparison = () => {
   return (
     <section className="md:py-16 py-12 px-6 relative overflow-hidden">
-
-      {/* <BlurCircle left="1200px" blur="400px" /> */}
+      <div className="absolute inset-0 flex items-center justify-center md:left-[730px] md:bottom-[130px] md:right-0 bottom-[600px] -right-[225px]">
+        <img
+          src="/images/case-studies/background.svg"
+          alt="Case Studies Background"
+          className="max-w-full max-h-full object-contain"
+        />
+      </div>
 
       <div className="max-w-7xl mx-auto">
         <SectionHeader badgeText="Why Us?" className="md:mb-6 mb-2">
@@ -14,8 +18,8 @@ const Comparison = () => {
             Collaborate With Me
           </h2>
           <p className="text-base md:text-2xl md:leading-8 text-[#00000073] max-w-4xl mx-auto">
-            Here&apos;s exactly why over 80+ Established DTC Brands have worked with
-            me to help scale content production and profits
+            Here&apos;s exactly why over 80+ Established DTC Brands have worked
+            with me to help scale content production and profits
           </p>
         </SectionHeader>
 
@@ -39,7 +43,9 @@ const Comparison = () => {
                   No Learning or Optimization
                 </div>
 
-                <div className="text-white text-base md:text-lg">Poor Communication</div>
+                <div className="text-white text-base md:text-lg">
+                  Poor Communication
+                </div>
 
                 <div className="text-white text-base md:text-lg">
                   Bad Customer Experience
@@ -57,7 +63,9 @@ const Comparison = () => {
 
             {/* Working With Me Card */}
             <div className="bg-black rounded-3xl p-6 shadow-lg w-full lg:w-96 border-3 border-primary relative md:right-16">
-              <h3 className="text-3xl font-bold text-primary">Working With Me</h3>
+              <h3 className="text-3xl font-bold text-primary">
+                Working With Me
+              </h3>
 
               {/* Border Gradient Under Heading */}
               <div className="h-[1px] w-full bg-gradient-to-r from-white to-transparent my-6"></div>
