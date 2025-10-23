@@ -245,8 +245,24 @@ export default function CaseStudiesSection() {
           ))}
         </div>
 
-        {/* NEW TESTING SECTION */}
-        <div className="relative max-w-6xl mx-auto mt-20 w-full bg-black rounded-3xl p-8 shadow-2xl border-2 border-primary">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-12">
+          <button
+            onClick={() => (location.href = "#cta")}
+            className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+          >
+            <span>Schedule Free Ads Audit</span>
+            <svg
+              className="w-3 md:w-4 h-3 md:h-4"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path d="M10 0l10 10-10 10-2-2 6-6H0V8h14l-6-6z" />
+            </svg>
+          </button>
+        </div>
+
+        {/* NEW SECTION */}
+        <div className="relative max-w-6xl mx-auto w-full bg-black rounded-3xl p-8 shadow-2xl border-2 border-primary">
           <div className="grid md:grid-cols-2 gap-8 md:mt-8">
             {/* Left Column */}
             <div className="text-white space-y-6 z-20">
@@ -258,8 +274,8 @@ export default function CaseStudiesSection() {
               </h1>
 
               <p className="text-sm md:text-xl leading-relaxed max-w-md">
-                We&apos;re a lean team of senior specialists helping DTC E-commerce
-                brands grow globally.
+                We&apos;re a lean team of senior specialists helping DTC
+                E-commerce brands grow globally.
               </p>
 
               <p className="text-sm md:text-xl leading-relaxed max-w-md">
@@ -275,7 +291,8 @@ export default function CaseStudiesSection() {
               </p>
 
               <p className="text-sm md:text-xl leading-relaxed max-w-md">
-                We aren&apos;t here to be the biggest; we&apos;re here to be the best.
+                We aren&apos;t here to be the biggest; we&apos;re here to be the
+                best.
               </p>
             </div>
 
@@ -284,7 +301,9 @@ export default function CaseStudiesSection() {
               {/* Yes Box */}
               <div className="bg-gradient-to-tr from-[#5cc8d4] via-[#5360c2] to-[#5360c2] rounded-2xl pt-1 pb-8 px-4 shadow-lg">
                 <div className="flex items-center gap-2 mb-2 relative">
-                  <h2 className="text-[40px] font-instrument italic text-white">Yes</h2>
+                  <h2 className="text-[40px] font-instrument italic text-white">
+                    Yes
+                  </h2>
                   <Image
                     src="/images/case-studies/to-down.svg"
                     alt="arrow"
@@ -329,7 +348,9 @@ export default function CaseStudiesSection() {
               {/* No Box */}
               <div className="bg-transparent border-2 border-gray-200 rounded-2xl pt-1 pb-8 px-4 shadow-lg">
                 <div className="flex items-center gap-2 mb-2 relative">
-                  <h2 className="text-[40px] font-instrument italic text-white">No</h2>
+                  <h2 className="text-[40px] font-instrument italic text-white">
+                    No
+                  </h2>
                   <Image
                     src="/images/case-studies/to-down.svg"
                     alt="arrow"
