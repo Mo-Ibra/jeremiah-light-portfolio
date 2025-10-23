@@ -11,7 +11,7 @@ import VideoReelCardForPortfolio from "@/components/VideoReelCardForPortfolio";
 const VideoReelsForPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const filters = ["All", "UGC", "High Production", "AI", "Statics"];
+  const filters = ["All", "UGC", "High-Production", "AI", "Statics"];
 
   // Filter the reels based on active filter
   const filteredReels =
@@ -59,8 +59,8 @@ const VideoReelsForPortfolio = () => {
 
         {/* Reels Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-3 md:gap-2 lg:gap-5 mx-auto max-w-max mb-20 gap-2 sm:gap-3">
-          {filteredReels.map((reel, index) => (
-            <VideoReelCardForPortfolio key={index} {...reel} />
+          {filteredReels.map((reel) => (
+            <VideoReelCardForPortfolio key={reel.id} {...reel} />
           ))}
         </div>
 

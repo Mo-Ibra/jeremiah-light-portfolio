@@ -29,18 +29,31 @@
  * }
  */
 export const videoReels = [
+  // {
+  //   aspectRatio: "9/16",
+  //   videoId: "hisd0uu37o", // Wistia video ID
+  //   views: "2.3M",
+  //   platform: "TikTok",
+  //   hasTestimonial: true, // true = show testimonial section, false = hide it
+  //   testimonialText:
+  //     "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
+  //   testimonialImageSrc: "1.jpg", // Name of testimonial image in /public/images/testimonials/
+  //   authorName: "Jeremiah Smith",
+  //   authorRole: "CEO, Company Name",
+  //   rating: 5,
+  // },
+
   {
+    id: 1,
     aspectRatio: "9/16",
-    videoId: "hisd0uu37o", // Wistia video ID
-    views: "2.3M",
-    platform: "TikTok",
-    hasTestimonial: true, // true = show testimonial section, false = hide it
-    testimonialText:
-      "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
-    testimonialImageSrc: "1.jpg", // Name of testimonial image in /public/images/testimonials/
-    authorName: "Jeremiah Smith",
-    authorRole: "CEO, Company Name",
-    rating: 5,
+    videoId: "ug1fifdzcl",
+    views: "4.1M",
+    platform: "Instagram",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
   },
   {
     aspectRatio: "9/16",
@@ -235,7 +248,7 @@ export const portfolioReels = [
     videoId: "8h6q65blew",
     views: "2.3M",
     platform: "TikTok",
-    category: "High Production",
+    category: "High-Production",
     hasTestimonial: false,
     testimonialText: null,
     testimonialImageSrc: null,
@@ -294,7 +307,7 @@ export const portfolioReels = [
     videoId: "/images/reels-images/4.jpg",
     views: "2.3M",
     platform: "TikTok",
-    category: "Statics ",
+    category: "Statics",
     hasTestimonial: true,
     testimonialText:
       "That was an amazing experience. I had a great time and learned a lot. I'm so grateful for the opportunity to work with Jeremiah.",
@@ -368,6 +381,48 @@ export const portfolioReels = [
     views: "4.1M",
     platform: "Instagram",
     category: "Statics",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    id: 16,
+    type: "video",
+    aspectRatio: "9/16",
+    videoId: "pdnecz4ppl",
+    views: "4.1M",
+    platform: "Instagram",
+    category: "High-Production",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    id: 17,
+    type: "video",
+    aspectRatio: "9/16",
+    videoId: "60zvxyu6iy",
+    views: "4.1M",
+    platform: "Instagram",
+    category: "High-Production",
+    hasTestimonial: false,
+    testimonialText: null,
+    testimonialImageSrc: null,
+    authorName: null,
+    authorRole: null,
+  },
+  {
+    id: 18,
+    type: "video",
+    aspectRatio: "9/16",
+    videoId: "ejybscbi06",
+    views: "4.1M",
+    platform: "Instagram",
+    category: "UGC",
     hasTestimonial: false,
     testimonialText: null,
     testimonialImageSrc: null,
