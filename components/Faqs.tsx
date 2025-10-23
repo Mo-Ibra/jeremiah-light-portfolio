@@ -61,11 +61,11 @@ export default function FAQs() {
                     <div className="flex-shrink-0">
                       {openIndex === index ? (
                         <Plus
-                          className="w-5 h-5 rotate-45 text-white"
+                          className="w-5 h-5 rotate-45 transition-all duration-300 ease-in-out text-white"
                           strokeWidth={4}
                         />
                       ) : (
-                        <Plus className="w-5 h-5 text-white" strokeWidth={4} />
+                        <Plus className="w-5 h-5 rotate-0 transition-all duration-300 ease-in-out text-white" strokeWidth={4} />
                       )}
                     </div>
                   </button>

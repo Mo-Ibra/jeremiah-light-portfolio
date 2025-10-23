@@ -13,9 +13,9 @@ So let's make a list for myself.
 - Fix the paragraph under heading in each section (✅)
 - Borders (✅)
 - Fix the modal bug on mobile (Hide scrollbar when open modal) (✅)
-- Fix big screen, mobile background
+- Fix big screen, mobile background  (✅)
+- Make Faq icon more smooth (✅)
 - Blend background together
-- Make Faq icon more smooth
 - Add the new section (After fix all previous first)
 
 [10:42 PM, 10/20/2025] Jeremiah Harcharran Static: https://www.linkedin.com/in/jeremiah-harcharran-95948b207/
