@@ -84,7 +84,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Studio Content */}
+          {/* High Production Content */}
           <div className="relative rounded-3xl overflow-hidden h-[390px] group shadow-2xl">
             <div className="absolute inset-0 rounded-3xl p-[4px] bg-gradient-to-t from-white via-[#6C5DD3] to-primary">
               <div className="h-full w-full rounded-3xl overflow-hidden relative">
@@ -98,7 +98,7 @@ const Services = () => {
 
                 <div className="relative z-10 p-6 h-full flex flex-col justify-end text-white">
                   <h3 className="text-2xl font-semibold mb-2 text-[#8994E9]">
-                    Studio Content
+                    High Production Content
                   </h3>
                   <p className="text-white/90 leading-relaxed text-xs">
                     Professional, polished, and high-production content created
