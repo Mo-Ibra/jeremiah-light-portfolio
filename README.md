@@ -39,6 +39,10 @@ So let's make a list for myself.
 - Fix FAQ Separator (✅)
 - Video stretch (✅)
 
+- Fix Benifits Borders (✅)
+- All "Me" to Us (✅)
+- Fix "Case studies" button ✅
+
 
 [10:42 PM, 10/20/2025] Jeremiah Harcharran Static: https://www.linkedin.com/in/jeremiah-harcharran-95948b207/
 [10:42 PM, 10/20/2025] Jeremiah Harcharran Static: https://www.instagram.com/jeremiahpr_/

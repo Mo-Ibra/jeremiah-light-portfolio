@@ -245,7 +245,7 @@ export default function CaseStudiesSection() {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4 my-12 md:my-16">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-5 mb-12 md:mt-10 md:mb-16">
           <button
             onClick={() => (location.href = "#cta")}
             className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"

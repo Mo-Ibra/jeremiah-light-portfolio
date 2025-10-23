@@ -15,11 +15,11 @@ const Comparison = () => {
         <SectionHeader badgeText="Why Us?" className="md:mb-6 mb-2">
           <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             Why <span className="text-primary">Leading DTC Brands</span>{" "}
-            Collaborate With Me
+            Collaborate With Us
           </h2>
           <p className="text-base md:text-2xl md:leading-8 text-[#00000073] max-w-4xl mx-auto">
             Here&apos;s exactly why over 80+ Established DTC Brands have worked
-            with me to help scale content production and profits
+            with us to help scale content production and profits
           </p>
         </SectionHeader>
 
@@ -64,7 +64,7 @@ const Comparison = () => {
             {/* Working With Me Card */}
             <div className="bg-black rounded-3xl p-6 shadow-lg w-full lg:w-96 border-3 border-primary relative md:right-16">
               <h3 className="text-3xl font-bold text-primary">
-                Working With Me
+                Working With Us
               </h3>
 
               {/* Border Gradient Under Heading */}

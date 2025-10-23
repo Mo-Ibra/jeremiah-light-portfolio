@@ -27,7 +27,7 @@ const Features = () => {
             {/* Content Management - 3/4 */}
             <div className="relative lg:col-span-2 rounded-4xl overflow-hidden group">
               {/* Gradient Border */}
-              <div className="relative inset-0 rounded-4xl p-[4px] bg-gradient-to-t from-primary via-[#6253c290] to-white shadow-2xl">
+              <div className="relative inset-0 rounded-4xl p-[4px] bg-gradient-to-t from-primary via-[#6253c290] to-black shadow-2xl">
                 <div className="h-full w-full bg-black rounded-4xl shadow-lg flex flex-col overflow-hidden">
                   <div className="bg-black relative">
                     <Image
@@ -58,7 +58,7 @@ const Features = () => {
             {/* Ads Reporting - 1/4 */}
             <div className="relative lg:col-span-1 rounded-4xl overflow-hidden group">
               {/* Gradient Border */}
-              <div className="relative inset-0 rounded-4xl p-[4px] bg-gradient-to-t from-primary via-[#6253c290] to-white shadow-2xl">
+              <div className="relative inset-0 rounded-4xl p-[4px] bg-gradient-to-t from-primary via-[#6253c290] to-black shadow-2xl">
                 <div className="h-full w-full bg-black rounded-4xl shadow-lg flex flex-col overflow-hidden">
                   <div className="bg-black relative">
                     <Image
@@ -87,50 +87,60 @@ const Features = () => {
           {/* Second Row */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* Communication - 1/4 */}
-            <div className="lg:col-span-1 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
-              <div className="bg-black relative">
-                <Image
-                  src="/images/features/3.png"
-                  alt="Ads Reporting & Management"
-                  width={600}
-                  height={300}
-                  className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
-                />
-              </div>
-              <div className="md:pl-6 pl-4 py-3">
-                <h3 className="text-lg font-bold text-white mb-2">
-                  Direct & Rapid Communication
-                </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed md:mb-0 mb-1">
-                  You get direct, same-day communication with me. No account
-                  managers, no waiting - just fast, consistent support, whenever
-                  you want.
-                </p>
+            <div className="relative lg:col-span-1 rounded-4xl overflow-hidden group">
+              {/* Gradient Border */}
+              <div className="relative inset-0 rounded-4xl p-[4px] bg-gradient-to-b from-primary via-[#6253c290] to-black shadow-2xl">
+                <div className="h-full w-full bg-black rounded-4xl shadow-lg flex flex-col overflow-hidden">
+                  <div className="bg-black relative">
+                    <Image
+                      src="/images/features/3.png"
+                      alt="Ads Reporting & Management"
+                      width={600}
+                      height={300}
+                      className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
+                    />
+                  </div>
+                  <div className="md:pl-6 pl-4 py-3">
+                    <h3 className="text-lg font-bold text-white mb-2">
+                      Direct & Rapid Communication
+                    </h3>
+                    <p className="text-[#ffffffb3] text-xs leading-relaxed md:mb-0 mb-1">
+                      You get direct, same-day communication with me. No account
+                      managers, no waiting - just fast, consistent support,
+                      whenever you want.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Psychographics - 3/4 */}
-            <div className="lg:col-span-2 bg-black rounded-4xl shadow-lg overflow-hidden flex flex-col border-3 border-primary">
-              <div className="bg-black relative">
-                <Image
-                  src="/images/features/4.png"
-                  alt="Content Management System Interface"
-                  width={600}
-                  height={300}
-                  className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
-                />
-              </div>
-              <div className="md:pl-6 pl-4 py-3">
-                <h3 className="text-xl font-bold text-white mb-2">
-                  Proprietary Audience Insights
-                </h3>
-                <p className="text-[#ffffffb3] text-xs leading-relaxed md:max-w-xl max-w-xs md:mb-0 mb-1">
-                  We go beyond basic demographics. Our proprietary database
-                  tracks the emotional and behavioural psychographics of your
-                  target audience. This allows us to craft ads with messaging
-                  that resonates on a deeper level, leading to higher conversion
-                  rates and stronger brand affinity.
-                </p>
+            <div className="relative lg:col-span-2 rounded-4xl overflow-hidden group">
+              {/* Gradient Border */}
+              <div className="relative inset-0 rounded-4xl p-[4px] bg-gradient-to-b from-primary via-[#6253c290] to-black shadow-2xl">
+                <div className="h-full w-full bg-black rounded-4xl shadow-lg flex flex-col overflow-hidden">
+                  <div className="bg-black relative">
+                    <Image
+                      src="/images/features/4.png"
+                      alt="Content Management System Interface"
+                      width={600}
+                      height={300}
+                      className="w-full h-[300px] object-cover md:p-2 px-2 pt-2 rounded-4xl"
+                    />
+                  </div>
+                  <div className="md:pl-6 pl-4 py-3">
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      Proprietary Audience Insights
+                    </h3>
+                    <p className="text-[#ffffffb3] text-xs leading-relaxed md:max-w-xl max-w-xs md:mb-0 mb-1">
+                      We go beyond basic demographics. Our proprietary database
+                      tracks the emotional and behavioural psychographics of
+                      your target audience. This allows us to craft ads with
+                      messaging that resonates on a deeper level, leading to
+                      higher conversion rates and stronger brand affinity.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
