@@ -39,20 +39,22 @@ const HeroForPortfolio = () => {
 
           {/* Hero Text */}
           <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[70px] mb-4 md:mb-6 leading-tight bg-gradient-to-r from-[#5360C2] to-[#272E5C] bg-clip-text text-transparent font-instrument">
-            Performance Creative
+            We Tell Stories and
             <br />
-            for Scale-Stage Brands
+            Solve Problems
           </h1>
 
           {/* Description Text */}
           <p className="text-xs md:text-[15px] text-black mb-2 leading-relaxed max-w-2xl">
-            We help DTC brands spending $20k-$100k/month grow profitably by
-            creating high-converting ads at scale.
+            See the data-driven UGC, AI-generated, and High Production ads that
+            form the backbone of a high-performance creative strategy. These
+            style are what allow top brands to profitably acquire new customers
+            with confidence
           </p>
-          <p className="text-xs md:text-[15px] text-black mb-6 leading-relaxed max-w-2xl">
+          {/* <p className="text-xs md:text-[15px] text-black mb-6 leading-relaxed max-w-2xl">
             Creative Strategy, Copywriting, Funnels, Post Production, Ads and
             Campaign Structure - done with and for you.
-          </p>
+          </p> */}
         </div>
 
         {/* CTA Buttons - Centered Below */}
