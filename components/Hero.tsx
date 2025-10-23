@@ -27,30 +27,6 @@ const Hero = () => {
              md:bg-[url('/images/hero/hero-bg.png')]"
       ></div>
 
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Right */}
-        {/* <div className="absolute top-20 right-0 text-white opacity-80">
-          <Image
-            src={"/images/hero/cloud.png"}
-            width={433}
-            height={433}
-            alt="Cloud"
-          />
-        </div> */}
-
-        {/* Left */}
-        {/* {!isMobile && (
-          <div className="absolute -top-[450px] right-[1100px] text-white opacity-80">
-            <Image
-              src={"/images/hero/top-left-cloud.svg"}
-              width={1058}
-              height={1058}
-              alt="Cloud"
-            />
-          </div>
-        )} */}
-      </div>
-
       {/* Main Content Container */}
       <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full mt-10 md:mt-64 lg:mt-0">
         {/* Top Section - Text and Video Side by Side */}
@@ -59,7 +35,7 @@ const Hero = () => {
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl mt-6">
             {/* Status Badge */}
             <div className="inline-flex items-center px-4 py-1 border border-green-400 bg-[#eff1fe] rounded-full text-[#0ea300] text-[10px] md:text-sm font-semibold mb-4 md:mb-0">
-              <div className="w-3 h-3 bg-[#00c514] rounded-full mr-2"></div>
+              <div className="w-2 h-2 bg-[#00c514] rounded-full mr-2"></div>
               Partnering with 1 more brand this month
             </div>
 

@@ -27,11 +27,11 @@ So let's make a list for myself.
 - Fix Hero text margins  (✅)
 - Add gradient border on benifits and features (✅)
 - Add button in testimonial (✅)
-- Fix Glow in small screen
+- Fix Glow in small screen (✅)
+- Make dot in hero more smaller (✅)
+- Change "Our Services" image (✅)
 - Fix "->" in buttons
 - Fix FAQ Separator
-- Change "Our Services" image
-- Make dot in hero more smaller
 - Change navbar colors in small screen to fit figma
 - Video stretch
 - And add a line break after the “-“ in mobile in case studies section

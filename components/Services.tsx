@@ -131,7 +131,7 @@ const Services = () => {
               <div className="rounded-3xl overflow-hidden bg-gradient-to-t from-black via-[#0a0a1a] to-[#1a1a3a]">
                 <div className="relative z-10 w-full h-[250px] flex justify-center items-center">
                   <Image
-                    src="/images/services/group.png"
+                    src="/images/services/group-2.png"
                     alt="Growth Chart"
                     width={500}
                     height={400}
