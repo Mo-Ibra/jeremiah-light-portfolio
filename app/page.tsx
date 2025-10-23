@@ -59,11 +59,8 @@ function Home() {
       <Navigation />
       <Hero />
       <VideoReels />
-      <div className="h-16 md:h-20 bg-gradient-to-b from-white to-[#5360c226]"></div>
       <CaseStudiesSection />
-      <div className="h-16 md:h-20 bg-gradient-to-b from-[#5360c226] to-white"></div>
       <TestimonialsSection />
-      <div className="h-16 md:h-20 bg-gradient-to-b from-white to-[#5360c226]"></div>
       <Services />
       {/* {!isMobile && <Portfolio />} */}
       <AboutMe />

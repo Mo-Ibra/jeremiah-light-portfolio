@@ -297,28 +297,28 @@ export default function CaseStudiesSection() {
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
-                    <p className="text-white text-sm">
+                    <p className="text-white text-sm max-w-md">
                       Brand (or product) has product-market-fit
                     </p>
                   </div>
 
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
-                    <p className="text-white text-sm">
+                    <p className="text-white text-sm max-w-md">
                       Wants a long-term partnership
                     </p>
                   </div>
 
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
-                    <p className="text-white text-sm">
+                    <p className="text-white text-sm max-w-md">
                       Is in need of more, different or better creative
                     </p>
                   </div>
 
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
-                    <p className="text-white text-sm">
+                    <p className="text-white text-sm max-w-md">
                       Spends between $20k - $100k per month on paid advertising
                       (Meta, TikTok, Google)
                     </p>
@@ -342,28 +342,28 @@ export default function CaseStudiesSection() {
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
-                    <p className="text-white text-base">
+                    <p className="text-white text-sm max-w-md">
                       Doesn&apos;t have product-market-fit
                     </p>
                   </div>
 
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
-                    <p className="text-white text-base">
+                    <p className="text-white text-sm max-w-md">
                       Success is based on short-term fixes
                     </p>
                   </div>
 
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
-                    <p className="text-white text-base">
+                    <p className="text-white text-sm max-w-md">
                       Cares more about price than value & results
                     </p>
                   </div>
 
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
-                    <p className="text-white text-base">
+                    <p className="text-white text-sm max-w-md">
                       Lack of communication & understanding
                     </p>
                   </div>
