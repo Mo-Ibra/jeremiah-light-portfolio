@@ -12,8 +12,8 @@ const Comparison = () => {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <SectionHeader badgeText="Why Us?" className="md:mb-6 mb-2">
-          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
+        <SectionHeader badgeText="Why Us?" className="md:mb-6 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 md:mb-6 mb-2">
             Why <span className="text-primary">Leading DTC Brands</span>{" "}
             Collaborate With Us
           </h2>

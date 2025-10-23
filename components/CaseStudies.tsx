@@ -148,7 +148,7 @@ export default function CaseStudiesSection() {
   ];
 
   return (
-    <section className="md:py-16 py-12 px-4 bg-gradient-to-b from-[#5360c226] from-[90%] to-white to-[80%]">
+    <section className="md:py-16 py-12 px-4 bg-gradient-to-b from-[#5360c226] from-[90%] to-white to-[80%]" id="case-studies">
       <div className="max-w-4xl xl:max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader

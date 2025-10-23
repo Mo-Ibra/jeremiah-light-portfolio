@@ -66,25 +66,25 @@ const Navigation = () => {
                   Portfolio
                 </a>
                 <a
-                  href="#services"
+                  href="/#services"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Services
                 </a>
                 <a
-                  href="#case-studies"
+                  href="/#case-studies"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Case Studies
                 </a>
                 <a
-                  href="#about"
+                  href="/#about"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   About
                 </a>
                 <a
-                  href="#process"
+                  href="/#process"
                   className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Process
@@ -162,21 +162,21 @@ const Navigation = () => {
                 Portfolio
               </a>
               <a
-                href="#case-studies"
+                href="/#case-studies"
                 onClick={toggleMenu}
                 className="hover:text-white/70"
               >
                 Case Studies
               </a>
               <a
-                href="#about"
+                href="/#about"
                 onClick={toggleMenu}
                 className="hover:text-white/70"
               >
                 About
               </a>
               <a
-                href="#process"
+                href="/#process"
                 onClick={toggleMenu}
                 className="hover:text-white/70"
               >

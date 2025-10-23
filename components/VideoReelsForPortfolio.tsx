@@ -31,16 +31,10 @@ const VideoReelsForPortfolio = () => {
           className="md:mb-0 mb-2"
           withLabel={false}
         >
-          <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             The <span className="text-primary">Creative Styles</span> Trusted by{" "}
             <span className="text-primary">6, 7, and 8-Figure Brands</span>
           </h2>
-          <p className="text-base md:text-2xl font-semibold text-[#00000073] max-w-5xl mx-auto leading-relaxed">
-            See the data-driven UGC, AI-generated, and Studio ads that form the
-            backbone of a high-performance creative strategy. This is what
-            allows top brands to profitably acquire new customers with
-            confidence
-          </p>
         </SectionHeader>
 
         {/* Filter Buttons */}
@@ -70,7 +64,7 @@ const VideoReelsForPortfolio = () => {
           ))}
         </div>
 
-        <button className="px-6 md:px-8 py-3 md:py-4 bg-transparent text-primary rounded-full shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12 border-2 border-primary">
+        <button onClick={() => location.href = "#cta"} className="px-6 md:px-8 py-3 md:py-4 bg-transparent text-primary rounded-full shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12 border-2 border-primary">
           <span>Schedule Free Ads Audit Today</span>
         </button>
       </div>
