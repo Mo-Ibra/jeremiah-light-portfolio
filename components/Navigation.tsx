@@ -91,8 +91,8 @@ const Navigation = () => {
             {/* Mobile Logo - Separate */}
             <Link href="/" className="md:hidden">
               <div className="flex flex-col">
-                <Image
-                  src="/images/navbar/logo.svg"
+                <img
+                  src="/images/navbar/logo.png"
                   width={160}
                   height={40}
                   alt="Logo"
