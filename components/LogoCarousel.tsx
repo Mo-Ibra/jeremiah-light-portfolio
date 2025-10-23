@@ -4,12 +4,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const logos = [
-  "/images/hero/logos/1.svg",
-  "/images/hero/logos/2.svg",
-  "/images/hero/logos/3.svg",
-  "/images/hero/logos/4.svg",
-  "/images/hero/logos/5.svg",
-  "/images/hero/logos/6.svg",
+  "/images/hero/logos/1.webp",
+  "/images/hero/logos/2.webp",
+  "/images/hero/logos/3.webp",
+  "/images/hero/logos/4.webp",
+  "/images/hero/logos/5.webp",
+  "/images/hero/logos/6.webp",
 ];
 
 function LogoCarousel() {
