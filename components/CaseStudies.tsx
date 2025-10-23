@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import Image from "next/image";
+import { Check, X } from "lucide-react";
 
 interface Metric {
   icon: string | "/images/case-studies/icons/1.svg";
@@ -155,7 +156,7 @@ export default function CaseStudiesSection() {
           badgeBackgroundColor="bg-[#5360c226]"
           className="md:mb-12 mb-6"
         >
-          <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-2">
+          <h2 className="text-xl md:text-[40px] font-semibold text-gray-900 mb-2">
             Our Creatives Actually Work -{" "}
             <span className="text-primary">Watch Some Results Below</span>
           </h2>
@@ -242,6 +243,139 @@ export default function CaseStudiesSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* NEW TESTING SECTION */}
+        <div className="relative max-w-6xl mx-auto mt-20 w-full bg-black rounded-3xl p-8 shadow-2xl border-2 border-primary">
+          <div className="grid md:grid-cols-2 gap-8 mt-8">
+            {/* Left Column */}
+            <div className="text-white space-y-6 z-20">
+              <h1 className="text-5xl mb-4">
+                Who do we{" "}
+                <span className="italic font-light font-instrument">
+                  work with?
+                </span>
+              </h1>
+
+              <p className="text-xl leading-relaxed max-w-md">
+                We're a lean team of senior specialists helping DTC E-commerce
+                brands grow globally.
+              </p>
+
+              <p className="text-xl leading-relaxed max-w-md">
+                With 5+ years experience each and thousands spent on ads, we
+                work with established companies that understand their metrics
+                and seek long-term growth.
+              </p>
+
+              <p className="text-xl leading-relaxed max-w-md">
+                We deliver hardcore paid advertising, capping our roster at 4
+                clients at any given time to invest 95% of our time on their
+                success.
+              </p>
+
+              <p className="text-xl leading-relaxed max-w-md">
+                We aren't here to be the biggest; we're here to be the best.
+              </p>
+            </div>
+
+            {/* Right Column */}
+            <div className="space-y-6">
+              {/* Yes Box */}
+              <div className="bg-gradient-to-tr from-[#5cc8d4] via-[#5360c2] to-[#5360c2] rounded-2xl pt-1 pb-8 px-4 shadow-lg">
+                <div className="flex items-center gap-2 mb-2 relative">
+                  <h2 className="text-[40px] font-instrument italic text-white">Yes</h2>
+                  <Image
+                    src="/images/case-studies/to-down.svg"
+                    alt="arrow"
+                    width={16}
+                    height={16}
+                    className="text-white relative top-2"
+                  />
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                    <p className="text-white text-sm">
+                      Brand (or product) has product-market-fit
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                    <p className="text-white text-sm">
+                      Wants a long-term partnership
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                    <p className="text-white text-sm">
+                      Is in need of more, different or better creative
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                    <p className="text-white text-sm">
+                      Spends between $20k - $100k per month on paid advertising
+                      (Meta, TikTok, Google)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* No Box */}
+              <div className="bg-transparent border-2 border-gray-200 rounded-2xl pt-1 pb-8 px-4 shadow-lg">
+                <div className="flex items-center gap-2 mb-2 relative">
+                  <h2 className="text-[40px] font-instrument italic text-white">No</h2>
+                  <Image
+                    src="/images/case-studies/to-down.svg"
+                    alt="arrow"
+                    width={16}
+                    height={16}
+                    className="text-white relative top-2"
+                  />
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                    <p className="text-white text-base">
+                      Doesn't have product-market-fit
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                    <p className="text-white text-base">
+                      Success is based on short-term fixes
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                    <p className="text-white text-base">
+                      Cares more about price than value & results
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                    <p className="text-white text-base">
+                      Lack of communication & understanding
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Blur Background */}
+          <div className="absolute bottom-0 left-0">
+            <img src="/images/case-studies/blur-bg.svg" alt="Blur BG" />
+          </div>
         </div>
       </div>
     </section>
