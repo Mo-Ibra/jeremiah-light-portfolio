@@ -6,12 +6,12 @@ import React, { useState } from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { portfolioReels } from "@/data/data";
 import SectionHeader from "./SectionHeader";
-import BlurCircle from "./BlurCircle";
+// import BlurCircle from "./BlurCircle";
 
 const VideoReelsForPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const filters = ["All", "UGC", "Studio", "AI", "Statics"];
+  const filters = ["All", "UGC", "High Production", "AI", "Statics"];
 
   // Filter the reels based on active filter
   const filteredReels =
@@ -22,11 +22,8 @@ const VideoReelsForPortfolio = () => {
   return (
     <section
       id="portfolio"
-      className="relative overflow-hidden pt-24 md:pt-36"
+      className="relative overflow-hidden pt-6 md:pt-12"
     >
-      <BlurCircle top="200px" className="z-40" />
-      <BlurCircle left="1500px" top="900px" className="z-40" />
-
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <SectionHeader badgeText="Creative Portfolio" className="md:mb-0 mb-2">

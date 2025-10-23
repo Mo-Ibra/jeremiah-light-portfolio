@@ -3,6 +3,7 @@
 import CTA from "@/components/CTA";
 import FAQs from "@/components/Faqs";
 import Footer from "@/components/Footer";
+import HeroForPortfolio from "@/components/HeroForPortfolio";
 import Navigation from "@/components/Navigation";
 import QuizModal from "@/components/QuizModal";
 import VideoReelsForPortfolio from "@/components/VideoReelsForPortfolio";
@@ -35,6 +36,7 @@ function Page() {
   return (
     <>
       <Navigation />
+      <HeroForPortfolio />
       <VideoReelsForPortfolio />
       <FAQs />
       <CTA onOpenQuiz={openQuiz} />
