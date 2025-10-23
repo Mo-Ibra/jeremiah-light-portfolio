@@ -393,9 +393,15 @@ export default function CaseStudiesSection() {
             </div>
           </div>
 
+          <div className="absolute top-0 right-0 md:w-[350px] md:h-[350px] w-[200px] h-[200px] bg-gradient-to-bl from-primary via-[#5cc8d4]/10 to-transparent pointer-events-none blur-3xl"></div>
+
           {/* Blur Background */}
           <div className="absolute bottom-0 left-0">
-            <img src="/images/case-studies/blur-bg.svg" alt="Blur BG" style={{ borderRadius: "20px" }} />
+            <img
+              src="/images/case-studies/blur-bg.svg"
+              alt="Blur BG"
+              style={{ borderRadius: "20px" }}
+            />
           </div>
         </div>
       </div>
