@@ -216,7 +216,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                     Before booking, please give us more insight into your needs
                   </p>
                   <p className="quiz-subtitle mt-6">
-                    If you're a good fit you'll hear from us and we'll set up a call - if not we'll tell you quickly and respectfully *
+                    If you&apos;re a good fit you&apos;ll hear from us and we&apos;ll set up a call - if not we&apos;ll tell you quickly and respectfully *
                   </p>
                 </div>
 
