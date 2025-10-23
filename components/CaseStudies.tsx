@@ -247,34 +247,34 @@ export default function CaseStudiesSection() {
 
         {/* NEW TESTING SECTION */}
         <div className="relative max-w-6xl mx-auto mt-20 w-full bg-black rounded-3xl p-8 shadow-2xl border-2 border-primary">
-          <div className="grid md:grid-cols-2 gap-8 mt-8">
+          <div className="grid md:grid-cols-2 gap-8 md:mt-8">
             {/* Left Column */}
             <div className="text-white space-y-6 z-20">
-              <h1 className="text-5xl mb-4">
+              <h1 className="text-[32px] md:text-5xl mb-4">
                 Who do we{" "}
                 <span className="italic font-light font-instrument">
                   work with?
                 </span>
               </h1>
 
-              <p className="text-xl leading-relaxed max-w-md">
+              <p className="text-sm md:text-xl leading-relaxed max-w-md">
                 We&apos;re a lean team of senior specialists helping DTC E-commerce
                 brands grow globally.
               </p>
 
-              <p className="text-xl leading-relaxed max-w-md">
+              <p className="text-sm md:text-xl leading-relaxed max-w-md">
                 With 5+ years experience each and thousands spent on ads, we
                 work with established companies that understand their metrics
                 and seek long-term growth.
               </p>
 
-              <p className="text-xl leading-relaxed max-w-md">
+              <p className="text-sm md:text-xl leading-relaxed max-w-md">
                 We deliver hardcore paid advertising, capping our roster at 4
                 clients at any given time to invest 95% of our time on their
                 success.
               </p>
 
-              <p className="text-xl leading-relaxed max-w-md">
+              <p className="text-sm md:text-xl leading-relaxed max-w-md">
                 We aren&apos;t here to be the biggest; we&apos;re here to be the best.
               </p>
             </div>
