@@ -36,7 +36,7 @@ const Comparison = () => {
 
               <div className="space-y-4">
                 <div className="text-white text-base md:text-lg">
-                  Boring Cookie Cutter ADs
+                  Boring Cookie Cutter Ads
                 </div>
 
                 <div className="text-white text-base md:text-lg">
