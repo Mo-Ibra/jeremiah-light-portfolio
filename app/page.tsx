@@ -60,10 +60,10 @@ function Home() {
       <Hero />
       <VideoReels />
       <CaseStudiesSection />
+      <AboutMe />
       <TestimonialsSection />
       <Services />
       {/* {!isMobile && <Portfolio />} */}
-      <AboutMe />
       <Process />
       <Comparison />
       <Features />

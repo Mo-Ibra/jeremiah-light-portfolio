@@ -6,16 +6,17 @@ import { Button } from "./ui/button";
 const AboutMe = () => {
   return (
     <section
-      className="md:py-16 py-12 px-6 relative overflow-hidden z-50"
+      className="md:pb-12 py-12 px-6 relative overflow-hidden z-50"
       id="about"
     >
-      <BlurCircle
+      {/* <BlurCircle
         left="1000px"
-        blur="250px"
+        blur="550px"
+        top="800px"
         width="300px"
         height="450px"
         className="-z-10"
-      />
+      /> */}
 
       <div className="max-w-4xl md:max-w-7xl mx-auto">
         {/* Header */}

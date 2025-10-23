@@ -148,7 +148,7 @@ export default function CaseStudiesSection() {
   ];
 
   return (
-    <section className="md:py-16 py-12 px-4 bg-[#5360c226]" id="case-studies">
+    <section className="md:py-16 py-12 px-4 bg-gradient-to-b from-[#5360c226] from-[90%] to-white to-[80%]">
       <div className="max-w-4xl xl:max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader
@@ -395,7 +395,7 @@ export default function CaseStudiesSection() {
 
           {/* Blur Background */}
           <div className="absolute bottom-0 left-0">
-            <img src="/images/case-studies/blur-bg.svg" alt="Blur BG" />
+            <img src="/images/case-studies/blur-bg.svg" alt="Blur BG" style={{ borderRadius: "20px" }} />
           </div>
         </div>
       </div>
