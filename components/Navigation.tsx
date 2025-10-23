@@ -31,9 +31,9 @@ const Navigation = () => {
                     width={160}
                     height={40}
                     alt="Logo"
-                    className="w-32 lg:w-[160px] h-auto"
+                    className="w-32 lg:w-32 h-auto"
                   />
-                  <p className="text-[8px] lg:text-[11px] text-white ml-[6px]">
+                  <p className="text-[8px] lg:text-[9px] text-white ml-[6px]">
                     Performance Creative Partner
                   </p>
                 </div>
@@ -43,37 +43,37 @@ const Navigation = () => {
               <div className="flex items-center space-x-2">
                 <a
                   href="#home"
-                  className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
+                  className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Home
                 </a>
                 <a
                   href="#portfolio"
-                  className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
+                  className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Portfolio
                 </a>
                 <a
                   href="#services"
-                  className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
+                  className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Services
                 </a>
                 <a
                   href="#case-studies"
-                  className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
+                  className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Case Studies
                 </a>
                 <a
                   href="#about"
-                  className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
+                  className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   About
                 </a>
                 <a
                   href="#process"
-                  className="px-4 py-2 rounded-full transition text-white hover:bg-white/20"
+                  className="px-2 py-1 rounded-full transition text-white hover:bg-white/20"
                 >
                   Process
                 </a>
@@ -81,7 +81,7 @@ const Navigation = () => {
 
               {/* CTA Inside */}
               <button
-                className="flex px-6 py-2 mx-4 bg-white rounded-full font-bold text-gray-700 shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2 whitespace-nowrap"
+                className="flex px-4 py-1.5 mx-4 bg-white rounded-full font-semibold text-gray-700 shadow-md hover:shadow-lg transition-all hover:scale-105 items-center space-x-2 whitespace-nowrap"
                 onClick={() => (window.location.href = "#cta")}
               >
                 <span>Let&apos;s Talk</span>
@@ -107,7 +107,7 @@ const Navigation = () => {
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center space-x-3">
               <button
-                className="px-8 py-2 rounded-full bg-white text-gray-700 font-bold transition-all text-sm flex items-center space-x-2 relative group"
+                className="px-8 py-2 rounded-full bg-white text-gray-700 font-semibold transition-all text-sm flex items-center space-x-2 relative group"
                 onClick={() => (window.location.href = "#cta")}
               >
                 <span className="relative">Let&apos;s Talk</span>

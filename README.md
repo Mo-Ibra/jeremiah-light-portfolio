@@ -22,7 +22,8 @@ So let's make a list for myself.
 - Navbar Close Icon in mobile (✅)
 - Fix Navbar mobile border radius (✅)
 - Fix Faq Background (✅)
-- Make navbar smaller in desktop
+- Fix New Section background (✅)
+- Make navbar smaller in desktop and let's talk semibold
 - Fix Hero text margins
 - Add gradient border on benifits and features
 
