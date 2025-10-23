@@ -104,7 +104,7 @@ const Navigation = () => {
             <Link href="/" className="md:hidden">
               <div className="flex flex-col">
                 <Image
-                  src={`${isMobile ? "/images/navbar/logo.png" : "/images/navbar/logo.svg"}`}
+                  src={`${isMobile ? "/images/navbar/logo.webp" : "/images/navbar/logo.svg"}`}
                   width={160}
                   height={40}
                   alt="Logo"
