@@ -21,7 +21,7 @@ export default function FAQs() {
     >
       <div className="absolute inset-0 flex items-center justify-center">
         <img
-          src="/images/faqs/background.svg"
+          src="/images/faqs/background-2.svg"
           alt="Faq Background"
           className="max-w-full max-h-full object-contain"
         />

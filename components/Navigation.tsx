@@ -116,12 +116,12 @@ const Navigation = () => {
               {/* Burger Menu */}
               <button
                 onClick={toggleMenu}
-                className="p-2 rounded-md text-white transition hover:bg-white/10"
+                className="p-2 rounded-full bg-white text-black transition hover:bg-white/10"
               >
                 {isMenuOpen ? (
-                  <X className="w-6 h-6" />
+                  <X className="w-4 h-4" />
                 ) : (
-                  <Menu className="w-6 h-6" />
+                  <Menu className="w-4 h-4" />
                 )}
               </button>
             </div>

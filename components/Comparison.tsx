@@ -8,7 +8,7 @@ const Comparison = () => {
       <BlurCircle left="1200px" blur="400px" />
 
       <div className="max-w-7xl mx-auto">
-        <SectionHeader badgeText="Why Us?" className="md:mb-12 mb-2">
+        <SectionHeader badgeText="Why Us?" className="md:mb-6 mb-2">
           <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             Why <span className="text-primary">Leading DTC Brands</span>{" "}
             Collaborate With Me
@@ -21,7 +21,7 @@ const Comparison = () => {
 
         {/* Comparison Cards */}
         <div className="relative max-w-4xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-4 lg:gap-8">
             {/* Traditional Agencies Card */}
             <div className="bg-black rounded-3xl p-6 shadow-lg w-full lg:w-96 lg:mt-12 border-3 border-primary">
               <h3 className="text-3xl font-bold text-white">
