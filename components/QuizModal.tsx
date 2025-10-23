@@ -216,8 +216,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                     Before booking, please give us more insight into your needs
                   </p>
                   <p className="quiz-subtitle mt-6">
-                    Note: Due to high demand & quality standards, some entrants
-                    may be rejected pre-call *
+                    If you're a good fit you'll hear from us and we'll set up a call - if not we'll tell you quickly and respectfully *
                   </p>
                 </div>
 
@@ -264,7 +263,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
               {/* Step 2: Ad Spend */}
               <div className={`quiz-step ${currentStep === 2 ? "active" : ""}`}>
                 <div className="quiz-header">
-                  <h3 className="quiz-title">Schedule Free Ads Audit</h3>
+                  <h3 className="quiz-title"></h3>
                 </div>
 
                 <h4 className="quiz-question">
@@ -321,7 +320,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
               {/* Step 3: Issues */}
               <div className={`quiz-step ${currentStep === 3 ? "active" : ""}`}>
                 <div className="quiz-header">
-                  <h3 className="quiz-title">Schedule Free Ads Audit</h3>
+                  <h3 className="quiz-title"></h3>
                 </div>
 
                 <h4 className="quiz-question">
@@ -351,7 +350,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
               {/* Step 4: Looking for */}
               <div className={`quiz-step ${currentStep === 4 ? "active" : ""}`}>
                 <div className="quiz-header">
-                  <h3 className="quiz-title">Schedule Free Ads Audit</h3>
+                  <h3 className="quiz-title"></h3>
                 </div>
 
                 <h4 className="quiz-question">What are you looking for?</h4>
@@ -379,7 +378,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
               {/* Step 5: Website */}
               <div className={`quiz-step ${currentStep === 5 ? "active" : ""}`}>
                 <div className="quiz-header">
-                  <h3 className="quiz-title">Schedule Free Ads Audit</h3>
+                  <h3 className="quiz-title"></h3>
                 </div>
 
                 <h4 className="quiz-question">Please share your website URL</h4>
@@ -408,7 +407,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
               {/* Step 6: Contact Info */}
               <div className={`quiz-step ${currentStep === 6 ? "active" : ""}`}>
                 <div className="quiz-header">
-                  <h3 className="quiz-title">Schedule Free Ads Audit</h3>
+                  <h3 className="quiz-title"></h3>
                 </div>
 
                 <h4 className="quiz-question">
