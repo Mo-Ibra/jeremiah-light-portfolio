@@ -81,7 +81,7 @@ const VideoReels = () => {
   // ]);
 
   return (
-    <section id="portfolio" className="relative overflow-hidden z-0">
+    <section id="portfolio" className="relative overflow-hidden z-0  bg-white">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className="text-center my-2 sm:my-4 lg:my-6 tracking-tight opacity-0 translate-y-5 animate-[fadeInUp_1s_ease_forwards]">
