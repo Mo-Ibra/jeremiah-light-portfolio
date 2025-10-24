@@ -399,20 +399,6 @@ export const portfolioReels = [
     id: 16,
     type: "video",
     aspectRatio: "9/16",
-    videoId: "pdnecz4ppl",
-    views: "4.1M",
-    platform: "Instagram",
-    category: "High-Production",
-    hasTestimonial: false,
-    testimonialText: null,
-    testimonialImageSrc: null,
-    authorName: null,
-    authorRole: null,
-  },
-  {
-    id: 17,
-    type: "video",
-    aspectRatio: "9/16",
     videoId: "60zvxyu6iy",
     views: "4.1M",
     platform: "Instagram",
@@ -424,7 +410,7 @@ export const portfolioReels = [
     authorRole: null,
   },
   {
-    id: 18,
+    id: 17,
     type: "video",
     aspectRatio: "9/16",
     videoId: "ejybscbi06",
@@ -438,7 +424,7 @@ export const portfolioReels = [
     authorRole: null,
   },
   {
-    id: 19,
+    id: 18,
     type: "video",
     aspectRatio: "9/16",
     videoId: "ug1fifdzcl",
@@ -452,7 +438,7 @@ export const portfolioReels = [
     authorRole: null,
   },
   {
-    id: 20,
+    id: 19,
     type: "video",
     aspectRatio: "9/16",
     videoId: "u34ur396h2",
@@ -466,7 +452,7 @@ export const portfolioReels = [
     authorRole: null,
   },
   {
-    id: 21,
+    id: 20,
     type: "video",
     aspectRatio: "9/16",
     videoId: "eoq02iv4av",
@@ -480,7 +466,7 @@ export const portfolioReels = [
     authorRole: null,
   },
   {
-    id: 22,
+    id: 21,
     type: "video",
     aspectRatio: "9/16",
     videoId: "281d36eotk",
@@ -496,7 +482,7 @@ export const portfolioReels = [
     rating: 5,
   },
   {
-    id: 23,
+    id: 22,
     type: "video",
     aspectRatio: "9/16",
     videoId: "ue0iiq05po",
@@ -510,7 +496,7 @@ export const portfolioReels = [
     authorRole: null,
   },
   {
-    id: 24,
+    id: 23,
     type: "video",
     aspectRatio: "9/16",
     videoId: "p340cccbz9",
@@ -526,7 +512,7 @@ export const portfolioReels = [
     rating: 5,
   },
   {
-    id: 25,
+    id: 24,
     type: "video",
     aspectRatio: "9/16",
     videoId: "zs4vtmwlu8",
@@ -542,7 +528,7 @@ export const portfolioReels = [
     rating: 4,
   },
   {
-    id: 26,
+    id: 25,
     type: "video",
     aspectRatio: "9/16",
     videoId: "dcgtijdehj",
@@ -556,7 +542,7 @@ export const portfolioReels = [
     authorRole: null,
   },
   {
-    id: 27,
+    id: 26,
     type: "video",
     aspectRatio: "9/16",
     videoId: "7zb5qe3kwx",
