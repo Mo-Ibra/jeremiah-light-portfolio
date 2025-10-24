@@ -56,6 +56,7 @@ export const videoReels = [
     authorRole: null,
   },
   {
+    id: 2,
     aspectRatio: "9/16",
     videoId: "u34ur396h2",
     views: "1.8M",
@@ -67,8 +68,9 @@ export const videoReels = [
     authorRole: null,
   },
   {
+    id: 3,
     aspectRatio: "9/16",
-    videoId: "7zb5qe3kwx",
+    videoId: "eoq02iv4av",
     views: "3.5M",
     platform: "TikTok",
     hasTestimonial: false,
@@ -78,6 +80,7 @@ export const videoReels = [
     authorRole: null,
   },
   {
+    id: 4,
     aspectRatio: "9/16",
     videoId: "281d36eotk",
     views: "925K",
@@ -91,6 +94,7 @@ export const videoReels = [
     rating: 5,
   },
   {
+    id: 5,
     aspectRatio: "9/16",
     videoId: "ue0iiq05po",
     views: "1.2M",
@@ -102,6 +106,7 @@ export const videoReels = [
     authorRole: null,
   },
   {
+    id: 6,
     aspectRatio: "9/16",
     videoId: "p340cccbz9",
     views: "4.1M",
@@ -115,6 +120,7 @@ export const videoReels = [
     rating: 5,
   },
   {
+    id: 7,
     aspectRatio: "9/16",
     videoId: "zs4vtmwlu8",
     views: "4.1M",
@@ -128,6 +134,7 @@ export const videoReels = [
     rating: 4,
   },
   {
+    id: 8,
     aspectRatio: "9/16",
     videoId: "dcgtijdehj",
     views: "4.1M",
@@ -139,8 +146,9 @@ export const videoReels = [
     authorRole: null,
   },
   {
+    id: 9,
     aspectRatio: "9/16",
-    videoId: "eoq02iv4av",
+    videoId: "7zb5qe3kwx",
     views: "4.1M",
     platform: "Instagram",
     hasTestimonial: false,
