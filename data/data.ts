@@ -710,7 +710,7 @@ export const faqData = [
   {
     question: "What does your pricing look like?",
     answer:
-      "Pricing is tailored based on your goals and scope. I don't do generic packages - every quote is custom, clear, value-focused with zero hidden fees; and fair for both parties.For a no obligation quote - use the form below, and lets talk about it.",
+      "Pricing is tailored based on your goals and scope. I don't do generic packages - every quote is custom, clear, value-focused with zero hidden fees; and fair for both parties. For a no obligation quote - use the form below, and lets talk about it.",
   },
   {
     question: "What's the commitment?",
