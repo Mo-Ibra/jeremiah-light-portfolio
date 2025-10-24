@@ -1,44 +1,7 @@
-So let's make a list for myself. 
+### Adding Notion DB
 
-- Add faq and CTA, Footer to full portfolio page (✅)
-- "Schedule Free Ads Audit" in CTA instead of what is there (✅)
-- Add favicon (✅)
-- Remove continue button in the second question in modal  (✅)
-- About Me => About Us and sizing the text on mobile  (✅)
-- Text in my process section (✅)
-- Sizing and change second section title (✅)
-- Hero section (Label and margin, and this fade in carousel) (✅)
-- Benefits and Features section on mobile - it should be more to the left because it cuts out a bit  (✅)
-- Add facebook meta pixel (✅)
-- Fix the paragraph under heading in each section (✅)
-- Borders (✅)
-- Fix the modal bug on mobile (Hide scrollbar when open modal) (✅)
-- Fix big screen, mobile background  (✅)
-- Make Faq icon more smooth (✅)
-- Blend background together (✅) Then Removed
-- Add the new section (After fix all previous first) (✅)
-
-
-- Navbar Close Icon in mobile (✅)
-- Fix Navbar mobile border radius (✅)
-- Fix Faq Background (✅)
-- Fix New Section background (✅)
-- Make navbar smaller in desktop and let's talk semibold (✅)
-- Fix Hero text margins  (✅)
-- Add gradient border on benifits and features (✅)
-- Add button in testimonial (✅)
-- Fix Glow in small screen (✅)
-
-
-- Make dot in hero more smaller (✅)
-- Change "Our Services" image (✅)
-- Move compare cards up a little bit and change the Sort layout on mobile (✅)
-- Change navbar colors in small screen to fit figma (✅)
-- And add a line break after the “-“ in mobile in case studies section (✅)
-- Fix "->" in buttons (✅)
-- Fix FAQ Separator (✅)
-- Video stretch (✅)
-
-- Fix Benifits Borders (✅)
-- All "Me" to Us (✅)
-- Fix "Case studies" button ✅
+- Package.json
+- Package-lock.json
+- Components/QuizModal
+- app/api (the whole folder)
+- app/page.tsx

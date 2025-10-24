@@ -43,9 +43,11 @@ function Home() {
 
   useEffect(() => {
     if (isQuizOpen) {
-      document.body.style.overflow = "hidden";
+      console.log("Hidden");
+      // document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "";
+      console.log("Show");
+      // document.body.style.overflow = "";
     }
 
     // Clean up on unmount

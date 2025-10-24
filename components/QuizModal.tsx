@@ -15,7 +15,7 @@ interface QuizModalProps {
 interface FormData {
   platform: string;
   adSpend: string;
-  issues: string;
+  problemFacing: string;
   lookingFor: string;
   website: string;
   // ctr: number;
@@ -29,7 +29,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState<FormData>({
     platform: "",
     adSpend: "",
-    issues: "",
+    problemFacing: "",
     lookingFor: "",
     website: "",
     // ctr: 2,
@@ -67,11 +67,9 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
       setFormData({
         platform: "",
         adSpend: "",
-        issues: "",
+        problemFacing: "",
         lookingFor: "",
         website: "",
-        // ctr: 2,
-        // conversionRate: 3,
         fullName: "",
         email: "",
       });
@@ -111,8 +109,8 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
       return;
     }
 
-    if (currentStep === 3 && !formData.issues.trim()) {
-      alert("Please describe the issues you are facing.");
+    if (currentStep === 3 && !formData.problemFacing.trim()) {
+      alert("Please describe the problemFacing you are facing.");
       return;
     }
 
@@ -147,30 +145,28 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
         window.fbq("track", "QuizSubmit", {
           platform: formData.platform,
           adSpend: formData.adSpend,
-          issues: formData.issues,
+          problemFacing: formData.problemFacing,
           lookingFor: formData.lookingFor,
           website: formData.website,
-          // ctr: formData.ctr,
-          // conversionRate: formData.conversionRate,
           email: formData.email,
         });
       }
 
-      // const res = await fetch("/api/send-email", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(formData),
-      // });
+      const res = await fetch("/api/send-notion", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-      // if (res.ok) {
-      // setShowSuccess(true);
-      closeModal();
-      const cal = await getCalApi({ namespace: "30min" });
-      cal("ui", { layout: "month_view" });
-      cal("modal", { calLink: "harcharran/30min" });
-      // } else {
-      // console.error("Failed to send email");
-      // }
+      
+      if (res.ok) {
+        closeModal();
+        const cal = await getCalApi({ namespace: "30min" });
+        cal("ui", { layout: "month_view" });
+        cal("modal", { calLink: "harcharran/30min" });
+      } else {
+        console.error("Failed to send email");
+      }
     } catch (err) {
       console.error("Error submitting form:", err);
     }
@@ -341,9 +337,9 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose }) => {
                   <input
                     type="text"
                     className="quiz-input"
-                    value={formData.issues}
+                    value={formData.problemFacing}
                     onChange={(e) =>
-                      handleInputChange("issues", e.target.value)
+                      handleInputChange("problemFacing", e.target.value)
                     }
                   />
                 </div>
