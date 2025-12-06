@@ -57,7 +57,7 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Right Column - Wistia Video */}
+          {/* Right Column -- Wistia Video */}
           <div className="relative w-full lg:w-1/2 max-w-2xl">
             <div className="relative aspect-video rounded-2xl border-4 border-primary overflow-hidden shadow-2xl bg-gradient-to-b from-[#1f2346] to-[#272E5C]">
               <div className="absolute inset-0 flex items-center justify-center">
