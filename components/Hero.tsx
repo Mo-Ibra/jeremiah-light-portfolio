@@ -66,7 +66,7 @@ const Hero = () => {
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div
-                  className={`wistia_embed wistia_async_hgkhne26m9 plugin_wistiaLogo=false volumeControl=false autoPlay=false relative w-full h-full transition-[filter] duration-300 ease-in-out hover:brightness-110`}
+                  className={`wistia_embed wistia_async_uzq66c53fa plugin_wistiaLogo=false volumeControl=false autoPlay=false relative w-full h-full transition-[filter] duration-300 ease-in-out hover:brightness-110`}
                 ></div>
               </div>
             </div>
