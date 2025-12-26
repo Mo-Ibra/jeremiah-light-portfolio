@@ -35,7 +35,7 @@ const AboutMe = () => {
               <div className="absolute inset-0 rounded-3xl p-[4px] bg-gradient-to-tl from-white via-[#6253c290] to-primary">
                 <div className="h-full w-full rounded-3xl overflow-hidden bg-gray-200">
                   <img
-                    src="/images/portfolio/3.png"
+                    src="/images/portfolio/4.png"
                     alt="Jeremiah - Creative Director"
                     className="w-full h-full object-cover"
                   />
