@@ -1,0 +1,87 @@
+"use client";
+
+import Image from "next/image";
+import NewLogoCarousel from "./NewLogoCarousel";
+
+const NewHero = () => {
+  return (
+    <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF]">
+      <div className="flex justify-center items-center min-h-[100vh] z-40 relative overflow-hidden rounded-b-3xl md:rounded-3xl">
+        {/* Main Content Container */}
+        <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full mt-10 md:mt-64 lg:mt-0">
+          {/* Top Section - Text and Video Side by Side */}
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8">
+            {/* Left Column - Text Content */}
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl mt-6">
+              {/* Hero Text */}
+              <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[50px] font-bold md:mb-6 leading-tight bg-white bg-clip-text text-transparent">
+                Performance Creative
+                <br />
+                for Scale-Stage Brands
+              </h1>
+
+              {/* Desktop Text - Hidden on Mobile */}
+              <p className="hidden md:block text-xs md:text-[15px] text-white mb-2 leading-relaxed max-w-xl">
+                We help DTC brands spending $20k-$100k/month grow profitably by
+                creating high-converting ads at scale.
+              </p>
+              <p className="hidden md:block text-xs md:text-[15px] text-white mb-6 leading-relaxed max-w-xl">
+                Creative Strategy, Copywriting, Funnels, Post Production, Ads and
+                Campaign Structure - done with and for you.
+              </p>
+            </div>
+
+            {/* Right Column -- Wistia Video */}
+            <div className="relative w-full lg:w-1/2 max-w-2xl">
+              <div className="relative aspect-video rounded-2xl border-4 border-primary overflow-hidden shadow-2xl bg-gradient-to-b from-[#1f2346] to-[#272E5C]">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Loading Spineer*/}
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div
+                    className={`wistia_embed wistia_async_uzq66c53fa plugin_wistiaLogo=false volumeControl=false autoPlay=false relative w-full h-full transition-[filter] duration-300 ease-in-out hover:brightness-110`}
+                  ></div>
+                </div>
+              </div>
+
+              {/* Mobile Text - Hidden on Desktop */}
+              <p className="block md:hidden mt-6 text-xs md:text-xl text-black leading-relaxed max-w-xl text-center">
+                We help DTC brands spending $20k-$100k/month grow profitably by
+                creating high-converting ads at scale.
+              </p>
+              <p className="block md:hidden mt-2 text-xs md:text-xl text-black leading-relaxed max-w-xl text-center">
+                Creative Strategy, Copywriting, Funnels, Post Production, Ads and
+                Campaign Structure - done with and for you.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA Buttons - Centered Below */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-14">
+            <button
+              onClick={() => (location.href = "#cta")}
+              className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-white font-bold text-[#8480FF] rounded-lg shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+            >
+              <span>Schedule Free Ads Audit</span>
+              <Image
+                src="/images/button-arrow.svg"
+                alt="Arrow Icon"
+                width={16}
+                height={16}
+                className="w-3 md:w-4 h-3 md:h-4"
+              />
+            </button>
+          </div>
+          {/* Logo Carousel - At the Bottom */}
+          <div className="w-full relative bottom-4 md:bottom-0  max-w-full bg-white">
+            <NewLogoCarousel />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  );
+};
+
+export default NewHero;

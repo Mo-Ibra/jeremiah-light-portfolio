@@ -1,6 +1,7 @@
 "use client";
 
-import Hero from "@/components/Hero";
+import NewHero from "@/components/NewHero";
+// import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
 import VideoReels from "@/components/VideoReels";
 import Services from "@/components/Services";
@@ -17,6 +18,7 @@ import Footer from "@/components/Footer";
 
 import { useEffect, useState } from "react";
 import QuizModal from "@/components/QuizModal";
+import NewNavigaton from "@/components/NewNavigation";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -58,8 +60,10 @@ function Home() {
 
   return (
     <>
-      <Navigation />
-      <Hero />
+      {/* <Navigation /> */}
+      {/* <Hero /> */}
+      <NewNavigaton />
+      <NewHero />
       <VideoReels />
       <CaseStudiesSection />
       <AboutMe />
