@@ -10,11 +10,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    { label: 'Home', href: '#' },
-    { label: 'Portfolio', href: '#' },
-    { label: 'Case Studies', href: '#' },
-    { label: 'About', href: '#' },
-    { label: 'Process', href: '#' },
+    { label: 'Home', href: '#home' },
+    { label: 'Portfolio', href: '#portfolio' },
+    { label: 'Case Studies', href: '#case-studies' },
+    { label: 'About', href: '#about' },
+    { label: 'Process', href: '#process' },
   ]
 
   return (
@@ -42,7 +42,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:block" onClick={() => location.href = "#cta"}>
             <button className="bg-[#8480FF] hover:bg-[#6b68d9] text-white px-6 py-2 rounded-lg font-medium transition-colors">
               Let's Talk
             </button>
@@ -64,13 +64,13 @@ export default function Navbar() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ opacity: 0, y: -10 }}
+              initial={{ opacity: 0, y: "-100%" }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
+              exit={{ opacity: 0, y: "-100%" }}
+              transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }} // smooth cubic-bezier
               className="md:hidden absolute top-full left-0 w-full bg-white border-b shadow-lg z-40 overflow-hidden"
             >
-              <div className="flex flex-col gap-1 p-5">
+              <div className="flex flex-col gap-1 p-5 pt-2">
                 {navLinks.map((link) => (
                   <Link
                     key={link.label}
@@ -88,7 +88,7 @@ export default function Navbar() {
                     </motion.span>
                   </Link>
                 ))}
-                <div className="pt-4">
+                <div className="pt-4 pb-2">
                   <button className="bg-[#8480FF] hover:bg-[#6b68d9] text-white px-6 py-3 rounded-xl font-semibold transition-all shadow-md active:scale-95 w-full">
                     Let's Talk
                   </button>
