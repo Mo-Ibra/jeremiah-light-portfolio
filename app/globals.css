@@ -136,12 +136,24 @@ body {
   font-family: "Instrument Serif", serif;
 }
 
-.bg-diagonal-stripes {
-  /* اللون الأساسي */
-  background-color: #dfe3ff;
+.bg-diagonal-video-stripes {
+  /* Main Color */
+  background-color: rgb(200, 199, 252);
+  /* Stripe Color */
   background-image: repeating-linear-gradient(-135deg,
-      rgba(255, 255, 255, 0.3) 0px,
-      rgba(255, 255, 255, 0.3) 2px,
+      rgba(193, 191, 249) 0px,
+      rgba(193, 191, 249) 2px,
+      transparent 2px,
+      transparent 12px);
+}
+
+.bg-diagonal-carousel-stripes {
+  /* Main Color */
+  background-color: rgb(217, 215, 255);
+  /* Stripe Color */
+  background-image: repeating-linear-gradient(-135deg,
+      rgba(225, 224, 255) 0px,
+      rgba(225, 224, 255) 2px,
       transparent 2px,
       transparent 12px);
 }
