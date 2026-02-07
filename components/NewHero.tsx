@@ -9,10 +9,12 @@ const NewHero = () => {
       <div className="flex-grow flex justify-center items-center z-40 relative overflow-hidden">
         {/* Background Dot Pattern */}
         <div
-          className="absolute inset-0 z-0 opacity-40 pointer-events-none"
+          className="absolute inset-0 z-0 opacity-50 pointer-events-none"
           style={{
-            backgroundImage: "radial-gradient(white 1px, transparent 0)",
-            backgroundSize: "20px 20px",
+            backgroundImage: "url('/images/new-hero/texture.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "right center",
+            backgroundRepeat: "no-repeat",
             maskImage: "linear-gradient(to right, transparent 20%, black 80%)",
             WebkitMaskImage: "linear-gradient(to right, transparent 20%, black 80%)",
           }}
