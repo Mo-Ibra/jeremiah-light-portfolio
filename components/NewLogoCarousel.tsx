@@ -9,7 +9,6 @@ const logos = [
   "/images/logo-carousel/logo-3.png",
   "/images/logo-carousel/logo-4.png",
   "/images/logo-carousel/logo-5.png",
-  "/images/logo-carousel/logo-6.png",
 ];
 
 function NewLogoCarousel() {

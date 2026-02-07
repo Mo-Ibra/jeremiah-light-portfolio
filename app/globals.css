@@ -117,6 +117,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -135,35 +136,33 @@ body {
   font-family: "Instrument Serif", serif;
 }
 
-
-/* Skelton Loader */
-
 .bg-diagonal-stripes {
-  background-image: repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 10px,
-    rgba(178, 185, 255, 0.2) 10px,
-    rgba(178, 185, 255, 0.2) 11px
-  );
+  /* اللون الأساسي */
+  background-color: #dfe3ff;
+  background-image: repeating-linear-gradient(-135deg,
+      rgba(255, 255, 255, 0.3) 0px,
+      rgba(255, 255, 255, 0.3) 2px,
+      transparent 2px,
+      transparent 12px);
 }
+
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
   }
+
   100% {
     background-position: 200% 0;
   }
 }
 
 .animate-shimmer {
-  background: linear-gradient(
-    90deg,
-    #d1d5db 25%,
-    #e5e7eb 50%,
-    #d1d5db 75%
-  );
+  background: linear-gradient(90deg,
+      #d1d5db 25%,
+      #e5e7eb 50%,
+      #d1d5db 75%);
   background-size: 200% 100%;
   animation: shimmer 1.6s infinite linear;
 }
+
 /* Skelton Loader */
