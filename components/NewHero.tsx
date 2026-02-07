@@ -73,10 +73,17 @@ const NewHero = () => {
               />
             </button>
           </div>
-          {/* Logo Carousel - At the Bottom */}
-          <div className="w-full relative bottom-4 md:bottom-0  max-w-full bg-white">
-            <NewLogoCarousel />
-          </div>
+        </div>
+      </div>
+
+
+      {/* Logo Carousel - Full Width at the Bottom */}
+      <div className="w-full bg-[#E8EAFF] bg-diagonal-stripes py-12 border-y border-white/20">
+        <div className="max-w-[85rem] mx-auto px-8">
+          <h3 className="text-center text-[#8480FF] font-medium mb-10 text-lg md:text-xl">
+            Trusted by Top Brands
+          </h3>
+          <NewLogoCarousel />
         </div>
       </div>
     </section>
