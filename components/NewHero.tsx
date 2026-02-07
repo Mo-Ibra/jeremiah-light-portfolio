@@ -7,6 +7,16 @@ const NewHero = () => {
   return (
     <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF] min-h-[92vh] flex flex-col">
       <div className="flex-grow flex justify-center items-center z-40 relative overflow-hidden">
+        {/* Background Dot Pattern */}
+        <div
+          className="absolute inset-0 z-0 opacity-40 pointer-events-none"
+          style={{
+            backgroundImage: "radial-gradient(white 1px, transparent 0)",
+            backgroundSize: "20px 20px",
+            maskImage: "linear-gradient(to right, transparent 20%, black 80%)",
+            WebkitMaskImage: "linear-gradient(to right, transparent 20%, black 80%)",
+          }}
+        />
         {/* Main Content Container */}
         <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full mt-10 md:mt-20 lg:mt-0">
           {/* Top Section - Text and Video Side by Side */}
