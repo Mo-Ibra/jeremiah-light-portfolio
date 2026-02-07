@@ -19,6 +19,7 @@ import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import QuizModal from "@/components/QuizModal";
 import NewNavigaton from "@/components/NewNavigation";
+import NewTestimonials from "@/components/NewTestimonials";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -67,7 +68,8 @@ function Home() {
       <VideoReels />
       <CaseStudiesSection />
       <AboutMe />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
+      <NewTestimonials />
       <Services />
       {/* {!isMobile && <Portfolio />} */}
       <Process />
