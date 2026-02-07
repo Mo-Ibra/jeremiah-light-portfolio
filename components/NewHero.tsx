@@ -5,12 +5,12 @@ import NewLogoCarousel from "./NewLogoCarousel";
 
 const NewHero = () => {
   return (
-    <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF]">
-      <div className="flex justify-center items-center min-h-[100vh] z-40 relative overflow-hidden rounded-b-3xl md:rounded-3xl">
+    <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF] min-h-[92vh] flex flex-col">
+      <div className="flex-grow flex justify-center items-center z-40 relative overflow-hidden">
         {/* Main Content Container */}
-        <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full mt-10 md:mt-64 lg:mt-0">
+        <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full mt-10 md:mt-20 lg:mt-0">
           {/* Top Section - Text and Video Side by Side */}
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-5 md:mt-16">
             {/* Left Column - Text Content */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl mt-6">
               {/* Hero Text */}
@@ -46,11 +46,11 @@ const NewHero = () => {
               </div>
 
               {/* Mobile Text - Hidden on Desktop */}
-              <p className="block md:hidden mt-6 text-xs md:text-xl text-black leading-relaxed max-w-xl text-center">
+              <p className="block md:hidden mt-6 text-xs md:text-xl text-white leading-relaxed max-w-xl text-center">
                 We help DTC brands spending $20k-$100k/month grow profitably by
                 creating high-converting ads at scale.
               </p>
-              <p className="block md:hidden mt-2 text-xs md:text-xl text-black leading-relaxed max-w-xl text-center">
+              <p className="block md:hidden mt-2 text-xs md:text-xl text-white leading-relaxed max-w-xl text-center">
                 Creative Strategy, Copywriting, Funnels, Post Production, Ads and
                 Campaign Structure - done with and for you.
               </p>
@@ -58,10 +58,10 @@ const NewHero = () => {
           </div>
 
           {/* CTA Buttons - Centered Below */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-14">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-10">
             <button
               onClick={() => (location.href = "#cta")}
-              className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-white font-bold text-[#8480FF] rounded-lg shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+              className="px-6 py-3 md:px-8 md:py-3 w-fit md:mt-16 mx-auto cursor-pointer bg-white font-bold text-[#8480FF] rounded-lg shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
             >
               <span>Schedule Free Ads Audit</span>
               <Image
@@ -76,11 +76,10 @@ const NewHero = () => {
         </div>
       </div>
 
-
-      {/* Logo Carousel - Full Width at the Bottom */}
-      <div className="w-full bg-[#E8EAFF] bg-diagonal-stripes py-12 border-y border-white/20">
+      {/* Logo Carousel - Full Width at the Bottom within 100vh */}
+      <div className="w-full bg-[#E8EAFF] bg-diagonal-stripes py-8 border-y border-white/20">
         <div className="max-w-[85rem] mx-auto px-8">
-          <h3 className="text-center text-[#8480FF] font-medium mb-10 text-lg md:text-xl">
+          <h3 className="text-center text-[#8480FF] font-medium mb-6 text-sm md:text-base">
             Trusted by Top Brands
           </h3>
           <NewLogoCarousel />
