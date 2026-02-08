@@ -98,50 +98,53 @@ export const NewTestimonials = () => {
         </SectionHeader>
       </div>
 
-      <div className="flex flex-col gap-12">
-        {/* Top Carousel - Right to Left (Video Cards) */}
-        <div className="relative w-full flex overflow-hidden pause-on-hover">
+      <div className="flex flex-col">
+        {/* Top Carousel - Right to Left (Video Panels) */}
+        <div
+          className="relative w-full border-y border-gray-100 flex overflow-hidden pause-on-hover"
+        >
           {/* Gradient Masks */}
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
 
-          <div className="flex gap-6 px-4 animate-marquee-rtl">
-            {/* Double the items for seamless loop */}
+          <div className="flex animate-marquee-rtl">
             {[...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS].map((item, index) => (
               <div
                 key={`video-${index}`}
-                className="relative w-[320px] rounded-[2.5rem] overflow-hidden flex-shrink-0 group cursor-pointer border border-gray-200 bg-white "
+                className="flex-shrink-0 px-10 py-12 border-r border-gray-100 group cursor-pointer bg-white"
               >
-                {/* Image Container */}
-                <div className="relative w-full h-[535px] overflow-hidden">
-                  <Image
-                    src={item.thumbnail}
-                    alt={item.name}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500" />
+                <div className="relative w-[340px] flex flex-col">
+                  {/* Image Container */}
+                  <div className="relative w-full h-[535px] rounded-[2.5rem] overflow-hidden border border-gray-100">
+                    <Image
+                      src={item.thumbnail}
+                      alt={item.name}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500" />
 
-                  {/* Play Button Overlay - Stays on image */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-20 h-20 rounded-full bg-[#4F46E5] flex items-center justify-center text-white shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#4338CA]">
-                      <Play fill="white" size={32} className="ml-1.5" />
+                    {/* Play Button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-20 h-20 rounded-full bg-[#4F46E5] flex items-center justify-center text-white shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#4338CA]">
+                        <Play fill="white" size={32} className="ml-1.5" />
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Info Section - Now below the image */}
-                <div className="p-6 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full overflow-hidden relative border-2 border-white shadow-sm">
-                      <Image src={item.thumbnail} alt={item.name} fill className="object-cover" />
+                  {/* Info Section */}
+                  <div className="pt-8 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full overflow-hidden relative border-2 border-white shadow-sm">
+                        <Image src={item.thumbnail} alt={item.name} fill className="object-cover" />
+                      </div>
+                      <span className="font-bold text-gray-900 text-base">{item.name}</span>
                     </div>
-                    <span className="font-bold text-gray-900 text-base">{item.name}</span>
-                  </div>
-                  <div className="flex gap-1 text-[#FFB800]">
-                    {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-xl">★</span>
-                    ))}
+                    <div className="flex gap-1 text-[#FFB800]">
+                      {[...Array(5)].map((_, i) => (
+                        <span key={i} className="text-xl">★</span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -149,37 +152,41 @@ export const NewTestimonials = () => {
           </div>
         </div>
 
-        {/* Bottom Carousel - Left to Right (Text Cards) */}
-        <div className="relative w-full flex overflow-hidden pt-4 pause-on-hover">
+        {/* Bottom Carousel - Left to Right (Text Panels) */}
+        <div
+          className="relative w-full border-b border-gray-100 flex overflow-hidden pause-on-hover"
+        >
           {/* Gradient Masks */}
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
 
-          <div className="flex gap-6 px-4 animate-marquee-ltr">
+          <div className="flex animate-marquee-ltr">
             {[...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS].map((item, index) => (
               <div
                 key={`text-${index}`}
-                className="w-[400px] p-8 rounded-3xl bg-white shadow-sm border border-gray-100 flex-shrink-0 flex flex-col justify-between hover:shadow-lg transition-all duration-300"
+                className="flex-shrink-0 px-10 py-16 border-r border-gray-100 bg-white group cursor-pointer"
               >
-                <div className="mb-6">
-                  <p className="text-gray-700 text-lg leading-relaxed font-medium line-clamp-4">
-                    "{item.text}"
-                  </p>
-                </div>
-
-                <div className="flex items-center gap-1 mb-8 text-[#FFB800]">
-                  {[...Array(item.rating)].map((_, i) => (
-                    <span key={i} className="text-xl uppercase">★</span>
-                  ))}
-                </div>
-
-                <div className="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
-                  <div className="w-12 h-12 rounded-full overflow-hidden relative bg-gray-100 border border-gray-100">
-                    <Image src={item.avatar} alt={item.name} fill className="object-cover" />
+                <div className="w-[420px] flex flex-col justify-between h-full">
+                  <div className="mb-8">
+                    <p className="text-gray-700 text-xl leading-relaxed font-medium">
+                      "{item.text}"
+                    </p>
                   </div>
-                  <div>
-                    <h4 className="text-base font-bold text-gray-900">{item.name}</h4>
-                    <p className="text-sm text-gray-500 font-medium">{item.role}</p>
+
+                  <div className="flex items-center gap-1 mb-8 text-[#FFB800]">
+                    {[...Array(item.rating)].map((_, i) => (
+                      <span key={i} className="text-2xl uppercase">★</span>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
+                    <div className="w-14 h-14 rounded-full overflow-hidden relative bg-gray-100 border border-gray-100">
+                      <Image src={item.avatar} alt={item.name} fill className="object-cover" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-bold text-gray-900 leading-tight">{item.name}</h4>
+                      <p className="text-base text-gray-500 font-medium">{item.role}</p>
+                    </div>
                   </div>
                 </div>
               </div>
