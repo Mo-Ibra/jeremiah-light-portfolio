@@ -69,7 +69,7 @@ function Home() {
       <CaseStudiesSection />
       {/* <Testimonials /> */}
       <NewTestimonials />
-      <AboutMe />
+      {/* <AboutMe /> */}
       <Services />
       {/* {!isMobile && <Portfolio />} */}
       <Process />

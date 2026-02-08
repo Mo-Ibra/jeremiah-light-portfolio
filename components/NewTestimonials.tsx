@@ -7,7 +7,7 @@ import { TextTestimonialCard } from "./TextTestimonialCard";
 
 export const NewTestimonials = () => {
   return (
-    <section className="px-6 md:py-24 py-16 overflow-hidden bg-white">
+    <section className="px-6 py-6 overflow-hidden bg-white">
       <style jsx>{`
         @keyframes marquee-rtl {
           0% { transform: translateX(0); }
