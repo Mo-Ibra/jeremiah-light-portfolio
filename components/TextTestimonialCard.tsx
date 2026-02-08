@@ -1,7 +1,8 @@
+import { TextTestimonial } from "@/data/testimonials";
 import Image from "next/image"
 import { IoStar } from "react-icons/io5";
 
-export const TextTestimonialCard = ({ item }: { item: any }) => {
+export const TextTestimonialCard = ({ item }: { item: TextTestimonial }) => {
   return (
     <div
       className="flex-shrink-0 px-4 pt-6 pb-4 bg-white group cursor-pointer"

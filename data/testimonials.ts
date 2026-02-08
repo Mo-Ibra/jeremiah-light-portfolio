@@ -1,35 +1,55 @@
-export const VIDEO_TESTIMONIALS = [
+export interface VideoTestimonial {
+  id: number;
+  thumbnail: string;
+  name: string;
+  avatarImage: string;
+  videoId: string;
+}
+
+export interface TextTestimonial {
+  name: string;
+  avatar: string;
+  avatarBg: string;
+  date: string;
+  rating: number;
+  title: string;
+  content: string;
+  isPhoto: boolean;
+  photoUrl: string;
+}
+
+export const VIDEO_TESTIMONIALS: VideoTestimonial[] = [
   {
     id: 1,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
-    name: "Jenney Roy",
+    name: "Mike Ndoye",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
     videoId: "243psjy9l4",
   },
   {
     id: 2,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
-    name: "Jenney Roy",
+    name: "Mike Ndoye",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
     videoId: "243psjy9l4",
   },
   {
     id: 3,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
-    name: "Jenney Roy",
+    name: "Mike Ndoye",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
     videoId: "243psjy9l4",
   },
   {
     id: 4,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
-    name: "Jenney Roy",
+    name: "Mike Ndoye",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
     videoId: "243psjy9l4",
   },
 ];
 
-export const TEXT_TESTIMONIALS = [
+export const TEXT_TESTIMONIALS: TextTestimonial[] = [
   {
     name: "Malike from Albumtags",
     avatar: "M",

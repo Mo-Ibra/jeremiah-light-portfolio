@@ -51,7 +51,7 @@ export const NewTestimonials = () => {
 
           <div className="flex animate-marquee-rtl">
             {[...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS].map((item, index) => (
-              <VideoCard index={index} item={item} />
+              <VideoCard key={`video-${index}`} item={item} />
             ))}
           </div>
         </div>

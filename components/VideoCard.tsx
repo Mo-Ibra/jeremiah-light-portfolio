@@ -3,8 +3,9 @@
 import Image from "next/image"
 import { Play } from "lucide-react"
 import { useState, useEffect } from "react"
+import { VideoTestimonial } from "@/data/testimonials";
 
-export const VideoCard = ({ item }: { item: any }) => {
+export const VideoCard = ({ item }: { item: VideoTestimonial }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [thumbnailUrl, setThumbnailUrl] = useState(`https://fast.wistia.com/embed/medias/${item.videoId}/swatch`);
 
