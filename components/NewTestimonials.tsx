@@ -4,6 +4,7 @@ import SectionHeader from "./SectionHeader";
 import { VideoCard } from "./VideoCard";
 import { VIDEO_TESTIMONIALS, TEXT_TESTIMONIALS } from "@/data/testimonials";
 import { TextTestimonialCard } from "./TextTestimonialCard";
+import Image from "next/image";
 
 export const NewTestimonials = () => {
   return (
@@ -70,6 +71,23 @@ export const NewTestimonials = () => {
             ))}
           </div>
         </div>
+      </div>
+
+
+      <div className="flex flex-col sm:flex-row justify-center gap-4 my-4">
+        <button
+          onClick={() => (location.href = "#cta")}
+          className="px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-primary font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+        >
+          <span>Schedule Free Ads Audit</span>
+          <Image
+            src="/images/button-arrow.svg"
+            alt="Arrow Icon"
+            width={16}
+            height={16}
+            className="w-3 md:w-4 h-3 md:h-4"
+          />
+        </button>
       </div>
     </section>
   );

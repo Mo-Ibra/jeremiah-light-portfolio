@@ -58,7 +58,7 @@ export const TEXT_TESTIMONIALS: TextTestimonial[] = [
     rating: 5,
     title: "Couldn’t recommend anyone else",
     content:
-      "Can only recommend Jeremiah and the team at Harcharran, super service minded, problem solver, creative, and very fast. Jeremiah is always available and always ready to try out new ideas. He provides updates throughout the week, and monitors absolutely everything. Best, Malike CEO & Founder ",
+      "Can only recommend Jeremiah and the team at Harcharran, super service minded, problem solver, creative, and very fast. Jeremiah is always available and always ready to try out new ideas. He provides updates throughout the week, and monitors absolutely everything.",
     isPhoto: false,
     photoUrl: "",
   },
