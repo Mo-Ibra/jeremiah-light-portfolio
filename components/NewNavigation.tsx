@@ -48,7 +48,7 @@ export default function Navbar() {
 
             {/* Desktop CTA Button */}
             <div className="hidden md:block" onClick={() => location.href = "#cta"}>
-              <button className="bg-[#8480FF] hover:bg-[#6b68d9] text-white px-6 py-2 rounded-lg font-medium transition-colors">
+              <button className="bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-md active:scale-95 cursor-pointer">
                 Let's Talk
               </button>
             </div>
@@ -98,7 +98,7 @@ export default function Navbar() {
                     transition={{ delay: 0.1 + navLinks.length * 0.05, duration: 0.3 }}
                     className="pt-4 pb-2"
                   >
-                    <button className="bg-[#8480FF] hover:bg-[#6b68d9] text-white px-6 py-3 rounded-xl font-semibold transition-all shadow-md active:scale-95 w-full">
+                    <button className="bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-6 py-3 rounded-xl font-semibold transition-all shadow-md active:scale-95 w-full">
                       Let's Talk
                     </button>
                   </motion.div>
