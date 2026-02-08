@@ -146,7 +146,7 @@ export const NewTestimonials = () => {
                     </div>
                     <div className="flex gap-1">
                       {[...Array(5)].map((_, i) => (
-                        <Image key={i} src="/images/star.svg" alt="star" width={18} height={18} className="w-5 h-5" />
+                        <Image key={i} src="/images/star.svg" alt="star" width={18} height={18} className="w-[18px] h-[18px]" />
                       ))}
                     </div>
                   </div>
@@ -172,14 +172,14 @@ export const NewTestimonials = () => {
               >
                 <div className="w-[420px] flex flex-col justify-between h-full">
                   <div className="mb-8">
-                    <p className="text-gray-700 text-xl leading-relaxed font-medium">
-                      "{item.text}"
+                    <p className="text-[#1A1A1A] text-lg leading-relaxed font-medium">
+                      {item.text}
                     </p>
                   </div>
 
                   <div className="flex items-center gap-1 mb-8">
                     {[...Array(item.rating)].map((_, i) => (
-                      <Image key={i} src="/images/star.svg" alt="star" width={18} height={18} className="w-6 h-6" />
+                      <Image key={i} src="/images/star.svg" alt="star" width={18} height={18} className="w-[18px] h-[18px]" />
                     ))}
                   </div>
 
@@ -188,8 +188,8 @@ export const NewTestimonials = () => {
                       <Image src={item.avatarImage} alt={item.name} fill className="object-cover" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold text-gray-900 leading-tight">{item.name}</h4>
-                      <p className="text-base text-gray-500 font-medium">{item.role}</p>
+                      <h4 className="text-lg font-semibold text-gray-900 leading-tight">{item.name}</h4>
+                      <p className="text-base text-[#ACACB9] font-medium">{item.role}</p>
                     </div>
                   </div>
                 </div>
