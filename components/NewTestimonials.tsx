@@ -115,7 +115,7 @@ export const NewTestimonials = () => {
             {[...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS].map((item, index) => (
               <div
                 key={`video-${index}`}
-                className="flex-shrink-0 px-10 py-12 border-r border-gray-300 group cursor-pointer bg-white"
+                className="flex-shrink-0 px-10 py-12 border-r border-gray-200 group cursor-pointer bg-white"
               >
                 <div className="relative w-[340px] flex flex-col">
                   {/* Image Container */}
@@ -128,10 +128,15 @@ export const NewTestimonials = () => {
                     />
                     <div className="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500" />
 
-                    {/* Play Button */}
+                    {/* Play Button - Design Accurate */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-20 h-20 rounded-full bg-[#4F46E5] flex items-center justify-center text-white shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#4338CA]">
-                        <Play fill="white" size={32} className="ml-1.5" />
+                      <div className="relative flex items-center justify-center transition-all duration-500 group-hover:scale-110">
+                        {/* Outer Glassy Ring */}
+                        <div className="absolute w-[84px] h-[84px] rounded-full bg-[#83789880] backdrop-blur-[2px] border border-white" />
+                        {/* Main Indigo Button */}
+                        <div className="relative w-[58px] h-[58px] rounded-full bg-[#4B42E4] flex items-center justify-center text-white shadow-[0_8px_25px_-5px_rgba(75,66,228,0.5)]">
+                          <Play fill="white" size={32} className="ml-1" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -142,7 +147,7 @@ export const NewTestimonials = () => {
                       <div className="w-10 h-10 rounded-full overflow-hidden relative border-2 border-white shadow-sm">
                         <Image src={item.avatarImage} alt={item.name} fill className="object-cover" />
                       </div>
-                      <span className="font-bold text-gray-900 text-base">{item.name}</span>
+                      <span className="font-bold text-[#1a1a1a] text-base">{item.name}</span>
                     </div>
                     <div className="flex gap-1">
                       {[...Array(5)].map((_, i) => (
