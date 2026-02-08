@@ -5,7 +5,7 @@ import NewLogoCarousel from "./NewLogoCarousel";
 
 const NewHero = () => {
   return (
-    <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF] min-h-[92vh] flex flex-col">
+    <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF] min-h-[calc(100vh-80px)] flex flex-col">
       <div className="flex-grow flex justify-center items-center z-40 relative overflow-hidden">
         {/* Background Dot Pattern */}
         <div
