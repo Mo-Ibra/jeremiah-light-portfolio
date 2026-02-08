@@ -110,7 +110,7 @@ export const NewTestimonials = () => {
             {[...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS].map((item, index) => (
               <div
                 key={`video-${index}`}
-                className="relative w-[320px] h-[480px] rounded-[2.5rem] overflow-hidden shadow-xl bg-gray-50 flex-shrink-0 group cursor-pointer border border-gray-100"
+                className="relative w-[320px] h-[560px] rounded-[2.5rem] overflow-hidden flex-shrink-0 group cursor-pointer"
               >
                 <div className="relative w-full h-full">
                   <Image
@@ -128,7 +128,7 @@ export const NewTestimonials = () => {
                   </div>
                 </div>
 
-                <div className="absolute bottom-0 left-0 w-full p-6 bg-white/90 backdrop-blur-md flex items-center justify-between border-t border-gray-100 z-10">
+                <div className="absolute bottom-0 left-0 w-full p-6 bg-white backdrop-blur-md flex items-center justify-between z-10">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full overflow-hidden relative border-2 border-white shadow-sm">
                       <Image src={item.thumbnail} alt={item.name} fill className="object-cover" />
