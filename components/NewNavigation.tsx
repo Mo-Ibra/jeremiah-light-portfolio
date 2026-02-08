@@ -14,7 +14,7 @@ export default function Navbar() {
     { label: 'Home', href: '#home' },
     { label: 'Portfolio', href: '#portfolio' },
     { label: 'Case Studies', href: '#case-studies' },
-    { label: 'About', href: '#about' },
+    { label: "Testimonials", href: "#testimonials" },
     { label: 'Process', href: '#process' },
   ]
 
@@ -69,35 +69,39 @@ export default function Navbar() {
           <AnimatePresence>
             {isOpen && (
               <motion.div
-                initial={{ opacity: 0, y: "-100%" }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: "-100%" }}
-                transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }} // smooth cubic-bezier
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
                 className="md:hidden absolute top-full left-0 w-full bg-white border-b shadow-lg z-40 overflow-hidden"
               >
                 <div className="flex flex-col gap-1 p-5 pt-2">
-                  {navLinks.map((link) => (
-                    <Link
+                  {navLinks.map((link, i) => (
+                    <motion.div
                       key={link.label}
-                      href={link.href}
-                      onClick={() => setIsOpen(false)}
-                      className="text-[#8480FF] hover:text-[#6b68d9] py-3 font-medium border-b border-gray-50 last:border-none flex items-center justify-between group"
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.1 + i * 0.05, duration: 0.3 }}
                     >
-                      {link.label}
-                      <motion.span
-                        initial={{ x: -5, opacity: 0 }}
-                        whileHover={{ x: 0, opacity: 1 }}
-                        className="text-xs"
+                      <Link
+                        href={link.href}
+                        onClick={() => setIsOpen(false)}
+                        className="text-[#8480FF] hover:text-[#6b68d9] py-3 font-medium border-b border-gray-50 last:border-none flex items-center justify-between group"
                       >
-                        →
-                      </motion.span>
-                    </Link>
+                        {link.label}
+                      </Link>
+                    </motion.div>
                   ))}
-                  <div className="pt-4 pb-2">
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 + navLinks.length * 0.05, duration: 0.3 }}
+                    className="pt-4 pb-2"
+                  >
                     <button className="bg-[#8480FF] hover:bg-[#6b68d9] text-white px-6 py-3 rounded-xl font-semibold transition-all shadow-md active:scale-95 w-full">
                       Let's Talk
                     </button>
-                  </div>
+                  </motion.div>
                 </div>
               </motion.div>
             )}
@@ -105,6 +109,5 @@ export default function Navbar() {
         </div>
       </nav>
     </>
-
   )
 }

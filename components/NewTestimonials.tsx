@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const NewTestimonials = () => {
   return (
-    <section className="px-6 py-6 overflow-hidden bg-white">
+    <section className="px-6 py-6 overflow-hidden bg-white" id="testimonials">
       <style jsx>{`
         @keyframes marquee-rtl {
           0% { transform: translateX(0); }
