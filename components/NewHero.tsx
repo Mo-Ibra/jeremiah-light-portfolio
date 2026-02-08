@@ -20,13 +20,13 @@ const NewHero = () => {
           }}
         />
         {/* Main Content Container */}
-        <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full mt-10 md:mt-20 lg:mt-0">
+        <div className="relative z-10 px-8 max-w-[85rem] mx-auto w-full md:mt-20 lg:mt-0">
           {/* Top Section - Text and Video Side by Side */}
           <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-8 w-full mb-8 mt-5 md:mt-16">
             {/* Left Column - Text Content */}
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl mt-6">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl md:mt-6">
               {/* Hero Text */}
-              <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[50px] font-bold md:mb-6 leading-tight bg-white bg-clip-text text-transparent">
+              <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[50px] font-bold md:mb-6 leading-tight bg-white bg-clip-text text-transparent">
                 Performance Creative
                 <br />
                 for Scale-Stage Brands
