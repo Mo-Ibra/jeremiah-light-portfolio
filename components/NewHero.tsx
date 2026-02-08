@@ -26,14 +26,14 @@ const NewHero = () => {
             {/* Left Column - Text Content */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl md:mt-6">
               {/* Hero Text */}
-              <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[50px] font-bold md:mb-6 leading-tight bg-white bg-clip-text text-transparent">
+              <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[50px] font-bold md:mb-6 tracking-[-0.05em] leading-tight bg-white bg-clip-text text-transparent">
                 Performance Creative
                 <br />
                 for Scale Stage Brands
               </h1>
 
               {/* Desktop Text - Hidden on Mobile */}
-              <p className="hidden md:block text-xs md:text-[15px] text-white mb-2 leading-relaxed max-w-xl">
+              <p className="hidden md:block text-xs md:text-[15px] text-white mb-8 leading-relaxed max-w-xl">
                 We help DTC brands spending $20k-$100k/month grow profitably by
                 creating high-converting ads at scale.
               </p>
