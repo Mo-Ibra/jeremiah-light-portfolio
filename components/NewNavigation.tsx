@@ -48,8 +48,9 @@ export default function Navbar() {
 
             {/* Desktop CTA Button */}
             <div className="hidden md:block" onClick={() => location.href = "#cta"}>
-              <button className="bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-md active:scale-95 cursor-pointer">
-                Let's Talk
+              <button className="group relative overflow-hidden bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-md active:scale-95 cursor-pointer">
+                <span className="relative z-10">Let's Talk</span>
+                <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out group-hover:left-[100%]" />
               </button>
             </div>
 
