@@ -146,7 +146,7 @@ export const NewTestimonials = () => {
                     </div>
                     <div className="flex gap-1">
                       {[...Array(5)].map((_, i) => (
-                        <Image key={i} src="/images/star.svg" alt="star" width={20} height={20} className="w-5 h-5" />
+                        <Image key={i} src="/images/star.svg" alt="star" width={18} height={18} className="w-5 h-5" />
                       ))}
                     </div>
                   </div>
@@ -179,7 +179,7 @@ export const NewTestimonials = () => {
 
                   <div className="flex items-center gap-1 mb-8">
                     {[...Array(item.rating)].map((_, i) => (
-                      <Image key={i} src="/images/star.svg" alt="star" width={24} height={24} className="w-6 h-6" />
+                      <Image key={i} src="/images/star.svg" alt="star" width={18} height={18} className="w-6 h-6" />
                     ))}
                   </div>
 
