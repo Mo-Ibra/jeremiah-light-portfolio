@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Play } from "lucide-react"
 
-export const VideoCard = ({ index, item }: any) => {
+export const VideoCard = ({ index, item }: { index: number, item: any }) => {
   return (
     <div
       key={`video-${index}`}
