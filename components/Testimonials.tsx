@@ -117,11 +117,10 @@ function StarRating({ rating }: { rating: number }) {
           className={`${star <= rating ? "bg-green-600" : "bg-gray-300"} p-1`}
         >
           <IoStar
-            className={`h-4 w-4 ${
-              star <= rating
+            className={`h-4 w-4 ${star <= rating
                 ? "bg-green-600 fill-white text-white"
                 : "bg-gray-300 fill-white text-white"
-            }`}
+              }`}
           />
         </div>
       ))}
@@ -129,7 +128,7 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-export default function TestimonialsSection() {
+export default function Testimonials() {
   return (
     <section className="px-6 md:py-16 py-12 min-h-screen">
       <div className="mx-auto max-w-7xl">

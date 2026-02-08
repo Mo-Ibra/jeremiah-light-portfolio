@@ -1,12 +1,14 @@
 "use client";
 
-import NewHero from "@/components/NewHero";
 // import Hero from "@/components/Hero";
-import Navigation from "@/components/Navigation";
+import NewHero from "@/components/NewHero";
+// import Navigation from "@/components/Navigation";
+import NewNavigaton from "@/components/NewNavigation";
 import VideoReels from "@/components/VideoReels";
 import Services from "@/components/Services";
 // import Portfolio from "@/components/Portfolio";
-import TestimonialsSection from "@/components/Testimonials";
+// import Testimonials from "@/components/Testimonials";
+import NewTestimonials from "@/components/NewTestimonials";
 import CaseStudiesSection from "@/components/CaseStudies";
 import AboutMe from "@/components/AboutMe";
 import Process from "@/components/Process";
@@ -18,8 +20,6 @@ import Footer from "@/components/Footer";
 
 import { useEffect, useState } from "react";
 import QuizModal from "@/components/QuizModal";
-import NewNavigaton from "@/components/NewNavigation";
-import NewTestimonials from "@/components/NewTestimonials";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -68,7 +68,7 @@ function Home() {
       <VideoReels />
       <CaseStudiesSection />
       <AboutMe />
-      {/* <TestimonialsSection /> */}
+      {/* <Testimonials /> */}
       <NewTestimonials />
       <Services />
       {/* {!isMobile && <Portfolio />} */}

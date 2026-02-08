@@ -3,6 +3,7 @@
 import SectionHeader from "./SectionHeader";
 import Image from "next/image";
 import { Play } from "lucide-react";
+import { IoStar } from "react-icons/io5";
 
 // Mock Data
 const VIDEO_TESTIMONIALS = [
@@ -34,36 +35,52 @@ const VIDEO_TESTIMONIALS = [
 
 const TEXT_TESTIMONIALS = [
   {
-    id: 1,
-    text: "Navigating the complexities of CMMC compliance was daunting for our team. Get Compliant Now provided clear, step-by-step guidance tailored to our organization's needs.",
-    name: "Robert Jenkins",
-    role: "Founder, ShieldWorks Enterprises",
-    avatarImage: "/images/new-testimonials/testimonial-2.svg",
+    name: "Malike from Albumtags",
+    avatar: "M",
+    avatarBg: "bg-red-500",
+    date: "on Mar 12, 2025",
     rating: 5,
+    title: "Couldn’t recommend anyone else",
+    content:
+      "Can only recommend Jeremiah and the team at Harcharran, super service minded, problem solver, creative, and very fast. Jeremiah is always available and always ready to try out new ideas. He provides updates throughout the week, and monitors absolutely everything. Best, Malike CEO & Founder ",
+    isPhoto: false,
+    photoUrl: "",
   },
   {
-    id: 2,
-    text: "Their deep understanding of the latest DoD standards ensured we met all requirements efficiently.",
-    name: "Robert Jenkins",
-    role: "Founder, ShieldWorks Enterprises",
-    avatarImage: "/images/new-testimonials/testimonial-2.svg",
+    name: "Lucas from MorningBrew",
+    avatar: "L",
+    avatarBg: "bg-yellow-400",
+    date: "on Dec 2, 2024",
     rating: 5,
+    title: "Worth Every Penny!",
+    content:
+      "Huge recommendation to Jeremiah! He’s been making and running our Facebook ads for over 3 months now and has created impressive results throughout our partnership. Jeremiah works insanely hard to create the best results for us and I couldn’t recommend him more.",
+    isPhoto: false,
+    photoUrl: "",
   },
   {
-    id: 3,
-    text: "Navigating the complexities of CMMC compliance was daunting for our team. Get Compliant Now provided clear, step-by-step guidance tailored to our organization's needs.",
-    name: "Robert Jenkins",
-    role: "Founder, ShieldWorks Enterprises",
-    avatarImage: "/images/new-testimonials/testimonial-2.svg",
+    name: "Harrison from Ecomlocker",
+    avatar: "H",
+    avatarBg: "bg-orange-500",
+    date: "on Sep 11, 2025",
     rating: 5,
+    title: "Very Helpful",
+    content:
+      "This team goes above and beyond when it comes to service delivery and the quality of the creatives produced is unlike any other. We onboarded for help with B2B lead generation and well the results have been more than fantastic. Definitely recommend working with them.",
+    isPhoto: false,
+    photoUrl: "",
   },
   {
-    id: 4,
-    text: "Their deep understanding of the latest DoD standards ensured we met all requirements efficiently.",
-    name: "Robert Jenkins",
-    role: "Founder, ShieldWorks Enterprises",
-    avatarImage: "/images/new-testimonials/testimonial-2.svg",
+    name: "Damian from Nuvera",
+    avatar: "D",
+    avatarBg: "bg-red-600",
+    date: "on Dec 22, 2024",
     rating: 5,
+    title: "Exceeded Expectations",
+    content:
+      "The ads delivered were way better than what I was expecting. After working with other agencies, I honestly thought the ads were going to be generic but Jeremiah is different, he really does go the extra mile and this is reflected in the work he and his team produce.",
+    isPhoto: false,
+    photoUrl: "",
   },
 ];
 
@@ -163,7 +180,7 @@ export const NewTestimonials = () => {
 
         {/* Bottom Carousel - Left to Right (Text Panels) */}
         <div
-          className="relative w-full border-b border-gray-100 flex overflow-hidden pause-on-hover"
+          className="relative w-full flex overflow-hidden pause-on-hover"
         >
           {/* Gradient Masks */}
           <div className="absolute left-0 top-0 bottom-0 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
@@ -173,30 +190,67 @@ export const NewTestimonials = () => {
             {[...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS].map((item, index) => (
               <div
                 key={`text-${index}`}
-                className="flex-shrink-0 px-10 py-16 border-r border-gray-100 bg-white group cursor-pointer"
+                className="flex-shrink-0 px-4 pt-6 pb-4 bg-white group cursor-pointer"
               >
-                <div className="w-[420px] flex flex-col justify-between h-full">
-                  <div className="mb-8">
-                    <p className="text-[#1A1A1A] text-lg leading-relaxed font-medium">
-                      {item.text}
-                    </p>
+                <div className="w-[450px] rounded-2xl bg-white p-8 break-inside-avoid shadow-[0px_2px_12px_0px_rgba(0,0,0,0.3)] border border-gray-100">
+                  {/* Avatar and Name */}
+                  <div className="flex gap-4 items-center">
+                    <div className="relative">
+                      {item.isPhoto ? (
+                        <Image
+                          src={item.photoUrl || "/placeholder.svg"}
+                          alt={item.name}
+                          className="h-16 w-16 rounded-full object-cover"
+                          width={64}
+                          height={64}
+                        />
+                      ) : (
+                        <div
+                          className={`flex h-16 w-16 items-center justify-center rounded-full ${item.avatarBg} text-3xl font-bold text-white`}
+                        >
+                          {item.avatar}
+                        </div>
+                      )}
+                      <div className="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-white shadow-lg border border-gray-100">
+                        <IoStar
+                          className="h-4 w-4 text-green-600"
+                          strokeWidth={3}
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-gray-900 text-lg">
+                        {item.name}
+                      </h3>
+                      <p className="text-sm font-semibold text-gray-500">
+                        {item.date}
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="flex items-center gap-1 mb-8">
-                    {[...Array(item.rating)].map((_, i) => (
-                      <Image key={i} src="/images/star.svg" alt="star" width={18} height={18} className="w-[18px] h-[18px]" />
+                  {/* Star Rating */}
+                  <div className="my-6 flex gap-1">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <div
+                        key={star}
+                        className={`${star <= item.rating ? "bg-green-600" : "bg-gray-300"} p-1`}
+                      >
+                        <IoStar
+                          className="h-3.5 w-3.5 fill-white text-white"
+                        />
+                      </div>
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
-                    <div className="w-14 h-14 rounded-full overflow-hidden relative bg-gray-100 border border-gray-100">
-                      <Image src={item.avatarImage} alt={item.name} fill className="object-cover" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 leading-tight">{item.name}</h4>
-                      <p className="text-base text-[#ACACB9] font-medium">{item.role}</p>
-                    </div>
-                  </div>
+                  {/* Title */}
+                  <h4 className="mb-3 text-lg font-bold text-gray-900">
+                    {item.title}
+                  </h4>
+
+                  {/* Content */}
+                  <p className="text-base leading-relaxed text-gray-600">
+                    {item.content}
+                  </p>
                 </div>
               </div>
             ))}
