@@ -1,34 +1,71 @@
+"use client";
+
 import Image from "next/image"
 import { Play } from "lucide-react"
+import { useState, useEffect } from "react"
 
-export const VideoCard = ({ index, item }: { index: number, item: any }) => {
+export const VideoCard = ({ item }: { item: any }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [thumbnailUrl, setThumbnailUrl] = useState(`https://fast.wistia.com/embed/medias/${item.videoId}/swatch`);
+
+  useEffect(() => {
+    if (!item.videoId) return;
+
+    const fetchThumbnail = async () => {
+      try {
+        const res = await fetch(`https://fast.wistia.net/oembed?url=https://home.wistia.com/medias/${item.videoId}&format=json`);
+        const data = await res.json();
+        if (data.thumbnail_url) {
+          setThumbnailUrl(data.thumbnail_url);
+        }
+      } catch (error) {
+        console.error("Error fetching Wistia thumbnail:", error);
+      }
+    };
+
+    fetchThumbnail();
+  }, [item.videoId]);
+
   return (
     <div
-      key={`video-${index}`}
       className="flex-shrink-0 px-10 py-12 border-r border-gray-200 group cursor-pointer bg-white"
     >
       <div className="relative w-[340px] flex flex-col">
-        {/* Image Container */}
-        <div className="relative w-full h-[535px] rounded-xl overflow-hidden border border-gray-100">
-          <Image
-            src={item.thumbnail}
-            alt={item.name}
-            fill
-            className="object-cover transition-transform duration-700 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500" />
+        {/* Image/Video Container */}
+        <div
+          className="relative w-full h-[535px] rounded-xl overflow-hidden border border-gray-100 bg-black"
+          onClick={() => !isPlaying && setIsPlaying(true)}
+        >
+          {!isPlaying ? (
+            <>
+              <Image
+                src={thumbnailUrl}
+                alt={item.name}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500" />
 
-          {/* Play Button - Design Accurate */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative flex items-center justify-center transition-all duration-500 group-hover:scale-110">
-              {/* Outer Glassy Ring */}
-              <div className="absolute w-[84px] h-[84px] rounded-full bg-[#83789880] backdrop-blur-[2px] border border-white" />
-              {/* Main Indigo Button */}
-              <div className="relative w-[58px] h-[58px] rounded-full bg-[#4B42E4] flex items-center justify-center text-white shadow-[0_8px_25px_-5px_rgba(75,66,228,0.5)]">
-                <Play fill="white" size={32} className="ml-1" />
+              {/* Play Button - Design Accurate */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="relative flex items-center justify-center transition-all duration-500 group-hover:scale-110">
+                  {/* Outer Glassy Ring */}
+                  <div className="absolute w-[84px] h-[84px] rounded-full bg-[#83789880] backdrop-blur-[2px] border border-white" />
+                  {/* Main Indigo Button */}
+                  <div className="relative w-[58px] h-[58px] rounded-full bg-[#4B42E4] flex items-center justify-center text-white shadow-[0_8px_25px_-5px_rgba(75,66,228,0.5)]">
+                    <Play fill="white" size={32} className="ml-1" />
+                  </div>
+                </div>
               </div>
+            </>
+          ) : (
+            <div className="w-full h-full relative">
+              <div className="absolute inset-0 flex items-center justify-center bg-black">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
+              </div>
+              <div className={`wistia_embed wistia_async_${item.videoId} videoFoam=true autoPlay=true w-full h-full relative z-10`}></div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* Info Section */}

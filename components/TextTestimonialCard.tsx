@@ -1,10 +1,9 @@
 import Image from "next/image"
 import { IoStar } from "react-icons/io5";
 
-export const TextTestimonialCard = ({ index, item }: { index: number, item: any }) => {
+export const TextTestimonialCard = ({ item }: { item: any }) => {
   return (
     <div
-      key={`text-${index}`}
       className="flex-shrink-0 px-4 pt-6 pb-4 bg-white group cursor-pointer"
     >
       <div className="w-[450px] rounded-2xl bg-white p-8 break-inside-avoid shadow-[0px_2px_12px_0px_rgba(0,0,0,0.3)] border border-gray-100">

@@ -4,24 +4,28 @@ export const VIDEO_TESTIMONIALS = [
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Jenney Roy",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
+    videoId: "243psjy9l4",
   },
   {
     id: 2,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Jenney Roy",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
+    videoId: "243psjy9l4",
   },
   {
     id: 3,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Jenney Roy",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
+    videoId: "243psjy9l4",
   },
   {
     id: 4,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Jenney Roy",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
+    videoId: "243psjy9l4",
   },
 ];
 

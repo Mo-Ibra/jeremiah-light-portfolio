@@ -66,7 +66,7 @@ export const NewTestimonials = () => {
 
           <div className="flex animate-marquee-ltr">
             {[...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS].map((item, index) => (
-              <TextTestimonialCard index={index} item={item} />
+              <TextTestimonialCard key={`text-${index}`} item={item} />
             ))}
           </div>
         </div>
