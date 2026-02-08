@@ -110,9 +110,10 @@ export const NewTestimonials = () => {
             {[...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS].map((item, index) => (
               <div
                 key={`video-${index}`}
-                className="relative w-[320px] h-[560px] rounded-[2.5rem] overflow-hidden flex-shrink-0 group cursor-pointer"
+                className="relative w-[320px] rounded-[2.5rem] overflow-hidden flex-shrink-0 group cursor-pointer border border-gray-200 bg-white "
               >
-                <div className="relative w-full h-full">
+                {/* Image Container */}
+                <div className="relative w-full h-[535px] overflow-hidden">
                   <Image
                     src={item.thumbnail}
                     alt={item.name}
@@ -120,15 +121,17 @@ export const NewTestimonials = () => {
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500" />
-                </div>
 
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 rounded-full bg-[#4F46E5] flex items-center justify-center text-white shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#4338CA]">
-                    <Play fill="white" size={32} className="ml-1.5" />
+                  {/* Play Button Overlay - Stays on image */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 h-20 rounded-full bg-[#4F46E5] flex items-center justify-center text-white shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#4338CA]">
+                      <Play fill="white" size={32} className="ml-1.5" />
+                    </div>
                   </div>
                 </div>
 
-                <div className="absolute bottom-0 left-0 w-full p-6 bg-white backdrop-blur-md flex items-center justify-between z-10">
+                {/* Info Section - Now below the image */}
+                <div className="p-6 flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full overflow-hidden relative border-2 border-white shadow-sm">
                       <Image src={item.thumbnail} alt={item.name} fill className="object-cover" />
