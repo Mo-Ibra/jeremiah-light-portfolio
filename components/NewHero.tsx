@@ -29,7 +29,7 @@ const NewHero = () => {
               <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[50px] font-bold md:mb-6 leading-tight bg-white bg-clip-text text-transparent">
                 Performance Creative
                 <br />
-                for Scale-Stage Brands
+                for Scale Stage Brands
               </h1>
 
               {/* Desktop Text - Hidden on Mobile */}
@@ -92,9 +92,9 @@ const NewHero = () => {
 
       {/* Logo Carousel - Full Width at the Bottom within 100vh */}
       <div className="w-full bg-[#E8EAFF] bg-diagonal-carousel-stripes py-8 border-y border-white/20">
-        <div className="max-w-[85rem] mx-auto px-8">
+        <div className="max-w-full mx-auto px-8">
           <h3 className="text-center text-[#8480FF] font-semibold mb-6 text-sm md:text-base">
-            Trusted by Top Brands
+            TRUSTED BY TOP BRANDS
           </h3>
           <NewLogoCarousel />
         </div>
