@@ -67,9 +67,9 @@ function Home() {
       <NewHero />
       <VideoReels />
       <CaseStudiesSection />
-      <AboutMe />
       {/* <Testimonials /> */}
       <NewTestimonials />
+      <AboutMe />
       <Services />
       {/* {!isMobile && <Portfolio />} */}
       <Process />
