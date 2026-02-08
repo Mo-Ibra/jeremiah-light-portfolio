@@ -10,21 +10,25 @@ const VIDEO_TESTIMONIALS = [
     id: 1,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Jenney Roy",
+    avatarImage: "/images/new-testimonials/testimonial-2.svg",
   },
   {
     id: 2,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Jenney Roy",
+    avatarImage: "/images/new-testimonials/testimonial-2.svg",
   },
   {
     id: 3,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Jenney Roy",
+    avatarImage: "/images/new-testimonials/testimonial-2.svg",
   },
   {
     id: 4,
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Jenney Roy",
+    avatarImage: "/images/new-testimonials/testimonial-2.svg",
   },
 ];
 
@@ -34,7 +38,7 @@ const TEXT_TESTIMONIALS = [
     text: "Navigating the complexities of CMMC compliance was daunting for our team. Get Compliant Now provided clear, step-by-step guidance tailored to our organization's needs.",
     name: "Robert Jenkins",
     role: "Founder, ShieldWorks Enterprises",
-    avatar: "/images/new-testimonials/testimonials-2.png",
+    avatarImage: "/images/new-testimonials/testimonial-2.svg",
     rating: 5,
   },
   {
@@ -42,7 +46,7 @@ const TEXT_TESTIMONIALS = [
     text: "Their deep understanding of the latest DoD standards ensured we met all requirements efficiently.",
     name: "Robert Jenkins",
     role: "Founder, ShieldWorks Enterprises",
-    avatar: "/images/new-testimonials/testimonials-2.png",
+    avatarImage: "/images/new-testimonials/testimonial-2.svg",
     rating: 5,
   },
   {
@@ -50,7 +54,7 @@ const TEXT_TESTIMONIALS = [
     text: "Navigating the complexities of CMMC compliance was daunting for our team. Get Compliant Now provided clear, step-by-step guidance tailored to our organization's needs.",
     name: "Robert Jenkins",
     role: "Founder, ShieldWorks Enterprises",
-    avatar: "/images/new-testimonials/testimonials-2.png",
+    avatarImage: "/images/new-testimonials/testimonial-2.svg",
     rating: 5,
   },
   {
@@ -58,7 +62,7 @@ const TEXT_TESTIMONIALS = [
     text: "Their deep understanding of the latest DoD standards ensured we met all requirements efficiently.",
     name: "Robert Jenkins",
     role: "Founder, ShieldWorks Enterprises",
-    avatar: "/images/new-testimonials/testimonials-2.png",
+    avatarImage: "/images/new-testimonials/testimonial-2.svg",
     rating: 5,
   },
 ];
@@ -111,11 +115,11 @@ export const NewTestimonials = () => {
             {[...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS].map((item, index) => (
               <div
                 key={`video-${index}`}
-                className="flex-shrink-0 px-10 py-12 border-r border-gray-100 group cursor-pointer bg-white"
+                className="flex-shrink-0 px-10 py-12 border-r border-gray-300 group cursor-pointer bg-white"
               >
                 <div className="relative w-[340px] flex flex-col">
                   {/* Image Container */}
-                  <div className="relative w-full h-[535px] rounded-[2.5rem] overflow-hidden border border-gray-100">
+                  <div className="relative w-full h-[535px] rounded-xl overflow-hidden border border-gray-100">
                     <Image
                       src={item.thumbnail}
                       alt={item.name}
@@ -136,13 +140,13 @@ export const NewTestimonials = () => {
                   <div className="pt-8 flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full overflow-hidden relative border-2 border-white shadow-sm">
-                        <Image src={item.thumbnail} alt={item.name} fill className="object-cover" />
+                        <Image src={item.avatarImage} alt={item.name} fill className="object-cover" />
                       </div>
                       <span className="font-bold text-gray-900 text-base">{item.name}</span>
                     </div>
-                    <div className="flex gap-1 text-[#FFB800]">
+                    <div className="flex gap-1">
                       {[...Array(5)].map((_, i) => (
-                        <span key={i} className="text-xl">★</span>
+                        <Image key={i} src="/images/star.svg" alt="star" width={20} height={20} className="w-5 h-5" />
                       ))}
                     </div>
                   </div>
@@ -173,15 +177,15 @@ export const NewTestimonials = () => {
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-1 mb-8 text-[#FFB800]">
+                  <div className="flex items-center gap-1 mb-8">
                     {[...Array(item.rating)].map((_, i) => (
-                      <span key={i} className="text-2xl uppercase">★</span>
+                      <Image key={i} src="/images/star.svg" alt="star" width={24} height={24} className="w-6 h-6" />
                     ))}
                   </div>
 
                   <div className="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
                     <div className="w-14 h-14 rounded-full overflow-hidden relative bg-gray-100 border border-gray-100">
-                      <Image src={item.avatar} alt={item.name} fill className="object-cover" />
+                      <Image src={item.avatarImage} alt={item.name} fill className="object-cover" />
                     </div>
                     <div>
                       <h4 className="text-lg font-bold text-gray-900 leading-tight">{item.name}</h4>
