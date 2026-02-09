@@ -82,7 +82,7 @@ export const NewTestimonials = () => {
           <span className="relative z-10 flex items-center space-x-2">
             <span>Schedule Free Ads Audit</span>
             <Image
-              src="/images/button-arrow.svg"
+              src="/images/arrow-white.svg"
               alt="Arrow Icon"
               width={16}
               height={16}
