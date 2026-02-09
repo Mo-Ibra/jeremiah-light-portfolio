@@ -32,8 +32,8 @@ export const NewTestimonials = () => {
 
       <div className="mx-auto max-w-7xl mb-8 md:mb-16">
         <SectionHeader badgeText="Testimonials" className="md:mb-10 mb-6 text-center">
-          <h2 className="text-3xl md:text-[45px] font-semibold text-gray-900 mb-4 tracking-tight">
-            Thinking about <span className="text-primary">Working With Us?</span>
+          <h2 className="text-2xl md:text-[45px] font-semibold text-gray-900 mb-4 tracking-tight">
+            Thinking about <span className="text-primary block md:inline">Working With Us?</span>
           </h2>
           <p className="text-base md:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed">
             Hear about what our clients have to say first
