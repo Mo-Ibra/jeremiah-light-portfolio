@@ -63,7 +63,7 @@ export const TextTestimonialCard = ({ item }: { item: TextTestimonial }) => {
         </h4>
 
         {/* Content */}
-        <p className="text-base leading-relaxed text-gray-600">
+        <p className="text-base leading-relaxed text-gray-600 line-clamp-4 md:line-clamp-none">
           {item.content}
         </p>
       </div>
