@@ -76,16 +76,18 @@ const NewHero = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-10">
               <button
                 onClick={() => (location.href = "#cta")}
-                className="px-6 py-3 md:px-8 md:py-3 w-fit md:mt-16 mx-auto cursor-pointer bg-white font-bold text-[#8480FF] rounded-lg shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+                className="group relative overflow-hidden transition-all duration-200 shadow-[0_6px_0_0_#dcdbff] hover:shadow-[0_8px_0_0_#dcdbff] hover:-translate-y-[2px] active:translate-y-[4px] active:shadow-none cursor-pointer bg-white text-[#8480FF] font-bold rounded-xl flex items-center justify-center space-x-2 px-8 py-4 w-fit md:mt-16 mx-auto"
               >
-                <span>Schedule Free Ads Audit</span>
-                <Image
-                  src="/images/button-arrow.svg"
-                  alt="Arrow Icon"
-                  width={16}
-                  height={16}
-                  className="w-3 md:w-4 h-3 md:h-4"
-                />
+                <span className="relative z-10 flex items-center space-x-2">
+                  <span>Schedule Free Ads Audit</span>
+                  <Image
+                    src="/images/button-arrow.svg"
+                    alt="Arrow Icon"
+                    width={16}
+                    height={16}
+                    className="w-3 md:w-4 h-3 md:h-4"
+                  />
+                </span>
               </button>
             </div>
           </div>
