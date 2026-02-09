@@ -10,7 +10,6 @@ import Services from "@/components/Services";
 // import Testimonials from "@/components/Testimonials";
 import NewTestimonials from "@/components/NewTestimonials";
 import CaseStudiesSection from "@/components/CaseStudies";
-import AboutMe from "@/components/AboutMe";
 import Process from "@/components/Process";
 import Comparison from "@/components/Comparison";
 import Features from "@/components/Features";
