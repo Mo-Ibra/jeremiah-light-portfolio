@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const NewTestimonials = () => {
   return (
-    <section className="px-6 py-6 overflow-hidden bg-white" id="testimonials">
+    <section className="px-4 py-4 md:px-6 md:py-6 overflow-hidden bg-white" id="testimonials">
       <style jsx>{`
         @keyframes marquee-rtl {
           0% { transform: translateX(0); }
@@ -30,7 +30,7 @@ export const NewTestimonials = () => {
         }
       `}</style>
 
-      <div className="mx-auto max-w-7xl mb-16">
+      <div className="mx-auto max-w-7xl mb-8 md:mb-16">
         <SectionHeader badgeText="Testimonials" className="md:mb-10 mb-6 text-center">
           <h2 className="text-3xl md:text-[45px] font-semibold text-gray-900 mb-4 tracking-tight">
             Thinking about <span className="text-primary">Working With Us?</span>

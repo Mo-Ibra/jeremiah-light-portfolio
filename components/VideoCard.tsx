@@ -29,12 +29,12 @@ export const VideoCard = ({ item }: { item: VideoTestimonial }) => {
 
   return (
     <div
-      className="flex-shrink-0 px-10 py-12 border-r border-gray-200 group cursor-pointer bg-white"
+      className="flex-shrink-0 px-4 py-8 md:px-10 md:py-12 border-r border-gray-200 group cursor-pointer bg-white"
     >
-      <div className="relative w-[340px] flex flex-col">
+      <div className="relative w-[260px] md:w-[340px] flex flex-col">
         {/* Image/Video Container */}
         <div
-          className="relative w-full h-[535px] rounded-xl overflow-hidden border border-gray-100 bg-black"
+          className="relative w-full h-[400px] md:h-[535px] rounded-xl overflow-hidden border border-gray-100 bg-black"
           onClick={() => !isPlaying && setIsPlaying(true)}
         >
           {!isPlaying ? (
@@ -70,7 +70,7 @@ export const VideoCard = ({ item }: { item: VideoTestimonial }) => {
         </div>
 
         {/* Info Section */}
-        <div className="pt-8 flex items-center justify-between">
+        <div className="pt-4 md:pt-8 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden relative border-2 border-white shadow-sm">
               <Image src={item.avatarImage} alt={item.name} fill className="object-cover" />
