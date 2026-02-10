@@ -5,7 +5,7 @@ import { IoStar } from "react-icons/io5";
 export const TextTestimonialCard = ({ item }: { item: TextTestimonial }) => {
   return (
     <div
-      className="flex-shrink-0 px-2 pt-4 pb-2 md:px-4 md:pt-6 md:pb-4 bg-white group cursor-pointer"
+      className="flex-shrink-0 px-2 pt-4 pb-2 md:px-4 md:pt-6 md:pb-4 bg-white group cursor-pointer snap-center"
     >
       <div className="w-[320px] md:w-[450px] rounded-2xl bg-white p-5 md:p-8 break-inside-avoid md:shadow-[0px_2px_12px_0px_rgba(0,0,0,0.3)] border border-gray-100">
         {/* Avatar and Name */}

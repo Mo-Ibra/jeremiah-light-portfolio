@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import { VideoCard } from "./VideoCard";
 import { VIDEO_TESTIMONIALS, TEXT_TESTIMONIALS } from "@/data/testimonials";
@@ -7,6 +8,15 @@ import { TextTestimonialCard } from "./TextTestimonialCard";
 import Image from "next/image";
 
 export const NewTestimonials = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <section className="px-4 py-4 md:px-6 md:py-6 overflow-hidden bg-white" id="testimonials">
       <style jsx>{`
@@ -18,15 +28,26 @@ export const NewTestimonials = () => {
           0% { transform: translateX(-50%); }
           100% { transform: translateX(0); }
         }
-        .animate-marquee-rtl {
-          animation: marquee-rtl 40s linear infinite;
+        
+        @media (min-width: 768px) {
+          .animate-marquee-rtl {
+            animation: marquee-rtl 40s linear infinite;
+          }
+          .animate-marquee-ltr {
+            animation: marquee-ltr 45s linear infinite;
+          }
+          .pause-on-hover:hover .animate-marquee-rtl,
+          .pause-on-hover:hover .animate-marquee-ltr {
+            animation-play-state: paused;
+          }
         }
-        .animate-marquee-ltr {
-          animation: marquee-ltr 45s linear infinite;
+
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
         }
-        .pause-on-hover:hover .animate-marquee-rtl,
-        .pause-on-hover:hover .animate-marquee-ltr {
-          animation-play-state: paused;
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
 
@@ -41,17 +62,17 @@ export const NewTestimonials = () => {
         </SectionHeader>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-4">
         {/* Top Carousel - Right to Left (Video Panels) */}
         <div
-          className="relative w-full border-y border-gray-100 flex overflow-hidden pause-on-hover"
+          className="relative w-full border-y border-gray-100 flex overflow-x-auto md:overflow-hidden scrollbar-hide snap-x snap-mandatory pause-on-hover"
         >
           {/* Gradient Masks */}
-          <div className="absolute left-0 top-0 bottom-0 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 md:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
+          <div className="hidden md:block absolute left-0 top-0 bottom-0 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
 
           <div className="flex animate-marquee-rtl">
-            {[...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS].map((item, index) => (
+            {(isMobile ? VIDEO_TESTIMONIALS : [...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS]).map((item, index) => (
               <VideoCard key={`video-${index}`} item={item} />
             ))}
           </div>
@@ -59,14 +80,14 @@ export const NewTestimonials = () => {
 
         {/* Bottom Carousel - Left to Right (Text Panels) */}
         <div
-          className="relative w-full flex overflow-hidden pause-on-hover"
+          className="relative w-full flex overflow-x-auto md:overflow-hidden scrollbar-hide snap-x snap-mandatory pause-on-hover"
         >
           {/* Gradient Masks */}
-          <div className="absolute left-0 top-0 bottom-0 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 md:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
 
           <div className="flex animate-marquee-ltr">
-            {[...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS].map((item, index) => (
+            {(isMobile ? TEXT_TESTIMONIALS : [...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS]).map((item, index) => (
               <TextTestimonialCard key={`text-${index}`} item={item} />
             ))}
           </div>

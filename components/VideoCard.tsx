@@ -29,7 +29,7 @@ export const VideoCard = ({ item }: { item: VideoTestimonial }) => {
 
   return (
     <div
-      className="flex-shrink-0 px-4 py-8 md:px-10 md:py-12 border-r border-gray-200 group cursor-pointer bg-white"
+      className="flex-shrink-0 px-4 py-8 md:px-10 md:py-12 border-r border-gray-200 group cursor-pointer bg-white snap-center"
     >
       <div className="relative w-[260px] md:w-[340px] flex flex-col">
         {/* Image/Video Container */}
