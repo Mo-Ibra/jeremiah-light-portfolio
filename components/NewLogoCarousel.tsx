@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const logos = [
-  "/images/logo-carousel/logo-1.svg",
+  // "/images/logo-carousel/logo-1.svg",
   "/images/logo-carousel/logo-2.svg",
   "/images/logo-carousel/logo-3.svg",
   "/images/logo-carousel/logo-4.svg",
