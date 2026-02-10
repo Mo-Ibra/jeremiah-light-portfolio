@@ -265,7 +265,7 @@ export default function CaseStudiesSection() {
           </button>
         </div>
 
-        <AboutMe />
+        {/* <AboutMe /> */}
 
         {/* NEW SECTION */}
         <div className="relative max-w-6xl mx-auto w-full bg-black rounded-3xl p-8 shadow-2xl border-2 border-primary">

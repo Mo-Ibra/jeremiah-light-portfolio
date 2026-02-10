@@ -92,7 +92,7 @@ const NewHero = () => {
         </div>
 
         {/* Logo Carousel - Full Width at the Bottom within 100vh */}
-        <div className="w-full bg-[#E8EAFF] bg-diagonal-carousel-stripes py-4 md:py-8 border-y border-white/20">
+        <div className="w-full bg-[#FFFFFF] bg-diagonal-carousel-stripes py-4 md:py-8 border-y border-white/20">
           <div className="max-w-full mx-auto px-8">
             <h3 className="text-center text-[#8480FF] font-semibold mb-3 md:mb-6 text-sm md:text-base">
               TRUSTED BY TOP BRANDS
