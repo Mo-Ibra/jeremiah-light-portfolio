@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeader from "./SectionHeader";
 import Image from "next/image";
 import { Check, X } from "lucide-react";
+import AboutMe from "./AboutMe";
 
 interface Metric {
   icon: string | "/images/case-studies/icons/1.svg";
@@ -263,6 +264,8 @@ export default function CaseStudiesSection() {
             <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out group-hover:left-[100%]" />
           </button>
         </div>
+
+        <AboutMe />
 
         {/* NEW SECTION */}
         <div className="relative max-w-6xl mx-auto w-full bg-black rounded-3xl p-8 shadow-2xl border-2 border-primary">

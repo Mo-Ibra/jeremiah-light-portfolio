@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 const AboutMe = () => {
   return (
     <section
-      className="md:pb-12 py-12 px-6 relative overflow-hidden z-50"
+      className="md:pb-12 px-6 relative overflow-hidden z-50"
       id="about"
     >
       {/* <BlurCircle
