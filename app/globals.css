@@ -147,16 +147,16 @@ body {
       transparent 12px);
 }
 
-.bg-diagonal-carousel-stripes {
-  /* Main Color */
-  background-color: rgb(217, 215, 255);
-  /* Stripe Color */
-  background-image: repeating-linear-gradient(-135deg,
+/* .bg-diagonal-carousel-stripes { */
+/* Main Color */
+/* background-color: rgb(217, 215, 255); */
+/* Stripe Color */
+/* background-image: repeating-linear-gradient(-135deg,
       rgba(225, 224, 255) 0px,
       rgba(225, 224, 255) 2px,
       transparent 2px,
       transparent 12px);
-}
+} */
 
 @keyframes shimmer {
   0% {
