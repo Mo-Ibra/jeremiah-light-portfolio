@@ -1,5 +1,4 @@
 import Image from "next/image";
-import BlurCircle from "./BlurCircle";
 import SectionHeader from "./SectionHeader";
 import { Button } from "./ui/button";
 
@@ -20,11 +19,11 @@ const AboutMe = () => {
 
       <div className="max-w-4xl md:max-w-7xl mx-auto">
         {/* Header */}
-        <SectionHeader badgeText="About Us" className="mb-0 md:mb-16">
+        {/* <SectionHeader badgeText="About Us" className="mb-0 md:mb-16">
           <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             Message From <span className="text-primary">Our Founder </span>
           </h2>
-        </SectionHeader>
+        </SectionHeader> */}
 
         {/* Two Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-4xl md:max-w-6xl mx-auto">
