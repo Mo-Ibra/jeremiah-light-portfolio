@@ -34,7 +34,7 @@ const VideoReelsForPortfolio = () => {
         >
           <h2 className="text-2xl md:text-[40px] font-semibold text-gray-900 mb-6">
             The <span className="text-primary">Creative Styles</span> Trusted by{" "}
-            <span className="text-primary">6, 7, and 8-Figure Brands</span>
+            <span className="text-primary">7, 8, and 9-Figure Brands</span>
           </h2>
         </SectionHeader>
 
