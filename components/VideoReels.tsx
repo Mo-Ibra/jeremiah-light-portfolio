@@ -85,7 +85,7 @@ const VideoReels = () => {
         {/* Header */}
         <div className="text-center my-2 sm:my-4 lg:my-6 tracking-tight opacity-0 translate-y-5 animate-[fadeInUp_1s_ease_forwards]">
           <p className="text-2xl md:text-4xl text-black font-semibold md:leading-12">
-            <span className="text-primary">1,000+</span> Ads Created
+            <span className="text-primary">10,000+</span> Ads Created
             <br />
             <span className="text-primary">$10.25M+</span> In Sales Generated
           </p>
