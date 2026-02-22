@@ -22,12 +22,12 @@ export default function Navbar() {
       <nav className="bg-white shadow-sm relative z-50">
         <div className="max-w-[85rem] mx-auto">
 
-          <div className="flex justify-between items-center h-20 px-5 relative z-50 bg-white">
+          <div className="flex justify-between items-center h-16 md:h-20 px-5 relative z-50 bg-white">
 
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 md:mt-0 mt-1">
               <Link href="/">
-                <Image src="/images/new-navbar/logo.svg" alt="Logo" width={209} height={40} className="w-[160px] md:w-[209px]" />
+                <Image src="/images/new-navbar/logo.svg" alt="Logo" width={209} height={40} className="w-[130px] md:w-[209px]" />
               </Link>
             </div>
 
