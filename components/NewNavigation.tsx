@@ -1,14 +1,10 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
 import AnnouncementBar from './AnnouncementBar'
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
     { label: 'Home', href: '/' },
@@ -49,66 +45,26 @@ export default function Navbar() {
             </div>
 
             {/* Desktop CTA Button */}
-            <div className="hidden md:block" onClick={() => location.href = "#cta"}>
-              <button className="group relative overflow-hidden bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-md active:scale-95 cursor-pointer">
-                <span className="relative z-10">Let's Talk</span>
-                <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out group-hover:left-[100%]" />
-              </button>
+            <div className="hidden md:block">
+              <Link href="#cta">
+                <button className="group relative overflow-hidden bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-md active:scale-95 cursor-pointer">
+                  <span className="relative z-10">Let's Talk</span>
+                  <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out group-hover:left-[100%]" />
+                </button>
+              </Link>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile CTA Button */}
             <div className="md:hidden">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="text-[#8480FF] p-2"
-                aria-label="Toggle Menu"
-              >
-                {isOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
+              <Link href="#cta">
+                <button className="group relative overflow-hidden bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-4 py-2 rounded-lg font-medium text-[13px] transition-all shadow-md active:scale-95 cursor-pointer">
+                  <span className="relative z-10 whitespace-nowrap">Schedule Free Ads Audit</span>
+                  <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out group-hover:left-[100%]" />
+                </button>
+              </Link>
             </div>
           </div>
 
-          {/* Mobile Navigation */}
-          <AnimatePresence>
-            {isOpen && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
-                className="md:hidden absolute top-full left-0 w-full bg-white border-b shadow-lg z-40 overflow-hidden"
-              >
-                <div className="flex flex-col gap-1 p-5 pt-2">
-                  {navLinks.map((link, i) => (
-                    <motion.div
-                      key={link.label}
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.1 + i * 0.05, duration: 0.3 }}
-                    >
-                      <Link
-                        href={link.href}
-                        onClick={() => setIsOpen(false)}
-                        className="text-[#8480FF] hover:text-[#6b68d9] py-3 font-medium border-b border-gray-50 last:border-none flex items-center justify-between group"
-                      >
-                        {link.label}
-                      </Link>
-                    </motion.div>
-                  ))}
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1 + navLinks.length * 0.05, duration: 0.3 }}
-                    className="pt-4 pb-2"
-                  >
-                    <button className="bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-6 py-3 rounded-xl font-semibold transition-all shadow-md active:scale-95 w-full">
-                      Let's Talk
-                    </button>
-                  </motion.div>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </div>
       </nav>
     </>
