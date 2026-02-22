@@ -7,6 +7,7 @@ import { portfolioReels } from "@/data/data";
 import SectionHeader from "./SectionHeader";
 import BlurCircle from "./BlurCircle";
 import VideoReelCardForPortfolio from "@/components/VideoReelCardForPortfolio";
+import Image from "next/image";
 
 const VideoReelsForPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -45,10 +46,9 @@ const VideoReelsForPortfolio = () => {
               onClick={() => setActiveFilter(filter)}
               className={`
                 px-5 py-2 rounded-full text-sm transition-all duration-200 font-semibold z-50 text-[15px]
-                ${
-                  activeFilter === filter
-                    ? "bg-indigo-600 text-white shadow-md"
-                    : "bg-transparent text-primary hover:bg-gray-50 "
+                ${activeFilter === filter
+                  ? "bg-indigo-600 text-white shadow-md"
+                  : "bg-transparent text-primary hover:bg-gray-50 "
                 }
               `}
             >
@@ -64,9 +64,24 @@ const VideoReelsForPortfolio = () => {
           ))}
         </div>
 
-        <button onClick={() => location.href = "#cta"} className="cursor-pointer px-6 md:px-8 py-3 md:py-4 bg-transparent text-primary rounded-full shadow-md font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto my-12 border-2 border-primary">
-          <span>Schedule Free Ads Audit Today</span>
-        </button>
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-5 mb-12 md:mt-10 md:mb-16">
+          <button
+            onClick={() => (location.href = "#cta")}
+            className="group relative overflow-hidden px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+          >
+            <span className="relative z-10 flex items-center space-x-2">
+              <span>Schedule Free Ads Audit</span>
+              <Image
+                src="/images/arrow-white.svg"
+                alt="Arrow Icon"
+                width={16}
+                height={16}
+                className="w-3 md:w-4 h-3 md:h-4"
+              />
+            </span>
+            <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out group-hover:left-[100%]" />
+          </button>
+        </div>
       </div>
     </section>
   );

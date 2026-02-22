@@ -11,7 +11,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    { label: 'Home', href: '#home' },
+    { label: 'Home', href: '/' },
     { label: 'Portfolio', href: '#portfolio' },
     { label: 'Case Studies', href: '#case-studies' },
     { label: "Testimonials", href: "#testimonials" },
@@ -30,7 +30,9 @@ export default function Navbar() {
 
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Image src="/images/new-navbar/logo.svg" alt="Logo" width={209} height={40} className="w-[160px] md:w-[209px]" />
+              <Link href="/">
+                <Image src="/images/new-navbar/logo.svg" alt="Logo" width={209} height={40} className="w-[160px] md:w-[209px]" />
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
