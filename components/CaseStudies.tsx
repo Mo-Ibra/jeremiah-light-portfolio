@@ -42,7 +42,7 @@ export default function CaseStudiesSection() {
           label: "Adspend",
         },
         {
-          icon: "/images/case-studies/icons/3.svg",
+          icon: "/images/case-studies/icons/3-new.svg",
           value: "7321",
           label: "Orders",
         },
@@ -73,7 +73,7 @@ export default function CaseStudiesSection() {
           label: "Adspend",
         },
         {
-          icon: "/images/case-studies/icons/3.svg",
+          icon: "/images/case-studies/icons/3-new.svg",
           value: "3224",
           label: "Orders",
         },
@@ -104,7 +104,7 @@ export default function CaseStudiesSection() {
           label: "Adspend",
         },
         {
-          icon: "/images/case-studies/icons/3.svg",
+          icon: "/images/case-studies/icons/3-new.svg",
           value: "4321",
           label: "Orders",
         },
@@ -135,7 +135,7 @@ export default function CaseStudiesSection() {
           label: "Adspend",
         },
         {
-          icon: "/images/case-studies/icons/3.svg",
+          icon: "/images/case-studies/icons/3-new.svg",
           value: "98",
           label: "Orders",
         },

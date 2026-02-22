@@ -29,7 +29,7 @@ export default function FAQs() {
 
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeader
-          badgeText="Do you have any question?"
+          badgeText="Do you have any questions?"
           badgeBackgroundColor="bg-[#5360c226]"
           className="md:mb-12 mb-6"
         >
@@ -50,9 +50,8 @@ export default function FAQs() {
                 <div className="relative bg-[#272727] backdrop-blur-sm rounded-2xl">
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className={`w-full px-6 md:py-5 py-2.5 text-left flex items-center justify-between ${
-                      openIndex === index ? "rounded-none" : "rounded-2xl"
-                    } transition-all duration-300 ease-in-out`}
+                    className={`w-full px-6 md:py-5 py-2.5 text-left flex items-center justify-between ${openIndex === index ? "rounded-none" : "rounded-2xl"
+                      } transition-all duration-300 ease-in-out`}
                   >
                     <h3 className="md:text-base text-xs font-semibold text-white pr-4">
                       {faq.question}
@@ -73,11 +72,10 @@ export default function FAQs() {
                   </button>
 
                   <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      openIndex === index
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index
                         ? "max-h-96 opacity-100"
                         : "max-h-0 opacity-0"
-                    }`}
+                      }`}
                   >
                     <div className="px-6 pb-5">
                       <p className="text-muted md:text-sm text-[10px] leading-relaxed max-w-[500px]">
