@@ -18,7 +18,7 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
   }, []);
 
   return (
-    <section className="md:py-16 py-12 md:pb-36 px-6" id="cta">
+    <section className="md:py-16 pt-2 pb-12 md:pb-36 px-6" id="cta">
       <div className="max-w-5xl mx-auto">
         <div
           className="relative max-w-7xl rounded-3xl p-10 md:p-12 text-center overflow-hidden"
@@ -65,7 +65,7 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
             </span>
           </h2>
           <p className="relative z-10 text-[#ffffff90] md:mb-2 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base ">
-            I work with a maximum of 4 brands at any given time to ensure my
+            We work with a maximum of 4 brands at any given time to ensure our
             partners get the focus and results they deserve.
           </p>
           <p className="relative z-10 text-[#ffffff90] md:mb-2 mb-4 max-w-4xl mx-auto leading-relaxed text-sm md:text-base ">

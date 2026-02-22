@@ -104,7 +104,7 @@ const Footer = () => {
             {/* Desktop: Copyright and Links */}
             <div className="hidden lg:block">
               <div className="text-gray-900 font-medium mb-3 text-base">
-                © 2025 HARCHARRAN LIMITED.{" "}
+                © 2026 HARCHARRAN LIMITED.{" "}
                 <span className="block md:inline">All Rights Reserved</span>
               </div>
               <div className="flex flex-wrap justify-center gap-6 text-sm">
