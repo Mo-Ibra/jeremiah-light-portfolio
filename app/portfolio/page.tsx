@@ -3,14 +3,12 @@
 import CTA from "@/components/CTA";
 import FAQs from "@/components/Faqs";
 import Footer from "@/components/Footer";
-// import HeroForPortfolio from "@/components/HeroForPortfolio";
-// import Navigation from "@/components/Navigation";
 import NewNavigaton from "@/components/NewNavigation";
-import NewHero from "@/components/NewHero";
+import HeroForPortfolio from "@/components/HeroForPortfolio";
 import QuizModal from "@/components/QuizModal";
 import VideoReelsForPortfolio from "@/components/VideoReelsForPortfolio";
 import { useEffect, useState } from "react";
-import HeroForPortfolio from "@/components/HeroForPortfolio";
+
 function Page() {
   const [isQuizOpen, setIsQuizOpen] = useState(false);
 
@@ -37,10 +35,8 @@ function Page() {
 
   return (
     <>
-      {/* <Navigation /> */}
-      {/* <HeroForPortfolio /> */}
       <NewNavigaton />
-      <NewHero />
+      <HeroForPortfolio />
       <VideoReelsForPortfolio />
       <FAQs />
       <CTA onOpenQuiz={openQuiz} />
