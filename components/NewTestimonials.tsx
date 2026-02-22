@@ -35,9 +35,12 @@ export const NewTestimonials = () => {
         .animate-marquee-ltr {
           animation: marquee-ltr 45s linear infinite;
         }
-        .pause-on-hover:hover .animate-marquee-rtl,
-        .pause-on-hover:hover .animate-marquee-ltr {
-          animation-play-state: paused;
+        
+        @media (min-width: 768px) {
+          .pause-on-hover:hover .animate-marquee-rtl,
+          .pause-on-hover:hover .animate-marquee-ltr {
+            animation-play-state: paused;
+          }
         }
 
         .scrollbar-hide::-webkit-scrollbar {
@@ -63,7 +66,7 @@ export const NewTestimonials = () => {
       <div className="flex flex-col gap-4">
         {/* Top Carousel - Right to Left (Video Panels) */}
         <div
-          className="relative w-full border-y border-gray-100 flex overflow-hidden scrollbar-hide pause-on-hover"
+          className="relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x md:snap-none pause-on-hover"
         >
           {/* Gradient Masks */}
           <div className="hidden md:block absolute left-0 top-0 bottom-0 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
@@ -78,7 +81,7 @@ export const NewTestimonials = () => {
 
         {/* Bottom Carousel - Left to Right (Text Panels) */}
         <div
-          className="relative w-full flex overflow-hidden scrollbar-hide pause-on-hover"
+          className="relative w-full flex overflow-x-auto scrollbar-hide snap-x md:snap-none pause-on-hover"
         >
           {/* Gradient Masks */}
           <div className="hidden md:block absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
