@@ -29,17 +29,15 @@ export const NewTestimonials = () => {
           100% { transform: translateX(0); }
         }
         
-        @media (min-width: 768px) {
-          .animate-marquee-rtl {
-            animation: marquee-rtl 40s linear infinite;
-          }
-          .animate-marquee-ltr {
-            animation: marquee-ltr 45s linear infinite;
-          }
-          .pause-on-hover:hover .animate-marquee-rtl,
-          .pause-on-hover:hover .animate-marquee-ltr {
-            animation-play-state: paused;
-          }
+        .animate-marquee-rtl {
+          animation: marquee-rtl 40s linear infinite;
+        }
+        .animate-marquee-ltr {
+          animation: marquee-ltr 45s linear infinite;
+        }
+        .pause-on-hover:hover .animate-marquee-rtl,
+        .pause-on-hover:hover .animate-marquee-ltr {
+          animation-play-state: paused;
         }
 
         .scrollbar-hide::-webkit-scrollbar {
@@ -65,14 +63,14 @@ export const NewTestimonials = () => {
       <div className="flex flex-col gap-4">
         {/* Top Carousel - Right to Left (Video Panels) */}
         <div
-          className="relative w-full border-y border-gray-100 flex overflow-x-auto md:overflow-hidden scrollbar-hide snap-x snap-mandatory pause-on-hover"
+          className="relative w-full border-y border-gray-100 flex overflow-hidden scrollbar-hide pause-on-hover"
         >
           {/* Gradient Masks */}
           <div className="hidden md:block absolute left-0 top-0 bottom-0 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
           <div className="hidden md:block absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
 
           <div className="flex animate-marquee-rtl">
-            {(isMobile ? VIDEO_TESTIMONIALS : [...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS]).map((item, index) => (
+            {[...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS, ...VIDEO_TESTIMONIALS].map((item, index) => (
               <VideoCard key={`video-${index}`} item={item} />
             ))}
           </div>
@@ -80,14 +78,14 @@ export const NewTestimonials = () => {
 
         {/* Bottom Carousel - Left to Right (Text Panels) */}
         <div
-          className="relative w-full flex overflow-x-auto md:overflow-hidden scrollbar-hide snap-x snap-mandatory pause-on-hover"
+          className="relative w-full flex overflow-hidden scrollbar-hide pause-on-hover"
         >
           {/* Gradient Masks */}
           <div className="hidden md:block absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
           <div className="hidden md:block absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
 
           <div className="flex animate-marquee-ltr">
-            {(isMobile ? TEXT_TESTIMONIALS : [...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS]).map((item, index) => (
+            {[...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS, ...TEXT_TESTIMONIALS].map((item, index) => (
               <TextTestimonialCard key={`text-${index}`} item={item} />
             ))}
           </div>
