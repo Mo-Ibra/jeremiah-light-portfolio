@@ -87,7 +87,7 @@ const VideoReels = () => {
           <p className="text-2xl md:text-4xl text-black font-semibold md:leading-12">
             <span className="text-primary">1,000+</span> Ads Created
             <br />
-            <span className="text-primary">$1.25M+</span> In Sales Generated
+            <span className="text-primary">$10.25M+</span> In Sales Generated
           </p>
         </div>
 
