@@ -10,7 +10,7 @@ import NewHero from "@/components/NewHero";
 import QuizModal from "@/components/QuizModal";
 import VideoReelsForPortfolio from "@/components/VideoReelsForPortfolio";
 import { useEffect, useState } from "react";
-
+import HeroForPortfolio from "@/components/HeroForPortfolio";
 function Page() {
   const [isQuizOpen, setIsQuizOpen] = useState(false);
 
