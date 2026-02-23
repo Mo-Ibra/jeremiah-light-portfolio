@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import { VideoCard } from "./VideoCard";
 import { VIDEO_TESTIMONIALS, TEXT_TESTIMONIALS } from "@/data/testimonials";
@@ -8,14 +8,8 @@ import { TextTestimonialCard } from "./TextTestimonialCard";
 import Image from "next/image";
 
 export const NewTestimonials = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+  const [touchingTop, setTouchingTop] = useState(false);
+  const [touchingBottom, setTouchingBottom] = useState(false);
 
   return (
     <section className="px-4 py-4 md:px-6 md:py-6 overflow-hidden bg-white" id="testimonials">
@@ -36,6 +30,11 @@ export const NewTestimonials = () => {
           animation: marquee-ltr 45s linear infinite;
         }
         
+        .paused .animate-marquee-rtl,
+        .paused .animate-marquee-ltr {
+          animation-play-state: paused;
+        }
+
         @media (min-width: 768px) {
           .pause-on-hover:hover .animate-marquee-rtl,
           .pause-on-hover:hover .animate-marquee-ltr {
@@ -66,7 +65,10 @@ export const NewTestimonials = () => {
       <div className="flex flex-col gap-4">
         {/* Top Carousel - Right to Left (Video Panels) */}
         <div
-          className="relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x md:snap-none pause-on-hover"
+          className={`relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x md:snap-none pause-on-hover${touchingTop ? ' paused' : ''}`}
+          onTouchStart={() => setTouchingTop(true)}
+          onTouchEnd={() => setTouchingTop(false)}
+          onTouchCancel={() => setTouchingTop(false)}
         >
           {/* Gradient Masks */}
           <div className="hidden md:block absolute left-0 top-0 bottom-0 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
@@ -81,7 +83,10 @@ export const NewTestimonials = () => {
 
         {/* Bottom Carousel - Left to Right (Text Panels) */}
         <div
-          className="relative w-full flex overflow-x-auto scrollbar-hide snap-x md:snap-none pause-on-hover"
+          className={`relative w-full flex overflow-x-auto scrollbar-hide snap-x md:snap-none pause-on-hover${touchingBottom ? ' paused' : ''}`}
+          onTouchStart={() => setTouchingBottom(true)}
+          onTouchEnd={() => setTouchingBottom(false)}
+          onTouchCancel={() => setTouchingBottom(false)}
         >
           {/* Gradient Masks */}
           <div className="hidden md:block absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
