@@ -22,7 +22,7 @@ export default function Navbar() {
       <nav className="bg-white shadow-sm relative z-50">
         <div className="max-w-[85rem] mx-auto">
 
-          <div className="flex justify-between items-center h-14 md:h-20 px-5 relative z-50 bg-white">
+          <div className="flex justify-between items-center h-14 md:h-15 px-5 relative z-50 bg-white">
 
             {/* Logo */}
             <div className="flex-shrink-0 md:mt-0 mt-1">

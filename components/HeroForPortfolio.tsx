@@ -5,7 +5,7 @@ import NewLogoCarousel from "./NewLogoCarousel";
 const HeroForPorftolio = () => {
   return (
     <>
-      <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF] md:min-h-[calc(100vh-120px)] flex flex-col relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF] md:min-h-[calc(100vh-100px)] flex flex-col relative overflow-hidden">
         <div
           className="absolute inset-0 z-0 opacity-50 pointer-events-none"
           style={{
