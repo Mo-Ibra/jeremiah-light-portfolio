@@ -23,19 +23,19 @@ const HeroForPorftolio = () => {
           <div className="max-w-4xl mx-auto mb-12 md:mb-16">
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[80px] font-bold mb-8 tracking-tighter leading-[1.1] text-white drop-shadow-sm">
               Recent creatives <br className="hidden md:block" />
-              from the studio 🧑‍🍳
+              from the studio
             </h1>
             <p className="text-base md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto font-medium">
-              At AdFactory we’ve made every single type of advertisement for paid acquisition.
+              We’ve made every single type of advertisement for paid acquisition.
               Discover the performance-driven creatives that will drive measurable revenue growth for your brand.
             </p>
           </div>
         </div>
 
         {/* Logo Carousel - Full Width at the Bottom */}
-        <div className="w-full bg-white/95 backdrop-blur-sm bg-diagonal-carousel-stripes py-6 md:py-10 border-t border-white/20 relative z-40">
+        <div className="w-full bg-[#FFFFFF] bg-diagonal-carousel-stripes py-4 md:py-8 border-y border-white/20">
           <div className="max-w-full mx-auto px-8">
-            <h3 className="text-center text-[#8480FF] font-bold mb-6 md:mb-8 text-sm md:text-base tracking-widest uppercase">
+            <h3 className="text-center text-[#8480FF] font-semibold mb-3 md:mb-6 text-sm md:text-base">
               TRUSTED BY TOP BRANDS
             </h3>
             <NewLogoCarousel />
