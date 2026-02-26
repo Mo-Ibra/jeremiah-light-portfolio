@@ -149,7 +149,13 @@ export default function CaseStudiesSection() {
   ];
 
   return (
-    <section className="md:py-16 py-12 px-4 bg-gradient-to-b from-[#5360c226] from-[90%] to-white to-[80%]" id="case-studies">
+    <section className="md:py-16 py-12 px-4 bg-gradient-to-b from-[#5360c226] from-[90%] to-white to-[80%] relative" id="case-studies"
+    // style={{
+    //   backgroundImage:
+    //     "linear-gradient(to right, rgba(150,150,150,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(150,150,150,0.2) 1px, transparent 1px)",
+    //   backgroundSize: "40px 40px",
+    // }}
+    >
       <div className="max-w-4xl xl:max-w-7xl mx-auto">
         {/* Header */}
         <SectionHeader
