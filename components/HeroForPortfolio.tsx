@@ -5,7 +5,7 @@ import NewLogoCarousel from "./NewLogoCarousel";
 const HeroForPorftolio = () => {
   return (
     <>
-      <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF] md:min-h-[calc(100vh-100px)] flex flex-col relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#6F67FF] to-[#B2B9FF] flex flex-col relative overflow-hidden">
         <div
           className="absolute inset-0 z-0 opacity-50 pointer-events-none"
           style={{
@@ -18,10 +18,10 @@ const HeroForPorftolio = () => {
           }}
         />
 
-        <div className="flex-grow flex flex-col justify-center items-center z-40 relative px-8 max-w-[85rem] mx-auto w-full text-center py-20">
+        <div className="flex-grow flex flex-col justify-center items-center z-40 relative px-8 py-8 md:py-16 max-w-[85rem] mx-auto w-full text-center">
           {/* Main Content */}
-          <div className="max-w-4xl mx-auto mb-12 md:mb-16">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[80px] font-bold mb-8 tracking-tighter leading-[1.1] text-white drop-shadow-sm">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[80px] font-bold mb-4 md:mb-8 tracking-tighter leading-[1.1] text-white drop-shadow-sm">
               Recent creatives <br className="hidden md:block" />
               from the studio
             </h1>
