@@ -64,7 +64,7 @@ const VideoReelsForPortfolio = () => {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-5 mb-12 md:mt-10 md:mb-16">
+        {/* <div className="flex flex-col sm:flex-row justify-center gap-4 mt-5 mb-12 md:mt-10 md:mb-16">
           <button
             onClick={() => (location.href = "#cta")}
             className="group relative overflow-hidden px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
@@ -81,7 +81,7 @@ const VideoReelsForPortfolio = () => {
             </span>
             <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out group-hover:left-[100%]" />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
