@@ -21,11 +21,11 @@ const HeroForPorftolio = () => {
         <div className="flex-grow flex flex-col justify-center items-center z-40 relative px-8 py-8 md:py-16 max-w-[85rem] mx-auto w-full text-center">
           {/* Main Content */}
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[80px] font-bold mb-4 md:mb-8 tracking-tighter leading-[1.1] text-white drop-shadow-sm">
+            <h1 className="text-[28px] sm:text-5xl md:text-5xl lg:text-6xl xl:text-[50px] font-bold mb-4 md:mb-8 tracking-tighter leading-[1.1] text-white drop-shadow-sm">
               Recent creatives <br className="hidden md:block" />
               from the studio
             </h1>
-            <p className="text-base md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto font-medium">
+            <p className="text-base md:text-lg text-white/90 leading-relaxed md:max-w-3xl mx-auto font-medium">
               We’ve made every single type of advertisement for paid acquisition.
               Discover the performance-driven creatives that will drive measurable revenue growth for your brand.
             </p>

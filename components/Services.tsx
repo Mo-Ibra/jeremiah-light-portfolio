@@ -12,6 +12,16 @@ const Services = () => {
     >
       <BlurCircle />
 
+      {/* Grid Pattern Background */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(150,150,150,0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(150,150,150,0.15) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
+
       <div className="container max-w-[1200px] mx-auto">
         {/* Header */}
         <SectionHeader

@@ -81,9 +81,6 @@ const VideoReels = () => {
 
   return (
     <section id="portfolio" className="relative overflow-hidden z-0 bg-white" style={{
-      backgroundImage:
-        "linear-gradient(to right, rgba(150,150,150,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(150,150,150,0.2) 1px, transparent 1px)",
-      backgroundSize: "40px 40px",
     }}>
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}

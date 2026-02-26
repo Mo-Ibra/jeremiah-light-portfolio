@@ -7,7 +7,17 @@ const Features = () => {
     <section className="md:py-16 py-12 px-6 bg-[#5360c226] relative z-50">
       <BlurCircle left="20%" blur="350px" className="-z-10" />
 
-      <div className="max-w-5xl mx-auto">
+      {/* Grid Pattern Background */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(150,150,150,0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(150,150,150,0.15) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      <div className="max-w-5xl mx-auto relative z-10">
         {/* Header */}
         <SectionHeader
           badgeText="Benefits & Features"
