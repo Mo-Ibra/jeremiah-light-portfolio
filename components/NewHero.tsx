@@ -27,7 +27,7 @@ const NewHero = () => {
               {/* Left Column - Text Content */}
               <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl md:mt-6">
                 {/* Hero Text */}
-                <h1 className="text-[28px]  md:text-4xl xl:text-[40px] font-bold md:mb-6 tracking-[-0.05em] leading-tight bg-white bg-clip-text text-transparent">
+                <h1 className="text-[22px] md:text-4xl xl:text-[40px] font-bold md:mb-6 tracking-[-0.05em] leading-tight bg-white bg-clip-text text-transparent">
                   We Make Performance Creative
                   <br />
                   For Scale Stage Brands
