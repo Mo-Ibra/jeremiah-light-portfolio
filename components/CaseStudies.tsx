@@ -149,7 +149,7 @@ export default function CaseStudiesSection() {
   ];
 
   return (
-    <section className="md:py-16 py-12 px-4 bg-gradient-to-b from-[#5360c226] from-[90%] to-white to-[80%] relative overflow-hidden" id="case-studies">
+    <section className="py-12 px-4 bg-gradient-to-b from-[#5360c226] from-[90%] to-white to-[80%] relative overflow-hidden" id="case-studies">
       {/* Grid Pattern Background */}
       <div
         className="absolute inset-0 z-0 pointer-events-none h-[90%]"
@@ -157,6 +157,8 @@ export default function CaseStudiesSection() {
           backgroundImage:
             "linear-gradient(to right, rgba(150,150,150,0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(150,150,150,0.15) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
+          maskImage: "linear-gradient(to bottom, transparent, black 15%)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent, black 15%)",
         }}
       />
       <div className="max-w-4xl xl:max-w-7xl mx-auto relative z-10">

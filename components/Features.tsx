@@ -4,7 +4,7 @@ import BlurCircle from "./BlurCircle";
 
 const Features = () => {
   return (
-    <section className="md:py-16 py-12 px-6 bg-[#5360c226] relative z-50">
+    <section className="py-12 px-6 bg-[#5360c226] relative z-50">
       <BlurCircle left="20%" blur="350px" className="-z-10" />
 
       {/* Grid Pattern Background */}
@@ -14,6 +14,8 @@ const Features = () => {
           backgroundImage:
             "linear-gradient(to right, rgba(150,150,150,0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(150,150,150,0.15) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
+          maskImage: "linear-gradient(to bottom, transparent, black 15%)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent, black 15%)",
         }}
       />
 
