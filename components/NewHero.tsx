@@ -27,10 +27,10 @@ const NewHero = () => {
               {/* Left Column - Text Content */}
               <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl md:mt-6">
                 {/* Hero Text */}
-                <h1 className="text-[28px] sm:text-5xl md:text-5xl lg:text-6xl xl:text-[50px] font-bold md:mb-6 tracking-[-0.05em] leading-tight bg-white bg-clip-text text-transparent">
-                  Performance Creative
+                <h1 className="text-[28px]  md:text-4xl xl:text-[40px] font-bold md:mb-6 tracking-[-0.05em] leading-tight bg-white bg-clip-text text-transparent">
+                  We Make Performance Creative
                   <br />
-                  for Scale Stage Brands
+                  For Scale Stage Brands
                 </h1>
 
                 {/* Desktop Text - Hidden on Mobile */}
@@ -76,7 +76,7 @@ const NewHero = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4 my-8 md:my-10">
               <button
                 onClick={() => (location.href = "#cta")}
-                className="px-6 py-3 md:px-8 md:py-3 w-fit md:mt-16 mx-auto cursor-pointer bg-white font-bold text-[#8480FF] rounded-lg shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+                className="px-6 py-3 md:px-8 md:py-3 w-fit md:mt-16 mx-auto cursor-pointer bg-white font-bold text-[#8480FF] rounded-3xl shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
               >
                 <span>Schedule Free Ads Audit</span>
                 <Image

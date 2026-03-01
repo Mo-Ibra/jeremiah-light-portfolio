@@ -27,7 +27,7 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex-shrink-0 md:mt-0 mt-1">
               <Link href="/">
-                <Image src="/images/new-navbar/logo.svg" alt="Logo" width={209} height={40} className="w-[130px] md:w-[209px]" />
+                <Image src="/images/new-navbar/logo.svg" alt="Logo" width={190} height={40} className="w-[130px] md:w-[190px]" />
               </Link>
             </div>
 
@@ -47,7 +47,7 @@ export default function Navbar() {
             {/* Desktop CTA Button */}
             <div className="hidden md:block">
               <Link href="#cta">
-                <button className="group relative overflow-hidden bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-md active:scale-95 cursor-pointer">
+                <button className="group relative overflow-hidden bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white px-6 py-2 rounded-3xl font-medium transition-all shadow-md active:scale-95 cursor-pointer">
                   <span className="relative z-10">Let's Talk</span>
                   <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out group-hover:left-[100%]" />
                 </button>
