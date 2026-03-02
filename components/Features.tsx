@@ -4,7 +4,7 @@ import BlurCircle from "./BlurCircle";
 
 const Features = () => {
   return (
-    <section className="py-12 px-6 bg-[#5360c226] relative z-50">
+    <section className="md:py-12 py-6 px-6 bg-[#5360c226] relative z-50">
       <BlurCircle left="20%" blur="350px" className="-z-10" />
 
       {/* Grid Pattern Background */}

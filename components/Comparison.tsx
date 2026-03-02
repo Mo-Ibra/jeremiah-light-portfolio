@@ -2,7 +2,7 @@ import SectionHeader from "./SectionHeader";
 
 const Comparison = () => {
   return (
-    <section className="md:py-16 py-12 px-6 relative overflow-hidden">
+    <section className="md:py-12 py-6 px-6 relative overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center md:left-[730px] md:bottom-[130px] md:right-0 bottom-[600px] -right-[225px]">
         <img
           src="/images/case-studies/background.svg"

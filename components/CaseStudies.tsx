@@ -149,7 +149,7 @@ export default function CaseStudiesSection() {
   ];
 
   return (
-    <section className="py-12 px-4 bg-gradient-to-b from-[#5360c226] from-[90%] to-white to-[80%] relative overflow-hidden" id="case-studies">
+    <section className="md:py-12 py-6 px-4 bg-gradient-to-b from-[#5360c226] from-[90%] to-white to-[80%] relative overflow-hidden" id="case-studies">
       {/* Grid Pattern Background */}
       <div
         className="absolute inset-0 z-0 pointer-events-none h-[90%]"

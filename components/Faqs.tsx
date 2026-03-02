@@ -17,7 +17,7 @@ export default function FAQs() {
   return (
     <section
       id="faqs"
-      className="md:py-12 py-8 bg-background relative overflow-hidden z-50"
+      className="md:py-12 py-6 bg-background relative overflow-hidden z-50"
     >
       <div className="absolute inset-0 flex items-center justify-center">
         <img

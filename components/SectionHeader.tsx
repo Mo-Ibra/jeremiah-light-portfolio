@@ -21,19 +21,19 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   return (
     <div
       className={`text-center ${className}`}
-      // initial={{ opacity: 0, y: 40 }}
-      // whileInView={{ opacity: 1, y: 0 }}
-      // transition={{
-      //   duration: 0.6,
-      //   type: "spring",
-      //   stiffness: 120,
-      // }}
-      // viewport={{ once: true, amount: 0.3 }}
+    // initial={{ opacity: 0, y: 40 }}
+    // whileInView={{ opacity: 1, y: 0 }}
+    // transition={{
+    //   duration: 0.6,
+    //   type: "spring",
+    //   stiffness: 120,
+    // }}
+    // viewport={{ once: true, amount: 0.3 }}
     >
       {/* Badge */}
       {withLabel && (
         <div
-          className={`inline-flex items-center ${badgeBackgroundColor} text-primary px-5 py-1 rounded-full text-sm font-medium mb-6`}
+          className={`inline-flex items-center ${badgeBackgroundColor} text-primary px-5 py-1 rounded-full text-sm font-medium md:mb-6 mb-4`}
         >
           <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
           {badgeText}

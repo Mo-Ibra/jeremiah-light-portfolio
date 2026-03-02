@@ -7,7 +7,7 @@ import BlurCircle from "./BlurCircle";
 const Services = () => {
   return (
     <section
-      className="py-12 px-6 bg-[#5360c226] relative"
+      className="md:py-12 py-6 px-6 bg-[#5360c226] relative"
       id="services"
     >
       <BlurCircle />

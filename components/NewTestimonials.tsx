@@ -101,7 +101,7 @@ export const NewTestimonials = () => {
       </div>
 
 
-      <div className="flex flex-col sm:flex-row justify-center gap-4 my-4">
+      <div className="flex flex-col sm:flex-row justify-center gap-4 md:my-4 my-2">
         <button
           onClick={() => (location.href = "#cta")}
           className="group relative overflow-hidden px-6 py-3 md:px-8 md:py-3 w-fit mx-auto cursor-pointer bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 font-bold text-white rounded-full shadow-xl transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
