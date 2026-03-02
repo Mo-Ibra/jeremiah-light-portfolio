@@ -279,7 +279,7 @@ export default function CaseStudiesSection() {
         {/* <AboutMe /> */}
 
         {/* NEW SECTION */}
-        <div className="relative max-w-6xl mx-auto w-full bg-black rounded-3xl p-8 shadow-2xl border-2 border-primary">
+        <div className="relative max-w-6xl mx-auto w-full bg-black rounded-3xl p-8 border-2 border-primary">
           <div className="grid md:grid-cols-2 gap-8 md:mt-8">
             {/* Left Column */}
             <div className="text-white space-y-6 z-20">
