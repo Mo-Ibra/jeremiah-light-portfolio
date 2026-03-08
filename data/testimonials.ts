@@ -31,7 +31,7 @@ export const VIDEO_TESTIMONIALS: VideoTestimonial[] = [
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Mike Ndoye",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
-    videoId: "243psjy9l4",
+    videoId: "t3wxyd7pav",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export const VIDEO_TESTIMONIALS: VideoTestimonial[] = [
     thumbnail: "/images/new-testimonials/testimonials-1.png",
     name: "Mike Ndoye",
     avatarImage: "/images/new-testimonials/testimonial-2.svg",
-    videoId: "243psjy9l4",
+    videoId: "t3wxyd7pav",
   },
 ];
 
