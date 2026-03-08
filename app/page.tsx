@@ -19,6 +19,7 @@ import Footer from "@/components/Footer";
 
 import { useEffect, useState } from "react";
 import QuizModal from "@/components/QuizModal";
+import VideoReelsCarousel from "@/components/VideoReelsCarousel";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -64,7 +65,8 @@ function Home() {
       {/* <Hero /> */}
       <NewNavigaton />
       <NewHero />
-      <VideoReels />
+      {/* <VideoReels /> */}
+      <VideoReelsCarousel />
       <CaseStudiesSection />
       {/* <Testimonials /> */}
       <NewTestimonials />
