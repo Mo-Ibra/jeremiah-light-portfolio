@@ -55,10 +55,13 @@ const VideoReelsCarousel = () => {
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 mb-8 md:mb-16">
         <div className="text-center mb-2 sm:mb-4 lg:mb-6 tracking-tight opacity-0 translate-y-5 animate-[fadeInUp_1s_ease_forwards]">
-          <p className="text-2xl md:text-4xl text-black font-semibold md:leading-12">
+          <p className="text-2xl md:text-4xl text-black font-semibold md:leading-12 mb-2">
             <span className="text-primary">10,000+</span> Ads Created
             <br />
             <span className="text-primary">$10.25M+</span> In Sales Generated
+          </p>
+          <p className="text-sm md:text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
+            While your competitors <span className="text-primary font-bold">waste money</span> on boring ads, over <span className="text-primary font-bold">300+</span> winning brands are partnering with
           </p>
         </div>
       </div>
