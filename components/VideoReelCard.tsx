@@ -19,6 +19,8 @@ interface VideoReelCardProps {
   authorName?: string | null;
   authorRole?: string | null;
   rating?: number;
+  onPlay?: () => void;
+  onPause?: () => void;
 }
 
 interface WistiaVideo {
@@ -32,6 +34,8 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
   videoId,
   views,
   platform = "TikTok",
+  onPlay,
+  onPause,
 }) => {
   const [isMuted, setIsMuted] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -73,9 +77,16 @@ const VideoReelCard: React.FC<VideoReelCardProps> = ({
 
     window._wq.push({
       id: videoId,
-      onReady: (video: WistiaVideo) => {
+      onReady: (video: any) => {
         videoRef.current = video;
         console.log("Wistia video ready", video);
+
+        // Bind play/pause events
+        if (typeof video.bind === "function") {
+          video.bind("play", () => onPlay?.());
+          video.bind("pause", () => onPause?.());
+          video.bind("end", () => onPause?.());
+        }
 
         // Set initial mute state
         try {

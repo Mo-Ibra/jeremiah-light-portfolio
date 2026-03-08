@@ -2,17 +2,27 @@
 
 import "../styles/video-reels.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import VideoReelCard from "@/components/VideoReelCard";
 import { videoReels } from "@/data/data";
 import Link from "next/link";
 
 const VideoReelsCarousel = () => {
   const [touchingTop, setTouchingTop] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
-    <section id="portfolio" className="relative overflow-hidden z-0 bg-white" style={{
-    }}>
+    <section id="portfolio" className="relative overflow-hidden z-0 bg-white">
       <style jsx>{`
         @keyframes marquee-rtl {
           0% { transform: translateX(0); }
@@ -63,7 +73,7 @@ const VideoReelsCarousel = () => {
 
       <div className="flex flex-col gap-4">
         <div
-          className={`relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x md:snap-none pause-on-hover${touchingTop ? ' paused' : ''}`}
+          className={`relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x snap-mandatory md:snap-none pause-on-hover${(touchingTop || (isMobile && isVideoPlaying)) ? ' paused' : ''}`}
           onTouchStart={() => setTouchingTop(true)}
           onTouchEnd={() => setTouchingTop(false)}
           onTouchCancel={() => setTouchingTop(false)}
@@ -74,8 +84,12 @@ const VideoReelsCarousel = () => {
 
           <div className="flex animate-marquee-rtl gap-4 md:gap-8 py-4 md:py-8">
             {[...videoReels, ...videoReels, ...videoReels, ...videoReels].map((item, index) => (
-              <div key={`video-${index}`} className="flex-shrink-0">
-                <VideoReelCard {...item} />
+              <div key={`video-${index}`} className="flex-shrink-0 snap-center">
+                <VideoReelCard
+                  {...item}
+                  onPlay={() => setIsVideoPlaying(true)}
+                  onPause={() => setIsVideoPlaying(false)}
+                />
               </div>
             ))}
           </div>
