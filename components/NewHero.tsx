@@ -34,11 +34,11 @@ const NewHero = () => {
                 </h1>
 
                 {/* Desktop Text - Hidden on Mobile */}
-                <p className="hidden md:block text-xs md:text-[15px] text-white mb-8 leading-relaxed max-w-xl">
+                <p className="hidden md:block text-sm md:text-lg text-white mb-8 leading-relaxed max-w-xl">
                   We help DTC brands spending $20k-$100k/month grow profitably by
                   creating high-converting ads at scale.
                 </p>
-                <p className="hidden md:block text-xs md:text-[15px] text-white mb-6 leading-relaxed max-w-xl">
+                <p className="hidden md:block text-sm md:text-lg text-white mb-6 leading-relaxed max-w-xl">
                   Creative Strategy, Copywriting, Funnels, Post Production, Ads and
                   Campaign Structure - done with and for you.
                 </p>
