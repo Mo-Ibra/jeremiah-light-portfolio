@@ -25,29 +25,20 @@ const VideoReelsCarousel = () => {
   return (
     <section id="portfolio" className="relative overflow-hidden z-0 bg-white">
       <style jsx>{`
-        @keyframes marquee-rtl {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
         @keyframes marquee-ltr {
           0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
+          100% { transform: translateX(0%); }
         }
         
-        .animate-marquee-rtl {
-          animation: marquee-rtl 40s linear infinite;
-        }
         .animate-marquee-ltr {
-          animation: marquee-ltr 45s linear infinite;
+          animation: marquee-ltr 90s linear infinite;
         }
         
-        .paused .animate-marquee-rtl,
         .paused .animate-marquee-ltr {
           animation-play-state: paused;
         }
 
         @media (min-width: 768px) {
-          .pause-on-hover:hover .animate-marquee-rtl,
           .pause-on-hover:hover .animate-marquee-ltr {
             animation-play-state: paused;
           }
@@ -86,7 +77,7 @@ const VideoReelsCarousel = () => {
           <div className="hidden md:block absolute left-0 top-0 bottom-0 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
           <div className="hidden md:block absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
 
-          <div className="flex animate-marquee-rtl gap-4 md:gap-8 py-4 md:py-8">
+          <div className="flex animate-marquee-ltr gap-4 md:gap-8 py-4 md:py-8">
             {[...videoReels, ...videoReels, ...videoReels, ...videoReels].map((item, index) => (
               <div key={`video-${index}`} className="flex-shrink-0 snap-center">
                 <VideoReelCard
