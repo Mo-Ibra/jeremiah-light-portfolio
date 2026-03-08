@@ -12,6 +12,8 @@ const logos = [
   "/images/logo-carousel/logo-6.svg",
 ];
 
+const CAROUSEL_SPEED = 30;
+
 function NewLogoCarousel() {
   const repeatedLogos = Array(20).fill(logos).flat();
 
@@ -29,7 +31,7 @@ function NewLogoCarousel() {
             x: [0, -((120 + 48) * logos.length)],
           }}
           transition={{
-            duration: 15,
+            duration: CAROUSEL_SPEED,
             repeat: Infinity,
             ease: "linear",
           }}
