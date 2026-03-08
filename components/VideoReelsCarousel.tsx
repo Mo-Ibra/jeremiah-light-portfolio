@@ -8,7 +8,7 @@ import { videoReels } from "@/data/data";
 import Link from "next/link";
 
 const VideoReelsCarousel = () => {
-  const [touchingTop, setTouchingTop] = useState(false);
+  const [touching, setTouching] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
@@ -65,13 +65,13 @@ const VideoReelsCarousel = () => {
 
       <div className="flex flex-col gap-4">
         <div
-          className={`relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x snap-mandatory md:snap-none pause-on-hover${(touchingTop || (isMobile && (isVideoPlaying || hasInteracted))) ? ' paused' : ''}`}
+          className={`relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x snap-mandatory md:snap-none pause-on-hover${(touching || (isMobile && (isVideoPlaying || hasInteracted))) ? ' paused' : ''}`}
           onTouchStart={() => {
-            setTouchingTop(true);
+            setTouching(true);
             if (isMobile) setHasInteracted(true);
           }}
-          onTouchEnd={() => setTouchingTop(false)}
-          onTouchCancel={() => setTouchingTop(false)}
+          onTouchEnd={() => setTouching(false)}
+          onTouchCancel={() => setTouching(false)}
         >
           {/* Gradient Masks */}
           <div className="hidden md:block absolute left-0 top-0 bottom-0 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
