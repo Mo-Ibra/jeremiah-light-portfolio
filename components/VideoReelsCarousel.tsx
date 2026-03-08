@@ -11,6 +11,7 @@ const VideoReelsCarousel = () => {
   const [touchingTop, setTouchingTop] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -73,8 +74,11 @@ const VideoReelsCarousel = () => {
 
       <div className="flex flex-col gap-4">
         <div
-          className={`relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x snap-mandatory md:snap-none pause-on-hover${(touchingTop || (isMobile && isVideoPlaying)) ? ' paused' : ''}`}
-          onTouchStart={() => setTouchingTop(true)}
+          className={`relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x snap-mandatory md:snap-none pause-on-hover${(touchingTop || (isMobile && (isVideoPlaying || hasInteracted))) ? ' paused' : ''}`}
+          onTouchStart={() => {
+            setTouchingTop(true);
+            if (isMobile) setHasInteracted(true);
+          }}
           onTouchEnd={() => setTouchingTop(false)}
           onTouchCancel={() => setTouchingTop(false)}
         >
@@ -87,7 +91,10 @@ const VideoReelsCarousel = () => {
               <div key={`video-${index}`} className="flex-shrink-0 snap-center">
                 <VideoReelCard
                   {...item}
-                  onPlay={() => setIsVideoPlaying(true)}
+                  onPlay={() => {
+                    setIsVideoPlaying(true);
+                    if (isMobile) setHasInteracted(true);
+                  }}
                   onPause={() => setIsVideoPlaying(false)}
                 />
               </div>
