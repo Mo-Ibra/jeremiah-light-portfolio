@@ -23,7 +23,7 @@ const VideoReelsCarousel = () => {
   }, []);
 
   return (
-    <section id="portfolio" className="relative overflow-hidden z-0 bg-white">
+    <section id="portfolio" className="relative overflow-hidden z-0 bg-white pb-5 md:pb-9">
       <style jsx>{`
         @keyframes marquee-ltr {
           0% { transform: translateX(-50%); }
@@ -53,9 +53,9 @@ const VideoReelsCarousel = () => {
         }
       `}</style>
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 mb-8 md:mb-16">
-        <div className="text-center mb-2 sm:mb-4 lg:mb-6 tracking-tight opacity-0 translate-y-5 animate-[fadeInUp_1s_ease_forwards]">
-          <p className="text-2xl md:text-4xl text-black font-semibold md:leading-12 mb-2">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 mb-10 md:mb-16">
+        <div className="text-center opacity-0 translate-y-5 animate-[fadeInUp_1s_ease_forwards]">
+          <p className="text-2xl md:text-4xl text-black font-semibold md:leading-12 mb-4 tracking-tight">
             <span className="text-primary">10,000+</span> Ads Created
             <br />
             <span className="text-primary">$10.25M+</span> In Sales Generated
@@ -97,10 +97,10 @@ const VideoReelsCarousel = () => {
         </div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex justify-center md:my-5 my-4">
         <Link
           href="/portfolio"
-          className="group relative overflow-hidden px-6 py-3 md:px-8 md:py-3 w-fit bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white font-bold rounded-full shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto md:mb-12 my-6"
+          className="group relative overflow-hidden px-6 py-3 md:px-8 md:py-3 w-fit bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white font-bold rounded-full shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
         >
           <span className="relative z-10">See Full Portfolio</span>
           <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out" />
