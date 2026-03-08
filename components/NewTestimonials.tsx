@@ -24,10 +24,11 @@ export const NewTestimonials = () => {
         }
         
         .animate-marquee-rtl {
-          animation: marquee-rtl 40s linear infinite;
+          animation: marquee-rtl 70s linear infinite;
         }
+
         .animate-marquee-ltr {
-          animation: marquee-ltr 45s linear infinite;
+          animation: marquee-ltr 140s linear infinite;
         }
         
         .paused .animate-marquee-rtl,
