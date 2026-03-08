@@ -22,7 +22,7 @@ export default function FAQs() {
         <img
           src="/images/faqs/background-2.svg"
           alt="Faq Background"
-          className="max-w-full max-h-full object-contain"
+          className="max-w-full max-h-full object-contain absolute md:top-[-50px]"
         />
       </div>
 
