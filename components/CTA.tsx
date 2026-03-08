@@ -75,7 +75,7 @@ const CTA = ({ onOpenQuiz }: CTAProps) => {
             Apply below to see if we&apos;re a good fit.
           </p>
           <button
-            className="relative z-10 bg-white text-primary md:px-8 px-4 md:py-4 py-3 rounded-xl shadow-2xl cursor-pointer text-xs md:text-lg font-semibold hover:bg-gray-50 mb-4 hover:scale-110 transition-all"
+            className="relative z-10 bg-white text-primary md:px-5 md:py-2 px-3 py-2 rounded-lg shadow-2xl cursor-pointer text-xs md:text-lg font-semibold hover:bg-gray-50 mb-4 hover:scale-110 transition-all"
             onClick={onOpenQuiz}
           >
             Schedule Free Ads Audit
