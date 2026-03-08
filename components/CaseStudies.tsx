@@ -272,7 +272,7 @@ export default function CaseStudiesSection() {
                 className="w-3 md:w-4 h-3 md:h-4"
               />
             </span>
-            <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out group-hover:left-[100%]" />
+            <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out" />
           </button>
         </div>
 
