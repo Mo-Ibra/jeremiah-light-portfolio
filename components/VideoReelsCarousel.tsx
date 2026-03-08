@@ -65,7 +65,7 @@ const VideoReelsCarousel = () => {
 
       <div className="flex flex-col gap-4">
         <div
-          className={`relative w-full border-y border-gray-100 flex overflow-x-auto scrollbar-hide snap-x snap-mandatory md:snap-none pause-on-hover${(touching || (isMobile && (isVideoPlaying || hasInteracted))) ? ' paused' : ''}`}
+          className={`relative w-full flex overflow-x-auto scrollbar-hide snap-x snap-mandatory md:snap-none pause-on-hover${(touching || (isMobile && (isVideoPlaying || hasInteracted))) ? ' paused' : ''}`}
           onTouchStart={() => {
             setTouching(true);
             if (isMobile) setHasInteracted(true);
