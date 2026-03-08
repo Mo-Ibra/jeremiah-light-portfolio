@@ -100,7 +100,7 @@ const VideoReelsCarousel = () => {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <Link
           href="/portfolio"
-          className="group relative overflow-hidden px-7 md:px-9 py-3 md:py-4 w-fit bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white font-bold rounded-full shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto md:my-12 my-6"
+          className="group relative overflow-hidden px-6 py-3 md:px-8 md:py-3 w-fit bg-gradient-to-b from-[#8480FF] to-[#6b68d9] hover:contrast-125 text-white font-bold rounded-full shadow-md transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 mx-auto md:mb-12 my-6"
         >
           <span className="relative z-10">See Full Portfolio</span>
           <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out" />
