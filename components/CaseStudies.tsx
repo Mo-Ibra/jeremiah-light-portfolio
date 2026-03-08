@@ -264,13 +264,13 @@ export default function CaseStudiesSection() {
           >
             <span className="relative z-10 flex items-center space-x-2">
               <span>Schedule Free Ads Audit</span>
-              <Image
+              {/* <Image
                 src="/images/arrow-white.svg"
                 alt="Arrow Icon"
                 width={16}
                 height={16}
                 className="w-3 md:w-4 h-3 md:h-4"
-              />
+              /> */}
             </span>
             <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-20deg] transition-all duration-700 ease-in-out" />
           </button>
