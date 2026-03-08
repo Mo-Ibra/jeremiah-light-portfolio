@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 import { faqData } from "@/data/data";
-import BlurCircle from "./BlurCircle";
 
 export default function FAQs() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -44,7 +43,7 @@ export default function FAQs() {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className="relative rounded-2xl overflow-hidden transition-all duration-300 p-[2px] bg-gradient-to-t from-white via-[#6C5DD370] to-primary shadow-2xl"
+                className={`relative rounded-2xl overflow-hidden transition-all duration-300 p-[2px] bg-gradient-to-t from-white via-[#6C5DD370] to-primary ${!faq.latest ? "shadow-2xl" : ""}`}
               >
                 {/* Inner Content */}
                 <div className="relative bg-[#272727] backdrop-blur-sm rounded-2xl">

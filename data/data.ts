@@ -721,5 +721,6 @@ export const faqData = [
     question: "What are next steps?",
     answer:
       "Fill out the form below, book a meeting with me and lets talk about your brand! Please note that due to high demand, I can't take on all applicant. Thus, each submission will be reviewed to check for compatibility - some may be rejected pre-call.",
+    latest: true,
   },
 ];
